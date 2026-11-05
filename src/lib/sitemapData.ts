@@ -23,13 +23,89 @@ export const SITEMAP_PAGES: SitemapPage[] = [
     images: [
       {
         loc: imageLoc("/logo-icon.png"),
-        title: "Blox Fruit Calculator logo",
-        caption: "Brand mark for bloxfruitcalculator.net",
+        title: "Anagram Generator logo",
+        caption: "Brand mark for anagramgenerator.app",
       },
       {
-        loc: imageLoc("/blox-fruit-calculator.webp"),
-        title: "Blox Fruit Calculator",
-        caption: "Compare Blox Fruits trades and check WFL online",
+        loc: imageLoc("/anagram-generator.webp"),
+        title: "Anagram Generator",
+        caption: "Free online anagram generator for words and names",
+      },
+    ],
+  },
+  {
+    path: "/uk",
+    lastMod: LASTMOD,
+    changeFreq: "weekly",
+    priority: 0.95,
+  },
+  {
+    path: "/da",
+    lastMod: LASTMOD,
+    changeFreq: "weekly",
+    priority: 0.95,
+  },
+  {
+    path: "/br",
+    lastMod: LASTMOD,
+    changeFreq: "weekly",
+    priority: 0.95,
+  },
+  {
+    path: "/de",
+    lastMod: LASTMOD,
+    changeFreq: "weekly",
+    priority: 0.95,
+  },
+  {
+    path: "/anagram-solver",
+    lastMod: LASTMOD,
+    changeFreq: "weekly",
+    priority: 0.95,
+    images: [
+      {
+        loc: imageLoc("/anagram-generator-tool.webp"),
+        title: "Anagram solver",
+        caption: "Unscramble letters into real English words",
+      },
+    ],
+  },
+  {
+    path: "/name-anagram-generator",
+    lastMod: LASTMOD,
+    changeFreq: "weekly",
+    priority: 0.95,
+    images: [
+      {
+        loc: imageLoc("/anagram-generator-online.webp"),
+        title: "Name anagram generator",
+        caption: "Create multi-word anagrams from your name",
+      },
+    ],
+  },
+  {
+    path: "/how-to-use-anagram-generator",
+    lastMod: LASTMOD,
+    changeFreq: "weekly",
+    priority: 0.9,
+    images: [
+      {
+        loc: imageLoc("/anagram-generator-app.webp"),
+        title: "How to use Anagram Generator",
+        caption: "Step-by-step guide to making anagrams online",
+      },
+    ],
+  },
+  {
+    path: "/what-is-an-anagram",
+    lastMod: LASTMOD,
+    changeFreq: "weekly",
+    priority: 0.9,
+    images: [
+      {
+        loc: imageLoc("/anagram-generator.webp"),
+        title: "What is an anagram",
+        caption: "Definition and examples of anagrams",
       },
     ],
   },
@@ -37,77 +113,12 @@ export const SITEMAP_PAGES: SitemapPage[] = [
     path: "/features",
     lastMod: LASTMOD,
     changeFreq: "weekly",
-    priority: 0.9,
+    priority: 0.85,
     images: [
       {
-        loc: imageLoc("/blox-fruit-calculator-online.webp"),
-        title: "Blox Fruit Calculator features",
-        caption: "WFL checker, value list, physical and permanent support",
-      },
-    ],
-  },
-  {
-    path: "/how-to-use-blox-fruit-calculator",
-    lastMod: LASTMOD,
-    changeFreq: "weekly",
-    priority: 0.95,
-    images: [
-      {
-        loc: imageLoc("/blox-fruit-calculator-tool.webp"),
-        title: "How to use Blox Fruit Calculator",
-        caption: "Step-by-step trade value and WFL guide",
-      },
-    ],
-  },
-  {
-    path: "/trade-calculator",
-    lastMod: LASTMOD,
-    changeFreq: "weekly",
-    priority: 0.95,
-    images: [
-      {
-        loc: imageLoc("/blox-fruit-calculator.webp"),
-        title: "Blox Fruits trade calculator",
-        caption: "Win Fair Lose trade checker for Blox Fruits",
-      },
-    ],
-  },
-  {
-    path: "/blox-fruits-values",
-    lastMod: LASTMOD,
-    changeFreq: "daily",
-    priority: 0.95,
-    images: [
-      {
-        loc: imageLoc("/blox-fruit-calculator-online.webp"),
-        title: "Blox fruit values list",
-        caption: "Blox fruit values, trade value, demand, and Beli prices",
-      },
-    ],
-  },
-  {
-    path: "/what-is-wfl",
-    lastMod: LASTMOD,
-    changeFreq: "weekly",
-    priority: 0.9,
-    images: [
-      {
-        loc: imageLoc("/blox-fruit-calculator-tool.webp"),
-        title: "What is WFL in Blox Fruits",
-        caption: "Win Fair Lose meaning for Blox Fruits trades",
-      },
-    ],
-  },
-  {
-    path: "/permanent-vs-physical-fruits",
-    lastMod: LASTMOD,
-    changeFreq: "weekly",
-    priority: 0.9,
-    images: [
-      {
-        loc: imageLoc("/blox-fruit-calculator-app.webp"),
-        title: "Permanent vs physical Blox Fruits",
-        caption: "Difference between permanent and physical fruits",
+        loc: imageLoc("/anagram-generator-online.webp"),
+        title: "Anagram Generator features",
+        caption: "Exact anagrams, solver mode, and name phrases",
       },
     ],
   },
@@ -119,7 +130,7 @@ export const SITEMAP_PAGES: SitemapPage[] = [
     images: [
       {
         loc: imageLoc("/logo-icon.png"),
-        title: "About Blox Fruit Calculator",
+        title: "About Anagram Generator",
         caption: "Logo on the About page",
       },
     ],
@@ -131,41 +142,41 @@ export const SITEMAP_PAGES: SitemapPage[] = [
     priority: 0.8,
   },
   {
-    path: "/blog/blox-fruits-trading-guide",
+    path: "/blog/how-to-solve-anagrams",
     lastMod: LASTMOD,
     changeFreq: "monthly",
     priority: 0.9,
     images: [
       {
-        loc: imageLoc("/blox-fruit-calculator.webp"),
-        title: "Blox Fruits trading guide",
-        caption: "How to trade fruits smarter with a value calculator",
+        loc: imageLoc("/anagram-generator-tool.webp"),
+        title: "How to solve anagrams",
+        caption: "Practical tips for solving anagram puzzles faster",
       },
     ],
   },
   {
-    path: "/blog/how-demand-and-value-work",
+    path: "/blog/anagram-examples",
     lastMod: LASTMOD,
     changeFreq: "monthly",
     priority: 0.9,
     images: [
       {
-        loc: imageLoc("/blox-fruit-calculator-tool.webp"),
-        title: "How demand and value work",
-        caption: "Demand scores and trade values explained",
+        loc: imageLoc("/anagram-generator.webp"),
+        title: "Anagram examples",
+        caption: "Famous and fun anagram examples in English",
       },
     ],
   },
   {
-    path: "/blog/blox-fruits-trading-scams",
+    path: "/blog/anagram-vs-permutation",
     lastMod: LASTMOD,
     changeFreq: "monthly",
     priority: 0.9,
     images: [
       {
-        loc: imageLoc("/blox-fruit-calculator-online.webp"),
-        title: "Blox Fruits trading scams",
-        caption: "Common trade scams and how to avoid them",
+        loc: imageLoc("/anagram-generator-online.webp"),
+        title: "Anagram vs permutation",
+        caption: "How anagrams differ from letter permutations",
       },
     ],
   },

@@ -6,13 +6,13 @@ import CtaButton from "@/components/CtaButton";
 import { BRAND_LOGO, CONTACT_EMAIL, SITE_DOMAIN, SITE_NAME, SITE_ORIGIN } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "About Us — Blox Fruit Calculator",
+  title: "About Us — Anagram Generator",
   description:
-    "About Blox Fruit Calculator on bloxfruitcalculator.net: a free browser tool that compares Blox Fruits trades, values, demand, and Win / Fair / Lose.",
+    "About Anagram Generator on anagramgenerator.app: a free browser tool that rearranges words and names into anagrams and phrases.",
   alternates: { canonical: `${SITE_ORIGIN}/about-us` },
   openGraph: {
-    title: "About Us — Blox Fruit Calculator",
-    description: `Independent Blox Fruits trade toolkit at ${SITE_DOMAIN}.`,
+    title: "About Us — Anagram Generator",
+    description: `Independent anagram toolkit at ${SITE_DOMAIN}.`,
     url: `${SITE_ORIGIN}/about-us`,
     siteName: SITE_NAME,
     type: "website",
@@ -28,7 +28,7 @@ export default function AboutPage() {
           <div className="relative h-40 w-40 flex-shrink-0 overflow-hidden rounded-2xl border border-ink/10 bg-brand-soft">
             <Image
               src={BRAND_LOGO}
-              alt="Blox Fruit Calculator logo"
+              alt="Anagram Generator logo"
               fill
               sizes="160px"
               className="object-contain p-3"
@@ -41,8 +41,8 @@ export default function AboutPage() {
             </h1>
             <p className="text-lg leading-relaxed text-ink/80">
               We build one clear thing: a free{" "}
-              <strong className="text-ink">Blox Fruit Calculator</strong> that turns messy trade
-              offers into value, demand, and Win / Fair / Lose. We operate at{" "}
+              <strong className="text-ink">Anagram Generator</strong> that turns any word, name, or
+              letter rack into new words and phrases. We operate at{" "}
               <strong className="text-ink">{SITE_DOMAIN}</strong>.
             </p>
           </div>
@@ -50,37 +50,37 @@ export default function AboutPage() {
 
         <div className="space-y-5 text-ink/80 leading-relaxed">
           <p>
-            Blox Fruits trading moves faster than most value screenshots. Our calculator lets you
-            compare both sides of a deal, toggle physical and permanent fruits, and read a clear WFL
-            result before you accept.
+            Most anagram sites are either decades-old forms or game unscramblers with thin explanations.
+            We designed anagramgenerator.app around how people actually search: generate, solve, anagram a
+            name, and learn what an anagram is — with a modern letter-tile interface.
           </p>
           <p>
-            We are not affiliated with Blox Fruits, Roblox Corporation, or any third-party value
-            publisher. Values are community references for guidance. Markets change—always confirm
-            with recent offers.
+            Generation runs in your browser after the dictionary loads. We are not affiliated with Scrabble,
+            Words With Friends, or any dictionary publisher. Treat game-critical plays as guidance and confirm
+            in your preferred lexicon when stakes are high.
           </p>
           <p>
             Explore the{" "}
-            <Link href="/" className="text-teal-deep underline">
-              homepage calculator
+            <Link href="/" className="text-pink underline">
+              homepage generator
             </Link>
             , the{" "}
-            <Link href="/blox-fruits-values" className="text-teal-deep underline">
-              values list
+            <Link href="/anagram-solver" className="text-pink underline">
+              anagram solver
             </Link>
             , and guides like{" "}
-            <Link href="/what-is-wfl" className="text-teal-deep underline">
-              what WFL means
+            <Link href="/what-is-an-anagram" className="text-pink underline">
+              what is an anagram
             </Link>
             .
           </p>
           <p>
             Questions or corrections? Email{" "}
-            <a href={`mailto:${CONTACT_EMAIL}`} className="text-teal-deep underline">
+            <a href={`mailto:${CONTACT_EMAIL}`} className="text-pink underline">
               {CONTACT_EMAIL}
             </a>{" "}
             or use the{" "}
-            <Link href="/contact-us" className="text-teal-deep underline">
+            <Link href="/contact-us" className="text-pink underline">
               contact page
             </Link>
             .
@@ -88,8 +88,8 @@ export default function AboutPage() {
         </div>
 
         <div className="mt-10 flex justify-center">
-          <CtaButton href="/#calculator" ariaLabel="Open Blox Fruit Calculator" icon="arrow">
-            OPEN CALCULATOR
+          <CtaButton href="/#generator" ariaLabel="Open Anagram Generator" icon="arrow">
+            MAKE ANAGRAMS
           </CtaButton>
         </div>
       </div>

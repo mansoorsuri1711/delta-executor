@@ -8,11 +8,13 @@ import Footer from "@/components/Footer";
 import ScrollToTopWrapper from "@/components/ScrollToTopWrapper";
 import WebVitalsTracker from "@/components/WebVitalsTracker";
 import DeferredAnalytics from "@/components/DeferredAnalytics";
+import LocaleDocument from "@/components/LocaleDocument";
 import { MobileMenuProvider } from "@/components/MobileMenuProvider";
 import { ORGANIZATION_JSON_LD } from "@/lib/appFacts";
 import {
   ASSET_VERSION,
   OG_IMAGE,
+  SITE_KEYWORDS,
   SITE_NAME,
   SITE_ORIGIN,
   SITE_TAGLINE,
@@ -50,7 +52,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: "#8B5CF6",
+  themeColor: "#E94E89",
   viewportFit: "cover",
   interactiveWidget: "resizes-visual",
 };
@@ -58,29 +60,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_ORIGIN),
   title: {
-    default: "Blox Fruit Calculator — Values, Trade Value & WFL Checker",
+    default: "Anagram Generator — Make Word & Name Anagrams Free",
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_TAGLINE,
-  keywords: [
-    "blox fruit calculator",
-    "blox fruits calculator",
-    "blox fruit value calculator",
-    "blox fruits value calculator",
-    "blox fruit trade calculator",
-    "blox fruit values",
-    "blox fruit value",
-    "blox fruits values",
-    "blox fruits value",
-    "value blox fruit",
-    "blox fruit trade",
-    "blox fruit trade value",
-    "blox fruit trading",
-    "blox fruits trading",
-    "trade blox fruit",
-    "wfl calculator",
-    "permanent vs physical fruits",
-  ],
+  keywords: [...SITE_KEYWORDS],
   authors: [{ name: `${SITE_NAME} Team` }],
   creator: SITE_NAME,
   publisher: SITE_NAME,
@@ -112,7 +96,7 @@ export const metadata: Metadata = {
     languages: { "en-US": SITE_ORIGIN, en: SITE_ORIGIN },
   },
   openGraph: {
-    title: "Blox Fruit Calculator — Values, Trade Value & WFL Checker",
+    title: "Anagram Generator — Make Word & Name Anagrams Free",
     description: SITE_TAGLINE,
     url: SITE_ORIGIN,
     siteName: SITE_NAME,
@@ -123,26 +107,26 @@ export const metadata: Metadata = {
         url: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: "Blox Fruit Calculator on bloxfruitcalculator.net",
+        alt: "Anagram Generator on anagramgenerator.app",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blox Fruit Calculator — Values, Trade Value & WFL Checker",
+    title: "Anagram Generator — Make Word & Name Anagrams Free",
     description: SITE_TAGLINE,
     images: [
       {
         url: TWITTER_IMAGE,
         width: 1200,
         height: 600,
-        alt: "Blox Fruit Calculator on bloxfruitcalculator.net",
+        alt: "Anagram Generator on anagramgenerator.app",
       },
     ],
   },
   applicationName: SITE_NAME,
-  category: "Games",
-  classification: "Blox Fruit Calculator",
+  category: "Utilities",
+  classification: "Anagram Generator",
 };
 
 export default function RootLayout({
@@ -155,16 +139,16 @@ export default function RootLayout({
       lang="en"
       suppressHydrationWarning
       className={`${gulkave.variable} ${bodyFont.variable}`}
-      style={{ backgroundColor: "#F5F3FB", colorScheme: "light" }}
+      style={{ backgroundColor: "#F7F5FC", colorScheme: "light" }}
     >
       <head>
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="theme-color" content="#8B5CF6" />
+        <meta name="theme-color" content="#E94E89" />
         <style
           dangerouslySetInnerHTML={{
             __html:
-              "html,body{background-color:#F5F3FB!important;color-scheme:light}#__next,main{background-color:transparent}",
+              "html,body{background-color:#F7F5FC!important;color-scheme:light}#__next,main{background-color:transparent}",
           }}
         />
         <link rel="icon" href={`/favicon.ico?v=${ASSET_VERSION}`} type="image/x-icon" sizes="48x48" />
@@ -181,10 +165,11 @@ export default function RootLayout({
       </head>
       <body
         className="font-sans antialiased text-ink min-h-screen flex flex-col bg-brand site-atmosphere"
-        style={{ backgroundColor: "#F5F3FB" }}
+        style={{ backgroundColor: "#F7F5FC" }}
         suppressHydrationWarning
       >
         <MobileMenuProvider>
+          <LocaleDocument />
           <Header />
           <main className="relative z-10 flex-1">{children}</main>
           <Footer />

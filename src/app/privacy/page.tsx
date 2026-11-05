@@ -3,9 +3,9 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { CONTACT_EMAIL, SITE_DOMAIN, SITE_NAME, SITE_ORIGIN } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Blox Fruit Calculator",
+  title: "Privacy Policy — Anagram Generator",
   description:
-    "Privacy policy for bloxfruitcalculator.net: what we collect, how analytics may be used, and how to contact us.",
+    "Privacy policy for anagramgenerator.app: what we collect, how analytics may be used, and how to contact us.",
   alternates: { canonical: `${SITE_ORIGIN}/privacy` },
 };
 
@@ -23,19 +23,19 @@ export default function PrivacyPage() {
         <div className="space-y-4 leading-relaxed text-ink/80">
           <p>
             This Privacy Policy explains how {SITE_NAME} ({SITE_DOMAIN}) handles information when
-            you use the Blox Fruit Calculator and the rest of the site.
+            you use the Anagram Generator and the rest of the site.
           </p>
           <h2 className="pt-2 font-display text-xl font-bold text-ink">Information we process</h2>
           <p>
-            The calculator runs in your browser. Trade selections are not stored on our servers as
-            an account history. If you email us or submit the contact form, we receive the details
-            you choose to send so we can reply.
+            Anagram search runs in your browser after the word list loads. The words and names you type
+            into the generator are not stored on our servers as an account history. If you email us or
+            submit the contact form, we receive the details you choose to send so we can reply.
           </p>
           <h2 className="font-display text-xl font-bold text-ink">Logs and analytics</h2>
           <p>
             Like most sites, hosting and analytics providers may process basic technical data such
             as IP address, browser type, and pages viewed. We use this to keep the site fast,
-            secure, and useful—not to sell personal profiles.
+            secure, and useful — not to sell personal profiles.
           </p>
           <h2 className="font-display text-xl font-bold text-ink">Cookies</h2>
           <p>
@@ -45,14 +45,13 @@ export default function PrivacyPage() {
           </p>
           <h2 className="font-display text-xl font-bold text-ink">Third parties</h2>
           <p>
-            Links to Roblox, community resources, or other sites are outside our control. Their
-            privacy practices apply when you leave {SITE_DOMAIN}. We are not affiliated with Roblox
-            Corporation or the Blox Fruits game studio.
+            Links to external dictionaries, games, or articles are outside our control. Their
+            privacy practices apply when you leave {SITE_DOMAIN}.
           </p>
           <h2 className="font-display text-xl font-bold text-ink">Contact</h2>
           <p>
             Privacy questions:{" "}
-            <a href={`mailto:${CONTACT_EMAIL}`} className="text-teal-deep underline">
+            <a href={`mailto:${CONTACT_EMAIL}`} className="text-pink underline">
               {CONTACT_EMAIL}
             </a>
             . Last updated November 5, 2026.

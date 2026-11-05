@@ -3,9 +3,9 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { SITE_DOMAIN, SITE_NAME, SITE_ORIGIN } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Disclaimer — Blox Fruit Calculator",
+  title: "Disclaimer — Anagram Generator",
   description:
-    "Disclaimer for bloxfruitcalculator.net: unofficial fan tool, community values only, no affiliation with Roblox or Blox Fruits.",
+    "Disclaimer for anagramgenerator.app: free wordplay tool, dictionary guidance only, no affiliation with Scrabble or game publishers.",
   alternates: { canonical: `${SITE_ORIGIN}/disclaimer` },
 };
 
@@ -22,22 +22,22 @@ export default function DisclaimerPage() {
         <h1 className="mb-6 font-display text-3xl font-bold text-ink">Disclaimer</h1>
         <div className="space-y-4 leading-relaxed text-ink/80">
           <p>
-            {SITE_NAME} on {SITE_DOMAIN} is an unofficial fan tool. It is not affiliated with,
-            endorsed by, or sponsored by Blox Fruits, its developers, or Roblox Corporation.
+            {SITE_NAME} on {SITE_DOMAIN} is an independent wordplay toolkit. It is not affiliated with,
+            endorsed by, or sponsored by Scrabble, Words With Friends, Hasbro, Mattel, Zynga, or any
+            dictionary publisher.
           </p>
           <p>
-            Fruit values, demand scores, and Win / Fair / Lose results are community estimates for
-            educational and planning purposes. Markets change with updates, stock, and player
-            behavior. Always verify offers in-game before you accept a trade.
+            Generated words and phrases come from a general English word list for education and
+            entertainment. Lexicons used in competitive games can differ. Always confirm tournament
+            or ranked plays in the official word source for your game.
           </p>
           <p>
-            We do not guarantee profits, perfect accuracy, or recovery of items lost to scams or
-            bad deals. Use the calculator as a guide alongside your own judgment and safe trading
-            habits.
+            We do not guarantee that every result is suitable for usernames, trademarks, or publication.
+            You are responsible for how you use copied phrases.
           </p>
           <p>
-            Roblox® and related marks are trademarks of their respective owners. Blox Fruits is a
-            game experience on the Roblox platform. All rights belong to their owners.
+            Game names and trademarks belong to their respective owners. All rights remain with those
+            owners.
           </p>
           <p>Last updated November 5, 2026.</p>
         </div>

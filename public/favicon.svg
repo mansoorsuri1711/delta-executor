@@ -1,13 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs>
-  <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3B2A7A"/><stop offset="1" stop-color="#120C2A"/></linearGradient>
-  <linearGradient id="fruit" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C4B5FD"/><stop offset="1" stop-color="#7C3AED"/></linearGradient>
-  <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4AF0B8"/><stop offset="1" stop-color="#14B886"/></linearGradient>
-  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A78BFA"/><stop offset="1" stop-color="#2EE6A8"/></linearGradient>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A0718"/><stop offset="1" stop-color="#1A1238"/></linearGradient>
-  <radialGradient id="glowA" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#8B5CF6" stop-opacity="0.22"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
-  <radialGradient id="glowB" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#2EE6A8" stop-opacity="0.15"/><stop offset="1" stop-color="#2EE6A8" stop-opacity="0"/></radialGradient>
-  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity="0.55"/></filter>
-</defs><g transform="translate(0,0) scale(1.0)"><rect width="512" height="512" rx="110" fill="url(#tile)"/>
-<rect x="76" y="40" width="360" height="432" rx="56" fill="#fff"/><rect x="112" y="78" width="288" height="200" rx="30" fill="#0E0A1F"/>
-<circle cx="256" cy="186" r="74" fill="url(#fruit)"/><path d="M268 110 C 300 80, 350 88, 356 112 C 326 128, 292 128, 268 110 Z" fill="#2EE6A8"/>
-<rect x="112" y="312" width="132" height="120" rx="22" fill="#E4DCFB"/><rect x="268" y="312" width="132" height="120" rx="22" fill="#2EE6A8"/></g></svg>
+  <linearGradient id="tilebg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3B3FB0"/><stop offset="1" stop-color="#1E1F66"/></linearGradient>
+  <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F0559F"/><stop offset="1" stop-color="#D21E78"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E8368F"/><stop offset="1" stop-color="#5B5FE0"/></linearGradient>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF5FA"/><stop offset="1" stop-color="#F2F3FF"/></linearGradient>
+  <radialGradient id="glowA" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F49AC8" stop-opacity="0.30"/><stop offset="1" stop-color="#F49AC8" stop-opacity="0"/></radialGradient>
+  <radialGradient id="glowB" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#8F93FF" stop-opacity="0.22"/><stop offset="1" stop-color="#8F93FF" stop-opacity="0"/></radialGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#1E1B3A" flood-opacity="0.14"/></filter>
+</defs><g transform="translate(0,0) scale(1.0)"><rect width="512" height="512" rx="110" fill="url(#tilebg)"/>
+<rect x="56" y="150" width="190" height="190" rx="34" fill="#fff"/><text x="151" y="296" text-anchor="middle" font-family="Poppins" font-weight="800" font-size="150" fill="#2B2E83">A</text>
+<rect x="266" y="150" width="190" height="190" rx="34" fill="#E8368F"/><text x="361" y="296" text-anchor="middle" font-family="Poppins" font-weight="800" font-size="150" fill="#fff">Z</text></g></svg>

@@ -1,15 +1,17 @@
-# SEO Audit Notes — Blox Fruit Calculator
+# SEO Audit Notes — Anagram Generator
 
-Date: 2026-11-05
+Domain: `https://anagramgenerator.app`  
+Primary keyword: **anagram generator**
 
-## Live SERP takeaways (blox fruit calculator)
+## Live SERP takeaways
 
-Top results are trade/WFL calculators: bloxfruitsvalues.com, Traderie, FantasyBlox, Gamersberg, mobile apps.
+Top results: Inge's, Wordsmith.org, Word.tips solver, Alan Eliasen, WordFinderX, dCode, WordZingo.
 
-### Gaps closed on this site
-- Thorough homepage content (how-to, value/price/demand, WFL, phys/perm, safety)
-- Dedicated values, WFL, permanent vs physical, how-to pages
-- 3 SERP-matched blogs only (trading guide, demand/value, scams)
-- Branded OG, sitemap index, robots Content-Signals, FAQ/HowTo/SoftwareApplication schema
-- Descriptive image alts using Blox Fruit Calculator assets in `/public`
+## Gaps we closed
 
+- Modern branded generator UX (letter tiles, pink CTA, indigo brand)
+- Separate solver + name anagram intents (no muddled single page)
+- Thorough homepage content (how-to, generator vs solver, examples, tips, FAQ, HowTo + SoftwareApplication schema)
+- Dedicated what-is / how-to / features / trust pages
+- Only 3 SERP-driven blogs (solve tips, examples, anagram vs permutation)
+- Descriptive image alts using Anagram Generator assets in `/public`

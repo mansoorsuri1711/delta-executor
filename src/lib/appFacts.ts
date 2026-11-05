@@ -31,8 +31,8 @@ export const WEB_APPLICATION_JSON_LD = {
   "@type": "SoftwareApplication",
   name: SITE_NAME,
   url: SITE_ORIGIN,
-  applicationCategory: "GameApplication",
-  operatingSystem: "Web",
+  applicationCategory: "UtilitiesApplication",
+  operatingSystem: "Web Browser",
   offers: {
     "@type": "Offer",
     price: "0",

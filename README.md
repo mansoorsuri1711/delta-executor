@@ -1,12 +1,8 @@
-# Blox Fruit Calculator
+# Anagram Generator
 
-Free Blox Fruit Calculator for [bloxfruitcalculator.net](https://bloxfruitcalculator.net) — compare both sides of a Blox Fruits trade, check fruit values and demand, and see Win / Fair / Lose instantly.
+Free online anagram generator for [anagramgenerator.app](https://anagramgenerator.app).
 
-## Stack
-
-- Next.js App Router + TypeScript
-- Tailwind CSS
-- Static SEO routes (sitemap index, image sitemap, robots Content-Signals)
+Rearrange any word, name, or letters into new words and multi-word phrases. Includes an anagram solver, name anagram workflow, and SERP-driven guides.
 
 ## Develop
 
@@ -15,19 +11,8 @@ npm install
 npm run dev
 ```
 
-## Build
+## Stack
 
-```bash
-npm run build
-npm start
-```
-
-## Primary pages
-
-- `/` — Blox Fruit Calculator (homepage)
-- `/trade-calculator` — dedicated WFL trade calculator
-- `/blox-fruits-values` — values list
-- `/how-to-use-blox-fruit-calculator` — how-to guide
-- `/what-is-wfl` — Win / Fair / Lose explained
-- `/permanent-vs-physical-fruits` — permanent vs physical
-- `/blog` — SERP-driven trading guides
+- Next.js App Router + TypeScript
+- Tailwind CSS
+- Client-side English dictionary (`public/data/`)

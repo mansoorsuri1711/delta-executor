@@ -3,15 +3,12 @@ const nextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   compress: true,
-  // Dev-only: allow HMR when the page is opened as 127.0.0.1 instead of localhost
   allowedDevOrigins: ['127.0.0.1', 'localhost'],
-  
-  // Target modern browsers - no legacy polyfills
+
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
-  
-  // Optimize images
+
   images: {
     formats: ['image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
@@ -22,38 +19,39 @@ const nextConfig = {
 
   async redirects() {
     return [
-      // Prior-brand and retired calculator routes → Blox Fruit Calculator
+      // Retired Blox Fruits / prior niche routes → Anagram Generator IA
       { source: '/funciones', destination: '/features', permanent: true },
-      { source: '/como-usar', destination: '/how-to-use-blox-fruit-calculator', permanent: true },
-      { source: '/how-it-works', destination: '/how-to-use-blox-fruit-calculator', permanent: true },
-      { source: '/how-to-use-wordle-calculator', destination: '/how-to-use-blox-fruit-calculator', permanent: true },
-      { source: '/wordle-solver', destination: '/trade-calculator', permanent: true },
-      { source: '/wordle-helper', destination: '/trade-calculator', permanent: true },
-      { source: '/wordle-finder', destination: '/blox-fruits-values', permanent: true },
-      { source: '/5-letter-words-for-wordle', destination: '/blox-fruits-values', permanent: true },
-      { source: '/best-wordle-starting-words', destination: '/blox-fruits-values', permanent: true },
-      { source: '/how-to-convert-salary-to-hourly', destination: '/how-to-use-blox-fruit-calculator', permanent: true },
-      { source: '/hourly-to-salary-calculator', destination: '/trade-calculator', permanent: true },
-      { source: '/salary-conversion-chart', destination: '/blox-fruits-values', permanent: true },
-      { source: '/blog/wordle-strategy-tips', destination: '/blog/blox-fruits-trading-guide', permanent: true },
-      { source: '/blog/how-wordle-colors-work', destination: '/blog/how-demand-and-value-work', permanent: true },
-      { source: '/blog/wordle-hard-mode-guide', destination: '/what-is-wfl', permanent: true },
-      { source: '/blog/best-second-wordle-guesses', destination: '/blog/blox-fruits-trading-scams', permanent: true },
-      { source: '/blog/salary-vs-hourly-pay', destination: '/blog/blox-fruits-trading-guide', permanent: true },
-      { source: '/blog/how-many-work-hours-in-a-year', destination: '/blog/how-demand-and-value-work', permanent: true },
-      { source: '/blog/monthly-salary-to-hourly', destination: '/what-is-wfl', permanent: true },
-      { source: '/blog/part-time-salary-to-hourly', destination: '/blog/blox-fruits-trading-scams', permanent: true },
-      { source: '/values', destination: '/blox-fruits-values', permanent: true },
-      { source: '/blox-fruit-values', destination: '/blox-fruits-values', permanent: true },
-      { source: '/blox-fruit-value', destination: '/blox-fruits-values', permanent: true },
-      { source: '/bloxfruitsvalues', destination: '/blox-fruits-values', permanent: true },
+      { source: '/como-usar', destination: '/how-to-use-anagram-generator', permanent: true },
+      { source: '/how-it-works', destination: '/how-to-use-anagram-generator', permanent: true },
+      { source: '/how-to-use-wordle-calculator', destination: '/how-to-use-anagram-generator', permanent: true },
+      { source: '/how-to-use-blox-fruit-calculator', destination: '/how-to-use-anagram-generator', permanent: true },
+      { source: '/wordle-solver', destination: '/anagram-solver', permanent: true },
+      { source: '/wordle-helper', destination: '/anagram-solver', permanent: true },
+      { source: '/wordle-finder', destination: '/anagram-solver', permanent: true },
+      { source: '/5-letter-words-for-wordle', destination: '/anagram-solver', permanent: true },
+      { source: '/best-wordle-starting-words', destination: '/blog/anagram-examples', permanent: true },
+      { source: '/trade-calculator', destination: '/', permanent: true },
+      { source: '/blox-fruits-values', destination: '/', permanent: true },
+      { source: '/blox-fruit-values', destination: '/', permanent: true },
+      { source: '/blox-fruit-value', destination: '/', permanent: true },
+      { source: '/bloxfruitsvalues', destination: '/', permanent: true },
+      { source: '/values', destination: '/', permanent: true },
+      { source: '/what-is-wfl', destination: '/what-is-an-anagram', permanent: true },
+      { source: '/permanent-vs-physical-fruits', destination: '/what-is-an-anagram', permanent: true },
       { source: '/value-calculator', destination: '/', permanent: true },
-      { source: '/trade', destination: '/trade-calculator', permanent: true },
-      { source: '/trading', destination: '/blog/blox-fruits-trading-guide', permanent: true },
-      { source: '/calculator', destination: '/trade-calculator', permanent: true },
-      { source: '/wfl', destination: '/what-is-wfl', permanent: true },
+      { source: '/trade', destination: '/', permanent: true },
+      { source: '/trading', destination: '/', permanent: true },
+      { source: '/calculator', destination: '/', permanent: true },
+      { source: '/wfl', destination: '/what-is-an-anagram', permanent: true },
       { source: '/about', destination: '/about-us', permanent: true },
       { source: '/pricing', destination: '/', permanent: true },
+      { source: '/blog/blox-fruits-trading-guide', destination: '/blog/how-to-solve-anagrams', permanent: true },
+      { source: '/blog/how-demand-and-value-work', destination: '/blog/anagram-vs-permutation', permanent: true },
+      { source: '/blog/blox-fruits-trading-scams', destination: '/blog/anagram-examples', permanent: true },
+      { source: '/blog/wordle-strategy-tips', destination: '/blog/how-to-solve-anagrams', permanent: true },
+      { source: '/blog/how-wordle-colors-work', destination: '/blog/anagram-vs-permutation', permanent: true },
+      { source: '/blog/wordle-hard-mode-guide', destination: '/what-is-an-anagram', permanent: true },
+      { source: '/blog/best-second-wordle-guesses', destination: '/blog/anagram-examples', permanent: true },
 
       // Catch-all retired niche routes
       { source: '/compound-interest-calculator', destination: '/', permanent: true },
@@ -68,6 +66,13 @@ const nextConfig = {
       { source: '/nfl-parlay-calculator', destination: '/', permanent: true },
       { source: '/moneyline-parlay-calculator', destination: '/', permanent: true },
       { source: '/round-robin-calculator', destination: '/', permanent: true },
+      { source: '/how-to-convert-salary-to-hourly', destination: '/', permanent: true },
+      { source: '/hourly-to-salary-calculator', destination: '/', permanent: true },
+      { source: '/salary-conversion-chart', destination: '/', permanent: true },
+      { source: '/blog/salary-vs-hourly-pay', destination: '/blog', permanent: true },
+      { source: '/blog/how-many-work-hours-in-a-year', destination: '/blog', permanent: true },
+      { source: '/blog/monthly-salary-to-hourly', destination: '/blog', permanent: true },
+      { source: '/blog/part-time-salary-to-hourly', destination: '/blog', permanent: true },
 
       // Legacy asset paths
       {
@@ -132,8 +137,6 @@ const nextConfig = {
     ];
   },
 
-  // Skip Next.js legacy polyfills. Target browsers already ship Array.at,
-  // Object.hasOwn, etc. (Lighthouse: Legacy JavaScript ~14KB).
   turbopack: {
     resolveAlias: {
       '../build/polyfills/polyfill-module': './src/lib/empty-polyfill.js',
@@ -154,12 +157,8 @@ const nextConfig = {
     return config;
   },
 
-  // Optimize headers
   async headers() {
     return [
-      // HTML pages: always revalidate so Googlebot gets fresh content.
-      // Exclude /_next/static so Next.js can manage hashed-asset caching
-      // (custom Cache-Control there breaks HMR in development).
       {
         source: '/((?!_next/static|_next/image).*)',
         headers: [
@@ -207,7 +206,6 @@ const nextConfig = {
           },
         ],
       },
-      // Public images: cache briefly and always revalidate so replacements show up
       {
         source: '/:path*.webp',
         headers: [
@@ -236,6 +234,15 @@ const nextConfig = {
         ],
       },
       {
+        source: '/data/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=86400, stale-while-revalidate=604800',
+          },
+        ],
+      },
+      {
         source: '/css/:path*',
         headers: [
           {
@@ -260,15 +267,13 @@ const nextConfig = {
     ];
   },
 
-  // Enable experimental features
   experimental: {
-    optimizeCss: true, // Critters inlines critical CSS
-    inlineCss: true, // Inline CSS in HTML to eliminate render-blocking (improves FCP/LCP)
+    optimizeCss: true,
+    inlineCss: true,
     scrollRestoration: true,
     optimizePackageImports: ['react-icons'],
   },
-  
-  // Modern module/nomodule pattern
+
   modularizeImports: {
     'react-icons': {
       transform: 'react-icons/{{member}}',
