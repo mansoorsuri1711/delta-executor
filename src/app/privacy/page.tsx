@@ -3,9 +3,9 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { CONTACT_EMAIL, SITE_DOMAIN, SITE_NAME, SITE_ORIGIN } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Anagram Generator",
+  title: "Gizlilik Politikası — Yazı Stilleri",
   description:
-    "Privacy policy for anagramgenerator.app: what we collect, how analytics may be used, and how to contact us.",
+    "yazıstilleri.com.tr gizlilik politikası: hangi veriler işlenir, analitik, çerezler ve iletişim.",
   alternates: { canonical: `${SITE_ORIGIN}/privacy` },
 };
 
@@ -14,47 +14,48 @@ export default function PrivacyPage() {
     <>
       <Breadcrumbs
         items={[
-          { label: "Home", href: "/" },
-          { label: "Privacy", href: "/privacy" },
+          { label: "Ana Sayfa", href: "/" },
+          { label: "Gizlilik Politikası" },
         ]}
       />
       <div className="container mx-auto max-w-3xl px-4 pb-12 pt-8">
-        <h1 className="mb-6 font-display text-3xl font-bold text-ink">Privacy Policy</h1>
-        <div className="space-y-4 leading-relaxed text-ink/80">
+        <h1 className="mb-6 font-display text-3xl font-bold text-white">Gizlilik Politikası</h1>
+        <div className="space-y-4 leading-relaxed text-white/75">
           <p>
-            This Privacy Policy explains how {SITE_NAME} ({SITE_DOMAIN}) handles information when
-            you use the Anagram Generator and the rest of the site.
+            Bu Gizlilik Politikası, {SITE_NAME} ({SITE_DOMAIN}) sitesini ve yazı stili
+            oluşturucuyu kullandığınızda bilgilerin nasıl ele alındığını açıklar.
           </p>
-          <h2 className="pt-2 font-display text-xl font-bold text-ink">Information we process</h2>
+          <h2 className="pt-2 font-display text-xl font-bold text-white">İşlediğimiz bilgiler</h2>
           <p>
-            Anagram search runs in your browser after the word list loads. The words and names you type
-            into the generator are not stored on our servers as an account history. If you email us or
-            submit the contact form, we receive the details you choose to send so we can reply.
+            Yazı stili dönüşümü tarayıcınızda çalışır. Oluşturucuya yazdığınız metinler hesap
+            geçmişi olarak sunucularımızda saklanmak üzere tasarlanmamıştır. Bize e-posta
+            gönderirseniz veya iletişim formunu doldurursanız, yanıt verebilmek için gönderdiğiniz
+            bilgileri alırız.
           </p>
-          <h2 className="font-display text-xl font-bold text-ink">Logs and analytics</h2>
+          <h2 className="font-display text-xl font-bold text-white">Loglar ve analitik</h2>
           <p>
-            Like most sites, hosting and analytics providers may process basic technical data such
-            as IP address, browser type, and pages viewed. We use this to keep the site fast,
-            secure, and useful — not to sell personal profiles.
+            Barındırma ve analitik hizmetleri, IP adresi, tarayıcı türü ve görüntülenen sayfalar
+            gibi teknik verileri işleyebilir. Bunu siteyi hızlı, güvenli ve kullanışlı tutmak için
+            kullanırız; kişisel profil satışı yapmıyoruz.
           </p>
-          <h2 className="font-display text-xl font-bold text-ink">Cookies</h2>
+          <h2 className="font-display text-xl font-bold text-white">Çerezler</h2>
           <p>
-            Essential cookies may be required for site operation. Analytics cookies, if enabled,
-            help us understand aggregate traffic. You can control cookies through your browser
-            settings.
+            Sitenin çalışması için gerekli çerezler kullanılabilir. Analitik çerezler etkinse
+            toplu trafiği anlamamıza yardım eder. Tarayıcı ayarlarınızdan çerezleri
+            yönetebilirsiniz.
           </p>
-          <h2 className="font-display text-xl font-bold text-ink">Third parties</h2>
+          <h2 className="font-display text-xl font-bold text-white">Üçüncü taraflar</h2>
           <p>
-            Links to external dictionaries, games, or articles are outside our control. Their
-            privacy practices apply when you leave {SITE_DOMAIN}.
+            Sosyal medya veya harici sitelere giden bağlantılar kendi gizlilik uygulamalarına
+            tabidir. {SITE_DOMAIN} dışına çıktığınızda o sitelerin politikaları geçerlidir.
           </p>
-          <h2 className="font-display text-xl font-bold text-ink">Contact</h2>
+          <h2 className="font-display text-xl font-bold text-white">İletişim</h2>
           <p>
-            Privacy questions:{" "}
+            Gizlilik soruları:{" "}
             <a href={`mailto:${CONTACT_EMAIL}`} className="text-pink underline">
               {CONTACT_EMAIL}
             </a>
-            . Last updated November 5, 2026.
+            . Son güncelleme: 5 Kasım 2026.
           </p>
         </div>
       </div>

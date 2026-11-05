@@ -6,8 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useMobileMenu } from './MobileMenuProvider';
-import { BRAND_LOGO_MARK, SITE_SHORT_NAME } from '@/lib/siteConfig';
-import LanguageSwitcher from './LanguageSwitcher';
+import { BRAND_LOGO_MARK, SITE_SHORT_NAME, SOCIAL_LINKS } from '@/lib/siteConfig';
 import { getLocaleFromPathname } from '@/lib/locales';
 import { getMessages } from '@/lib/i18n/messages';
 
@@ -16,8 +15,9 @@ function MenuButton({ onClick, isOpen }: { onClick: () => void; isOpen?: boolean
     <button
       type="button"
       onClick={onClick}
-      className="relative z-[60] flex h-10 w-10 items-center justify-center rounded-md text-ink hover:bg-ink/5 xl:hidden"
-      aria-label={isOpen ? 'Close menu' : 'Open menu'}
+      className="relative z-[60] flex h-10 w-10 items-center justify-center rounded-full lg:hidden"
+      style={{ color: 'var(--chrome-fg)' }}
+      aria-label={isOpen ? 'Menüyü kapat' : 'Menüyü aç'}
       aria-expanded={!!isOpen}
       aria-controls="mobile-nav-panel"
     >
@@ -39,19 +39,19 @@ export default function MobileNavigation() {
   const pathname = usePathname();
   const [mounted, setMounted] = useState(false);
   const locale = getLocaleFromPathname(pathname);
-  const homeHref = locale.path;
   const t = getMessages(locale.code);
 
   const navSections = [
     {
       title: t.footerTools.toUpperCase(),
       items: [
-        { href: '/', label: t.vsRow1Tool },
-        { href: '/anagram-solver', label: t.vsRow2Tool },
-        { href: '/name-anagram-generator', label: t.vsRow3Tool },
-        { href: '/how-to-use-anagram-generator', label: t.howIntroLink },
-        { href: '/what-is-an-anagram', label: t.navWhat },
-        { href: '/features', label: t.trustLink.replace(' →', '') },
+        { href: '/', label: t.navGenerator },
+        { href: '/instagram-yazi-tipleri', label: t.navInstagram },
+        { href: '/sekilli-nick', label: t.navNick },
+        { href: '/whatsapp-yazi-stilleri', label: t.navWhatsapp },
+        { href: '/nasil-kullanilir', label: 'Nasıl kullanılır' },
+        { href: '/yazi-stilleri-nedir', label: t.navWhat },
+        { href: '/features', label: 'Özellikler' },
       ],
     },
     {
@@ -59,15 +59,15 @@ export default function MobileNavigation() {
       items: [
         { href: '/blog', label: t.navBlog },
         { href: '/about-us', label: t.navAbout },
-        { href: '/contact-us', label: 'Contact' },
-        { href: '/privacy', label: 'Privacy' },
-        { href: '/disclaimer', label: 'Disclaimer' },
+        { href: '/contact-us', label: 'İletişim' },
+        { href: '/privacy', label: 'Gizlilik' },
+        { href: '/disclaimer', label: 'Sorumluluk reddi' },
       ],
     },
   ];
 
   const isActive = (href: string) => {
-    if (href === '/') return pathname === '/' || ['/uk', '/da', '/br', '/de'].includes(pathname);
+    if (href === '/') return pathname === '/';
     return pathname === href || pathname.startsWith(`${href}/`);
   };
 
@@ -93,43 +93,39 @@ export default function MobileNavigation() {
     createPortal(
       <div
         id="mobile-nav-panel"
-        className={`fixed inset-0 z-50 xl:hidden ${isOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}
+        className={`fixed inset-0 z-50 lg:hidden ${isOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}
         aria-hidden={!isOpen}
       >
         <button
           type="button"
-          className={`absolute inset-0 bg-ink/40 transition-opacity ${isOpen ? 'opacity-100' : 'opacity-0'}`}
-          aria-label="Close menu overlay"
+          className={`absolute inset-0 bg-black/70 transition-opacity ${isOpen ? 'opacity-100' : 'opacity-0'}`}
+          aria-label="Menüyü kapat"
           onClick={() => setIsOpen(false)}
         />
         <div
-          className={`absolute right-0 top-0 flex h-full w-[min(100%,22rem)] flex-col bg-white shadow-2xl transition-transform duration-300 ${
+          className={`absolute right-0 top-0 flex h-full w-[min(100%,22rem)] flex-col border-l border-white/10 bg-[#0a0a0a] shadow-2xl transition-transform duration-300 ${
             isOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
-          <div className="flex items-center justify-between border-b border-ink/10 px-4 py-4">
-            <Link href={homeHref} className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
+          <div className="flex items-center justify-between border-b border-white/10 px-4 py-4">
+            <Link href="/" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
               <Image src={BRAND_LOGO_MARK} alt="" width={32} height={32} className="rounded-lg" />
-              <span className="font-display text-sm font-bold text-ink">{SITE_SHORT_NAME}</span>
+              <span className="font-display text-sm font-bold text-white">{SITE_SHORT_NAME}</span>
             </Link>
-            <MenuButton isOpen onClick={() => setIsOpen(false)} />
+            <MenuButton onClick={() => setIsOpen(false)} isOpen />
           </div>
           <div className="flex-1 overflow-y-auto px-4 py-5">
-            <div className="mb-6">
-              <p className="mb-2 text-xs font-bold tracking-wider text-ink/40">LANGUAGE</p>
-              <LanguageSwitcher />
-            </div>
             {navSections.map((section) => (
               <div key={section.title} className="mb-6">
-                <p className="mb-2 text-xs font-bold tracking-wider text-ink/40">{section.title}</p>
+                <p className="mb-2 text-xs font-bold tracking-wider text-white/40">{section.title}</p>
                 <ul className="space-y-1">
                   {section.items.map((item) => (
                     <li key={item.href}>
                       <Link
-                        href={item.href === '/' ? homeHref : item.href}
+                        href={item.href}
                         onClick={() => setIsOpen(false)}
                         className={`block rounded-lg px-3 py-2.5 text-sm font-medium ${
-                          isActive(item.href) ? 'bg-pink/10 text-pink-deep' : 'text-ink/75 hover:bg-ink/5'
+                          isActive(item.href) ? 'bg-pink/15 text-pink' : 'text-white/70 hover:bg-white/5'
                         }`}
                       >
                         {item.label}
@@ -139,14 +135,29 @@ export default function MobileNavigation() {
                 </ul>
               </div>
             ))}
-          </div>
-          <div className="border-t border-ink/10 p-4">
+            <div className="mb-6">
+              <p className="mb-2 text-xs font-bold tracking-wider text-white/40">{t.footerSocial.toUpperCase()}</p>
+              <ul className="flex flex-wrap gap-2">
+                {Object.entries(SOCIAL_LINKS).map(([key, href]) => (
+                  <li key={key}>
+                    <a
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-lg border border-white/10 px-3 py-1.5 text-xs font-semibold capitalize text-white/70"
+                    >
+                      {key}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
             <Link
-              href={homeHref === '/' ? '/#generator' : `${homeHref}#generator`}
+              href="/#generator"
               onClick={() => setIsOpen(false)}
-              className="pink-gradient-btn flex w-full items-center justify-center rounded-xl px-4 py-3 text-sm font-bold text-white"
+              className="pink-gradient-btn inline-flex w-full items-center justify-center rounded-full px-4 py-3 text-sm font-semibold text-white"
             >
-              {t.makeAnagrams}
+              {t.makeStyles}
             </Link>
           </div>
         </div>
@@ -156,7 +167,9 @@ export default function MobileNavigation() {
 
   return (
     <>
-      <MenuButton isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
+      <div className="lg:hidden">
+        <MenuButton onClick={() => setIsOpen(true)} isOpen={isOpen} />
+      </div>
       {panel}
     </>
   );

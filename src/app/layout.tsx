@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import localFont from "next/font/local";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import Header from "@/components/Header";
@@ -10,7 +9,9 @@ import WebVitalsTracker from "@/components/WebVitalsTracker";
 import DeferredAnalytics from "@/components/DeferredAnalytics";
 import LocaleDocument from "@/components/LocaleDocument";
 import { MobileMenuProvider } from "@/components/MobileMenuProvider";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import { ORGANIZATION_JSON_LD } from "@/lib/appFacts";
+import { THEME_BOOT_SCRIPT } from "@/lib/theme";
 import {
   ASSET_VERSION,
   OG_IMAGE,
@@ -21,29 +22,19 @@ import {
   TWITTER_IMAGE,
 } from "@/lib/siteConfig";
 
-const gulkave = localFont({
-  src: [
-    {
-      path: "../fonts/Gulkave-Regular.woff",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../fonts/Gulkave-Regular.ttf",
-      weight: "400",
-      style: "normal",
-    },
-  ],
-  variable: "--font-gulkave",
-  display: "swap",
-  fallback: ["Helvetica Neue", "Arial", "sans-serif"],
-});
-
-const bodyFont = Plus_Jakarta_Sans({
-  subsets: ["latin"],
+const bodyFont = Inter({
+  subsets: ["latin", "latin-ext"],
   display: "swap",
   variable: "--font-body",
   weight: ["400", "500", "600", "700", "800"],
+  adjustFontFallback: true,
+});
+
+const displayFont = Montserrat({
+  subsets: ["latin", "latin-ext"],
+  display: "swap",
+  variable: "--font-display",
+  weight: ["600", "700", "800"],
   adjustFontFallback: true,
 });
 
@@ -52,7 +43,11 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: "#E94E89",
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+    { media: "(prefers-color-scheme: light)", color: "#f8f4fc" },
+  ],
+  colorScheme: "dark light",
   viewportFit: "cover",
   interactiveWidget: "resizes-visual",
 };
@@ -60,12 +55,12 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_ORIGIN),
   title: {
-    default: "Anagram Generator — Make Word & Name Anagrams Free",
+    default: "Yazı Stilleri — Instagram Font & Şekilli Yazı (Ücretsiz)",
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_TAGLINE,
   keywords: [...SITE_KEYWORDS],
-  authors: [{ name: `${SITE_NAME} Team` }],
+  authors: [{ name: `${SITE_NAME} Ekibi` }],
   creator: SITE_NAME,
   publisher: SITE_NAME,
   robots: {
@@ -93,40 +88,40 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: SITE_ORIGIN,
-    languages: { "en-US": SITE_ORIGIN, en: SITE_ORIGIN },
+    languages: { tr: SITE_ORIGIN, "x-default": SITE_ORIGIN },
   },
   openGraph: {
-    title: "Anagram Generator — Make Word & Name Anagrams Free",
+    title: "Yazı Stilleri — Instagram Font & Şekilli Yazı (Ücretsiz)",
     description: SITE_TAGLINE,
     url: SITE_ORIGIN,
     siteName: SITE_NAME,
-    locale: "en_US",
+    locale: "tr_TR",
     type: "website",
     images: [
       {
         url: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: "Anagram Generator on anagramgenerator.app",
+        alt: "Yazı Stilleri — yazıstilleri.com.tr",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Anagram Generator — Make Word & Name Anagrams Free",
+    title: "Yazı Stilleri — Instagram Font & Şekilli Yazı (Ücretsiz)",
     description: SITE_TAGLINE,
     images: [
       {
         url: TWITTER_IMAGE,
         width: 1200,
         height: 600,
-        alt: "Anagram Generator on anagramgenerator.app",
+        alt: "Yazı Stilleri — yazıstilleri.com.tr",
       },
     ],
   },
   applicationName: SITE_NAME,
   category: "Utilities",
-  classification: "Anagram Generator",
+  classification: "Yazı Stilleri",
 };
 
 export default function RootLayout({
@@ -136,21 +131,15 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="tr"
+      className={`${bodyFont.variable} ${displayFont.variable}`}
       suppressHydrationWarning
-      className={`${gulkave.variable} ${bodyFont.variable}`}
-      style={{ backgroundColor: "#F7F5FC", colorScheme: "light" }}
     >
       <head>
         <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="theme-color" content="#E94E89" />
-        <style
-          dangerouslySetInnerHTML={{
-            __html:
-              "html,body{background-color:#F7F5FC!important;color-scheme:light}#__next,main{background-color:transparent}",
-          }}
-        />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="theme-color" content="#000000" />
+        <script dangerouslySetInnerHTML={{ __html: THEME_BOOT_SCRIPT }} />
         <link rel="icon" href={`/favicon.ico?v=${ASSET_VERSION}`} type="image/x-icon" sizes="48x48" />
         <link rel="icon" href={`/favicon.svg?v=${ASSET_VERSION}`} type="image/svg+xml" />
         <link rel="icon" href={`/favicon-32x32.png?v=${ASSET_VERSION}`} type="image/png" sizes="32x32" />
@@ -164,17 +153,18 @@ export default function RootLayout({
         </Script>
       </head>
       <body
-        className="font-sans antialiased text-ink min-h-screen flex flex-col bg-brand site-atmosphere"
-        style={{ backgroundColor: "#F7F5FC" }}
+        className="font-sans antialiased min-h-screen flex flex-col site-atmosphere"
         suppressHydrationWarning
       >
-        <MobileMenuProvider>
-          <LocaleDocument />
-          <Header />
-          <main className="relative z-10 flex-1">{children}</main>
-          <Footer />
-          <ScrollToTopWrapper />
-        </MobileMenuProvider>
+        <ThemeProvider>
+          <MobileMenuProvider>
+            <LocaleDocument />
+            <Header />
+            <main className="relative z-10 flex-1 pt-24">{children}</main>
+            <Footer />
+            <ScrollToTopWrapper />
+          </MobileMenuProvider>
+        </ThemeProvider>
         <WebVitalsTracker />
         <DeferredAnalytics />
         <script

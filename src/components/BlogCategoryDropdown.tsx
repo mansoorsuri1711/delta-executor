@@ -1,5 +1,6 @@
 export const blogCategories = [
-  { name: 'How to solve anagrams', href: '/blog/how-to-solve-anagrams' },
-  { name: 'Anagram examples', href: '/blog/anagram-examples' },
-  { name: 'Anagram vs permutation', href: '/blog/anagram-vs-permutation' },
+  { name: 'Instagram bio yazı stilleri', href: '/blog/instagram-bio-yazi-stilleri' },
+  { name: 'Şekilli nick rehberi', href: '/blog/sekilli-nick-rehberi' },
+  { name: 'Estetik yazı stilleri', href: '/blog/estetik-yazi-stilleri' },
+  { name: 'TikTok & WhatsApp yazı tipi', href: '/blog/tiktok-whatsapp-yazi-tipi' },
 ];

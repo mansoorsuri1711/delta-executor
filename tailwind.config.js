@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,62 +9,85 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-body)', 'Helvetica Neue', 'Arial', 'sans-serif'],
-        display: ['var(--font-gulkave)', 'var(--font-body)', 'sans-serif'],
-        gulkave: ['var(--font-gulkave)', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        sans: ['var(--font-body)', 'Inter', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        display: ['var(--font-display)', 'var(--font-body)', 'sans-serif'],
+        gulkave: ['var(--font-display)', 'Helvetica Neue', 'Arial', 'sans-serif'],
       },
       colors: {
-        // Brand from Anagram Generator logo (indigo + magenta + gold)
-        brand: {
-          DEFAULT: '#F7F5FC',
-          soft: '#FFFFFF',
-          deep: '#EEEAF8',
-          glow: '#E94E89',
+        // BloxFruitsValues-inspired dark tokens (mapped for existing class names)
+        background: 'hsl(var(--background) / <alpha-value>)',
+        foreground: 'hsl(var(--foreground) / <alpha-value>)',
+        card: {
+          DEFAULT: 'hsl(var(--card) / <alpha-value>)',
+          foreground: 'hsl(var(--card-foreground) / <alpha-value>)',
         },
-        mist: '#E8E4F4',
-        blush: '#FDF2F7',
-        ink: '#14163D',
+        muted: {
+          DEFAULT: 'hsl(var(--muted) / <alpha-value>)',
+          foreground: 'hsl(var(--muted-foreground) / <alpha-value>)',
+        },
+        border: 'hsl(var(--border) / <alpha-value>)',
+        brand: {
+          DEFAULT: '#07070a',
+          soft: '#0a0a0a',
+          deep: '#111114',
+          glow: '#b366ff',
+        },
+        mist: '#1a1a1f',
+        blush: '#16121f',
+        ink: '#fafafa',
         pink: {
-          DEFAULT: '#E94E89',
-          soft: '#F472B6',
-          deep: '#BE185D',
+          DEFAULT: '#b366ff',
+          soft: '#c98fff',
+          deep: '#9b4dff',
         },
         coral: {
-          DEFAULT: '#F5C518',
-          deep: '#D4A017',
+          DEFAULT: '#f0c420',
+          deep: '#d4a017',
         },
         violet: {
-          DEFAULT: '#2F3F9A',
-          soft: '#5B6BC7',
-          deep: '#1E2A6B',
+          DEFAULT: '#b366ff',
+          soft: '#c98fff',
+          deep: '#8b5cf6',
         },
         orange: {
-          DEFAULT: '#F5C518',
-          soft: '#FCD34D',
-          deep: '#D4A017',
+          DEFAULT: '#f0c420',
+          soft: '#fcd34d',
+          deep: '#d4a017',
         },
         emerald: {
-          DEFAULT: '#0D9488',
-          soft: '#2DD4BF',
-          deep: '#0F766E',
+          DEFAULT: '#20c0a0',
+          soft: '#2dd4bf',
+          deep: '#0f766e',
         },
-        lilac: '#C7C3E8',
-        // Primary action = magenta CTA from hero mockup
+        lilac: '#3a2a55',
         teal: {
-          DEFAULT: '#E94E89',
-          deep: '#BE185D',
+          DEFAULT: '#b366ff',
+          deep: '#8b5cf6',
         },
-        sky: '#5B6BC7',
-        gold: '#F5C518',
-        primary: '#F7F5FC',
-        secondary: '#FFFFFF',
-        accent: '#E94E89',
-        sunrise: '#F5C518',
+        sky: '#20c0a0',
+        gold: '#f0c420',
+        primary: {
+          DEFAULT: '#b366ff',
+          foreground: '#fafafa',
+        },
+        secondary: '#0a0a0a',
+        accent: '#b366ff',
+        sunrise: '#f0c420',
         indigo: {
-          DEFAULT: '#2F3F9A',
-          deep: '#1A1B4B',
-          soft: '#4C5DB5',
+          DEFAULT: '#8b5cf6',
+          deep: '#1a0b2e',
+          soft: '#c98fff',
         },
+        scrim: '#000000',
+      },
+      borderRadius: {
+        xl: '0.75rem',
+        '2xl': '1rem',
+        '3xl': '1.5rem',
+      },
+      boxShadow: {
+        'glow-primary': '0 0 40px -10px rgba(179, 102, 255, 0.45)',
+        'card-dark': '0 24px 60px -28px rgba(0, 0, 0, 0.8)',
       },
       keyframes: {
         'fade-up': {

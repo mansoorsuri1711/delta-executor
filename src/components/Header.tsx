@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import MobileNavigation from './MobileNavigation';
-import LanguageSwitcher from './LanguageSwitcher';
+import AppearanceMenu from './AppearanceMenu';
 import { BRAND_LOGO_MARK, SITE_SHORT_NAME } from '@/lib/siteConfig';
 import { getLocaleFromPathname } from '@/lib/locales';
 import { getMessages } from '@/lib/i18n/messages';
@@ -13,27 +13,31 @@ export default function Header() {
   const pathname = usePathname();
   const locale = getLocaleFromPathname(pathname);
   const t = getMessages(locale.code);
-  const homeHref = locale.path;
 
   const navLinks = [
     { href: '/', label: t.navGenerator },
-    { href: '/anagram-solver', label: t.navSolver },
-    { href: '/name-anagram-generator', label: t.navNames },
-    { href: '/what-is-an-anagram', label: t.navWhat },
+    { href: '/instagram-yazi-tipleri', label: t.navInstagram },
+    { href: '/sekilli-nick', label: t.navNick },
+    { href: '/whatsapp-yazi-stilleri', label: t.navWhatsapp },
     { href: '/blog', label: t.navBlog },
-    { href: '/about-us', label: t.navAbout },
   ];
 
   const isActive = (href: string) => {
-    if (href === '/') return pathname === '/' || ['/uk', '/da', '/br', '/de'].includes(pathname);
-    return pathname === href || pathname.startsWith(href + '/');
+    if (href === '/') return pathname === '/';
+    return pathname === href || pathname.startsWith(`${href}/`);
   };
 
   return (
-    <header className="sticky top-0 z-40 px-3 pt-3 sm:px-4 sm:pt-4 md:px-6">
-      <div className="container mx-auto flex items-center justify-between gap-3 rounded-2xl border border-ink/10 bg-white/90 px-3 py-2.5 shadow-[0_12px_40px_-16px_rgba(20,22,61,0.22),0_4px_12px_-6px_rgba(233,78,137,0.18)] backdrop-blur-xl sm:px-4 sm:py-3">
-        <Link href={homeHref} className="flex min-w-0 items-center group">
-          <div className="relative mr-2.5 h-9 w-9 flex-shrink-0 overflow-hidden rounded-xl ring-1 ring-ink/10 transition group-hover:ring-pink/40 sm:h-10 sm:w-10">
+    <header className="pointer-events-none fixed inset-x-0 top-4 z-50 mx-auto w-[95%] max-w-7xl 2xl:max-w-[calc(100%-5rem)]">
+      <div
+        className="pointer-events-auto flex items-center justify-between gap-3 rounded-full border px-3 py-2 shadow-[0_12px_40px_-16px_rgba(0,0,0,0.35)] backdrop-blur-xl sm:px-4"
+        style={{
+          borderColor: 'var(--chrome-border)',
+          backgroundColor: 'var(--chrome-bg)',
+        }}
+      >
+        <Link href="/" className="flex min-w-0 items-center gap-2.5 group pl-1">
+          <div className="relative h-9 w-9 flex-shrink-0 overflow-hidden rounded-full ring-1 ring-[color:var(--chrome-border)] transition group-hover:ring-pink/50 sm:h-10 sm:w-10">
             <Image
               src={BRAND_LOGO_MARK}
               alt={`${t.brand} logo`}
@@ -43,39 +47,43 @@ export default function Header() {
               priority
             />
           </div>
-          <span className="truncate font-display text-sm font-bold leading-tight text-ink sm:text-base md:text-[1.05rem]">
+          <span
+            className="truncate font-display text-sm font-bold leading-tight sm:text-base"
+            style={{ color: 'var(--chrome-fg)' }}
+          >
             <span className="hidden sm:inline">{t.brand}</span>
             <span className="sm:hidden">{SITE_SHORT_NAME}</span>
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-1 xl:flex">
+        <nav className="hidden items-center gap-1 lg:flex" aria-label="Ana menü">
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}
-              href={href === '/' ? homeHref : href}
-              className={`relative rounded-lg px-2.5 py-1.5 text-sm font-medium transition-colors ${
-                isActive(href)
-                  ? 'bg-pink/10 font-semibold text-pink-deep'
-                  : 'text-ink/65 hover:bg-ink/5 hover:text-ink'
+              href={href}
+              className={`rounded-full px-3 py-2 text-sm font-medium transition-colors ${
+                isActive(href) ? 'font-semibold' : 'hover:opacity-100'
               }`}
+              style={{
+                color: isActive(href) ? 'var(--chrome-fg)' : 'var(--chrome-fg-muted)',
+                backgroundColor: isActive(href) ? 'var(--chrome-hover)' : 'transparent',
+              }}
             >
               {label}
             </Link>
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 xl:flex">
-          <LanguageSwitcher compact />
+        <div className="flex items-center gap-1.5 sm:gap-2">
+          <AppearanceMenu />
           <Link
-            href={homeHref === '/' ? '/#generator' : `${homeHref}#generator`}
-            className="pink-gradient-btn inline-flex items-center rounded-xl px-4 py-2.5 text-sm font-semibold text-white transition"
+            href="/#generator"
+            className="hidden items-center rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.15)] transition hover:bg-primary/90 sm:inline-flex"
           >
-            {t.makeAnagrams}
+            {t.makeStyles}
           </Link>
+          <MobileNavigation />
         </div>
-
-        <MobileNavigation />
       </div>
     </header>
   );

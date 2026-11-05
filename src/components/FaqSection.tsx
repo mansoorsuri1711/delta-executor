@@ -9,7 +9,6 @@ export default function FaqSection({
   id?: string;
   title?: string;
   items: FaqItem[];
-  /** Set false when the page already embeds FAQPage JSON-LD in a parent graph. */
   includeSchema?: boolean;
 }) {
   const schema = {
@@ -26,21 +25,25 @@ export default function FaqSection({
   };
 
   return (
-    <section id={id} className="mt-16">
-      <h2 className="mb-6 font-display text-2xl font-bold text-ink md:text-3xl">{title}</h2>
+    <section id={id} className="mt-16" aria-label={title}>
+      <h2 className="mb-3 font-display text-2xl font-bold text-white md:text-3xl">{title}</h2>
+      <p className="mb-6 text-sm text-white/45">Yazı stilleri hakkında sık sorulanlar</p>
       <div className="space-y-3">
         {items.map((item) => (
           <details
             key={item.question}
-            className="group rounded-xl border border-ink/10 bg-white open:border-violet/30 open:shadow-sm"
+            className="group rounded-2xl border border-white/10 bg-white/[0.03] open:border-pink/30 open:bg-white/[0.05]"
           >
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold text-ink">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold text-white">
               <span>{item.question}</span>
-              <span className="text-xl leading-none text-violet transition group-open:rotate-45" aria-hidden="true">
+              <span
+                className="text-xl leading-none text-pink transition group-open:rotate-45"
+                aria-hidden="true"
+              >
                 +
               </span>
             </summary>
-            <p className="px-5 pb-4 leading-relaxed text-ink/70">{item.answer}</p>
+            <p className="px-5 pb-4 leading-relaxed text-white/60">{item.answer}</p>
           </details>
         ))}
       </div>

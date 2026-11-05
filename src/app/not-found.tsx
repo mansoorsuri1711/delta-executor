@@ -1,24 +1,26 @@
 import Link from "next/link";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Page not found",
-  description: "The page you requested does not exist. Return to Anagram Generator.",
+  title: "Sayfa bulunamadı",
+  description: "Aradığınız sayfa yok. Yazı Stilleri oluşturucuya dönün.",
+  robots: { index: false, follow: true },
 };
 
 export default function NotFound() {
   return (
     <div className="container mx-auto flex max-w-xl flex-col items-center px-4 py-20 text-center">
-      <h1 className="font-display text-4xl font-bold text-ink">404</h1>
-      <p className="mt-4 text-lg text-ink/70">
-        That page no longer exists or never did. Head back to the Anagram Generator to rearrange
-        your next word.
+      <p className="text-sm font-bold uppercase tracking-wider text-pink">404</p>
+      <h1 className="mt-3 font-display text-3xl font-bold text-white md:text-4xl">Sayfa bulunamadı</h1>
+      <p className="mt-4 text-white/55">
+        Bu adres artık geçerli değil veya hiç var olmadı. Yazı stilleri oluşturucuya dönüp Instagram,
+        WhatsApp veya şekilli nick için yeni bir stil kopyalayabilirsiniz.
       </p>
       <Link
-        href="/"
+        href="/#generator"
         className="pink-gradient-btn mt-8 inline-flex rounded-xl px-5 py-3 text-sm font-semibold text-white"
       >
-        Back to generator
+        Yazı stili oluştur
       </Link>
     </div>
   );

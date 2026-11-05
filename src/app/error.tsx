@@ -7,9 +7,9 @@ export default function Error({
   reset: () => void;
 }) {
   return (
-    <div className="flex min-h-[60vh] flex-col items-center justify-center bg-brand px-4 text-ink">
+    <div className="flex min-h-[60vh] flex-col items-center justify-center bg-muted px-4 text-white">
       <h2 className="mb-3 font-display text-2xl font-bold">Something went wrong</h2>
-      <p className="mb-6 max-w-md text-center text-ink/70">
+      <p className="mb-6 max-w-md text-center text-white/65">
         Please try again. If the problem continues, reload the page.
       </p>
       <button

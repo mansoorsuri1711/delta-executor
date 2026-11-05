@@ -4,63 +4,71 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { OG_IMAGE, SITE_NAME, SITE_ORIGIN } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Anagram Blog — Tips, Examples & Wordplay Guides",
+  title: "Blog — Yazı Stilleri Rehberleri",
   description:
-    "SERP-driven anagram guides: how to solve anagrams, famous examples, and anagram vs permutation — written for anagramgenerator.app.",
+    "Instagram bio, şekilli nick, estetik yazı ve TikTok/WhatsApp yazı tipi hakkında Türkçe rehberler — yazıstilleri.com.tr.",
   alternates: { canonical: `${SITE_ORIGIN}/blog` },
   openGraph: {
-    title: "Anagram Blog",
-    description: "Practical anagram guides matched to real search demand.",
+    title: "Yazı Stilleri Blog",
+    description: "Pratik Unicode yazı stili kılavuzları.",
     url: `${SITE_ORIGIN}/blog`,
     siteName: SITE_NAME,
     type: "website",
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Anagram Generator blog" }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Yazı Stilleri blog" }],
   },
 };
 
 const posts = [
   {
-    href: "/blog/how-to-solve-anagrams",
-    title: "How to Solve Anagrams Faster",
+    href: "/blog/instagram-bio-yazi-stilleri",
+    title: "Instagram Bio Yazı Stilleri: 150 Karakterde Öne Çıkın",
     excerpt:
-      "Pattern tricks puzzle solvers use: letter frequency, hooks, vowel frames, and when to reach for a generator.",
-    date: "November 5, 2026",
+      "Bio sınırı, okunaklı stil seçimi, iOS/Android farkları ve kopyala-yapıştır adımları.",
+    date: "5 Kasım 2026",
   },
   {
-    href: "/blog/anagram-examples",
-    title: "Anagram Examples That Actually Stick",
+    href: "/blog/sekilli-nick-rehberi",
+    title: "Şekilli Nick Rehberi: PUBG, Free Fire ve Discord",
     excerpt:
-      "Famous single-word and phrase anagrams you can verify — from LISTEN/SILENT to name classics.",
-    date: "November 5, 2026",
+      "Karakter limiti, zalgo tuzağı, Türkçe harfler ve lobi ekranında okunaklı nick ipuçları.",
+    date: "5 Kasım 2026",
   },
   {
-    href: "/blog/anagram-vs-permutation",
-    title: "Anagram vs Permutation: What’s the Difference?",
+    href: "/blog/estetik-yazi-stilleri",
+    title: "Estetik Yazı Stilleri: Minimal ve Şık Unicode Kombinasyonları",
     excerpt:
-      "A clear comparison for students, interview prep, and wordplay fans who mix the two terms.",
-    date: "November 5, 2026",
+      "Soft script, küçük caps ve çerçevesiz sade stiller — profil ve durum metinleri için.",
+    date: "5 Kasım 2026",
+  },
+  {
+    href: "/blog/tiktok-whatsapp-yazi-tipi",
+    title: "TikTok ve WhatsApp Yazı Tipi: Aynı Metin, İki Platform",
+    excerpt:
+      "Biyografi sınırları, durum metni, grup adı ve TikTok link satırı için pratik öneriler.",
+    date: "5 Kasım 2026",
   },
 ];
 
 export default function BlogIndexPage() {
   return (
     <>
-      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }]} />
+      <Breadcrumbs items={[{ label: "Ana Sayfa", href: "/" }, { label: "Blog" }]} />
       <div className="container mx-auto max-w-3xl px-4 pb-14 pt-6">
-        <h1 className="font-display text-3xl font-bold text-ink md:text-5xl">Anagram blog</h1>
-        <p className="mt-4 text-ink/65">
-          Only posts that match live search demand around anagram generators, solvers, and definitions — no filler topics.
+        <h1 className="font-display text-3xl font-bold text-white md:text-5xl">Yazı Stilleri blog</h1>
+        <p className="mt-4 text-white/55">
+          Yalnızca gerçek arama ihtiyacına yanıt veren rehberler: bio, nick, estetik metin ve
+          mesajlaşma uygulamaları.
         </p>
         <ul className="mt-10 space-y-5">
           {posts.map((post) => (
             <li key={post.href}>
               <Link
                 href={post.href}
-                className="block rounded-2xl border border-ink/10 bg-white p-5 transition hover:border-pink/35 hover:shadow-sm"
+                className="block rounded-2xl border border-white/10 bg-card p-5 transition hover:border-pink/35 hover:border-pink/30"
               >
-                <p className="text-xs font-semibold uppercase tracking-wider text-ink/40">{post.date}</p>
-                <h2 className="mt-1 font-display text-2xl font-bold text-ink">{post.title}</h2>
-                <p className="mt-2 text-sm text-ink/65">{post.excerpt}</p>
+                <p className="text-xs font-semibold uppercase tracking-wider text-white/30">{post.date}</p>
+                <h2 className="mt-1 font-display text-2xl font-bold text-white">{post.title}</h2>
+                <p className="mt-2 text-sm text-white/55">{post.excerpt}</p>
               </Link>
             </li>
           ))}

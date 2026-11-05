@@ -1,17 +1,14 @@
-# SEO Audit Notes — Anagram Generator
+# SEO Audit Notes — Yazı Stilleri
 
-Domain: `https://anagramgenerator.app`  
-Primary keyword: **anagram generator**
+Domain: `https://yazıstilleri.com.tr`  
+Primary keyword: **yazı stilleri**
 
-## Live SERP takeaways
+## Shipped differentiators vs SERP winners
 
-Top results: Inge's, Wordsmith.org, Word.tips solver, Alan Eliasen, WordFinderX, dCode, WordZingo.
-
-## Gaps we closed
-
-- Modern branded generator UX (letter tiles, pink CTA, indigo brand)
-- Separate solver + name anagram intents (no muddled single page)
-- Thorough homepage content (how-to, generator vs solver, examples, tips, FAQ, HowTo + SoftwareApplication schema)
-- Dedicated what-is / how-to / features / trust pages
-- Only 3 SERP-driven blogs (solve tips, examples, anagram vs permutation)
-- Descriptive image alts using Anagram Generator assets in `/public`
+- Distinct Title vs H1; Turkish-first editorial copy  
+- Dedicated Instagram / şekilli nick / WhatsApp intents  
+- Only 4 SERP-driven blogs (bio, nick, estetik, TikTok/WhatsApp)  
+- Descriptive image alts using Yazı Stilleri assets in `/public`  
+- Hand-maintained WebSite, Organization, SoftwareApplication, FAQ, HowTo, Breadcrumb, Article schema  
+- Branded `og:site_name`, social `sameAs`, custom legal pages  
+- Sitemap index + image sitemap + Content-Signal robots.txt  

@@ -5,6 +5,7 @@ import {
   SITE_NAME,
   SITE_RATING,
   SITE_TAGLINE,
+  SOCIAL_SAME_AS,
 } from "@/lib/siteConfig";
 
 export const APP_AGGREGATE_RATING = {
@@ -24,7 +25,7 @@ export const ORGANIZATION_JSON_LD = {
   logo: `${SITE_ORIGIN}${BRAND_LOGO}`,
   email: CONTACT_EMAIL,
   description: SITE_TAGLINE,
-  sameAs: [] as string[],
+  sameAs: [...SOCIAL_SAME_AS],
 };
 
 export const WEB_APPLICATION_JSON_LD = {
@@ -36,7 +37,7 @@ export const WEB_APPLICATION_JSON_LD = {
   offers: {
     "@type": "Offer",
     price: "0",
-    priceCurrency: "USD",
+    priceCurrency: "TRY",
   },
   aggregateRating: APP_AGGREGATE_RATING,
   image: {

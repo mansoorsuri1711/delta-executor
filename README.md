@@ -1,18 +1,19 @@
-# Anagram Generator
+# Yazı Stilleri
 
-Free online anagram generator for [anagramgenerator.app](https://anagramgenerator.app).
+Ücretsiz Unicode yazı stilleri sitesi — [yazıstilleri.com.tr](https://yazıstilleri.com.tr).
 
-Rearrange any word, name, or letters into new words and multi-word phrases. Includes an anagram solver, name anagram workflow, and SERP-driven guides.
+Instagram yazı tipleri, şekilli nick, WhatsApp / TikTok stilleri ve Türkçe karakter destekli kopyala-yapıştır oluşturucu.
 
-## Develop
+## Geliştirme
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Stack
+## Üretim
 
-- Next.js App Router + TypeScript
-- Tailwind CSS
-- Client-side English dictionary (`public/data/`)
+```bash
+npm run build
+npm start
+```

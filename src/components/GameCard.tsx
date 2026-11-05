@@ -15,7 +15,7 @@ export default function GameCard({ title, description, imageSrc, link }: GameCar
   return (
     <div className="relative group">
       {/* Card */}
-      <div className="bg-white rounded-xl overflow-hidden shadow-lg transform transition-transform duration-300 group-hover:scale-[1.02] border border-gray-800">
+      <div className="bg-card rounded-xl overflow-hidden shadow-lg transform transition-transform duration-300 group-hover:scale-[1.02] border border-gray-800">
         {/* Card Top */}
         <div className="relative h-48 overflow-hidden">
           <Image 
@@ -39,7 +39,7 @@ export default function GameCard({ title, description, imageSrc, link }: GameCar
           <h3 className="text-xl font-bold text-black mb-2">{title}</h3>
           <p className="text-black text-sm mb-4">{description}</p>
           <Link href={link}>
-            <div className="inline-block bg-white hover:bg-white border border-black text-black font-medium py-2 px-4 rounded-lg transition-colors">
+            <div className="inline-block bg-card hover:bg-card border border-black text-black font-medium py-2 px-4 rounded-lg transition-colors">
               Play Now
             </div>
           </Link>
