@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-body)', 'Inter', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        sans: ['var(--font-body)', 'Outfit', 'Helvetica Neue', 'Arial', 'sans-serif'],
         display: ['var(--font-display)', 'var(--font-body)', 'sans-serif'],
         gulkave: ['var(--font-display)', 'Helvetica Neue', 'Arial', 'sans-serif'],
       },
@@ -30,23 +30,23 @@ module.exports = {
           DEFAULT: '#07070a',
           soft: '#0a0a0a',
           deep: '#111114',
-          glow: '#b366ff',
+          glow: '#00d4ff',
         },
         mist: '#1a1a1f',
         blush: '#16121f',
         ink: '#fafafa',
         pink: {
-          DEFAULT: '#b366ff',
-          soft: '#c98fff',
-          deep: '#9b4dff',
+          DEFAULT: '#00d4ff',
+          soft: '#5ce1ff',
+          deep: '#00b8e6',
         },
         coral: {
           DEFAULT: '#f0c420',
           deep: '#d4a017',
         },
         violet: {
-          DEFAULT: '#b366ff',
-          soft: '#c98fff',
+          DEFAULT: '#00d4ff',
+          soft: '#5ce1ff',
           deep: '#8b5cf6',
         },
         orange: {
@@ -61,22 +61,22 @@ module.exports = {
         },
         lilac: '#3a2a55',
         teal: {
-          DEFAULT: '#b366ff',
+          DEFAULT: '#00d4ff',
           deep: '#8b5cf6',
         },
         sky: '#20c0a0',
         gold: '#f0c420',
         primary: {
-          DEFAULT: '#b366ff',
+          DEFAULT: '#00d4ff',
           foreground: '#fafafa',
         },
         secondary: '#0a0a0a',
-        accent: '#b366ff',
+        accent: '#00d4ff',
         sunrise: '#f0c420',
         indigo: {
           DEFAULT: '#8b5cf6',
-          deep: '#1a0b2e',
-          soft: '#c98fff',
+          deep: '#0b1a28',
+          soft: '#5ce1ff',
         },
         scrim: '#000000',
       },
@@ -86,7 +86,7 @@ module.exports = {
         '3xl': '1.5rem',
       },
       boxShadow: {
-        'glow-primary': '0 0 40px -10px rgba(179, 102, 255, 0.45)',
+        'glow-primary': '0 0 40px -10px rgba(0, 212, 255, 0.45)',
         'card-dark': '0 24px 60px -28px rgba(0, 0, 0, 0.8)',
       },
       keyframes: {

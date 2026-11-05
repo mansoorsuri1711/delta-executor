@@ -10,16 +10,18 @@ import {
   SITE_NAME,
   SITE_ORIGIN,
   SOCIAL_LINKS,
+  APP_VERSION,
+  ANDROID_APK_URL,
 } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Hakkımızda — Yazı Stilleri",
+  title: `Hakkımızda — ${SITE_NAME}`,
   description:
-    "Yazıstilleri.com.tr: Instagram, WhatsApp, TikTok ve oyun nickleri için ücretsiz Unicode yazı stili oluşturucu ve Türkçe rehberler.",
+    `Delta Roblox hakkında bilgi edinin: kimiz, Android ve iOS için en iyi ücretsiz Roblox executor rehberlerini sunma misyonumuz ve ekibimize nasıl ulaşabileceğiniz.`,
   alternates: { canonical: `${SITE_ORIGIN}/about-us` },
   openGraph: {
-    title: "Hakkımızda — Yazı Stilleri",
-    description: `${SITE_NAME} ekibi ve misyonu.`,
+    title: `${SITE_NAME} Hakkında`,
+    description: `Delta Executor'ın 1 numaralı rehber sitesinin arkasındaki ekip ve misyon.`,
     url: `${SITE_ORIGIN}/about-us`,
     siteName: SITE_NAME,
     type: "website",
@@ -46,71 +48,91 @@ export default function AboutPage() {
           </div>
           <div>
             <h1 className="mb-4 font-display text-3xl font-bold text-white md:text-4xl">
-              {SITE_NAME} hakkında
+              {SITE_NAME} Hakkında
             </h1>
             <p className="text-lg leading-relaxed text-white/75">
-              {SITE_NAME}, {SITE_DOMAIN} adresinde yayınlanan ücretsiz bir{" "}
-              <strong className="text-white">yazı stili oluşturucu</strong> ve rehber sitesidir.
-              Amacımız, Instagram bio’sundan WhatsApp durumuna, şekilli nick’ten estetik caption’a
-              kadar Unicode metin ihtiyacını tek, hızlı ve anlaşılır bir yerde toplamak.
+              {SITE_NAME} ({SITE_DOMAIN}), Android ve iOS için ücretsiz Roblox script executor&apos;u{" "}
+              <strong className="text-white">Delta Executor</strong>&apos;a adanmış bağımsız bir rehber sitesidir. Topluluğun {APP_VERSION} sürümünden en iyi şekilde yararlanmasına yardımcı olmak için kurulum rehberleri, anahtar sistemi kılavuzları, güvenlik bilgileri ve script hub ipuçları yayınlıyoruz.
             </p>
           </div>
         </div>
 
         <div className="space-y-5 leading-relaxed text-white/75">
           <p>
-            Türkiye’de “yazı stilleri”, “instagram yazı tipleri” ve “şekilli nick” aramaları
-            çoğu zaman reklam dolu veya İngilizce arayüzlü sitelere yönlendiriyor. Biz aracı
-            Türkçe etiketler, Türkçe karakter desteği ve platforma özel sayfalarla
-            tasarladık. Dönüşüm tarayıcınızda gerçekleşir; hesap açmanız gerekmez.
+            Doğru ve güncel Delta Executor bilgisi bulmak gereğinden zor olmalı. Sonuçların çoğu eski sürümler için güncelliğini yitirmiş öğreticiler, yanıltıcı başlıklı YouTube videoları veya executor kılığına girmiş kötü amaçlı yazılım dağıtan açık dolandırıcılık sayfalarıdır. {SITE_NAME}&apos;i güvenilir, dürüst bir referans olmak için inşa ettik — Delta&apos;nın ne yaptığını, hangi risklerin var olduğunu ve güvenli kurulumu net bir şekilde açıklıyoruz.
           </p>
           <p>
-            Instagram, Meta, WhatsApp, TikTok, PUBG veya Free Fire markalarının sahibi değiliz
-            ve bu şirketlerle resmi bir iş ortaklığımız yoktur. Araç eğitim ve kişisel ifade
-            amaçlıdır; oyun veya platform kurallarına uymak kullanıcının sorumluluğundadır.
+            Roblox Corporation veya Roblox platformundaki herhangi bir oyun geliştiricisi ile bağlantılı, onaylanmış veya sponsorlu değiliz. Delta Executor üçüncü taraf bir araçtır; kullanımı Roblox Kullanım Koşullarını ihlal edebilir ve yasaklanma riskini beraberinde getirir. Kullanıcıların gerçek bilgiyi değil, hype&apos;ı hak ettiğine inandığımızdan rehberlerimiz boyunca buna şeffaf biçimde yer veriyoruz.
           </p>
           <p>
-            <Link href="/" className="text-pink underline">
-              Ana oluşturucu
-            </Link>
-            ,{" "}
-            <Link href="/instagram-yazi-tipleri" className="text-pink underline">
-              Instagram yazı tipleri
-            </Link>
-            ,{" "}
-            <Link href="/sekilli-nick" className="text-pink underline">
-              şekilli nick
+            İçeriğimiz, birden fazla Android cihazı ve iOS donanım yazılımı sürümünde Delta&apos;yı test eden executor topluluğu üyeleri tarafından yazılmakta ve incelenmektedir. Bilgileri güncel tutmak için büyük Roblox yamaları veya executor sürüm yayınlarından sonra sayfaları günler içinde güncelliyoruz.
+          </p>
+          <p>
+            {" "}
+            <Link href="/download" className="text-pink underline">
+              Android APK indirme rehberimizle
             </Link>{" "}
-            ve{" "}
+            başlayın,{" "}
+            <Link href="/ios" className="text-pink underline">
+              iOS kurulum rehberimize
+            </Link>{" "}
+            göz atın veya{" "}
+            <Link href="/#ozellikler" className="text-pink underline">
+              tam özellikler genel bakışına
+            </Link>{" "}
+            bakın. {" "}
             <Link href="/blog" className="text-pink underline">
-              blog rehberleri
+              Bloğumuz
             </Link>{" "}
-            ile başlayabilirsiniz.
+            anahtar sistemi, güvenlik soruları ve script hub ipuçlarını ele alır.
           </p>
           <p>
-            Soru veya düzeltme için{" "}
+            Sorularınız, düzeltmeleriniz veya ortaklık teklifleriniz için{" "}
             <a href={`mailto:${CONTACT_EMAIL}`} className="text-pink underline">
               {CONTACT_EMAIL}
             </a>{" "}
-            adresine yazın veya{" "}
+            adresine e-posta gönderin veya{" "}
             <Link href="/contact-us" className="text-pink underline">
               iletişim formunu
             </Link>{" "}
-            kullanın. Bizi sosyal medyada da takip edebilirsiniz:{" "}
-            <a href={SOCIAL_LINKS.instagram} className="text-pink underline" target="_blank" rel="noopener noreferrer">
-              Instagram
+            kullanın.             Güncelleme duyuruları için{" "}
+            <a
+              href={SOCIAL_LINKS.telegram}
+              className="text-pink underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Telegram
             </a>
             ,{" "}
-            <a href={SOCIAL_LINKS.tiktok} className="text-pink underline" target="_blank" rel="noopener noreferrer">
-              TikTok
+            <a
+              href={SOCIAL_LINKS.facebook}
+              className="text-pink underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Facebook
             </a>
-            .
+            ,{" "}
+            <a
+              href={SOCIAL_LINKS.x}
+              className="text-pink underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              X
+            </a>{" "}
+            ve{" "}
+            <Link href="/discord" className="text-pink underline">
+              Discord
+            </Link>
+            &apos;u takip edebilirsiniz.
           </p>
         </div>
 
         <div className="mt-10 flex justify-center">
-          <CtaButton href="/#generator" ariaLabel="Yazı stili oluşturucuyu aç" icon="arrow">
-            Oluşturucuyu aç
+          <CtaButton href={ANDROID_APK_URL} icon="download" ariaLabel="Delta Executor indirme sayfasına git">
+            Delta Executor İndir
           </CtaButton>
         </div>
       </div>

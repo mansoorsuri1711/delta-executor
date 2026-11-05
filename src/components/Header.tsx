@@ -4,8 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import MobileNavigation from './MobileNavigation';
-import AppearanceMenu from './AppearanceMenu';
-import { BRAND_LOGO_MARK, SITE_SHORT_NAME } from '@/lib/siteConfig';
+import { ANDROID_APK_URL, BRAND_LOGO_MARK, SITE_SHORT_NAME } from '@/lib/siteConfig';
 import { getLocaleFromPathname } from '@/lib/locales';
 import { getMessages } from '@/lib/i18n/messages';
 
@@ -16,9 +15,12 @@ export default function Header() {
 
   const navLinks = [
     { href: '/', label: t.navGenerator },
-    { href: '/instagram-yazi-tipleri', label: t.navInstagram },
-    { href: '/sekilli-nick', label: t.navNick },
-    { href: '/whatsapp-yazi-stilleri', label: t.navWhatsapp },
+    { href: '/download', label: t.navInstagram },
+    { href: '/ios', label: t.navNick },
+    { href: '/pc-version', label: t.navWhatsapp },
+    { href: '/mac', label: 'Mac' },
+    { href: '/discord', label: 'Discord' },
+    { href: '/how-to-use', label: 'Nasıl kullanılır' },
     { href: '/blog', label: t.navBlog },
   ];
 
@@ -75,13 +77,14 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-1.5 sm:gap-2">
-          <AppearanceMenu />
-          <Link
-            href="/#generator"
-            className="hidden items-center rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.15)] transition hover:bg-primary/90 sm:inline-flex"
+          <a
+            href={ANDROID_APK_URL}
+            download
+            rel="noopener noreferrer"
+            className="hidden items-center rounded-full bg-primary px-4 py-2 text-sm font-semibold text-black shadow-[inset_0_1px_0_rgba(255,255,255,0.15)] transition hover:bg-primary/90 sm:inline-flex"
           >
             {t.makeStyles}
-          </Link>
+          </a>
           <MobileNavigation />
         </div>
       </div>

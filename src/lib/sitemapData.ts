@@ -12,7 +12,7 @@ export type SitemapPage = {
   images?: Array<{ loc: string; title: string; caption: string }>;
 };
 
-const LASTMOD = "2026-11-05";
+const LASTMOD = "2026-11-06";
 
 export const SITEMAP_PAGES: SitemapPage[] = [
   {
@@ -22,92 +22,68 @@ export const SITEMAP_PAGES: SitemapPage[] = [
     priority: 1,
     images: [
       {
-        loc: imageLoc("/logo-icon.png"),
-        title: "Yazı Stilleri logo",
-        caption: "Yazı Stilleri marka logosu — yazıstilleri.com.tr",
+        loc: imageLoc("/delta-roblox-logo.webp"),
+        title: "Delta Roblox logosu",
+        caption: "Delta Roblox — deltaroblox.tr marka logosu",
       },
       {
-        loc: imageLoc("/yazı-stilleri.webp"),
-        title: "Yazı Stilleri",
-        caption: "Ücretsiz online yazı stilleri oluşturucu",
+        loc: imageLoc("/delta-roblox.webp"),
+        title: "Delta Executor",
+        caption: "Delta Executor — Android ve iOS için ücretsiz Roblox script executor",
+      },
+      {
+        loc: imageLoc("/delta-roblox-android.webp"),
+        title: "Delta Executor özellikleri — Android",
+        caption: "Script hub, hızlı enjeksiyon ve root gerektirmeyen Android yürütme",
+      },
+      {
+        loc: imageLoc("/delta-roblox-ios.webp"),
+        title: "Delta Executor özellikleri — iOS",
+        caption: "Delta Executor iOS özelliklerine genel bakış",
+      },
+      {
+        loc: imageLoc("/delta-roblox-scripts.webp"),
+        title: "Delta Executor script kütüphanesi",
+        caption: "Roblox oyunları için yerleşik script hub",
       },
     ],
   },
   {
-    path: "/instagram-yazi-tipleri",
+    path: "/download",
+    lastMod: LASTMOD,
+    changeFreq: "weekly",
+    priority: 0.98,
+    images: [
+      {
+        loc: imageLoc("/delta-roblox-android.webp"),
+        title: "Android için Delta Executor APK İndir",
+        caption: "Delta Executor v2.745 Android APK indirme ve kurulum rehberi",
+      },
+    ],
+  },
+  {
+    path: "/ios",
     lastMod: LASTMOD,
     changeFreq: "weekly",
     priority: 0.95,
     images: [
       {
-        loc: imageLoc("/yazı-stilleri-online.webp"),
-        title: "Instagram yazı tipleri",
-        caption: "Instagram bio ve gönderiler için yazı stilleri",
+        loc: imageLoc("/delta-roblox-ios.webp"),
+        title: "iOS için Delta Executor",
+        caption: "AltStore ve TrollStore ile Delta Executor iOS kurulum rehberi",
       },
     ],
   },
   {
-    path: "/sekilli-nick",
+    path: "/pc-version",
     lastMod: LASTMOD,
-    changeFreq: "weekly",
-    priority: 0.95,
-    images: [
-      {
-        loc: imageLoc("/yazı-stilleri-tool.webp"),
-        title: "Şekilli nick",
-        caption: "Oyun ve sosyal medya için şekilli nick stilleri",
-      },
-    ],
-  },
-  {
-    path: "/whatsapp-yazi-stilleri",
-    lastMod: LASTMOD,
-    changeFreq: "weekly",
-    priority: 0.95,
-    images: [
-      {
-        loc: imageLoc("/yazı-stilleri-app.webp"),
-        title: "WhatsApp yazı stilleri",
-        caption: "WhatsApp durum ve sohbet için Unicode yazı stilleri",
-      },
-    ],
-  },
-  {
-    path: "/nasil-kullanilir",
-    lastMod: LASTMOD,
-    changeFreq: "weekly",
-    priority: 0.9,
-    images: [
-      {
-        loc: imageLoc("/yazı-stilleri.webp"),
-        title: "Yazı stilleri nasıl kullanılır",
-        caption: "Adım adım yazı stili kopyala yapıştır rehberi",
-      },
-    ],
-  },
-  {
-    path: "/yazi-stilleri-nedir",
-    lastMod: LASTMOD,
-    changeFreq: "weekly",
-    priority: 0.9,
-    images: [
-      {
-        loc: imageLoc("/yazı-stilleri-online.webp"),
-        title: "Yazı stilleri nedir",
-        caption: "Unicode yazı stilleri tanımı ve kullanım alanları",
-      },
-    ],
-  },
-  {
-    path: "/features",
-    lastMod: LASTMOD,
-    changeFreq: "weekly",
+    changeFreq: "monthly",
     priority: 0.85,
     images: [
       {
-        loc: imageLoc("/yazı-stilleri-tool.webp"),
-        title: "Yazı Stilleri özellikleri",
-        caption: "Kategoriler, kopyala yapıştır ve Türkçe destek",
+        loc: imageLoc("/delta-roblox.webp"),
+        title: "Delta Executor PC sürümü rehberi",
+        caption: "Delta Executor PC durumu ve sahte EXE uyarısı",
       },
     ],
   },
@@ -115,12 +91,12 @@ export const SITEMAP_PAGES: SitemapPage[] = [
     path: "/about-us",
     lastMod: LASTMOD,
     changeFreq: "monthly",
-    priority: 0.7,
+    priority: 0.65,
     images: [
       {
-        loc: imageLoc("/logo-icon.png"),
-        title: "Hakkımızda Yazı Stilleri",
-        caption: "Yazı Stilleri hakkında logo",
+        loc: imageLoc("/delta-roblox-logo.webp"),
+        title: "Delta Roblox hakkında",
+        caption: "Delta Roblox ekibi ve misyonu",
       },
     ],
   },
@@ -131,54 +107,119 @@ export const SITEMAP_PAGES: SitemapPage[] = [
     priority: 0.8,
   },
   {
-    path: "/blog/instagram-bio-yazi-stilleri",
+    path: "/blog/delta-executor-key-system",
     lastMod: LASTMOD,
     changeFreq: "monthly",
-    priority: 0.9,
+    priority: 0.92,
     images: [
       {
-        loc: imageLoc("/yazı-stilleri-online.webp"),
-        title: "Instagram bio yazı stilleri",
-        caption: "Instagram biyografi için şık yazı tipi örnekleri",
+        loc: imageLoc("/delta-roblox-android.webp"),
+        title: "Delta Executor anahtar sistemi rehberi",
+        caption: "Delta Executor anahtar kontrol noktasını beş dakikadan kısa sürede tamamlama",
       },
     ],
   },
   {
-    path: "/blog/sekilli-nick-rehberi",
+    path: "/blog/is-delta-executor-safe",
     lastMod: LASTMOD,
     changeFreq: "monthly",
     priority: 0.9,
     images: [
       {
-        loc: imageLoc("/yazı-stilleri-tool.webp"),
-        title: "Şekilli nick rehberi",
-        caption: "PUBG Free Fire ve sosyal nick için yazı stilleri",
+        loc: imageLoc("/delta-roblox.webp"),
+        title: "Delta Executor güvenli mi?",
+        caption: "Dürüst risk değerlendirmesi: ban riski, kötü amaçlı yazılım ve izinler",
       },
     ],
   },
   {
-    path: "/blog/estetik-yazi-stilleri",
+    path: "/blog/delta-executor-scripts-hub",
     lastMod: LASTMOD,
     changeFreq: "monthly",
-    priority: 0.9,
+    priority: 0.88,
     images: [
       {
-        loc: imageLoc("/yazı-stilleri.webp"),
-        title: "Estetik yazı stilleri",
-        caption: "Estetik ve vaporwave tarzı Unicode yazı örnekleri",
+        loc: imageLoc("/delta-roblox-scripts.webp"),
+        title: "Delta Executor script hub",
+        caption: "En iyi scriptler ve Delta Executor yerleşik hub nasıl kullanılır",
       },
     ],
   },
   {
-    path: "/blog/tiktok-whatsapp-yazi-tipi",
+    path: "/how-to-use",
     lastMod: LASTMOD,
     changeFreq: "monthly",
     priority: 0.9,
     images: [
       {
-        loc: imageLoc("/yazı-stilleri-app.webp"),
-        title: "TikTok WhatsApp yazı tipi",
-        caption: "TikTok ve WhatsApp için kopyala yapıştır yazı stilleri",
+        loc: imageLoc("/delta-roblox-android.webp"),
+        title: "Delta Executor nasıl kullanılır — script çalıştırma rehberi",
+        caption: "Adım adım: Roblox'a bağlan, Script Hub, scripti yapıştır ve çalıştır",
+      },
+    ],
+  },
+  {
+    path: "/troubleshooting",
+    lastMod: LASTMOD,
+    changeFreq: "monthly",
+    priority: 0.88,
+    images: [
+      {
+        loc: imageLoc("/delta-roblox.webp"),
+        title: "Delta Executor sorun giderme rehberi",
+        caption: "Enjeksiyon hatası, anahtar hataları, çökmeler ve Play Protect engellerini çözme",
+      },
+    ],
+  },
+  {
+    path: "/mac",
+    lastMod: LASTMOD,
+    changeFreq: "monthly",
+    priority: 0.78,
+    images: [
+      {
+        loc: imageLoc("/delta-roblox.webp"),
+        title: "Mac için Delta Executor — emülatör rehberi",
+        caption: "macOS kullanıcıları için seçenekler: BlueStacks emülatörü ve iPhone Mirroring",
+      },
+    ],
+  },
+  {
+    path: "/vng",
+    lastMod: LASTMOD,
+    changeFreq: "monthly",
+    priority: 0.82,
+    images: [
+      {
+        loc: imageLoc("/delta-roblox-android.webp"),
+        title: "Delta Executor VNG — Vietnam Roblox istemcisi rehberi",
+        caption: "VNG Roblox açıklaması: kimin ihtiyacı var ve Delta VNG için nasıl kurulur",
+      },
+    ],
+  },
+  {
+    path: "/discord",
+    lastMod: LASTMOD,
+    changeFreq: "weekly",
+    priority: 0.9,
+    images: [
+      {
+        loc: imageLoc("/delta-roblox.webp"),
+        title: "Delta Executor Discord sunucusu",
+        caption: "Delta Executor Discord — güvenli katılım, duyurular ve dolandırıcılık uyarıları",
+      },
+    ],
+  },
+  {
+    path: "/comparison",
+    lastMod: LASTMOD,
+    changeFreq: "monthly",
+    priority: 0.85,
+    images: [
+      {
+        loc: imageLoc("/delta-roblox-android.webp"),
+        title: "Delta Executor ile diğer Roblox executor'lar karşılaştırması",
+        caption: "Dürüst karşılaştırma tablosu: mobil destek, anahtar sistemi, script hub, güncelleme hızı",
       },
     ],
   },

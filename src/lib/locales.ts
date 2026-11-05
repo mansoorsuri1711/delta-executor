@@ -10,7 +10,7 @@ export type SiteLocale = {
   ogLocale: string;
 };
 
-/** Primary locale is Turkish for yazıstilleri.com.tr */
+/** Primary locale is Turkish — deltaroblox.tr Turkish SERP. */
 export const SITE_LOCALES: SiteLocale[] = [
   {
     code: "tr",

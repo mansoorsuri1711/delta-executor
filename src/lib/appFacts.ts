@@ -30,10 +30,11 @@ export const ORGANIZATION_JSON_LD = {
 
 export const WEB_APPLICATION_JSON_LD = {
   "@type": "SoftwareApplication",
-  name: SITE_NAME,
+  name: "Delta Executor",
+  alternateName: "Delta Roblox",
   url: SITE_ORIGIN,
-  applicationCategory: "UtilitiesApplication",
-  operatingSystem: "Web Browser",
+  applicationCategory: "GameApplication",
+  operatingSystem: "Android, iOS",
   offers: {
     "@type": "Offer",
     price: "0",

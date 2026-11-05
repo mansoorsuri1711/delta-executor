@@ -1,6 +1,8 @@
 import Link from 'next/link';
+import { ANDROID_APK_URL } from '@/lib/siteConfig';
 
-export const PRIMARY_CTA_HREF = '/#generator';
+/** Default Android APK download — use for all download CTAs */
+export const PRIMARY_CTA_HREF = ANDROID_APK_URL;
 
 type IconKind = 'download' | 'arrow' | 'mail' | 'play';
 
@@ -42,12 +44,13 @@ const ICONS: Record<IconKind, React.ReactNode> = {
 };
 
 const sizeClass: Record<CtaSize, string> = {
-  md: 'px-8 py-4 text-lg rounded-2xl',
-  sm: 'px-4 py-2.5 text-sm rounded-xl',
+  md: 'px-8 py-4 text-lg',
+  sm: 'px-4 py-2.5 text-sm',
 };
 
+/** Match homepage outline CTAs (bfv-outline-btn) — not filled. */
 const baseClass =
-  'download-btn pink-gradient-btn inline-flex items-center justify-center text-white font-semibold border border-pink/30 transition-all group';
+  'bfv-outline-btn download-btn inline-flex items-center justify-center font-semibold transition-all group';
 
 function ButtonInner({
   children,
@@ -60,8 +63,8 @@ function ButtonInner({
 }) {
   const iconWrap =
     size === 'sm'
-      ? 'ml-2 inline-flex rounded-full bg-white/20 p-1.5 text-white transition-transform group-hover:scale-110'
-      : 'ml-3 inline-flex rounded-full bg-white/20 p-2 text-white transition-transform group-hover:scale-110';
+      ? 'ml-2 inline-flex rounded-full border border-pink/40 bg-pink/10 p-1.5 text-pink transition-transform group-hover:scale-110'
+      : 'ml-3 inline-flex rounded-full border border-pink/40 bg-pink/10 p-2 text-pink transition-transform group-hover:scale-110';
   const iconSvg = size === 'sm' ? 'w-4 h-4' : 'w-5 h-5';
 
   return (
@@ -99,11 +102,14 @@ export default function CtaButton({
   }
 
   if (isExternal) {
+    const isApk = href.endsWith('.apk');
+    const isMail = href.startsWith('mailto:');
     return (
       <a
         href={href}
-        target={href.startsWith('mailto:') ? undefined : '_blank'}
-        rel={href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
+        target={isMail || isApk ? undefined : '_blank'}
+        rel={isMail ? undefined : 'noopener noreferrer'}
+        download={isApk || undefined}
         className={classes}
         aria-label={ariaLabel}
         onClick={onClick}

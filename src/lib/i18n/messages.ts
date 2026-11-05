@@ -2,24 +2,9 @@ export type HomeMessages = {
   brand: string;
   metaTitle: string;
   metaDescription: string;
-  heroBefore: string;
-  heroAccent: string;
   heroSubPrefix: string;
   freeMeta: string;
   ratingsLabel: string;
-  toolTitle: string;
-  inputLabel: string;
-  inputPlaceholder: string;
-  searchLabel: string;
-  searchPlaceholder: string;
-  categoryAll: string;
-  charCount: string;
-  wordCount: string;
-  copy: string;
-  copied: string;
-  help: string;
-  noResults: string;
-  stylesHeading: string;
   whatTitle: string;
   whatBody: string;
   toolExplainerTitle: string;
@@ -31,10 +16,6 @@ export type HomeMessages = {
   whoItems: { t: string; d: string }[];
   modesTitle: string;
   modesIntro: string;
-  modes: { t: string; d: string }[];
-  tryIdeasTitle: string;
-  tryIdeasBody: string;
-  tryIdeas: string[];
   cardExactTitle: string;
   cardExactBody: string;
   cardSolverTitle: string;
@@ -46,33 +27,11 @@ export type HomeMessages = {
   howIntroLink: string;
   howIntroAfter: string;
   howSteps: { name: string; text: string }[];
-  vsTitle: string;
-  vsBody: string;
-  vsNeed: string;
-  vsTool: string;
-  vsWhy: string;
-  vsRow1Need: string;
-  vsRow1Tool: string;
-  vsRow1Why: string;
-  vsRow2Need: string;
-  vsRow2Tool: string;
-  vsRow2Why: string;
-  vsRow3Need: string;
-  vsRow3Tool: string;
-  vsRow3Why: string;
-  famousTitle: string;
-  famousBodyBefore: string;
-  famousBodyLink: string;
-  famousBodyAfter: string;
   whyEyebrow: string;
   whyTitle: string;
   whyBody: string;
-  tryWord: string;
   tipsTitle: string;
   tips: { t: string; d: string }[];
-  tipsFooterBefore: string;
-  tipsFooterMid: string;
-  tipsFooterAfter: string;
   trustTitle: string;
   trustItems: string[];
   trustLink: string;
@@ -100,294 +59,233 @@ export type HomeMessages = {
   platformsTitle: string;
   platformsIntro: string;
   platforms: { t: string; d: string }[];
-  turkishTitle: string;
-  turkishBody: string;
   compareTitle: string;
   compareBody: string;
 };
 
 const tr: HomeMessages = {
-  brand: "Yazı Stilleri",
-  metaTitle: "Yazı Stilleri — Instagram Font & Şekilli Yazı (Ücretsiz)",
+  brand: "Delta Roblox",
+  metaTitle: "Delta Roblox — Android ve iOS için Delta Executor İndirme",
   metaDescription:
-    "Yazı stilleri ile metninizi anında şık Unicode fontlara çevirin. Instagram yazı tipleri, şekilli nick, WhatsApp ve TikTok için kopyala-yapıştır. Türkçe karakter destekli, ücretsiz.",
-  heroBefore: "Instagram, WhatsApp ve nick için ",
-  heroAccent: "şık yazı stilleri",
+    "Delta Roblox, Delta Executor için kapsamlı rehber merkezinizdir: Android APK, iOS kurulum ipuçları, PC rehberi, anahtar sistemi yardımı ve 2026 script çalıştırma güncellemeleri.",
   heroSubPrefix:
-    "Metninizi yazın, onlarca Unicode yazı tipini anında görün ve tek dokunuşla kopyalayın. Kayıt yok, uygulama yok — tarayıcınızda çalışır.",
-  freeMeta: "Ücretsiz · Türkçe destekli · Güncellendi",
+    "Delta Executor ile mobil cihazlarda desteklenen Roblox scriptlerini çalıştırın — Android ve iOS için net indirme adımları, anahtar yardımı ve pratik güvenlik notları deltaroblox.tr'de.",
+  freeMeta: "Ücretsiz rehberler · Android ve iOS · Güncellendi",
   ratingsLabel: "değerlendirme",
-  toolTitle: "Yazı Stilleri Oluşturucu",
-  inputLabel: "Metninizi yazın",
-  inputPlaceholder: "Yazı Stilleri",
-  searchLabel: "Stil ara",
-  searchPlaceholder: "Kalın, kalp, oyun, estetik…",
-  categoryAll: "Tümü",
-  charCount: "Karakter",
-  wordCount: "Kelime",
-  copy: "Kopyala",
-  copied: "Kopyalandı",
-  help: "Türkçe harfler (ı, ğ, ü, ş, ö, ç) korunur. Sonuçlar Instagram, WhatsApp, TikTok, Discord ve oyun nick’lerinde yapıştırılabilir Unicode metindir.",
-  noResults: "Bu filtreyle stil bulunamadı.",
-  stylesHeading: "Hazır yazı stilleri",
-  whatTitle: "Yazı stilleri nedir?",
+  whatTitle: "Delta Roblox Nedir?",
   whatBody:
-    "Yazı stilleri, normal harfleri Unicode matematiksel ve süs karakterleriyle değiştirerek Instagram, WhatsApp veya oyunlarda özel görünen metin üretir. Gerçek bir font dosyası yüklemezsiniz; kopyaladığınız metin her platformda aynı şık görünümü taşır. Bu yüzden yazı stilleri, bio, gönderi açıklaması ve şekilli nick için en hızlı çözümdür.",
-  toolExplainerTitle: "Yazı stilleri aracı nasıl çalışır?",
+    "Delta Roblox, popüler mobil odaklı Roblox script yürütücüsü Delta Executor için bağımsız bir bilgi ve indirme rehberi sitesidir. Oyuncular, uygulama mevcut Roblox istemcisiyle uyumlu olduğunda Android ve iOS'ta desteklenen Lua scriptlerini yüklemek için Delta'yı kullanır. Bu site Delta'nın ne yaptığını, kurulumların nasıl çalıştığını, anahtar sisteminin nasıl işlediğini ve güvensiz yansıma APK'lardan nasıl kaçınılacağını açıklar.",
+  toolExplainerTitle: "Oyuncular neden Delta Executor arıyor?",
   toolExplainerBody:
-    "Kutuya yazdığınız her harf, seçili stilin Unicode eşlemine dönüşür. Kalın, el yazısı, gotik, balon, kare, estetik çerçeve ve oyun nick süslemeleri aynı anda listelenir. Beğendiğiniz satırın yanındaki Kopyala ile panonuza alın; ardından Instagram biyografinize, WhatsApp durumunuza veya PUBG / Free Fire nick’inize yapıştırın. İşlem tamamen tarayıcınızda olur — metniniz sunucuya gönderilmez.",
-  controlsTitle: "Oluşturucuda neler var?",
+    "Delta Roblox etrafındaki arama talebi üç konuda yoğunlaşır: çalışan bir APK veya iOS derlemesi edinmek, anahtar sistemini açmak ve Roblox güncellemelerinden sonra hâlâ çalışan scriptler bulmak. Delta Executor, karanlık mobil arayüzü, script hub erişimi ve sık sürüm güncellemeleriyle (v2.745 serisi gibi) tanınır. Delta Roblox, bu amaçları ayrı rehberlere böler.",
+  controlsTitle: "Delta Executor ile neler elde edersiniz",
   controls: [
     {
-      t: "Canlı önizleme",
-      d: "Yazdığınız anda 70’ten fazla yazı stili güncellenir. Deneme-yanılma için sayfayı yenilemeniz gerekmez.",
+      t: "Hızlı script çalıştırma",
+      d: "Delta, desteklenen Android cihazlarda hızlı enjeksiyon ve çalıştırma süreleri sunar; çiftlik ve yardımcı scriptler daha az beklemeyle başlar.",
     },
     {
-      t: "Kategori filtreleri",
-      d: "Şık, el yazısı, gotik, balon, estetik, çerçeveli, çizgili, ters, oyun nick ve sembollü stilleri tek dokunuşla ayırın.",
+      t: "Android ve iOS odaklı",
+      d: "Delta Roblox aramalarının büyük çoğunluğu mobildir. Android APK rehberini veya cihazınıza uygun iOS kurulum rehberini takip edin.",
     },
     {
-      t: "Stil arama",
-      d: "“Kalın”, “kalp” veya “oyun” yazarak aradığınız yazı tipine saniyeler içinde ulaşın.",
+      t: "Anahtar sistemi açma",
+      d: "Pek çok derleme zaman sınırlı anahtar kullanır. Anahtar rehberimiz, sizi gizlenmiş yönlendirmelerden geçirmeden standart akışı açıklar.",
     },
     {
-      t: "Tek tıkla kopyala",
-      d: "Her stil kartında Kopyala düğmesi vardır. Bildirimle “Kopyalandı” doğrulaması alırsınız.",
+      t: "Script hub erişimi",
+      d: "Güvenilir hub'lardan desteklenen scriptleri görüntüleyin veya yapıştırın. Büyük Roblox istemci güncellemelerinden sonra scriptleri mutlaka yeniden kontrol edin.",
     },
     {
-      t: "Karakter sayacı",
-      d: "Instagram bio (150 karakter) ve nick limitlerine uymak için karakter ve kelime sayısını anlık görün.",
+      t: "Kararlılık güncellemeleri",
+      d: "Roblox yama yaptığında executor uygulamaları bozulur. Net bir sürüm numarası belirten ve değişiklik notları yayınlayan derlemeleri tercih edin.",
     },
     {
-      t: "Türkçe karakter özeni",
-      d: "ı, ğ, ü, ş, ö, ç harfleri mümkün olduğunca korunur; eşleme yoksa orijinal harf bırakılır — bozuk nick riski azalır.",
+      t: "Kullanıcı dostu arayüz",
+      d: "Delta'nın karanlık mobil arayüzü; çalıştır, hub ve ayarlar seçeneklerini telefonda çiftlik yaparken bile kolayca erişilebilir kılar.",
     },
   ],
-  whoTitle: "Kimler yazı stilleri kullanır?",
+  whoTitle: "Delta Roblox kime yönelik?",
   whoIntro:
-    "Yazı stilleri yalnızca “süslü yazı” değildir. Profilini öne çıkarmak, marka tonunu yansıtmak veya oyunlarda akılda kalıcı nick seçmek isteyen herkes için pratik bir araçtır.",
+    "Delta Roblox, boş 'anında ücretsiz Robux' vaatleri değil, net kurulum adımları ve dürüst risk bilgisi isteyen mobil oyuncularına hizmet eder.",
   whoItems: [
     {
-      t: "Instagram ve TikTok içerik üreticileri",
-      d: "Bio, highlight başlığı ve açıklamalarda sıradan yazıdan sıyrılarak daha fazla profil ziyareti hedeflerler.",
+      t: "Android script kullanıcıları",
+      d: "Delta Executor APK'yı yükleyen, bilinmeyen kaynakları dikkatli etkinleştiren ve temiz bir kurulum kontrol listesi isteyen oyuncular.",
     },
     {
-      t: "WhatsApp ve Discord kullanıcıları",
-      d: "Durum metni, grup adı veya sunucu nickname’ini şık hale getirmek için kopyala-yapıştır yazı stilleri kullanırlar.",
+      t: "iOS deneyimcileri",
+      d: "Yüklemeden önce platforma özgü uyarılara ihtiyaç duyan Delta iOS / IPA veya doğrudan kurulum seçeneklerini araştıran kullanıcılar.",
     },
     {
-      t: "Oyun ve e-spor oyuncuları",
-      d: "PUBG, Free Fire, Mobile Legends ve benzeri oyunlarda şekilli nick ile lobide daha görünür olurlar.",
+      t: "Anahtar ve script öğrencileri",
+      d: "Çiftlik scriptlerini anlayan ancak güncellemelerden sonra anahtar sayfalarında, süresi dolmuş bağlantılarda veya bozulmuş hub'larda takılan yeni başlayanlar.",
     },
     {
-      t: "Küçük işletmeler ve markalar",
-      d: "Kampanya metinlerinde ve sosyal yanıtlarında tutarlı, akılda kalan bir tipografi dili kurmak isterler.",
+      t: "Güvenlik bilincine sahip oyuncular",
+      d: "Yansımaları karşılaştıran, Trustpilot tarzı geri bildirimleri okuyan ve Delta Executor'ın hesabı için güvenli olup olmadığını soran herkes.",
     },
   ],
-  modesTitle: "Hangi yazı stili ne işe yarar?",
+  modesTitle: "Delta Roblox rehberlerini keşfedin",
   modesIntro:
-    "Her kategori farklı bir niyet taşır. Aşağıdaki özet, aradığınız görünüme hızlıca karar vermenize yardımcı olur.",
-  modes: [
-    {
-      t: "Şık & kalın",
-      d: "Okunabilirliği yüksek matematiksel kalın ve italik stiller — bio ve uzun açıklamalar için idealdir.",
-    },
-    {
-      t: "El yazısı & gotik",
-      d: "Romantik, vintage veya dramatik bir his istediğiniz hikâye ve başlıklarda öne çıkar.",
-    },
-    {
-      t: "Oyun nick & çerçeve",
-      d: "Sembol çerçeveli ve savaş temalı süslemeler, kısa nick’lerde maksimum dikkat çeker.",
-    },
-  ],
-  tryIdeasTitle: "Hemen deneyebileceğiniz örnek metinler",
-  tryIdeasBody:
-    "Bir örnek seçin veya kendi adınızı yazın. Yazı stilleri listesi anında yenilenir.",
-  tryIdeas: [
-    "Yazı Stilleri",
-    "Instagram Bio",
-    "Şekilli Nick",
-    "Estetik Yazı",
-    "Günaydın ✨",
-    "Takip Et",
-  ],
-  cardExactTitle: "Instagram yazı tipleri",
+    "İndirme, iOS, PC, Discord, Mac ve blog konuları için ayrı sayfalar — her arama amacının net bir evi vardır.",
+  cardExactTitle: "Android APK indirme",
   cardExactBody:
-    "Bio, açıklama ve yorumlar için kopyalanabilir Instagram fontları. Limit dostu, okunabilir şık stiller.",
-  cardSolverTitle: "Şekilli nick oluşturucu",
+    "Android 8+ için adım adım Delta Executor APK kurulumu; izinler ve kurulum sonrası kontroller dahil.",
+  cardSolverTitle: "iOS kurulum yolu",
   cardSolverBody:
-    "Oyun ve sosyal hesaplar için çerçeveli, sembollü ve gotik nick kombinasyonları.",
-  cardWhatsappTitle: "WhatsApp & TikTok stilleri",
+    "Delta'nın iOS'a genellikle nasıl kurulduğu, 'doğrudan kurulum' ne anlama gelir ve derlemelerin nerede başarısız olduğu.",
+  cardWhatsappTitle: "Scriptler ve hub'lar",
   cardWhatsappBody:
-    "Durum, video açıklaması ve sohbetler için hızlı kopyala-yapıştır yazı tipi paketleri.",
-  howTitle: "Yazı stilleri nasıl kullanılır?",
-  howIntroBefore: "Dört adımda hazır. Daha ayrıntılı anlatım için",
-  howIntroLink: "nasıl kullanılır rehberine",
-  howIntroAfter: "göz atın.",
+    "Delta Executor için çalışan scriptler nasıl bulunur ve gereksiz paketler indirmeden nasıl düzenlenir.",
+  howTitle: "Delta Executor'a nasıl başlanır",
+  howIntroBefore: "Tam bir rehber mi istiyorsunuz?",
+  howIntroLink: "Android indirme rehberini",
+  howIntroAfter: "açın veya menüden iOS / PC sayfalarına geçin.",
   howSteps: [
     {
-      name: "Metninizi yazın",
-      text: "Adınızı, bio cümlenizi veya nick’inizi üstteki kutuya girin. Türkçe karakterler desteklenir.",
+      name: "Platformunuzu seçin",
+      text: "Android APK, en yaygın Delta Roblox yoludur. iOS ve PC'nin ayrı kısıtlamaları vardır — uygun rehberi kullanın.",
     },
     {
-      name: "Stili seçin",
-      text: "Kategoriye göre gezin veya arama yapın. Önizleme canlı güncellenir.",
+      name: "Güvenilir bir derlemeden yükleyin",
+      text: "Etiketli Delta Executor paketini indirin, sürüm dizesini doğrulayın ve sohbet bağlantılarından gelen rastgele yeniden adlandırılmış APK'lardan kaçının.",
     },
     {
-      name: "Kopyalayın",
-      text: "Beğendiğiniz satırdaki Kopyala düğmesine basın. “Kopyalandı” onayını görün.",
+      name: "Anahtarı tamamlayın (gerekiyorsa)",
+      text: "Uygulama içi anahtar akışını açın, kısa kilit açma adımlarını tamamlayın, ardından Delta'ya geri dönün. Anahtarların süresi genellikle belirli bir süre sonra dolar.",
     },
     {
-      name: "Yapıştırın",
-      text: "Instagram, WhatsApp, TikTok, Discord veya oyun nick alanına yapıştırın ve kaydedin.",
+      name: "Desteklenen bir script yükleyin",
+      text: "Hub'dan bir script yapıştırın veya seçin, istendiğinde Roblox'a bağlanın ve yalnızca anladığınız scriptleri çalıştırın.",
     },
   ],
-  vsTitle: "Ne arıyorsanız doğru sayfaya gidin",
-  vsBody:
-    "Tek bir uzun sayfa her soruyu cevaplayamaz. Amacınıza göre aşağıdaki araçlardan birini seçin — böylece hem siz hem arama motorları net bir niyet görür.",
-  vsNeed: "İhtiyacınız",
-  vsTool: "Sayfa",
-  vsWhy: "Neden",
-  vsRow1Need: "Instagram bio ve gönderi fontları",
-  vsRow1Tool: "Instagram yazı tipleri",
-  vsRow1Why: "Bio limiti, örnekler ve platforma özel ipuçları bir arada.",
-  vsRow2Need: "Oyun ve sosyal şekilli nick",
-  vsRow2Tool: "Şekilli nick",
-  vsRow2Why: "Kısa nick’ler, çerçeveler ve okunabilirlik kontrolü.",
-  vsRow3Need: "WhatsApp durum ve sohbet stilleri",
-  vsRow3Tool: "WhatsApp yazı stilleri",
-  vsRow3Why: "Durum metni ve sohbet için hızlı kopyala-yapıştır örnekleri.",
-  famousTitle: "Popüler yazı stili örnekleri",
-  famousBodyBefore: "Aşağıdakiler sık aranan görünümlere örnektir. Daha fazla fikir için",
-  famousBodyLink: "estetik yazı stilleri yazımızı",
-  famousBodyAfter: "okuyun.",
-  whyEyebrow: "Neden Yazı Stilleri?",
-  whyTitle: "Hızlı, ücretsiz ve Türkçe odaklı",
+  whyEyebrow: "Netlik için inşa edildi",
+  whyTitle: "Neden deltaroblox.tr kullanmalısınız?",
   whyBody:
-    "Rakip sitelerin çoğunda zayıf açıklama, eksik rehber ve dağınık kategoriler var. Burada oluşturucu, platform sayfaları, SSS ve blog niyetleri birbirine bağlı — böylece aradığınız cevaba tek tıkla ulaşırsınız.",
-  tryWord: "Hemen dene",
-  tipsTitle: "Daha iyi sonuç için ipuçları",
+    "Delta Executor SERP sayfalarının çoğu tüm anahtar kelimeleri tek bir URL'ye tıkıştırır, indirmeleri izleyicilerin arkasına saklar veya güvenlik konusunu atlar. Delta Roblox amaçları ayırır, gerçek görüntü meta verisi kullanır ve yandan yükleme risklerini baştan belirtir.",
+  tipsTitle: "Pratik Delta ipuçları",
   tips: [
     {
-      t: "Bio için kısa tutun",
-      d: "Instagram biyografisi yaklaşık 150 karakterdir. Çok süslemeli stiller karakteri şişirir; şık kalın veya küçük harf stillerini tercih edin.",
+      t: "Roblox istemcisiyle eşleştirin",
+      d: "Roblox güncellemesinden sonra, dünün APK'sının hâlâ temiz enjekte edip etmediğini varsaymadan önce bir Delta sürüm notunu bekleyin.",
     },
     {
-      t: "Nick’te okunabilirlik şart",
-      d: "Aşırı zalgo veya yoğun çerçeve bazı oyunlarda reddedilebilir. Önce kısa gotik veya balon deneyin.",
+      t: "Anahtarları geçici sayın",
+      d: "Kilit açma başarısız olursa, Discord DM'lerindeki yabancılardan anahtar yapıştırmak yerine resmi anahtar yolunu yenileyin.",
     },
     {
-      t: "Platform uyumunu test edin",
-      d: "Her Unicode karakter her uygulamada aynı görünmeyebilir. Kopyaladıktan sonra hedef uygulamada bir kez kontrol edin.",
+      t: "Test ederken hesapları ayırın",
+      d: "Script araçları Roblox kurallarını ihlal edebilir. Executor'ları değerlendiriyorsanız yedek hesap kullanın.",
     },
     {
-      t: "Türkçe harfleri koruyun",
-      d: "İsimlerde ı/ğ/ü kritikse, harfi bozan stillerden kaçının veya harfi sade bırakıp sadece çerçeve ekleyin.",
+      t: "Yüklemeden önce tarayın",
+      d: "Mümkün olduğunda bilinen dosya adlarını ve karmalarını tercih edin. Delta ile ilgisi olmayan erişilebilirlik izinleri isteyen APK'ları silin.",
     },
   ],
-  tipsFooterBefore: "Temel kavramlar için",
-  tipsFooterMid: " sayfasına ve ",
-  tipsFooterAfter: "yazısına bakın.",
-  trustTitle: "Neden bu siteyi tercih etmelisiniz?",
+  trustTitle: "Bu sitedeki güven sinyalleri",
   trustItems: [
-    "70+ Unicode yazı stili, kategorili gezinme",
-    "Türkçe karakterlere özenli eşleme",
-    "Kayıt yok — metin tarayıcıda kalır",
-    "Instagram, nick ve WhatsApp için ayrı rehber sayfaları",
-    "SSS + HowTo + yazılım şeması ile net SEO yapısı",
-    "Güncel görseller ve markalı sosyal bağlantılar",
+    "Alan adı üzerinde indirme rehberi (tek CTA olarak gizli bir bağlı kuruluş yönlendirmesi yok)",
+    "Android, iOS, PC, anahtar yardımı ve güvenlik için ayrı sayfalar",
+    "Özel Gizlilik ve Sorumluluk Reddi — şablonlu metin değil",
+    "SoftwareApplication şemasıyla eşleşen görünür derecelendirme arayüzü",
   ],
-  trustLink: "Tüm özellikleri gör →",
-  faqTitle: "Sıkça sorulan sorular",
+  trustLink: "Sorumluluk reddimizi okuyun",
+  faqTitle: "Delta Roblox Sıkça Sorulan Sorular",
   faqs: [
     {
-      question: "Yazı stilleri ücretsiz mi?",
+      question: "Delta Executor nedir?",
       answer:
-        "Evet. Yazı Stilleri oluşturucusu ücretsizdir; kayıt veya uygulama indirmeden tarayıcıda kullanabilirsiniz.",
+        "Delta Executor (çoğunlukla Delta Roblox olarak aranır), Android'de ve uygun olduğunda iOS derlemelerinde desteklenen Lua scriptlerini çalıştırmak için kullanılan üçüncü taraf bir mobil Roblox script yürütücüsüdür.",
     },
     {
-      question: "Instagram’da yazı tipi nasıl değiştirilir?",
+      question: "Delta Executor ücretsiz mi?",
       answer:
-        "Metninizi buraya yazın, beğendiğiniz stili kopyalayın ve Instagram bio, açıklama veya yorum alanına yapıştırın. Instagram kendi font menüsünü açmaz; Unicode yazı stilleri bu yüzden kullanılır.",
+        "Uygulama genellikle bir anahtar sistemi veya kilit açma akışıyla ücretsiz sunulur. Belgelenmiş süreç dışında rastgele satıcılara 'premium anahtar' için asla ödeme yapmamalısınız.",
     },
     {
-      question: "Türkçe karakterler destekleniyor mu?",
+      question: "Delta Android ve iOS'ta çalışıyor mu?",
       answer:
-        "Evet. ı, ğ, ü, ş, ö, ç harfleri mümkün olduğunca korunur. Bir stilde eşleme yoksa orijinal harf bırakılır.",
+        "Android APK desteği birincil yoldur. iOS seçenekleri bazı sürümlerde mevcuttur ancak imzalama, cihaz işletim sistemi ve mevcut yamaya bağlıdır — iOS rehberine bakın.",
     },
     {
-      question: "Şekilli nick oyunlarda çalışır mı?",
+      question: "Delta anahtarına ihtiyacım var mı?",
       answer:
-        "Çoğu Unicode stil PUBG, Free Fire ve benzeri oyunlarda yapıştırılabilir. Bazı özel semboller filtrelenebilir; kısa ve okunaklı bir stil seçmenizi öneririz.",
+        "Pek çok derleme, scriptler çalışmadan önce kısa bir anahtar kilit açma gerektirir. Anahtarların süresi genellikle sınırlıdır. Olağan adımlar için anahtar sistemi blogunu okuyun.",
     },
     {
-      question: "Yazdığım metin kaydediliyor mu?",
+      question: "Roblox hesabım yasaklanabilir mi?",
       answer:
-        "Hayır. Dönüştürme işlemi cihazınızda çalışır; metninizi sunucuya göndermeyiz.",
+        "Evet. Executor kullanmak Roblox Kullanım Koşullarını ihlal edebilir ve moderasyon işlemlerine yol açabilir. Herhangi bir şey yüklemeden önce riski anlayın.",
     },
     {
-      question: "WhatsApp ve TikTok’ta da kullanılır mı?",
+      question: "Delta Executor güvenli mi?",
       answer:
-        "Evet. Kopyalanan yazı stilleri WhatsApp durum/sohbet, TikTok açıklama ve Discord gibi uygulamalara yapıştırılabilir.",
+        "Güvenlik, derleme kaynağına, verdiğiniz izinlere ve çalıştırdığınız scriptlere bağlıdır. Bilinmeyen yansımalardan kaçının ve yandan yüklemeden önce güvenlik makalemizi okuyun.",
+    },
+    {
+      question: "Delta Executor Roblox tarafından tespit edilemez mi?",
+      answer:
+        "Hiçbir executor 'tespit edilemez' değildir. Roblox'un hile karşıtı sistemi sunucu taraflıdır ve davranış kalıplarını analiz eder. Delta'nın tespit edilemez olduğunu iddia etmiyoruz — daha az görünür scriptler (pasif otomatik çiftlik ile bariz uçma/hız hileleri) riski azaltır.",
+    },
+    {
+      question: "Delta UNC'yi (Unified Naming Convention) destekliyor mu?",
+      answer:
+        "Delta Executor, UNC API yüzeyinin önemli bir bölümünü uygular. Tam kapsam düzeyi güncellemeye göre değişir — her yama döngüsünde Roblox'un Lua ortamına eklenen veya kaldırılan işlevler sonraki Delta güncellemelerinde ele alınır.",
+    },
+    {
+      question: "Script hub harici script sitelerinden nasıl farklı?",
+      answer:
+        "Hub scriptleri eklenmeden önce incelenir; bu, açık oturum çalan kodları tarar. Harici script siteleri denetimsizdir ve daha yüksek kötü amaçlı Lua riski taşır. Hub ödünleşimi: sınırlı, düzenlenmiş bir seçim ile harici kaynaklardan sınırsız ancak denetlenmemiş seçenekler arasındadır.",
     },
   ],
-  ctaTitle: "Şık yazı stillerini şimdi oluşturun",
+  ctaTitle: "Delta Executor indirme rehberi",
   ctaBody:
-    "Metninizi yazın, stilinizi kopyalayın ve sosyal profilinizi saniyeler içinde öne çıkarın.",
-  ctaButton: "Yazı stili oluştur",
-  navGenerator: "Oluşturucu",
-  navInstagram: "Instagram",
-  navNick: "Şekilli Nick",
-  navWhatsapp: "WhatsApp",
-  navWhat: "Yazı stilleri nedir?",
+    "Android APK rehberiyle başlayın veya cihazınıza göre iOS / PC rehberlerini açın. Ardından anahtar kilit açma ve güvenlik notlarını inceleyin.",
+  ctaButton: "İndirme rehberini aç",
+  navGenerator: "Ana Sayfa",
+  navInstagram: "İndir",
+  navNick: "iOS",
+  navWhatsapp: "PC",
+  navWhat: "Özellikler",
   navBlog: "Blog",
   navAbout: "Hakkımızda",
-  makeStyles: "Stil oluştur",
+  makeStyles: "İndir",
   languageLabel: "Dil",
-  footerTools: "Araçlar",
+  footerTools: "Sayfalar",
   footerGuides: "Rehberler",
-  footerSocial: "Sosyal",
-  footerCtaTitle: "Hemen dene",
-  footerCtaBody: "Ücretsiz yazı stilleri ile bio ve nick’inizi dönüştürün.",
+  footerSocial: "Sosyal Medya",
+  footerCtaTitle: "Delta Executor'ı edinin",
+  footerCtaBody: "Android, iOS ve PC yolları — net uyarılarla birlikte.",
   footerRights: "Tüm hakları saklıdır.",
   footerNote:
-    "Yazı Stilleri bağımsız bir Unicode metin aracıdır; Instagram, WhatsApp, TikTok veya oyun markalarıyla resmi ortaklığı yoktur.",
-  platformsTitle: "Hangi platformlarda kullanılır?",
+    "Delta Roblox bağımsız bir hayran rehberidir. Roblox Corporation ile bağlantısı yoktur. Executor'lar ToS'u ihlal edebilir — kullanım riski size aittir.",
+  platformsTitle: "Kapsanan platformlar",
   platformsIntro:
-    "Aynı kopyalanmış metin birden fazla uygulamada çalışır. Aşağıdaki platformlar Türkiye’de en çok aranan kullanım alanlarıdır.",
+    "Delta Roblox, Google sonuçlarına hâkim olan amaçları ele alır: Android APK, iOS kurulumu, PC denemeleri ve anahtar kilit açma yardımı.",
   platforms: [
     {
-      t: "Instagram",
-      d: "Biyografi, gönderi açıklaması, yorum ve highlight isimleri için yazı tipleri.",
+      t: "Android",
+      d: "APK yandan yükleme, bilinmeyen kaynak ayarları ve ilk çalıştırma anahtar akışı.",
     },
     {
-      t: "WhatsApp",
-      d: "Durum metni, grup adı ve sohbetlerde dikkat çeken şekilli yazılar.",
+      t: "iOS",
+      d: "IPA / doğrudan kurulum kalıpları ve yaygın imzalama hataları.",
     },
     {
-      t: "TikTok & X",
-      d: "Video açıklamaları ve profil adlarında estetik Unicode stiller.",
+      t: "PC",
+      d: "'Delta for PC' listelerinin genellikle ne anlama geldiği ve rastgele EXE yansımalarına güvenli alternatifler.",
     },
     {
-      t: "Discord & oyunlar",
-      d: "Sunucu nick’i, PUBG / Free Fire şekilli nick ve lobide görünürlük.",
+      t: "Scriptler",
+      d: "Hub kullanımı, yapıştır-çalıştır ve güncelleme sonrası doğrulama alışkanlıkları.",
     },
   ],
-  turkishTitle: "Türkçe karakter desteği neden önemli?",
-  turkishBody:
-    "Birçok yazı tipi sitesi Türkçe harfleri İngilizce eşe zorla çevirir veya kırar. İsimlerde ve marka adlarında ı, ğ, ü, ş, ö, ç doğru görünmezse güven kaybolur. Yazı Stilleri, mümkün olan Unicode eşlemeleri kullanır; eşleme yoksa harfi olduğu gibi bırakır. Böylece “şekilli” görünüm ile okunabilir Türkçe arasında denge kurarsınız.",
-  compareTitle: "Rakiplerden farkımız",
+  compareTitle: "Delta Roblox ile tipik yansıma sayfaları karşılaştırması",
   compareBody:
-    "Sadece stil listesi yetmez. Rehber sayfaları, net SSS, sosyal kanallar, özgün görseller ve birbiriyle bağlantılı blog niyetleri ile arama sonuçlarında daha eksiksiz bir cevap sunuyoruz — içerik boşluğu bırakmadan.",
+    "Yansıma siteleri genellikle kurulum adımlarını anahtar kelime doldurma ve site dışı yönlendirmelerin altına gömer. Delta Roblox, CTA'ları deltaroblox.tr'de tutar, rehberleri platforma göre ayırır ve YouTube başlıklarının atladığı riskleri belgeler.",
 };
 
-const byCode: Record<string, HomeMessages> = {
-  tr,
-  "tr-TR": tr,
-};
-
-export function getMessages(code?: string): HomeMessages {
-  if (!code) return tr;
-  return byCode[code] || tr;
+export function getMessages(_code?: string): HomeMessages {
+  return tr;
 }

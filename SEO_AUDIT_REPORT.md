@@ -1,14 +1,12 @@
-# SEO Audit Notes — Yazı Stilleri
+# SEO Audit Notes — Delta Roblox
 
-Domain: `https://yazıstilleri.com.tr`  
-Primary keyword: **yazı stilleri**
+Domain: `https://deltaroblox.tr`  
+Primary keyword: **delta roblox** / **delta executor**
 
-## Shipped differentiators vs SERP winners
+## Shipped
 
-- Distinct Title vs H1; Turkish-first editorial copy  
-- Dedicated Instagram / şekilli nick / WhatsApp intents  
-- Only 4 SERP-driven blogs (bio, nick, estetik, TikTok/WhatsApp)  
-- Descriptive image alts using Yazı Stilleri assets in `/public`  
-- Hand-maintained WebSite, Organization, SoftwareApplication, FAQ, HowTo, Breadcrumb, Article schema  
-- Branded `og:site_name`, social `sameAs`, custom legal pages  
-- Sitemap index + image sitemap + Content-Signal robots.txt  
+- Multi-page IA: Home, Download, iOS, PC, Features, Blog (3 SERP posts), About, Contact, Privacy, Disclaimer
+- Distinct Title vs H1; SoftwareApplication + AggregateRating + FAQ + HowTo schema
+- Branded `og:site_name` (Delta Roblox); WebP assets &lt; 50KB with unique alts
+- Sitemap index → `index.xml` + `image-sitemap.xml`; Content-Signal robots.txt
+- On-domain download CTAs; custom legal pages; honest ToS/ban risk language

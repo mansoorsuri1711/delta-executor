@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useMobileMenu } from './MobileMenuProvider';
-import { BRAND_LOGO_MARK, SITE_SHORT_NAME, SOCIAL_LINKS } from '@/lib/siteConfig';
+import { ANDROID_APK_URL, BRAND_LOGO_MARK, SITE_SHORT_NAME, SOCIAL_LABELS, SOCIAL_LINKS } from '@/lib/siteConfig';
 import { getLocaleFromPathname } from '@/lib/locales';
 import { getMessages } from '@/lib/i18n/messages';
 
@@ -46,22 +46,26 @@ export default function MobileNavigation() {
       title: t.footerTools.toUpperCase(),
       items: [
         { href: '/', label: t.navGenerator },
-        { href: '/instagram-yazi-tipleri', label: t.navInstagram },
-        { href: '/sekilli-nick', label: t.navNick },
-        { href: '/whatsapp-yazi-stilleri', label: t.navWhatsapp },
-        { href: '/nasil-kullanilir', label: 'Nasıl kullanılır' },
-        { href: '/yazi-stilleri-nedir', label: t.navWhat },
-        { href: '/features', label: 'Özellikler' },
+        { href: '/download', label: t.navInstagram },
+        { href: '/ios', label: t.navNick },
+        { href: '/pc-version', label: t.navWhatsapp },
+        { href: '/mac', label: 'Mac' },
+        { href: '/discord', label: 'Discord' },
+        { href: '/how-to-use', label: 'Nasıl Kullanılır' },
+        { href: '/#ozellikler', label: t.navWhat },
+        { href: '/comparison', label: 'Karşılaştırma' },
       ],
     },
     {
       title: t.footerGuides.toUpperCase(),
       items: [
+        { href: '/troubleshooting', label: 'Sorun Giderme' },
+        { href: '/vng', label: 'VNG (Vietnam)' },
         { href: '/blog', label: t.navBlog },
         { href: '/about-us', label: t.navAbout },
         { href: '/contact-us', label: 'İletişim' },
         { href: '/privacy', label: 'Gizlilik' },
-        { href: '/disclaimer', label: 'Sorumluluk reddi' },
+        { href: '/disclaimer', label: 'Sorumluluk Reddi' },
       ],
     },
   ];
@@ -138,27 +142,39 @@ export default function MobileNavigation() {
             <div className="mb-6">
               <p className="mb-2 text-xs font-bold tracking-wider text-white/40">{t.footerSocial.toUpperCase()}</p>
               <ul className="flex flex-wrap gap-2">
-                {Object.entries(SOCIAL_LINKS).map(([key, href]) => (
+                {(Object.keys(SOCIAL_LINKS) as Array<keyof typeof SOCIAL_LINKS>).map((key) => (
                   <li key={key}>
-                    <a
-                      href={href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="rounded-lg border border-white/10 px-3 py-1.5 text-xs font-semibold capitalize text-white/70"
-                    >
-                      {key}
-                    </a>
+                    {key === 'discord' ? (
+                      <Link
+                        href="/discord"
+                        onClick={() => setIsOpen(false)}
+                        className="rounded-lg border border-white/10 px-3 py-1.5 text-xs font-semibold text-white/70"
+                      >
+                        {SOCIAL_LABELS[key]}
+                      </Link>
+                    ) : (
+                      <a
+                        href={SOCIAL_LINKS[key]}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="rounded-lg border border-white/10 px-3 py-1.5 text-xs font-semibold text-white/70"
+                      >
+                        {SOCIAL_LABELS[key]}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>
             </div>
-            <Link
-              href="/#generator"
+            <a
+              href={ANDROID_APK_URL}
+              download
+              rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
-              className="pink-gradient-btn inline-flex w-full items-center justify-center rounded-full px-4 py-3 text-sm font-semibold text-white"
+              className="bfv-outline-btn inline-flex w-full items-center justify-center rounded-full px-4 py-3 text-sm font-semibold"
             >
               {t.makeStyles}
-            </Link>
+            </a>
           </div>
         </div>
       </div>,

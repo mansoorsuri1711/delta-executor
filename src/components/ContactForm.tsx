@@ -33,18 +33,18 @@ export default function ContactForm() {
 
   return (
     <div className="border border-white/10 bg-card p-6 md:p-8">
-      <h2 className="mb-6 text-center font-display text-2xl font-bold text-white">Send us a message</h2>
+      <h2 className="mb-6 text-center font-display text-2xl font-bold text-white">Bize mesaj gönderin</h2>
 
       {formSubmitted ? (
         <div className="mb-6 border border-emerald/40 bg-emerald/10 p-4 text-center text-white">
-          <p>Thanks for your message. We will get back to you soon.</p>
+          <p>Mesajınız için teşekkürler. En kısa sürede size döneceğiz.</p>
         </div>
       ) : null}
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         <div>
           <label htmlFor="name" className="mb-1 block text-sm font-medium text-white/85">
-            Name
+            Ad Soyad
           </label>
           <input
             id="name"
@@ -52,8 +52,8 @@ export default function ContactForm() {
             className={`w-full rounded-md border bg-[#F7F8FC] px-4 py-2 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-violet ${
               errors.name ? 'border-pink' : 'border-ink/15'
             }`}
-            placeholder="Your name"
-            {...register('name', { required: 'Name is required' })}
+            placeholder="Adınız"
+            {...register('name', { required: 'Ad Soyad zorunludur' })}
           />
           {errors.name && (
             <p className="mt-1 text-sm text-pink-soft">{errors.name.message}</p>
@@ -62,7 +62,7 @@ export default function ContactForm() {
 
         <div>
           <label htmlFor="email" className="mb-1 block text-sm font-medium text-white/85">
-            Email
+            E-posta
           </label>
           <input
             id="email"
@@ -70,12 +70,12 @@ export default function ContactForm() {
             className={`w-full rounded-md border bg-[#F7F8FC] px-4 py-2 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-violet ${
               errors.email ? 'border-pink' : 'border-ink/15'
             }`}
-            placeholder="you@example.com"
+            placeholder="siz@example.com"
             {...register('email', {
-              required: 'Email is required',
+              required: 'E-posta zorunludur',
               pattern: {
                 value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                message: 'Enter a valid email',
+                message: 'Geçerli bir e-posta adresi girin',
               },
             })}
           />
@@ -86,7 +86,7 @@ export default function ContactForm() {
 
         <div>
           <label htmlFor="subject" className="mb-1 block text-sm font-medium text-white/85">
-            Subject
+            Konu
           </label>
           <input
             id="subject"
@@ -94,8 +94,8 @@ export default function ContactForm() {
             className={`w-full rounded-md border bg-[#F7F8FC] px-4 py-2 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-violet ${
               errors.subject ? 'border-pink' : 'border-ink/15'
             }`}
-            placeholder="How can we help?"
-            {...register('subject', { required: 'Subject is required' })}
+            placeholder="Size nasıl yardımcı olabiliriz?"
+            {...register('subject', { required: 'Konu zorunludur' })}
           />
           {errors.subject && (
             <p className="mt-1 text-sm text-pink-soft">{errors.subject.message}</p>
@@ -104,7 +104,7 @@ export default function ContactForm() {
 
         <div>
           <label htmlFor="message" className="mb-1 block text-sm font-medium text-white/85">
-            Message
+            Mesaj
           </label>
           <textarea
             id="message"
@@ -112,12 +112,12 @@ export default function ContactForm() {
             className={`w-full rounded-md border bg-[#F7F8FC] px-4 py-2 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-violet ${
               errors.message ? 'border-pink' : 'border-ink/15'
             }`}
-            placeholder="Write your message..."
+            placeholder="Mesajınızı yazın..."
             {...register('message', {
-              required: 'Message is required',
+              required: 'Mesaj zorunludur',
               minLength: {
                 value: 10,
-                message: 'Message must be at least 10 characters',
+                message: 'Mesaj en az 10 karakter olmalıdır',
               },
             })}
           />
@@ -128,7 +128,7 @@ export default function ContactForm() {
 
         <div className="flex justify-center">
           <CtaButton as="button" type="submit" icon="mail">
-            Send message
+            Mesaj gönder
           </CtaButton>
         </div>
       </form>

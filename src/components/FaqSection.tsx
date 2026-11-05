@@ -2,7 +2,7 @@ type FaqItem = { question: string; answer: string };
 
 export default function FaqSection({
   id = "faq",
-  title = "Frequently asked questions",
+  title = "Sıkça sorulan sorular",
   items,
   includeSchema = true,
 }: {
@@ -27,7 +27,7 @@ export default function FaqSection({
   return (
     <section id={id} className="mt-16" aria-label={title}>
       <h2 className="mb-3 font-display text-2xl font-bold text-white md:text-3xl">{title}</h2>
-      <p className="mb-6 text-sm text-white/45">Yazı stilleri hakkında sık sorulanlar</p>
+      <p className="mb-6 text-sm text-white/45">Delta Roblox hakkında sıkça sorulan sorular</p>
       <div className="space-y-3">
         {items.map((item) => (
           <details
