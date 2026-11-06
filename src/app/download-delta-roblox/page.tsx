@@ -19,11 +19,11 @@ export const metadata: Metadata = {
   title: `Delta Executor APK ${APP_VERSION} Android İndir (Kasım 2026)`,
   description:
     "Android'de Delta Executor APK indirme ve kurulum için adım adım rehber. Yandan yükleme, anahtar sistemi ipuçları, APK ayrıntıları, sistem gereksinimleri, sahte APK uyarıları ve güvenli kurulum kontrol listesi.",
-  alternates: { canonical: `${SITE_ORIGIN}/download` },
+  alternates: { canonical: `${SITE_ORIGIN}/download-delta-roblox` },
   openGraph: {
     title: `Delta Executor APK İndir — ${SITE_NAME}`,
     description: "Delta Executor v2.745 için güvenli Android kurulum rehberi, Kasım 2026.",
-    url: `${SITE_ORIGIN}/download`,
+    url: `${SITE_ORIGIN}/download-delta-roblox`,
     siteName: SITE_NAME,
     type: "website",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `${SITE_NAME} indirme rehberi` }],
@@ -145,7 +145,7 @@ export default function DownloadPage() {
               <CtaButton href={ANDROID_APK_URL} icon="download">
                 APK İndir {APP_VERSION}
               </CtaButton>
-              <Link href="/ios" className="font-semibold text-pink hover:underline self-center">
+              <Link href="/ios-delta-roblox" className="font-semibold text-pink hover:underline self-center">
                 iOS rehberi →
               </Link>
             </div>
@@ -368,22 +368,22 @@ export default function DownloadPage() {
           items={faqItems}
         />
         <div className="mt-10 flex flex-wrap gap-4">
-          <Link href="/ios" className="font-semibold text-pink hover:underline">
+          <Link href="/ios-delta-roblox" className="font-semibold text-pink hover:underline">
             iOS kurulum rehberi →
           </Link>
-          <Link href="/pc-version" className="font-semibold text-pink hover:underline">
+          <Link href="/pc-delta-roblox" className="font-semibold text-pink hover:underline">
             PC sürüm bilgisi →
           </Link>
-          <Link href="/vng" className="font-semibold text-pink hover:underline">
+          <Link href="/vng-delta-roblox" className="font-semibold text-pink hover:underline">
             VNG (Vietnam) →
           </Link>
-          <Link href="/mac" className="font-semibold text-pink hover:underline">
+          <Link href="/mac-delta-roblox" className="font-semibold text-pink hover:underline">
             Mac rehberi →
           </Link>
-          <Link href="/how-to-use" className="font-semibold text-pink hover:underline">
+          <Link href="/how-to-use-delta-roblox" className="font-semibold text-pink hover:underline">
             Nasıl kullanılır →
           </Link>
-          <Link href="/troubleshooting" className="font-semibold text-pink hover:underline">
+          <Link href="/troubleshooting-delta-roblox" className="font-semibold text-pink hover:underline">
             Sorun giderme →
           </Link>
           <Link href="/#ozellikler" className="font-semibold text-pink hover:underline">

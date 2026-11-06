@@ -69,7 +69,7 @@ export default function ContactPage() {
             X
           </a>
           ,{" "}
-          <a href="/discord" className="text-pink underline">
+          <a href="/discord-delta-roblox" className="text-pink underline">
             Discord
           </a>
           .

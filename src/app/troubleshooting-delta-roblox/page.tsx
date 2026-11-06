@@ -18,11 +18,11 @@ export const metadata: Metadata = {
   title: `Delta Executor Sorun Giderme — Enjeksiyon Hatası, Anahtar Sorunları ve Çökmeler (${APP_VERSION})`,
   description:
     "Delta Executor hatalarını düzeltin: enjeksiyon başarısız, anahtar süresi doldu, Hata 280, geçersiz paket, VNG uyumsuzluğu, iOS yerel sorunları, Play Protect, izinler ve çökmeler. Kasım 2026.",
-  alternates: { canonical: `${SITE_ORIGIN}/troubleshooting` },
+  alternates: { canonical: `${SITE_ORIGIN}/troubleshooting-delta-roblox` },
   openGraph: {
     title: `Delta Executor Sorun Giderme — ${SITE_NAME}`,
     description: `${APP_VERSION}, ${STYLES_UPDATED} sürümündeki her yaygın Delta Executor hatasına çözümler.`,
-    url: `${SITE_ORIGIN}/troubleshooting`,
+    url: `${SITE_ORIGIN}/troubleshooting-delta-roblox`,
     siteName: SITE_NAME,
     type: "website",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Delta Executor sorun giderme rehberi" }],
@@ -132,7 +132,7 @@ const issues = [
       "Küresel Delta APK, Vietnam Roblox (VNG) istemcisine temiz bağlanamaz. Küresel ve VNG derlemelerini karıştırmak, bağlanma / sürüm uyumsuzluğu hatalarına yol açar.",
     steps: [
       "Roblox uygulamanızın VNG Vietnam derlemesi mi yoksa küresel derleme mi olduğunu doğrulayın.",
-      "Vietnam istemcisinde oynuyorken özel VNG Delta paketini kullanın — /vng sayfasına bakın.",
+      "Vietnam istemcisinde oynuyorken özel VNG Delta paketini kullanın — /vng-delta-roblox sayfasına bakın.",
       "Roblox istemciniziyle hangisinin eşleştiğini bilmiyorsanız küresel ve VNG Delta değişkenlerini yan yana yüklemeyin.",
       "Büyük istemci yamalarından sonra hem Roblox VNG hem de Delta VNG'yi güncelleyin.",
       "Paketler değiştirildikten sonra hâlâ bağlanılamıyorsa her iki uygulamanın önbelleğini temizleyin.",
@@ -145,7 +145,7 @@ const issues = [
       "Bazı iOS derlemeleri, sertifika araçları veya yansıtılmış Asya CDN derlemeleri kullanıldığında kısa süreliğine Çince arayüz dizileri veya yerel ayarla ilgili kurulum iletişim kutuları gösterir. Bu genellikle ayrı bir ürün değil, yerelleştirme paketleme tuhaflığıdır.",
     steps: [
       "Kurulumu tamamlayın, ardından Delta'nın içinde Ayarlar'ı açın ve varsa dili Türkçe veya İngilizce'ye geçirin.",
-      "Rastgele Telegram IPA yansımaları yerine güvendiğiniz iOS rehber yolundan (/ios) yeniden yükleyin.",
+      "Rastgele Telegram IPA yansımaları yerine güvendiğiniz iOS rehber yolundan (/ios-delta-roblox) yeniden yükleyin.",
       "Roblox iOS yamalarından sonra en yeni IPA'ya güncelleyin — yerel tuhaflıklar genellikle yeni derlemelerle düzelir.",
       "Cihaz dili Çince ise işletim sistemi yerelini uygulama dizelerinden ayırt etmek için İngilizce sistem diliyle test edin.",
       "İlgisiz yerelleştirme paketleri içeren \"kırık Premium\" IPA'lardan kaçının.",
@@ -161,7 +161,7 @@ const issues = [
       "64-bit ARM cihazları tercih edin; çok eski yalnızca 32-bit telefonlar başarısız olabilir.",
       "ABI'yi kontrol etmeden yalnızca emülatörler için etiketlenmiş paketleri fiziksel telefonlara yüklemeye zorlamayın.",
       "RAM ve depolama alanı boşaltın, ardından yeniden deneyin — depolama alanı kritik düzeyde düşük olduğunda bazı üreticiler genel bir \"uyumlu değil\" mesajı gösterir.",
-      "Resmi olmayan çatalları takip etmeden önce /download adresindeki sistem gereksinimleri tablosunu okuyun.",
+      "Resmi olmayan çatalları takip etmeden önce /download-delta-roblox adresindeki sistem gereksinimleri tablosunu okuyun.",
     ],
   },
 ];
@@ -233,7 +233,7 @@ export default function TroubleshootingPage() {
               <CtaButton href={ANDROID_APK_URL} icon="download">
                 Delta {APP_VERSION}&apos;i Yeniden Yükle
               </CtaButton>
-              <Link href="/how-to-use" className="font-semibold text-pink hover:underline self-center">
+              <Link href="/how-to-use-delta-roblox" className="font-semibold text-pink hover:underline self-center">
                 Nasıl kullanılır →
               </Link>
             </div>
@@ -314,10 +314,10 @@ export default function TroubleshootingPage() {
       <div className="container mx-auto max-w-3xl px-4 pb-14 pt-4">
         <FaqSection title="Sorun Giderme SSS" items={faqItems} />
         <div className="mt-10 flex flex-wrap gap-4">
-          <Link href="/download" className="font-semibold text-pink hover:underline">
+          <Link href="/download-delta-roblox" className="font-semibold text-pink hover:underline">
             ← İndir
           </Link>
-          <Link href="/ios" className="font-semibold text-pink hover:underline">
+          <Link href="/ios-delta-roblox" className="font-semibold text-pink hover:underline">
             iOS rehberi →
           </Link>
           <Link href="/blog/delta-executor-key-system" className="font-semibold text-pink hover:underline">

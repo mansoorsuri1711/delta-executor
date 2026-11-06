@@ -15,12 +15,12 @@ export default function Header() {
 
   const navLinks = [
     { href: '/', label: t.navGenerator },
-    { href: '/download', label: t.navInstagram },
-    { href: '/ios', label: t.navNick },
-    { href: '/pc-version', label: t.navWhatsapp },
-    { href: '/mac', label: 'Mac' },
-    { href: '/discord', label: 'Discord' },
-    { href: '/how-to-use', label: 'Nasıl kullanılır' },
+    { href: '/download-delta-roblox', label: t.navInstagram },
+    { href: '/ios-delta-roblox', label: t.navNick },
+    { href: '/pc-delta-roblox', label: t.navWhatsapp },
+    { href: '/mac-delta-roblox', label: 'Mac' },
+    { href: '/discord-delta-roblox', label: 'Discord' },
+    { href: '/how-to-use-delta-roblox', label: 'Nasıl kullanılır' },
     { href: '/blog', label: t.navBlog },
   ];
 

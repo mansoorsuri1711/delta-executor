@@ -18,11 +18,11 @@ export const metadata: Metadata = {
   title: `Delta Executor VNG — Vietnam Roblox İstemcisi Rehberi (${APP_VERSION})`,
   description:
     "Delta Executor VNG nedir? Vietnam yerel Roblox istemcisini (VNG), VNG sürümüne kimin ihtiyaç duyduğunu, küresel Roblox'tan nasıl farklı olduğunu ve Vietnamlı oyuncular için kurulum notlarını açıklar. Kasım 2026.",
-  alternates: { canonical: `${SITE_ORIGIN}/vng` },
+  alternates: { canonical: `${SITE_ORIGIN}/vng-delta-roblox` },
   openGraph: {
     title: `Delta Executor VNG (Vietnam) — ${SITE_NAME}`,
     description: `VNG Roblox istemcisi açıklandı, kimin ihtiyacı var ve ${APP_VERSION} için Delta Executor uyumluluk notları.`,
-    url: `${SITE_ORIGIN}/vng`,
+    url: `${SITE_ORIGIN}/vng-delta-roblox`,
     siteName: SITE_NAME,
     type: "website",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Delta Executor VNG Vietnam rehberi" }],
@@ -86,7 +86,7 @@ export default function VngPage() {
               <CtaButton href={ANDROID_APK_URL} icon="download">
                 Delta {APP_VERSION} İndir
               </CtaButton>
-              <Link href="/how-to-use" className="font-semibold text-pink hover:underline self-center">
+              <Link href="/how-to-use-delta-roblox" className="font-semibold text-pink hover:underline self-center">
                 Nasıl kullanılır →
               </Link>
             </div>
@@ -244,13 +244,13 @@ export default function VngPage() {
       <div className="container mx-auto max-w-3xl px-4 pb-14 pt-4">
         <FaqSection title="VNG SSS" items={faqItems} />
         <div className="mt-10 flex flex-wrap gap-4">
-          <Link href="/download" className="font-semibold text-pink hover:underline">
+          <Link href="/download-delta-roblox" className="font-semibold text-pink hover:underline">
             ← İndirme rehberi
           </Link>
-          <Link href="/how-to-use" className="font-semibold text-pink hover:underline">
+          <Link href="/how-to-use-delta-roblox" className="font-semibold text-pink hover:underline">
             Nasıl kullanılır →
           </Link>
-          <Link href="/troubleshooting" className="font-semibold text-pink hover:underline">
+          <Link href="/troubleshooting-delta-roblox" className="font-semibold text-pink hover:underline">
             Sorun giderme →
           </Link>
         </div>

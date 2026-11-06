@@ -251,7 +251,7 @@ export default function ScriptsHubPage() {
           <CtaButton href={ANDROID_APK_URL} icon="download" size="sm">
             Delta Executor İndir
           </CtaButton>
-          <Link href="/how-to-use" className="font-semibold text-pink hover:underline self-center">
+          <Link href="/how-to-use-delta-roblox" className="font-semibold text-pink hover:underline self-center">
             Nasıl kullanılır →
           </Link>
           <Link href="/blog/is-delta-executor-safe" className="font-semibold text-pink hover:underline self-center">

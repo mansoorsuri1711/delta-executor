@@ -17,12 +17,12 @@ export const metadata: Metadata = {
   title: `Delta Executor PC Sürümü — Emülatör Rehberi ve Sahte EXE Uyarısı (Kasım 2026)`,
   description:
     "Windows veya Mac için resmi Delta Executor var mı? Gerçek durum, BlueStacks/LDPlayer aracılığıyla emülatör yolu, sistem gereksinimleri, emülatör ne zaman kullanılır ve sahte EXE tehlikeleri. Kasım 2026.",
-  alternates: { canonical: `${SITE_ORIGIN}/pc-version` },
+  alternates: { canonical: `${SITE_ORIGIN}/pc-delta-roblox` },
   openGraph: {
     title: `Delta Executor PC — ${SITE_NAME}`,
     description:
       "Dürüst rehber: PC executor durumu, emülatör yolu, sistem gereksinimleri ve sahte EXE riskleri.",
-    url: `${SITE_ORIGIN}/pc-version`,
+    url: `${SITE_ORIGIN}/pc-delta-roblox`,
     siteName: SITE_NAME,
     type: "website",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Delta Executor PC rehberi" }],
@@ -117,7 +117,7 @@ export default function PcVersionPage() {
               <CtaButton href={ANDROID_APK_URL} icon="download">
                 Android APK&apos;yı tercih ediyorum
               </CtaButton>
-              <Link href="/ios" className="font-semibold text-pink hover:underline self-center">
+              <Link href="/ios-delta-roblox" className="font-semibold text-pink hover:underline self-center">
                 iOS rehberi →
               </Link>
             </div>
@@ -272,7 +272,7 @@ export default function PcVersionPage() {
         <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 text-sm text-white/65">
           <strong className="text-white">Mac mı kullanıyorsunuz?</strong> Intel Mac&apos;te BlueStacks,
           Apple Silicon sınırlamaları ve iPhone Yansıtma&apos;yı alternatif olarak ele alan özel{" "}
-          <Link href="/mac" className="text-pink hover:underline">Mac rehberimize</Link>{" "}
+          <Link href="/mac-delta-roblox" className="text-pink hover:underline">Mac rehberimize</Link>{" "}
           bakın.
         </div>
       </div>
@@ -281,13 +281,13 @@ export default function PcVersionPage() {
       <div className="container mx-auto max-w-3xl px-4 pb-14">
         <FaqSection title="PC Sürümü SSS" items={faqItems} />
         <div className="mt-10 flex flex-wrap gap-4">
-          <Link href="/download" className="font-semibold text-pink hover:underline">
+          <Link href="/download-delta-roblox" className="font-semibold text-pink hover:underline">
             ← Android indirme
           </Link>
-          <Link href="/ios" className="font-semibold text-pink hover:underline">
+          <Link href="/ios-delta-roblox" className="font-semibold text-pink hover:underline">
             iOS rehberi →
           </Link>
-          <Link href="/mac" className="font-semibold text-pink hover:underline">
+          <Link href="/mac-delta-roblox" className="font-semibold text-pink hover:underline">
             Mac rehberi →
           </Link>
           <Link href="/blog/is-delta-executor-safe" className="font-semibold text-pink hover:underline">

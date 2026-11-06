@@ -19,14 +19,25 @@ const nextConfig = {
 
   async redirects() {
     return [
+      // Short paths → SEO keyword URLs
+      { source: '/download', destination: '/download-delta-roblox', permanent: true },
+      { source: '/ios', destination: '/ios-delta-roblox', permanent: true },
+      { source: '/pc-version', destination: '/pc-delta-roblox', permanent: true },
+      { source: '/mac', destination: '/mac-delta-roblox', permanent: true },
+      { source: '/discord', destination: '/discord-delta-roblox', permanent: true },
+      { source: '/how-to-use', destination: '/how-to-use-delta-roblox', permanent: true },
+      { source: '/troubleshooting', destination: '/troubleshooting-delta-roblox', permanent: true },
+      { source: '/vng', destination: '/vng-delta-roblox', permanent: true },
+      { source: '/comparison', destination: '/comparison-delta-roblox', permanent: true },
+
       // Legacy niche routes → Delta Roblox IA
       { source: '/features', destination: '/', permanent: true },
       { source: '/funciones', destination: '/', permanent: true },
-      { source: '/como-usar', destination: '/download', permanent: true },
-      { source: '/how-it-works', destination: '/download', permanent: true },
-      { source: '/nasil-kullanilir', destination: '/download', permanent: true },
+      { source: '/como-usar', destination: '/download-delta-roblox', permanent: true },
+      { source: '/how-it-works', destination: '/download-delta-roblox', permanent: true },
+      { source: '/nasil-kullanilir', destination: '/download-delta-roblox', permanent: true },
       { source: '/yazi-stilleri-nedir', destination: '/', permanent: true },
-      { source: '/instagram-yazi-tipleri', destination: '/download', permanent: true },
+      { source: '/instagram-yazi-tipleri', destination: '/download-delta-roblox', permanent: true },
       { source: '/sekilli-nick', destination: '/', permanent: true },
       { source: '/whatsapp-yazi-stilleri', destination: '/', permanent: true },
       { source: '/about', destination: '/about-us', permanent: true },

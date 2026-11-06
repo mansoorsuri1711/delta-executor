@@ -78,25 +78,25 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
     {
       title: "Android indirme",
       body: "Delta Executor Android'de APK olarak kurulur. Bilinmeyen kaynaklara izin verme, doğru derlemeyi seçme ve kurulum sonrası kontroller modern sürümlerde sık takıldığınız noktalardır. Adım adım kontrol listesini indirme sayfasında bulursunuz.",
-      href: "/download",
+      href: "/download-delta-roblox",
       linkLabel: "Android indirme rehberi",
     },
     {
       title: "iOS kurulumu",
       body: "iPhone ve iPad'de Delta genellikle IPA veya doğrudan kurulum yollarıyla gelir. İmzalama hataları, süresi dolmuş profiller ve sürüm uyumsuzluğu en yaygın engellerdir. iOS sayfası hangi yöntemin ne zaman işe yaradığını açıklar.",
-      href: "/ios",
+      href: "/ios-delta-roblox",
       linkLabel: "iOS kurulum rehberi",
     },
     {
       title: "PC sürümü",
       body: "Birçok yansıma sitesi “PC için Delta” diye EXE dosyası sunar. Gerçekte çoğu bağlantı şüpheli veya alakasız yazılım taşır. PC sayfasında bu iddiaları ayıklıyor ve güvenli alternatifleri netleştiriyoruz.",
-      href: "/pc-version",
+      href: "/pc-delta-roblox",
       linkLabel: "PC sürümü rehberi",
     },
     {
       title: "Nasıl kullanılır",
       body: "Kurulumdan sonra bağlanma, Script Hub, yapıştırma ve çalıştırma akışını bilmek gerekir. Kullanım rehberi bu adımları sırayla gösterir; böylece sadece APK indirip ekranda takılmazsınız.",
-      href: "/how-to-use",
+      href: "/how-to-use-delta-roblox",
       linkLabel: "Kullanım rehberi",
     },
     {
@@ -114,25 +114,25 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
     {
       title: "Sorun giderme",
       body: "Enjeksiyon hataları, anahtar sorunları, çökmeler ve Play Protect engelleri sık görülür. Sorun giderme sayfası her hata için kısa teşhis ve çözüm sırası verir.",
-      href: "/troubleshooting",
+      href: "/troubleshooting-delta-roblox",
       linkLabel: "Sorun giderme rehberi",
     },
     {
       title: "Mac rehberi",
       body: "macOS'ta resmi bir Delta uygulaması yoktur; çoğu kullanıcı emülatör veya iPhone yansıtma ile ilerler. Mac sayfası hangi seçeneğin kime uyduğunu anlatır.",
-      href: "/mac",
+      href: "/mac-delta-roblox",
       linkLabel: "Mac rehberi",
     },
     {
       title: "VNG (Vietnam)",
       body: "VNG Roblox istemcisi bazı bölgelerde standart istemciden farklıdır. VNG sayfası kimin buna ihtiyacı olduğunu ve kurulumu nasıl yapacağını açıklar.",
-      href: "/vng",
+      href: "/vng-delta-roblox",
       linkLabel: "VNG rehberi",
     },
     {
       title: "Discord sunucusu",
       body: "Güncelleme duyuruları, hata bildirimi ve script tartışması Discord’da akar. Discord sayfası güvenli katılım adımlarını ve sahte davet / DM dolandırıcılık uyarılarını verir.",
-      href: "/discord",
+      href: "/discord-delta-roblox",
       linkLabel: "Discord rehberi",
     },
   ];
@@ -170,7 +170,7 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
                 Delta Executor İndir
                 <span aria-hidden="true">→</span>
               </a>
-              <Link href="/ios" className="bfv-outline-btn bfv-outline-btn-muted">
+              <Link href="/ios-delta-roblox" className="bfv-outline-btn bfv-outline-btn-muted">
                 iOS rehberi
               </Link>
             </div>
@@ -178,7 +178,7 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
               {(Object.keys(SOCIAL_LINKS) as Array<keyof typeof SOCIAL_LINKS>).map((key) => (
                 <a
                   key={key}
-                  href={key === "discord" ? "/discord" : SOCIAL_LINKS[key]}
+                  href={key === "discord" ? "/discord-delta-roblox" : SOCIAL_LINKS[key]}
                   {...(key === "discord"
                     ? {}
                     : { target: "_blank", rel: "noopener noreferrer" })}
@@ -236,7 +236,7 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
             <p className="text-base leading-relaxed text-white/60 sm:text-lg">{t.whatBody}</p>
             <p className="mt-4 text-base leading-relaxed text-white/60 sm:text-lg">
               &ldquo;delta roblox&rdquo; ve &ldquo;delta executor indir&rdquo; için canlı Google sonuçları YouTube kurulum videoları, Play Store benzerleri ve tek sayfalık yansıma siteleriyle doludur.{" "}
-              <Link href="/download" className="font-semibold text-pink hover:underline">
+              <Link href="/download-delta-roblox" className="font-semibold text-pink hover:underline">
                 İndirme rehberimiz
               </Link>{" "}
               her sorguyu tek bir devasa URL&apos;ye yığmak yerine kurulum adımlarını deltaroblox.tr&apos;de platforma özgü ayrıntılarla sunar.
@@ -378,7 +378,7 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
             <h2 className="font-display text-3xl font-bold text-white md:text-4xl">{t.howTitle}</h2>
             <p className="mt-3 max-w-2xl text-white/55">
               {t.howIntroBefore}{" "}
-              <Link href="/download" className="font-semibold text-pink hover:underline">
+              <Link href="/download-delta-roblox" className="font-semibold text-pink hover:underline">
                 {t.howIntroLink}
               </Link>{" "}
               {t.howIntroAfter}
@@ -487,7 +487,7 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
               </p>
             </div>
             <Link
-              href="/comparison"
+              href="/comparison-delta-roblox"
               className="shrink-0 rounded-full border border-pink/30 bg-pink/10 px-5 py-2.5 text-sm font-semibold text-pink hover:bg-pink/20"
             >
               Karşılaştırmayı gör →
@@ -519,7 +519,7 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
             ))}
           </ul>
           <p className="mt-6 text-sm text-white/55">
-            <Link href="/discord" className="font-semibold text-pink hover:underline">
+            <Link href="/discord-delta-roblox" className="font-semibold text-pink hover:underline">
               Discord rehberine git →
             </Link>
             {" "}E-posta mı tercih ediyorsunuz?{" "}
@@ -568,14 +568,14 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
                 title: t.cardExactTitle,
                 body: t.cardExactBody,
                 img: BRAND_FEATURE_2,
-                href: "/download",
+                href: "/download-delta-roblox",
                 alt: "Delta Roblox Android APK indirme özellik görseli",
               },
               {
                 title: t.cardSolverTitle,
                 body: t.cardSolverBody,
                 img: BRAND_FEATURE_3,
-                href: "/ios",
+                href: "/ios-delta-roblox",
                 alt: "Delta Executor iOS kurulum özellik görseli",
               },
               {

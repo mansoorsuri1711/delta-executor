@@ -73,7 +73,7 @@ export default function BlogIndexPage() {
         </ul>
         <p className="mt-12 text-sm text-white/35">
           Başlamak mı istiyorsunuz?{" "}
-          <Link href="/download" className="text-pink underline">
+          <Link href="/download-delta-roblox" className="text-pink underline">
             İndirme sayfasına
           </Link>{" "}
           gidin veya{" "}

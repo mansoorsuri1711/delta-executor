@@ -19,11 +19,11 @@ export const metadata: Metadata = {
   title: `Delta Executor Nasıl Kullanılır — Script Çalıştırma, Script Hub ve İpuçları (${APP_VERSION})`,
   description:
     "Delta Executor kullanım rehberi: Roblox'a bağlanma, script hub'ı gezme, scriptleri yapıştırma ve çalıştırma, otomatik enjeksiyon, script kaydetme ve ilk scripti çalıştırma. Kasım 2026.",
-  alternates: { canonical: `${SITE_ORIGIN}/how-to-use` },
+  alternates: { canonical: `${SITE_ORIGIN}/how-to-use-delta-roblox` },
   openGraph: {
     title: `Delta Executor Nasıl Kullanılır — ${SITE_NAME}`,
     description: `Delta Executor ${APP_VERSION} için tam kullanım rehberi — bağlanma, script hub, çalıştırma ve daha fazlası.`,
-    url: `${SITE_ORIGIN}/how-to-use`,
+    url: `${SITE_ORIGIN}/how-to-use-delta-roblox`,
     siteName: SITE_NAME,
     type: "website",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Delta Executor nasıl kullanılır" }],
@@ -130,7 +130,7 @@ export default function HowToUsePage() {
               <CtaButton href={ANDROID_APK_URL} icon="download">
                 Delta Executor İndir {APP_VERSION}
               </CtaButton>
-              <Link href="/troubleshooting" className="font-semibold text-pink hover:underline self-center">
+              <Link href="/troubleshooting-delta-roblox" className="font-semibold text-pink hover:underline self-center">
                 Sorun giderme →
               </Link>
             </div>
@@ -255,10 +255,10 @@ export default function HowToUsePage() {
       <div className="container mx-auto max-w-3xl px-4 pb-14 pt-4">
         <FaqSection title="Nasıl Kullanılır SSS" items={faqItems} />
         <div className="mt-10 flex flex-wrap gap-4">
-          <Link href="/download" className="font-semibold text-pink hover:underline">
+          <Link href="/download-delta-roblox" className="font-semibold text-pink hover:underline">
             ← İndirme rehberi
           </Link>
-          <Link href="/troubleshooting" className="font-semibold text-pink hover:underline">
+          <Link href="/troubleshooting-delta-roblox" className="font-semibold text-pink hover:underline">
             Sorun giderme →
           </Link>
           <Link href="/blog/delta-executor-scripts-hub" className="font-semibold text-pink hover:underline">

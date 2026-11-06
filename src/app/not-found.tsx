@@ -19,7 +19,7 @@ export default function NotFound() {
         <Link href="/" className="bfv-outline-btn">
           Ana Sayfa
         </Link>
-        <Link href="/download" className="bfv-outline-btn bfv-outline-btn-muted">
+        <Link href="/download-delta-roblox" className="bfv-outline-btn bfv-outline-btn-muted">
           İndirme rehberi
         </Link>
       </div>

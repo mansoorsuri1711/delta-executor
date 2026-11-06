@@ -18,11 +18,11 @@ export const metadata: Metadata = {
   title: `Delta Executor iOS — iPhone ve iPad Kurulum Rehberi (${APP_VERSION}, Kasım 2026)`,
   description:
     "iPhone ve iPad'e bilgisayar olmadan Delta Executor nasıl kurulur. AltStore ve TrollStore aracılığıyla yandan yükleme, Delta iOS Premium, sertifika geçerliliği, anahtar sistemi ve iOS 17/18 uyumluluk notlarını kapsar.",
-  alternates: { canonical: `${SITE_ORIGIN}/ios` },
+  alternates: { canonical: `${SITE_ORIGIN}/ios-delta-roblox` },
   openGraph: {
     title: `iOS için Delta Executor — ${SITE_NAME}`,
     description: `Delta Executor ${APP_VERSION}, ${STYLES_UPDATED} için iPhone ve iPad kurulum rehberi.`,
-    url: `${SITE_ORIGIN}/ios`,
+    url: `${SITE_ORIGIN}/ios-delta-roblox`,
     siteName: SITE_NAME,
     type: "website",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `Delta Executor iOS rehberi` }],
@@ -281,16 +281,16 @@ export default function IosPage() {
       <div className="container mx-auto max-w-3xl px-4 pb-14">
         <FaqSection title="iOS SSS" items={faqItems} />
         <div className="mt-10 flex flex-wrap gap-4">
-          <Link href="/download" className="font-semibold text-pink hover:underline">
+          <Link href="/download-delta-roblox" className="font-semibold text-pink hover:underline">
             ← Android APK rehberi
           </Link>
-          <Link href="/pc-version" className="font-semibold text-pink hover:underline">
+          <Link href="/pc-delta-roblox" className="font-semibold text-pink hover:underline">
             PC sürümü →
           </Link>
-          <Link href="/mac" className="font-semibold text-pink hover:underline">
+          <Link href="/mac-delta-roblox" className="font-semibold text-pink hover:underline">
             Mac rehberi →
           </Link>
-          <Link href="/vng" className="font-semibold text-pink hover:underline">
+          <Link href="/vng-delta-roblox" className="font-semibold text-pink hover:underline">
             VNG (Vietnam) →
           </Link>
           <Link href="/blog/delta-executor-key-system" className="font-semibold text-pink hover:underline">

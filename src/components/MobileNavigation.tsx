@@ -46,21 +46,21 @@ export default function MobileNavigation() {
       title: t.footerTools.toUpperCase(),
       items: [
         { href: '/', label: t.navGenerator },
-        { href: '/download', label: t.navInstagram },
-        { href: '/ios', label: t.navNick },
-        { href: '/pc-version', label: t.navWhatsapp },
-        { href: '/mac', label: 'Mac' },
-        { href: '/discord', label: 'Discord' },
-        { href: '/how-to-use', label: 'Nasıl Kullanılır' },
+        { href: '/download-delta-roblox', label: t.navInstagram },
+        { href: '/ios-delta-roblox', label: t.navNick },
+        { href: '/pc-delta-roblox', label: t.navWhatsapp },
+        { href: '/mac-delta-roblox', label: 'Mac' },
+        { href: '/discord-delta-roblox', label: 'Discord' },
+        { href: '/how-to-use-delta-roblox', label: 'Nasıl Kullanılır' },
         { href: '/#ozellikler', label: t.navWhat },
-        { href: '/comparison', label: 'Karşılaştırma' },
+        { href: '/comparison-delta-roblox', label: 'Karşılaştırma' },
       ],
     },
     {
       title: t.footerGuides.toUpperCase(),
       items: [
-        { href: '/troubleshooting', label: 'Sorun Giderme' },
-        { href: '/vng', label: 'VNG (Vietnam)' },
+        { href: '/troubleshooting-delta-roblox', label: 'Sorun Giderme' },
+        { href: '/vng-delta-roblox', label: 'VNG (Vietnam)' },
         { href: '/blog', label: t.navBlog },
         { href: '/about-us', label: t.navAbout },
         { href: '/contact-us', label: 'İletişim' },
@@ -146,7 +146,7 @@ export default function MobileNavigation() {
                   <li key={key}>
                     {key === 'discord' ? (
                       <Link
-                        href="/discord"
+                        href="/discord-delta-roblox"
                         onClick={() => setIsOpen(false)}
                         className="rounded-lg border border-white/10 px-3 py-1.5 text-xs font-semibold text-white/70"
                       >

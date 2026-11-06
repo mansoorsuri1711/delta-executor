@@ -17,12 +17,12 @@ export const metadata: Metadata = {
   title: `Delta Executor Discord — Topluluk, Güncellemeler ve Güvenli Katılım (${APP_VERSION})`,
   description:
     "Delta Executor Discord sunucusu nedir, nasıl güvenli katılınır, hangi kanallar işe yarar ve sahte davet / DM dolandırıcılıklarından nasıl kaçınılır. Güncelleme duyuruları, hata bildirimi ve script ipuçları. Kasım 2026.",
-  alternates: { canonical: `${SITE_ORIGIN}/discord` },
+  alternates: { canonical: `${SITE_ORIGIN}/discord-delta-roblox` },
   openGraph: {
     title: `Delta Executor Discord — ${SITE_NAME}`,
     description:
       "Delta Executor topluluk Discord’una güvenli katılım, kanal özeti ve dolandırıcılık uyarıları.",
-    url: `${SITE_ORIGIN}/discord`,
+    url: `${SITE_ORIGIN}/discord-delta-roblox`,
     siteName: SITE_NAME,
     type: "website",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Delta Executor Discord rehberi" }],
@@ -60,7 +60,7 @@ const joinSteps = [
   {
     n: 1,
     title: "Yalnızca bu sitedeki daveti kullanın",
-    body: `Davet linkleri sık değişir. Güncel bağlantıyı deltaroblox.tr/discord üzerinden açın — rastgele yorum veya DM davetlerine tıklamayın.`,
+    body: `Davet linkleri sık değişir. Güncel bağlantıyı deltaroblox.tr/discord-delta-roblox üzerinden açın — rastgele yorum veya DM davetlerine tıklamayın.`,
   },
   {
     n: 2,
@@ -75,7 +75,7 @@ const joinSteps = [
   {
     n: 4,
     title: "Destek isterken kayıt ekleyin",
-    body: "Cihaz modeli, Android/iOS sürümü, Delta sürümü ve hata metni olmadan yardım yavaşlar. Önce /troubleshooting adımlarını deneyin.",
+    body: "Cihaz modeli, Android/iOS sürümü, Delta sürümü ve hata metni olmadan yardım yavaşlar. Önce /troubleshooting-delta-roblox adımlarını deneyin.",
   },
 ];
 
@@ -214,19 +214,19 @@ export default function DiscordPage() {
         <div className="space-y-4 text-white/65 leading-relaxed">
           <p>
             Discord hızlı duyurular için iyidir. Kalıcı kurulum adımları için site sayfalarını kullanın:{" "}
-            <Link href="/download" className="font-semibold text-pink hover:underline">
+            <Link href="/download-delta-roblox" className="font-semibold text-pink hover:underline">
               Android indirme
             </Link>
             ,{" "}
-            <Link href="/ios" className="font-semibold text-pink hover:underline">
+            <Link href="/ios-delta-roblox" className="font-semibold text-pink hover:underline">
               iOS
             </Link>
             ,{" "}
-            <Link href="/how-to-use" className="font-semibold text-pink hover:underline">
+            <Link href="/how-to-use-delta-roblox" className="font-semibold text-pink hover:underline">
               nasıl kullanılır
             </Link>
             ,{" "}
-            <Link href="/troubleshooting" className="font-semibold text-pink hover:underline">
+            <Link href="/troubleshooting-delta-roblox" className="font-semibold text-pink hover:underline">
               sorun giderme
             </Link>{" "}
             ve{" "}
@@ -266,7 +266,7 @@ export default function DiscordPage() {
             >
               Discord’a katıl →
             </a>
-            <Link href="/download" className="font-semibold text-pink hover:underline self-center">
+            <Link href="/download-delta-roblox" className="font-semibold text-pink hover:underline self-center">
               İndirme rehberi →
             </Link>
           </div>

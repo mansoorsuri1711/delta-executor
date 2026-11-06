@@ -18,11 +18,11 @@ export const metadata: Metadata = {
   title: `Delta Executor ve Diğer Roblox Executor'lar — Karşılaştırma Tablosu (${APP_VERSION})`,
   description:
     "Delta Executor ile diğer popüler Roblox executor'larının dürüst karşılaştırması: mobil destek, anahtar sistemi, script hub, güncelleme hızı ve ban riski dürüstlüğü. Sahte 'tespit edilemez' iddiası yok. Kasım 2026.",
-  alternates: { canonical: `${SITE_ORIGIN}/comparison` },
+  alternates: { canonical: `${SITE_ORIGIN}/comparison-delta-roblox` },
   openGraph: {
     title: `Delta Executor Karşılaştırması — ${SITE_NAME}`,
     description: `Delta Executor ve alternatifler — ${APP_VERSION}, ${STYLES_UPDATED} için dürüst özellik karşılaştırması.`,
-    url: `${SITE_ORIGIN}/comparison`,
+    url: `${SITE_ORIGIN}/comparison-delta-roblox`,
     siteName: SITE_NAME,
     type: "website",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Delta Executor karşılaştırması" }],
@@ -275,7 +275,7 @@ export default function ComparisonPage() {
       <div className="container mx-auto max-w-5xl px-4 pb-14 pt-4">
         <FaqSection title="Karşılaştırma SSS" items={faqItems} />
         <div className="mt-10 flex flex-wrap gap-4">
-          <Link href="/download" className="font-semibold text-pink hover:underline">
+          <Link href="/download-delta-roblox" className="font-semibold text-pink hover:underline">
             ← Android indirme
           </Link>
           <Link href="/#ozellikler" className="font-semibold text-pink hover:underline">

@@ -32,9 +32,9 @@ export default function Footer() {
             <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white/45">Sayfalar</h2>
             <ul className="space-y-2.5 text-sm">
               <li><Link href="/" className="text-white/70 hover:text-white">Ana Sayfa</Link></li>
-              <li><Link href="/download" className="text-white/70 hover:text-white">{t.navInstagram}</Link></li>
-              <li><Link href="/ios" className="text-white/70 hover:text-white">{t.navNick}</Link></li>
-              <li><Link href="/pc-version" className="text-white/70 hover:text-white">{t.navWhatsapp}</Link></li>
+              <li><Link href="/download-delta-roblox" className="text-white/70 hover:text-white">{t.navInstagram}</Link></li>
+              <li><Link href="/ios-delta-roblox" className="text-white/70 hover:text-white">{t.navNick}</Link></li>
+              <li><Link href="/pc-delta-roblox" className="text-white/70 hover:text-white">{t.navWhatsapp}</Link></li>
               <li><Link href="/#ozellikler" className="text-white/70 hover:text-white">{t.navWhat}</Link></li>
             </ul>
           </div>
@@ -42,12 +42,12 @@ export default function Footer() {
           <div>
             <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white/45">Rehberler</h2>
             <ul className="space-y-2.5 text-sm">
-              <li><Link href="/how-to-use" className="text-white/70 hover:text-white">Nasıl Kullanılır</Link></li>
-              <li><Link href="/troubleshooting" className="text-white/70 hover:text-white">Sorun Giderme</Link></li>
-              <li><Link href="/mac" className="text-white/70 hover:text-white">Mac Rehberi</Link></li>
-              <li><Link href="/vng" className="text-white/70 hover:text-white">VNG (Vietnam)</Link></li>
-              <li><Link href="/discord" className="text-white/70 hover:text-white">Discord</Link></li>
-              <li><Link href="/comparison" className="text-white/70 hover:text-white">Karşılaştırma</Link></li>
+              <li><Link href="/how-to-use-delta-roblox" className="text-white/70 hover:text-white">Nasıl Kullanılır</Link></li>
+              <li><Link href="/troubleshooting-delta-roblox" className="text-white/70 hover:text-white">Sorun Giderme</Link></li>
+              <li><Link href="/mac-delta-roblox" className="text-white/70 hover:text-white">Mac Rehberi</Link></li>
+              <li><Link href="/vng-delta-roblox" className="text-white/70 hover:text-white">VNG (Vietnam)</Link></li>
+              <li><Link href="/discord-delta-roblox" className="text-white/70 hover:text-white">Discord</Link></li>
+              <li><Link href="/comparison-delta-roblox" className="text-white/70 hover:text-white">Karşılaştırma</Link></li>
               <li><Link href="/blog" className="text-white/70 hover:text-white">{t.navBlog}</Link></li>
               <li><Link href="/blog/delta-executor-key-system" className="text-white/70 hover:text-white">Anahtar Sistemi</Link></li>
               <li><Link href="/blog/is-delta-executor-safe" className="text-white/70 hover:text-white">Güvenlik</Link></li>
@@ -62,7 +62,7 @@ export default function Footer() {
               {(Object.keys(SOCIAL_LINKS) as Array<keyof typeof SOCIAL_LINKS>).map((key) => (
                 <li key={key}>
                   {key === 'discord' ? (
-                    <Link href="/discord" className="text-white/70 hover:text-white">
+                    <Link href="/discord-delta-roblox" className="text-white/70 hover:text-white">
                       {SOCIAL_LABELS[key]}
                     </Link>
                   ) : (
