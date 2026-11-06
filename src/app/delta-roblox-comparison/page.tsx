@@ -18,11 +18,11 @@ export const metadata: Metadata = {
   title: `Delta Executor ve Diğer Roblox Executor'lar — Karşılaştırma Tablosu (${APP_VERSION})`,
   description:
     "Delta Executor ile diğer popüler Roblox executor'larının dürüst karşılaştırması: mobil destek, anahtar sistemi, script hub, güncelleme hızı ve ban riski dürüstlüğü. Sahte 'tespit edilemez' iddiası yok. Kasım 2026.",
-  alternates: { canonical: `${SITE_ORIGIN}/comparison-delta-roblox` },
+  alternates: { canonical: `${SITE_ORIGIN}/delta-roblox-comparison` },
   openGraph: {
     title: `Delta Executor Karşılaştırması — ${SITE_NAME}`,
     description: `Delta Executor ve alternatifler — ${APP_VERSION}, ${STYLES_UPDATED} için dürüst özellik karşılaştırması.`,
-    url: `${SITE_ORIGIN}/comparison-delta-roblox`,
+    url: `${SITE_ORIGIN}/delta-roblox-comparison`,
     siteName: SITE_NAME,
     type: "website",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Delta Executor karşılaştırması" }],

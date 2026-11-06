@@ -96,7 +96,7 @@ const faqItems = [
   {
     question: "PC'de Delta anahtarına ihtiyacım var mı?",
     answer:
-      "PC-emülatör kurulumlarının çoğu BlueStacks/LDPlayer içinde Android Delta APK'yı çalıştırmaya devam eder, bu nedenle aynı mobil anahtar akışı geçerlidir. Kalıcı anahtarsız Windows EXE iddiaları yüksek risk olarak değerlendirilmeli — /pc-delta-roblox sayfasına bakın ve rastgele EXE yansımalarından kaçının.",
+      "PC-emülatör kurulumlarının çoğu BlueStacks/LDPlayer içinde Android Delta APK'yı çalıştırmaya devam eder, bu nedenle aynı mobil anahtar akışı geçerlidir. Kalıcı anahtarsız Windows EXE iddiaları yüksek risk olarak değerlendirilmeli — /delta-roblox-pc sayfasına bakın ve rastgele EXE yansımalarından kaçının.",
   },
   {
     question: "Linkvertise reklamlarını anahtar atlatma araçlarıyla geçmek güvenli mi?",
@@ -289,7 +289,7 @@ export default function KeySystemPage() {
           <CtaButton href={ANDROID_APK_URL} icon="download" size="sm">
             Delta Executor İndir
           </CtaButton>
-          <Link href="/ios-delta-roblox" className="font-semibold text-pink hover:underline self-center">
+          <Link href="/delta-roblox-ios" className="font-semibold text-pink hover:underline self-center">
             iOS rehberi →
           </Link>
           <Link href="/blog/is-delta-executor-safe" className="font-semibold text-pink hover:underline self-center">

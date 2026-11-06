@@ -18,11 +18,11 @@ export const metadata: Metadata = {
   title: `Delta Executor VNG — Vietnam Roblox İstemcisi Rehberi (${APP_VERSION})`,
   description:
     "Delta Executor VNG nedir? Vietnam yerel Roblox istemcisini (VNG), VNG sürümüne kimin ihtiyaç duyduğunu, küresel Roblox'tan nasıl farklı olduğunu ve Vietnamlı oyuncular için kurulum notlarını açıklar. Kasım 2026.",
-  alternates: { canonical: `${SITE_ORIGIN}/vng-delta-roblox` },
+  alternates: { canonical: `${SITE_ORIGIN}/delta-roblox-vng` },
   openGraph: {
     title: `Delta Executor VNG (Vietnam) — ${SITE_NAME}`,
     description: `VNG Roblox istemcisi açıklandı, kimin ihtiyacı var ve ${APP_VERSION} için Delta Executor uyumluluk notları.`,
-    url: `${SITE_ORIGIN}/vng-delta-roblox`,
+    url: `${SITE_ORIGIN}/delta-roblox-vng`,
     siteName: SITE_NAME,
     type: "website",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Delta Executor VNG Vietnam rehberi" }],
@@ -250,7 +250,7 @@ export default function VngPage() {
           <Link href="/how-to-use-delta-roblox" className="font-semibold text-pink hover:underline">
             Nasıl kullanılır →
           </Link>
-          <Link href="/troubleshooting-delta-roblox" className="font-semibold text-pink hover:underline">
+          <Link href="/delta-roblox-troubleshooting" className="font-semibold text-pink hover:underline">
             Sorun giderme →
           </Link>
         </div>

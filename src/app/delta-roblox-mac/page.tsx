@@ -18,11 +18,11 @@ export const metadata: Metadata = {
   title: `Mac için Delta Executor — Seçenekler, Sınırlar ve Emülatör Rehberi (${APP_VERSION})`,
   description:
     "Mac için Delta Executor var mı? Gerçek seçeneklerinizi kapsayan dürüst yanıt: BlueStacks aracılığıyla Android emülatörü, neden yerel macOS derlemesi olmadığı ve nelere dikkat etmeniz gerektiği. Kasım 2026.",
-  alternates: { canonical: `${SITE_ORIGIN}/mac-delta-roblox` },
+  alternates: { canonical: `${SITE_ORIGIN}/delta-roblox-mac` },
   openGraph: {
     title: `Mac için Delta Executor — ${SITE_NAME}`,
     description: `Mac kullanıcıları için Delta Executor ${APP_VERSION} ile yapabilecekleriniz — emülatör rehberi ve dürüst sınırlar.`,
-    url: `${SITE_ORIGIN}/mac-delta-roblox`,
+    url: `${SITE_ORIGIN}/delta-roblox-mac`,
     siteName: SITE_NAME,
     type: "website",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Delta Executor Mac rehberi" }],
@@ -114,7 +114,7 @@ export default function MacPage() {
               <CtaButton href={ANDROID_APK_URL} icon="download">
                 Android APK İndir
               </CtaButton>
-              <Link href="/ios-delta-roblox" className="font-semibold text-pink hover:underline self-center">
+              <Link href="/delta-roblox-ios" className="font-semibold text-pink hover:underline self-center">
                 iOS (iPhone) rehberi →
               </Link>
             </div>
@@ -166,7 +166,7 @@ export default function MacPage() {
             <li>
               <strong className="text-white">Windows&apos;ta PC emülatörü (ayrı makine)</strong> —
               Bir Windows PC&apos;ye erişiminiz varsa bu daha kararlı bir emülatör ortamıdır.{" "}
-              <Link href="/pc-delta-roblox" className="text-pink hover:underline">PC sürümü rehberimize</Link>{" "}
+              <Link href="/delta-roblox-pc" className="text-pink hover:underline">PC sürümü rehberimize</Link>{" "}
               bakın.
             </li>
           </ul>
@@ -246,7 +246,7 @@ export default function MacPage() {
             Güvenli katılım adımları ve DM dolandırıcılık uyarıları Discord rehberinde.
           </p>
           <Link
-            href="/discord-delta-roblox"
+            href="/delta-roblox-discord"
             className="shrink-0 rounded-full border border-pink/30 bg-pink/10 px-5 py-2.5 text-sm font-semibold text-pink hover:bg-pink/20"
           >
             Discord rehberi →
@@ -261,16 +261,16 @@ export default function MacPage() {
           <Link href="/download-delta-roblox" className="font-semibold text-pink hover:underline">
             ← Android indirme
           </Link>
-          <Link href="/ios-delta-roblox" className="font-semibold text-pink hover:underline">
+          <Link href="/delta-roblox-ios" className="font-semibold text-pink hover:underline">
             iOS rehberi →
           </Link>
-          <Link href="/pc-delta-roblox" className="font-semibold text-pink hover:underline">
+          <Link href="/delta-roblox-pc" className="font-semibold text-pink hover:underline">
             PC sürümü →
           </Link>
-          <Link href="/discord-delta-roblox" className="font-semibold text-pink hover:underline">
+          <Link href="/delta-roblox-discord" className="font-semibold text-pink hover:underline">
             Discord →
           </Link>
-          <Link href="/troubleshooting-delta-roblox" className="font-semibold text-pink hover:underline">
+          <Link href="/delta-roblox-troubleshooting" className="font-semibold text-pink hover:underline">
             Sorun giderme →
           </Link>
         </div>

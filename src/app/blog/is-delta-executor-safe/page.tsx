@@ -216,7 +216,7 @@ export default function IsDeltaSafePage() {
           <Link href="/blog/delta-executor-key-system" className="font-semibold text-pink hover:underline self-center">
             Anahtar sistemi →
           </Link>
-          <Link href="/troubleshooting-delta-roblox" className="font-semibold text-pink hover:underline self-center">
+          <Link href="/delta-roblox-troubleshooting" className="font-semibold text-pink hover:underline self-center">
             Sorun giderme →
           </Link>
         </div>

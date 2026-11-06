@@ -73,7 +73,7 @@ export default function AboutPage() {
               Android APK indirme rehberimizle
             </Link>{" "}
             başlayın,{" "}
-            <Link href="/ios-delta-roblox" className="text-pink underline">
+            <Link href="/delta-roblox-ios" className="text-pink underline">
               iOS kurulum rehberimize
             </Link>{" "}
             göz atın veya{" "}
@@ -123,7 +123,7 @@ export default function AboutPage() {
               X
             </a>{" "}
             ve{" "}
-            <Link href="/discord-delta-roblox" className="text-pink underline">
+            <Link href="/delta-roblox-discord" className="text-pink underline">
               Discord
             </Link>
             &apos;u takip edebilirsiniz.

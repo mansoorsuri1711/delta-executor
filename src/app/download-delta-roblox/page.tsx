@@ -145,7 +145,7 @@ export default function DownloadPage() {
               <CtaButton href={ANDROID_APK_URL} icon="download">
                 APK İndir {APP_VERSION}
               </CtaButton>
-              <Link href="/ios-delta-roblox" className="font-semibold text-pink hover:underline self-center">
+              <Link href="/delta-roblox-ios" className="font-semibold text-pink hover:underline self-center">
                 iOS rehberi →
               </Link>
             </div>
@@ -368,22 +368,22 @@ export default function DownloadPage() {
           items={faqItems}
         />
         <div className="mt-10 flex flex-wrap gap-4">
-          <Link href="/ios-delta-roblox" className="font-semibold text-pink hover:underline">
+          <Link href="/delta-roblox-ios" className="font-semibold text-pink hover:underline">
             iOS kurulum rehberi →
           </Link>
-          <Link href="/pc-delta-roblox" className="font-semibold text-pink hover:underline">
+          <Link href="/delta-roblox-pc" className="font-semibold text-pink hover:underline">
             PC sürüm bilgisi →
           </Link>
-          <Link href="/vng-delta-roblox" className="font-semibold text-pink hover:underline">
+          <Link href="/delta-roblox-vng" className="font-semibold text-pink hover:underline">
             VNG (Vietnam) →
           </Link>
-          <Link href="/mac-delta-roblox" className="font-semibold text-pink hover:underline">
+          <Link href="/delta-roblox-mac" className="font-semibold text-pink hover:underline">
             Mac rehberi →
           </Link>
           <Link href="/how-to-use-delta-roblox" className="font-semibold text-pink hover:underline">
             Nasıl kullanılır →
           </Link>
-          <Link href="/troubleshooting-delta-roblox" className="font-semibold text-pink hover:underline">
+          <Link href="/delta-roblox-troubleshooting" className="font-semibold text-pink hover:underline">
             Sorun giderme →
           </Link>
           <Link href="/#ozellikler" className="font-semibold text-pink hover:underline">

@@ -18,11 +18,11 @@ export const metadata: Metadata = {
   title: `Delta Executor iOS — iPhone ve iPad Kurulum Rehberi (${APP_VERSION}, Kasım 2026)`,
   description:
     "iPhone ve iPad'e bilgisayar olmadan Delta Executor nasıl kurulur. AltStore ve TrollStore aracılığıyla yandan yükleme, Delta iOS Premium, sertifika geçerliliği, anahtar sistemi ve iOS 17/18 uyumluluk notlarını kapsar.",
-  alternates: { canonical: `${SITE_ORIGIN}/ios-delta-roblox` },
+  alternates: { canonical: `${SITE_ORIGIN}/delta-roblox-ios` },
   openGraph: {
     title: `iOS için Delta Executor — ${SITE_NAME}`,
     description: `Delta Executor ${APP_VERSION}, ${STYLES_UPDATED} için iPhone ve iPad kurulum rehberi.`,
-    url: `${SITE_ORIGIN}/ios-delta-roblox`,
+    url: `${SITE_ORIGIN}/delta-roblox-ios`,
     siteName: SITE_NAME,
     type: "website",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `Delta Executor iOS rehberi` }],
@@ -284,13 +284,13 @@ export default function IosPage() {
           <Link href="/download-delta-roblox" className="font-semibold text-pink hover:underline">
             ← Android APK rehberi
           </Link>
-          <Link href="/pc-delta-roblox" className="font-semibold text-pink hover:underline">
+          <Link href="/delta-roblox-pc" className="font-semibold text-pink hover:underline">
             PC sürümü →
           </Link>
-          <Link href="/mac-delta-roblox" className="font-semibold text-pink hover:underline">
+          <Link href="/delta-roblox-mac" className="font-semibold text-pink hover:underline">
             Mac rehberi →
           </Link>
-          <Link href="/vng-delta-roblox" className="font-semibold text-pink hover:underline">
+          <Link href="/delta-roblox-vng" className="font-semibold text-pink hover:underline">
             VNG (Vietnam) →
           </Link>
           <Link href="/blog/delta-executor-key-system" className="font-semibold text-pink hover:underline">

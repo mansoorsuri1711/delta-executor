@@ -62,7 +62,7 @@ export const SITEMAP_PAGES: SitemapPage[] = [
     ],
   },
   {
-    path: "/ios-delta-roblox",
+    path: "/delta-roblox-ios",
     lastMod: LASTMOD,
     changeFreq: "weekly",
     priority: 0.95,
@@ -75,7 +75,7 @@ export const SITEMAP_PAGES: SitemapPage[] = [
     ],
   },
   {
-    path: "/pc-delta-roblox",
+    path: "/delta-roblox-pc",
     lastMod: LASTMOD,
     changeFreq: "monthly",
     priority: 0.85,
@@ -159,7 +159,7 @@ export const SITEMAP_PAGES: SitemapPage[] = [
     ],
   },
   {
-    path: "/troubleshooting-delta-roblox",
+    path: "/delta-roblox-troubleshooting",
     lastMod: LASTMOD,
     changeFreq: "monthly",
     priority: 0.88,
@@ -172,7 +172,7 @@ export const SITEMAP_PAGES: SitemapPage[] = [
     ],
   },
   {
-    path: "/mac-delta-roblox",
+    path: "/delta-roblox-mac",
     lastMod: LASTMOD,
     changeFreq: "monthly",
     priority: 0.78,
@@ -185,7 +185,7 @@ export const SITEMAP_PAGES: SitemapPage[] = [
     ],
   },
   {
-    path: "/vng-delta-roblox",
+    path: "/delta-roblox-vng",
     lastMod: LASTMOD,
     changeFreq: "monthly",
     priority: 0.82,
@@ -198,7 +198,7 @@ export const SITEMAP_PAGES: SitemapPage[] = [
     ],
   },
   {
-    path: "/discord-delta-roblox",
+    path: "/delta-roblox-discord",
     lastMod: LASTMOD,
     changeFreq: "weekly",
     priority: 0.9,
@@ -211,7 +211,7 @@ export const SITEMAP_PAGES: SitemapPage[] = [
     ],
   },
   {
-    path: "/comparison-delta-roblox",
+    path: "/delta-roblox-comparison",
     lastMod: LASTMOD,
     changeFreq: "monthly",
     priority: 0.85,

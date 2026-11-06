@@ -1,3 +1,5 @@
+const { LEGACY_REDIRECTS, CURRENT } = require('./legacyRedirects');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   poweredByHeader: false,
@@ -19,33 +21,23 @@ const nextConfig = {
 
   async redirects() {
     return [
-      // Short paths → SEO keyword URLs
-      { source: '/download', destination: '/download-delta-roblox', permanent: true },
-      { source: '/ios', destination: '/ios-delta-roblox', permanent: true },
-      { source: '/pc-version', destination: '/pc-delta-roblox', permanent: true },
-      { source: '/mac', destination: '/mac-delta-roblox', permanent: true },
-      { source: '/discord', destination: '/discord-delta-roblox', permanent: true },
-      { source: '/how-to-use', destination: '/how-to-use-delta-roblox', permanent: true },
-      { source: '/troubleshooting', destination: '/troubleshooting-delta-roblox', permanent: true },
-      { source: '/vng', destination: '/vng-delta-roblox', permanent: true },
-      { source: '/comparison', destination: '/comparison-delta-roblox', permanent: true },
+      ...LEGACY_REDIRECTS,
 
       // Legacy niche routes → Delta Roblox IA
-      { source: '/features', destination: '/', permanent: true },
-      { source: '/funciones', destination: '/', permanent: true },
-      { source: '/como-usar', destination: '/download-delta-roblox', permanent: true },
-      { source: '/how-it-works', destination: '/download-delta-roblox', permanent: true },
-      { source: '/nasil-kullanilir', destination: '/download-delta-roblox', permanent: true },
-      { source: '/yazi-stilleri-nedir', destination: '/', permanent: true },
-      { source: '/instagram-yazi-tipleri', destination: '/download-delta-roblox', permanent: true },
-      { source: '/sekilli-nick', destination: '/', permanent: true },
-      { source: '/whatsapp-yazi-stilleri', destination: '/', permanent: true },
+      { source: '/funciones', destination: CURRENT.home, permanent: true },
+      { source: '/como-usar', destination: CURRENT.download, permanent: true },
+      { source: '/how-it-works', destination: CURRENT.download, permanent: true },
+      { source: '/nasil-kullanilir', destination: CURRENT.download, permanent: true },
+      { source: '/yazi-stilleri-nedir', destination: CURRENT.home, permanent: true },
+      { source: '/instagram-yazi-tipleri', destination: CURRENT.download, permanent: true },
+      { source: '/sekilli-nick', destination: CURRENT.home, permanent: true },
+      { source: '/whatsapp-yazi-stilleri', destination: CURRENT.home, permanent: true },
       { source: '/about', destination: '/about-us', permanent: true },
-      { source: '/pricing', destination: '/', permanent: true },
-      { source: '/uk', destination: '/', permanent: true },
-      { source: '/da', destination: '/', permanent: true },
-      { source: '/br', destination: '/', permanent: true },
-      { source: '/de', destination: '/', permanent: true },
+      { source: '/pricing', destination: CURRENT.home, permanent: true },
+      { source: '/uk', destination: CURRENT.home, permanent: true },
+      { source: '/da', destination: CURRENT.home, permanent: true },
+      { source: '/br', destination: CURRENT.home, permanent: true },
+      { source: '/de', destination: CURRENT.home, permanent: true },
       { source: '/blog/estetik-yazi-stilleri', destination: '/blog', permanent: true },
       { source: '/blog/instagram-bio-yazi-stilleri', destination: '/blog', permanent: true },
       { source: '/blog/sekilli-nick-rehberi', destination: '/blog', permanent: true },

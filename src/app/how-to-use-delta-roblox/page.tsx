@@ -130,7 +130,7 @@ export default function HowToUsePage() {
               <CtaButton href={ANDROID_APK_URL} icon="download">
                 Delta Executor İndir {APP_VERSION}
               </CtaButton>
-              <Link href="/troubleshooting-delta-roblox" className="font-semibold text-pink hover:underline self-center">
+              <Link href="/delta-roblox-troubleshooting" className="font-semibold text-pink hover:underline self-center">
                 Sorun giderme →
               </Link>
             </div>
@@ -258,7 +258,7 @@ export default function HowToUsePage() {
           <Link href="/download-delta-roblox" className="font-semibold text-pink hover:underline">
             ← İndirme rehberi
           </Link>
-          <Link href="/troubleshooting-delta-roblox" className="font-semibold text-pink hover:underline">
+          <Link href="/delta-roblox-troubleshooting" className="font-semibold text-pink hover:underline">
             Sorun giderme →
           </Link>
           <Link href="/blog/delta-executor-scripts-hub" className="font-semibold text-pink hover:underline">

@@ -18,11 +18,11 @@ export const metadata: Metadata = {
   title: `Delta Executor Sorun Giderme — Enjeksiyon Hatası, Anahtar Sorunları ve Çökmeler (${APP_VERSION})`,
   description:
     "Delta Executor hatalarını düzeltin: enjeksiyon başarısız, anahtar süresi doldu, Hata 280, geçersiz paket, VNG uyumsuzluğu, iOS yerel sorunları, Play Protect, izinler ve çökmeler. Kasım 2026.",
-  alternates: { canonical: `${SITE_ORIGIN}/troubleshooting-delta-roblox` },
+  alternates: { canonical: `${SITE_ORIGIN}/delta-roblox-troubleshooting` },
   openGraph: {
     title: `Delta Executor Sorun Giderme — ${SITE_NAME}`,
     description: `${APP_VERSION}, ${STYLES_UPDATED} sürümündeki her yaygın Delta Executor hatasına çözümler.`,
-    url: `${SITE_ORIGIN}/troubleshooting-delta-roblox`,
+    url: `${SITE_ORIGIN}/delta-roblox-troubleshooting`,
     siteName: SITE_NAME,
     type: "website",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Delta Executor sorun giderme rehberi" }],
@@ -132,7 +132,7 @@ const issues = [
       "Küresel Delta APK, Vietnam Roblox (VNG) istemcisine temiz bağlanamaz. Küresel ve VNG derlemelerini karıştırmak, bağlanma / sürüm uyumsuzluğu hatalarına yol açar.",
     steps: [
       "Roblox uygulamanızın VNG Vietnam derlemesi mi yoksa küresel derleme mi olduğunu doğrulayın.",
-      "Vietnam istemcisinde oynuyorken özel VNG Delta paketini kullanın — /vng-delta-roblox sayfasına bakın.",
+      "Vietnam istemcisinde oynuyorken özel VNG Delta paketini kullanın — /delta-roblox-vng sayfasına bakın.",
       "Roblox istemciniziyle hangisinin eşleştiğini bilmiyorsanız küresel ve VNG Delta değişkenlerini yan yana yüklemeyin.",
       "Büyük istemci yamalarından sonra hem Roblox VNG hem de Delta VNG'yi güncelleyin.",
       "Paketler değiştirildikten sonra hâlâ bağlanılamıyorsa her iki uygulamanın önbelleğini temizleyin.",
@@ -145,7 +145,7 @@ const issues = [
       "Bazı iOS derlemeleri, sertifika araçları veya yansıtılmış Asya CDN derlemeleri kullanıldığında kısa süreliğine Çince arayüz dizileri veya yerel ayarla ilgili kurulum iletişim kutuları gösterir. Bu genellikle ayrı bir ürün değil, yerelleştirme paketleme tuhaflığıdır.",
     steps: [
       "Kurulumu tamamlayın, ardından Delta'nın içinde Ayarlar'ı açın ve varsa dili Türkçe veya İngilizce'ye geçirin.",
-      "Rastgele Telegram IPA yansımaları yerine güvendiğiniz iOS rehber yolundan (/ios-delta-roblox) yeniden yükleyin.",
+      "Rastgele Telegram IPA yansımaları yerine güvendiğiniz iOS rehber yolundan (/delta-roblox-ios) yeniden yükleyin.",
       "Roblox iOS yamalarından sonra en yeni IPA'ya güncelleyin — yerel tuhaflıklar genellikle yeni derlemelerle düzelir.",
       "Cihaz dili Çince ise işletim sistemi yerelini uygulama dizelerinden ayırt etmek için İngilizce sistem diliyle test edin.",
       "İlgisiz yerelleştirme paketleri içeren \"kırık Premium\" IPA'lardan kaçının.",
@@ -317,7 +317,7 @@ export default function TroubleshootingPage() {
           <Link href="/download-delta-roblox" className="font-semibold text-pink hover:underline">
             ← İndir
           </Link>
-          <Link href="/ios-delta-roblox" className="font-semibold text-pink hover:underline">
+          <Link href="/delta-roblox-ios" className="font-semibold text-pink hover:underline">
             iOS rehberi →
           </Link>
           <Link href="/blog/delta-executor-key-system" className="font-semibold text-pink hover:underline">
