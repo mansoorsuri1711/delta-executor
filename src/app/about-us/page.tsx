@@ -77,7 +77,7 @@ export default function AboutPage() {
               iOS kurulum rehberimize
             </Link>{" "}
             göz atın veya{" "}
-            <Link href="/#ozellikler" className="text-pink underline">
+            <Link href="/" className="text-pink underline">
               tam özellikler genel bakışına
             </Link>{" "}
             bakın. {" "}

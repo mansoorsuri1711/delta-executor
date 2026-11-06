@@ -35,7 +35,6 @@ export default function Footer() {
               <li><Link href="/download-delta-roblox" className="text-white/70 hover:text-white">{t.navInstagram}</Link></li>
               <li><Link href="/delta-roblox-ios" className="text-white/70 hover:text-white">{t.navNick}</Link></li>
               <li><Link href="/delta-roblox-pc" className="text-white/70 hover:text-white">{t.navWhatsapp}</Link></li>
-              <li><Link href="/#ozellikler" className="text-white/70 hover:text-white">{t.navWhat}</Link></li>
             </ul>
           </div>
 

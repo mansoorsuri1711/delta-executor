@@ -386,7 +386,7 @@ export default function DownloadPage() {
           <Link href="/delta-roblox-troubleshooting" className="font-semibold text-pink hover:underline">
             Sorun giderme →
           </Link>
-          <Link href="/#ozellikler" className="font-semibold text-pink hover:underline">
+          <Link href="/" className="font-semibold text-pink hover:underline">
             Tüm özellikler →
           </Link>
           <Link href="/blog/delta-executor-key-system" className="font-semibold text-pink hover:underline">

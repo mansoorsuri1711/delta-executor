@@ -144,7 +144,7 @@ export default function IosPage() {
               <CtaButton href={ANDROID_APK_URL} icon="download">
                 Android APK&apos;yı tercih ediyorum
               </CtaButton>
-              <Link href="/#ozellikler" className="font-semibold text-pink hover:underline self-center">
+              <Link href="/" className="font-semibold text-pink hover:underline self-center">
                 Tüm özellikleri gör →
               </Link>
             </div>

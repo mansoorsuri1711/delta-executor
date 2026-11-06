@@ -151,8 +151,10 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
 
         <div className="container relative mx-auto max-w-4xl">
           <div className="mx-auto flex flex-col items-center text-center animate-fade-up">
-            <p className="mb-4 inline-flex items-center gap-1.5 rounded-full border border-pink/25 bg-pink/10 px-3 py-1 text-xs font-semibold text-pink">
-              {APP_VERSION} · {t.freeMeta}
+            <p className="hero-status-pill mb-5 inline-flex max-w-full flex-wrap items-center justify-center gap-x-2 gap-y-1.5 px-1.5 py-1.5 text-xs sm:gap-x-2.5 sm:px-2">
+              <span className="hero-status-version">{APP_VERSION}</span>
+              <span className="hidden h-3 w-px bg-white/20 sm:block" aria-hidden="true" />
+              <span className="hero-status-meta">{t.freeMeta}</span>
             </p>
             <h1 className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl">
               <span className="brand-gradient-text">{t.brand}</span>
@@ -253,95 +255,6 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
               priority
               className="h-auto w-full rounded-[1.5rem] border border-white/10 shadow-[0_30px_60px_-28px_rgba(0,0,0,0.85)]"
             />
-          </div>
-        </div>
-      </section>
-
-      <section id="ozellikler" className="scroll-mt-28 px-4 py-14 sm:px-6 md:px-8">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-3xl font-bold text-white md:text-4xl">
-            Delta Executor neler yapabilir?
-          </h2>
-          <p className="mt-3 text-base leading-relaxed text-white/55 sm:text-lg">
-            Yerleşik hub, yerel Lua motoru, ARM64 desteği, hızlı enjeksiyon ve düzenli yamalarla mobil öncelikli
-            Roblox script executor — Android ve iOS&apos;ta ücretsiz. Kullanıcı puanı: {SITE_RATING.ratingValue}/
-            {SITE_RATING.bestRating} ({SITE_RATING.ratingCount}+ değerlendirme) · sürüm {APP_VERSION}.
-          </p>
-          <div className="mt-10 space-y-10">
-            {[
-              {
-                title: "Yerel Lua çalıştırma motoru",
-                body: `Delta Executor ${APP_VERSION}, Roblox'un Lua VM'siyle doğrudan entegre olan hafif, özel bir Lua çalışma zamanı çalıştırır. Bu, geniş Roblox API kapsamı sağlar — standart Roblox Lua işlevlerinin çoğu ve pek çok UNC düzeyinde çağrı beklendiği gibi çalışır. Script uyumluluğu, Roblox motoru güncellemelerine karşı düzenli olarak test edilir.`,
-              },
-              {
-                title: "Çapraz platform: Android ve iOS",
-                body: "Executor, Android 5+'ta root olmadan ve iOS 15–18'de AltStore veya TrollStore yandan yüklemesi yoluyla yerel olarak çalışır. Her iki platform da aynı script hub'ı ve anahtar sistemini paylaşır, bu nedenle cihaz değiştirmek yeni bir araç öğrenmek anlamına gelmez.",
-              },
-              {
-                title: "Yerleşik Script Hub",
-                body: "Popüler Roblox oyunları için yüzlerce düzenlenmiş Lua scripte göz atın — Blox Fruits, Brookhaven, Pet Simulator, Arsenal, Jailbreak, Da Hood, Grow a Garden ve daha fazlası. Scriptler, oturum çalan kodları taramak için eklenmeden önce incelenir. Harici sitelerden kopyala-yapıştır gerekmez.",
-              },
-              {
-                title: "Düzenli Roblox güncelleme yamaları",
-                body: `Roblox sık güncellenir ve executor'ların buna uyum sağlaması gerekir. Delta genellikle büyük Roblox motor sürümlerinden 24–72 saat içinde uyumluluk güncellemeleri yayınlar. Sürüm ${APP_VERSION} (${STYLES_UPDATED}), Kasım 2026 Roblox motor değişikliklerine yönelik düzeltmeleri içerir.`,
-              },
-              {
-                title: "Anahtar sistemiyle ücretsiz",
-                body: "Delta Executor tamamen ücretsizdir. Anahtar sistemi — 24 saatlik cihaza özgü anahtar oluşturan kısa bir reklam kapısı kontrol noktası — tek erişim gereksinimidir. Script çalıştırmayı engelleyen gizli premium ücretli katman yoktur. iOS Premium, günlük anahtarı kaldıran isteğe bağlı bir kolaylık yükseltmesidir.",
-              },
-              {
-                title: "ARM ve ARM64 mimari desteği",
-                body: "APK, 2014'ten sonra üretilen neredeyse tüm Android telefonları kapsayan ARM ve ARM64 desteğiyle derlenir. ARM64 cihazlar gelişmiş performans ve bellek verimliliğinden yararlanır. Gerçek telefon çoğunluğunu dışarıda bırakan yalnızca x86 kısıtlaması yoktur.",
-              },
-              {
-                title: "Çökme karşıtı kararlılık",
-                body: "Enjeksiyon katmanı, tam bir Roblox çökmesine tırmandırılmadan önce Lua çalışma zamanı hatalarını yakalayan bir hata sınırlama sistemi içerir. Bir script yakalanmamış bir hata fırlatırsa Delta, Roblox oturumunuzu sert biçimde çöktürmek yerine hata ayrıntılarını içeren bir bildirim gösterir.",
-              },
-              {
-                title: "Karanlık mod arayüzü",
-                body: "Delta Executor arayüzünün tamamı varsayılan olarak karanlık renk şeması kullanır; bu, AMOLED Android ekranlarında pil tüketimini azaltır ve Roblox arka planda çalışırken kaplamayı daha az göze çarpar hale getirir. Açık mod anahtarı yoktur — karanlık arayüz sabitlenmiştir.",
-              },
-              {
-                title: "Scriptleri otomatik kaydet",
-                body: "Düzenleyiciye yazdığınız veya yapıştırdığınız scriptler her 30 saniyede bir yerel bir yuvaya otomatik kaydedilir. Executor beklenmedik şekilde kapatılırsa son kaydedilen sürüm bir sonraki başlatmada geri yüklenir. Kişisel bir kütüphane oluşturmak için manuel kayıt yuvaları da mevcuttur.",
-              },
-              {
-                title: "Sözdizimi ipuçlarıyla script düzenleyici",
-                body: "Yerleşik düzenleyici, Lua anahtar kelimelerini vurgular ve çalıştırılmadan önce temel sözdizimi hatalarını işaretler; bu, önemsiz yazım hatalarından kaynaklanan sinir bozucu çökmeleri azaltır. Basit bir satır sayacı ve hata göstergesi, hangi satırın dikkat gerektirdiğini gösterir.",
-              },
-              {
-                title: "Root gerektirmez (Android)",
-                body: "Delta Executor, root veya özel çekirdek gerektirmeyen bir kullanıcı alanı yöntemiyle enjekte eder. Çoğu büyük üreticinin stok Android'inde çalışır — Samsung, Xiaomi, OnePlus, OPPO, Vivo ve diğerleri.",
-              },
-              {
-                title: "Pano ve dosyadan script yükleme",
-                body: "Scriptleri doğrudan panodan yapıştırın veya cihaz depolama alanınızdan .lua / .txt dosyalarını yükleyin. Yalnızca yerleşik hub'a bağlı kalmak zorunda kalmadan kişisel bir script kütüphanesi yönetmek için kullanışlıdır.",
-              },
-            ].map((feature) => (
-              <div key={feature.title}>
-                <h3 className="font-display text-xl font-bold text-white md:text-2xl">{feature.title}</h3>
-                <p className="mt-3 text-base leading-relaxed text-white/60 sm:text-lg">{feature.body}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-12 grid gap-4 sm:grid-cols-3">
-            {[
-              { src: BRAND_FEATURE_2, alt: "Delta Executor Android üzerinde — script hub görünümü" },
-              { src: BRAND_FEATURE_3, alt: "Delta Executor iOS üzerinde — bağlanma ekranı" },
-              { src: BRAND_FEATURE_4, alt: "Delta Executor script kütüphanesi genel bakışı" },
-            ].map((img) => (
-              <div key={img.src} className="overflow-hidden rounded-2xl border border-white/10 bg-muted">
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  width={1200}
-                  height={900}
-                  sizes="(max-width: 640px) 100vw, 33vw"
-                  className="h-auto w-full object-contain"
-                />
-              </div>
-            ))}
           </div>
         </div>
       </section>

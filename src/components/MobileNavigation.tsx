@@ -52,7 +52,6 @@ export default function MobileNavigation() {
         { href: '/delta-roblox-mac', label: 'Mac' },
         { href: '/delta-roblox-discord', label: 'Discord' },
         { href: '/how-to-use-delta-roblox', label: 'Nasıl Kullanılır' },
-        { href: '/#ozellikler', label: t.navWhat },
         { href: '/delta-roblox-comparison', label: 'Karşılaştırma' },
       ],
     },

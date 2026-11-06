@@ -77,7 +77,7 @@ export default function BlogIndexPage() {
             İndirme sayfasına
           </Link>{" "}
           gidin veya{" "}
-          <Link href="/#ozellikler" className="text-pink underline">
+          <Link href="/" className="text-pink underline">
             tüm özelliklere
           </Link>{" "}
           göz atın.

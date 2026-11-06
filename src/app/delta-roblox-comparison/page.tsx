@@ -183,7 +183,7 @@ export default function ComparisonPage() {
               <CtaButton href={ANDROID_APK_URL} icon="download">
                 Delta {APP_VERSION} İndir
               </CtaButton>
-              <Link href="/#ozellikler" className="font-semibold text-pink hover:underline self-center">
+              <Link href="/" className="font-semibold text-pink hover:underline self-center">
                 Delta özellikleri →
               </Link>
             </div>
@@ -278,7 +278,7 @@ export default function ComparisonPage() {
           <Link href="/download-delta-roblox" className="font-semibold text-pink hover:underline">
             ← Android indirme
           </Link>
-          <Link href="/#ozellikler" className="font-semibold text-pink hover:underline">
+          <Link href="/" className="font-semibold text-pink hover:underline">
             Tüm özellikler →
           </Link>
           <Link href="/blog/is-delta-executor-safe" className="font-semibold text-pink hover:underline">
