@@ -4,7 +4,7 @@ import { SITE_DOMAIN, SITE_NAME, SITE_ORIGIN, STYLES_UPDATED } from "@/lib/siteC
 
 export const metadata: Metadata = {
   title: `Disclaimer — ${SITE_NAME}`,
-  description: `Disclaimer for ${SITE_DOMAIN}: no affiliation with Roblox Corporation, ban risk warning, and independent guide status.`,
+  description: `Disclaimer para sa ${SITE_DOMAIN}: walang kaanib sa Roblox Corporation, babala sa ban risk, at independent na status ng gabay.`,
   alternates: { canonical: `${SITE_ORIGIN}/disclaimer` },
 };
 
@@ -21,47 +21,39 @@ export default function DisclaimerPage() {
         <h1 className="mb-6 font-display text-3xl font-bold text-white">Disclaimer</h1>
         <div className="space-y-4 leading-relaxed text-white/75">
           <p>
-            {SITE_NAME} ({SITE_DOMAIN}) is an independent, community-operated guide website.{" "}
-            <strong className="text-white">We are not affiliated with, endorsed by, or officially connected to Roblox Corporation</strong>{" "}
-            or any game developer whose games appear on the Roblox platform.
+            Ang {SITE_NAME} ({SITE_DOMAIN}) ay independent, community-operated na website ng gabay.{" "}
+            <strong className="text-white">Hindi kami kaanib sa, ineendorso ng, o opisyal na konektado sa Roblox Corporation</strong>{" "}
+            o sinumang game developer na ang mga laro ay nasa Roblox platform.
           </p>
 
-          <h2 className="pt-2 font-display text-xl font-bold text-white">Terms of Service risk</h2>
+          <h2 className="pt-2 font-display text-xl font-bold text-white">Panganib sa Terms of Service</h2>
           <p>
-            Script executors including Delta Executor are third-party tools that interact with Roblox in ways that violate{" "}
-            <strong className="text-white">Roblox&apos;s Terms of Service</strong>. Using an executor on any Roblox account
-            carries the risk of temporary or permanent account suspension. {SITE_NAME} does not guarantee that using Delta Executor
-            will not result in a ban. We strongly recommend using a secondary account for testing to protect your main account.
+            Ang script executor kabilang ang Delta Executor ay third-party tool na nakikipag-ugnayan sa Roblox sa paraang lumalabag sa{" "}
+            <strong className="text-white">Terms of Service ng Roblox</strong>. Ang paggamit ng executor sa anumang Roblox account ay may panganib ng pansamantala o permanenteng suspension. Hindi ginagarantiya ng {SITE_NAME} na hindi ka ma-ba-ban sa paggamit ng Delta Executor. Lubos naming inirerekomenda ang paggamit ng secondary account para sa testing upang protektahan ang main account mo.
           </p>
 
-          <h2 className="font-display text-xl font-bold text-white">No guarantee of outcome</h2>
+          <h2 className="font-display text-xl font-bold text-white">Walang garantiya ng resulta</h2>
           <p>
-            We make no warranty that any script, feature, or technique described on this site will achieve a specific in-game outcome.
-            Game mechanics, anti-cheat systems, and Roblox&apos;s detection methods change frequently. Information on this site is
-            provided for educational and informational purposes only.
+            Wala kaming warranty na ang anumang script, feature, o teknik na inilalarawan sa site na ito ay makakamit ng tiyak na in-game na resulta. Madalas nagbabago ang game mechanics, anti-cheat system, at detection methods ng Roblox. Ang impormasyon sa site na ito ay para lamang sa edukasyon at impormasyon.
           </p>
 
-          <h2 className="font-display text-xl font-bold text-white">Third-party executors</h2>
+          <h2 className="font-display text-xl font-bold text-white">Third-party executor</h2>
           <p>
-            References to third-party executors (e.g. on the PC guide page) are for informational purposes only. We do not endorse them
-            and are not responsible for any harm arising from downloading or using software we do not distribute.
+            Ang mga banggit sa third-party executor (hal. sa PC guide page) ay para lamang sa impormasyon. Hindi namin ineendorso ang mga iyon at hindi kami responsable sa anumang pinsala mula sa pag-download o paggamit ng software na hindi namin ipinamamahagi.
           </p>
 
-          <h2 className="font-display text-xl font-bold text-white">Trademarks</h2>
+          <h2 className="font-display text-xl font-bold text-white">Mga trademark</h2>
           <p>
-            &ldquo;Roblox,&rdquo; the Roblox logo, and related marks are trademarks of Roblox Corporation. All third-party trademarks
-            mentioned on this site remain the property of their respective owners. References to them do not imply affiliation or
-            endorsement by those owners.
+            Ang &ldquo;Roblox,&rdquo; logo ng Roblox, at kaugnay na marka ay trademark ng Roblox Corporation. Ang lahat ng third-party trademark na binanggit sa site na ito ay nananatiling pag-aari ng kani-kanilang may-ari. Ang mga banggit sa mga iyon ay hindi nagpapahiwatig ng kaanib o endorsement ng mga may-ari.
           </p>
 
-          <h2 className="font-display text-xl font-bold text-white">Accuracy of information</h2>
+          <h2 className="font-display text-xl font-bold text-white">Katumpakan ng impormasyon</h2>
           <p>
-            We make reasonable efforts to keep guides accurate and up to date following Roblox updates and new Delta Executor releases.
-            However, the executor landscape evolves rapidly and some information may become outdated between updates.
-            For critical steps, always verify against the latest community sources and the official Delta Executor download page.
+            Gumagawa kami ng makatwirang pagsisikap na panatilihing tama at updated ang mga gabay pagkatapos ng Roblox update at bagong release ng Delta Executor. Gayunpaman, mabilis magbago ang executor landscape at maaaring maging outdated ang ilang impormasyon sa pagitan ng mga update.
+            Para sa kritikal na hakbang, palaging i-verify laban sa pinakabagong community source at opisyal na download page ng Delta Executor.
           </p>
 
-          <p>Last updated: {STYLES_UPDATED}.</p>
+          <p>Huling in-update: {STYLES_UPDATED}.</p>
         </div>
       </div>
     </>

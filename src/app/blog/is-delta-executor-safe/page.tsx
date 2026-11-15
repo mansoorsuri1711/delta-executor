@@ -16,56 +16,56 @@ import {
 } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: `Is Delta Executor Safe? Honest Risk Assessment (2026)`,
+  title: `Ligtas ba ang Delta Executor? Tapatang Pagsusuri ng Panganib (2026)`,
   description:
-    "An honest look at Delta Executor safety: device risk vs account ban risk, VirusTotal checks, permissions the app requests, and how to avoid malicious scripts. No hype, no cover-ups.",
+    "Tapatang tingin sa kaligtasan ng Delta Executor: panganib sa device vs ban sa account, VirusTotal check, mga permission ng app, at paano iwasan ang malicious script. Walang hype, walang cover-up.",
   alternates: { canonical: `${SITE_ORIGIN}/blog/is-delta-executor-safe` },
   openGraph: {
-    title: `Is Delta Executor Safe? — ${SITE_NAME}`,
+    title: `Ligtas ba ang Delta Executor? — ${SITE_NAME}`,
     description:
-      "Device risk, account ban risk, VirusTotal habits, and how to protect yourself when using Delta Executor.",
+      "Panganib sa device, ban sa account, VirusTotal habits, at paano protektahan ang sarili sa paggamit ng Delta Executor.",
     url: `${SITE_ORIGIN}/blog/is-delta-executor-safe`,
     siteName: SITE_NAME,
     type: "article",
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `Is Delta Executor safe?` }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `Ligtas ba ang Delta Executor?` }],
   },
 };
 
 const faqItems = [
   {
-    question: "Will Delta Executor get my Roblox account banned?",
+    question: "Ma-ba-ban ba ang Roblox account ko sa Delta Executor?",
     answer:
-      "Using any script executor — including Delta — violates Roblox's Terms of Service. Roblox can and does issue account warnings, temporary bans, and permanent bans to accounts caught running executors. The risk is real. Many users choose an alt account specifically to protect their main.",
+      "Ang paggamit ng anumang script executor — kabilang ang Delta — ay lumalabag sa Terms of Service ng Roblox. Maaaring magbigay ang Roblox ng warning, pansamantalang ban, at permanenteng ban sa account na nahuhuli sa executor. Totoo ang panganib. Maraming user ang gumagamit ng alt account para protektahan ang main.",
   },
   {
-    question: "Is Delta Executor a virus?",
+    question: "Virus ba ang Delta Executor?",
     answer:
-      "The official APK from deltaexecutor.com.ph is not malware. Because Delta requires deep system permissions to interact with Roblox, some antivirus engines flag it as a 'potentially unwanted program' (PUP) or 'hack tool.' That is a category label, not a confirmed malware detection. Always verify the SHA-256 hash of the file you downloaded against the one published on the official site.",
+      "Hindi malware ang opisyal na APK mula sa deltaexecutor.com.ph. Dahil kailangan ng Delta ng malalim na system permission para makipag-ugnayan sa Roblox, may antivirus na nagfa-flag nito bilang 'potentially unwanted program' (PUP) o 'hack tool.' Category label iyon, hindi kumpirmadong malware. Palaging i-verify ang SHA-256 hash ng na-download na file laban sa opisyal na site.",
   },
   {
-    question: "What permissions does Delta Executor request?",
+    question: "Anong mga permission ang hinihingi ng Delta Executor?",
     answer:
-      "Delta requests: 'Draw over other apps' (overlay, needed to display the injection UI on top of Roblox), storage access (to read/write scripts), and internet access (for key validation and Script Hub). It does not request contacts, camera, microphone, or SMS access.",
+      "Hinihingi ng Delta: 'Draw over other apps' (overlay, para sa injection UI sa ibabaw ng Roblox), storage access (basahin/isulat ang script), at internet access (key validation at Script Hub). Hindi nito hinihingi ang contacts, camera, microphone, o SMS.",
   },
   {
-    question: "Is Delta Executor undetectable?",
+    question: "Undetectable ba ang Delta Executor?",
     answer:
-      "No executor should ever be called 'undetectable.' Roblox's anti-cheat is updated continuously and detection methods evolve. Delta's developers work to maintain compatibility, but bans do occur. Never treat any executor as permanently safe.",
+      "Walang executor ang dapat tawaging 'undetectable.' Patuloy na ina-update ang anti-cheat ng Roblox. Sinisikap ng developer ng Delta na mapanatili ang compatibility, ngunit may nangyayaring ban. Huwag ituring ang anumang executor na permanenteng ligtas.",
   },
   {
-    question: "How can I check if my Delta APK is clean?",
+    question: "Paano ko malalaman kung malinis ang Delta APK ko?",
     answer:
-      "Upload the APK to VirusTotal (virustotal.com). Expect a small number of antivirus flags (1–5 out of 70+) on any real executor APK — this is normal for tools that modify app processes. A large number of detections (10+), or detections for 'trojan,' 'ransomware,' or 'spyware,' is a red flag. Cross-check the file's SHA-256 hash on the official download page.",
+      "I-upload ang APK sa VirusTotal (virustotal.com). Asahan ang kaunting antivirus flag (1–5 sa 70+) sa tunay na executor APK — normal ito sa tool na nagmo-modify ng app process. Red flag ang maraming detection (10+), o trojan/ransomware/spyware. I-cross-check ang SHA-256 hash sa opisyal na download page.",
   },
   {
-    question: "Should I use an alt account for Delta?",
+    question: "Dapat ba akong gumamit ng alt account para sa Delta?",
     answer:
-      "Yes — using a dedicated Roblox alt account is the single most effective way to protect your main account from a ban. If the alt gets banned, your progress, Robux, and items on the main account are unaffected.",
+      "Oo — ang dedicated Roblox alt account ang pinakamabisang proteksyon ng main account laban sa ban. Kung ma-ban ang alt, hindi apektado ang progress, Robux, at item sa main.",
   },
   {
-    question: "Can Delta Executor steal my Roblox password?",
+    question: "Maaari bang nakawin ng Delta Executor ang Roblox password ko?",
     answer:
-      "The official Delta Executor APK does not harvest credentials. The risk of credential theft comes from scripts you run inside Roblox, not from Delta itself. Never execute scripts that ask for your Roblox username, password, or cookies.",
+      "Hindi kinukuha ng opisyal na Delta Executor APK ang credentials. Mula sa script na pinapatakbo mo sa Roblox ang panganib ng credential theft, hindi sa Delta mismo. Huwag magpatakbo ng script na humihingi ng Roblox username, password, o cookies.",
   },
 ];
 
@@ -76,13 +76,13 @@ export default function IsDeltaSafePage() {
         items={[
           { label: "Home", href: "/" },
           { label: "Blog", href: "/blog" },
-          { label: "Is Delta Executor Safe?" },
+          { label: "Ligtas ba ang Delta Executor?" },
         ]}
       />
 
       <BlogPostSchema
-        title="Is Delta Executor Safe? An Honest Risk Assessment (2026)"
-        description="An honest look at Delta Executor safety: device risk vs account ban risk, VirusTotal checks, and how to avoid malicious scripts."
+        title="Ligtas ba ang Delta Executor? Tapatang Pagsusuri ng Panganib (2026)"
+        description="Tapatang tingin sa kaligtasan ng Delta Executor: panganib sa device vs ban, VirusTotal check, at paano iwasan ang malicious script."
         slug="is-delta-executor-safe"
         datePublished="2026-11-15"
         image={`${SITE_ORIGIN}${BRAND_LOGO}`}
@@ -93,25 +93,26 @@ export default function IsDeltaSafePage() {
         <div className="flex flex-col gap-8 md:flex-row md:items-center">
           <div className="flex-1">
             <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-pink/80">
-              Safety Guide · {APP_VERSION} · November 15, 2026
+              Gabay sa Kaligtasan · {APP_VERSION} · Nobyembre 15, 2026
             </p>
             <h1 className="font-display text-4xl font-bold text-white md:text-5xl">
-              Is Delta Executor Safe?
+              Ligtas ba ang Delta Executor?
             </h1>
             <p className="mt-4 max-w-xl text-lg text-white/65">
-              The honest answer is nuanced: the official Delta APK is not malware, but using it
-              carries real Roblox ban risk and demands certain habits to stay safe. This article
-              breaks down every dimension of "safe" so you can make an informed decision.
+              Nuanced ang tapat na sagot: hindi malware ang opisyal na Delta APK, ngunit may tunay
+              na Roblox ban risk at nangangailangan ng tamang habit para manatiling ligtas. Binibiyak
+              ng artikulong ito ang bawat dimensyon ng &quot;ligtas&quot; upang makagawa ka ng informed na
+              desisyon.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
               <CtaButton href={ANDROID_APK_URL} icon="download">
-                Download Official APK
+                I-download ang Opisyal na APK
               </CtaButton>
               <Link
                 href="/download-delta-executor"
                 className="font-semibold text-pink hover:underline self-center"
               >
-                Safe install guide →
+                Gabay sa ligtas na install →
               </Link>
               <Link
                 href="/disclaimer"
@@ -124,7 +125,7 @@ export default function IsDeltaSafePage() {
           <div className="relative w-full overflow-hidden rounded-2xl border border-white/10 bg-muted md:w-64 lg:w-72 flex items-center justify-center p-6">
             <Image
               src={BRAND_LOGO}
-              alt="Delta Executor official logo"
+              alt="Opisyal na logo ng Delta Executor"
               width={256}
               height={256}
               sizes="(max-width: 768px) 256px, 288px"
@@ -138,11 +139,11 @@ export default function IsDeltaSafePage() {
       {/* Disclaimer banner */}
       <div className="container mx-auto max-w-3xl px-4 pt-8">
         <div className="rounded-2xl border border-yellow-500/30 bg-yellow-500/5 px-5 py-4">
-          <p className="text-sm font-semibold text-yellow-400">Important disclaimer</p>
+          <p className="text-sm font-semibold text-yellow-400">Mahalagang disclaimer</p>
           <p className="mt-1 text-sm text-white/65">
-            Using script executors violates Roblox's Terms of Service and may result in account
-            suspensions or permanent bans. This article is for informational purposes only. Use
-            Delta Executor at your own risk.
+            Lumalabag sa Terms of Service ng Roblox ang paggamit ng script executor at maaaring magresulta
+            ng account suspension o permanenteng ban. Para sa impormasyon lamang ang artikulong ito. Gamitin
+            ang Delta Executor sa sarili mong panganib.
           </p>
         </div>
       </div>
@@ -150,28 +151,29 @@ export default function IsDeltaSafePage() {
       {/* Device safety */}
       <div className="container mx-auto max-w-3xl px-4 pt-10">
         <h2 className="mb-4 font-display text-2xl font-bold text-white md:text-3xl">
-          Device safety: is the APK itself dangerous?
+          Kaligtasan ng device: delikado ba ang APK mismo?
         </h2>
         <p className="text-white/65 leading-relaxed">
-          The official Delta Executor APK, downloaded from <strong className="text-white">deltaexecutor.com.ph</strong>, is
-          not malware in the traditional sense. It does not exfiltrate your personal data, subscribe
-          you to paid services, or encrypt your files for ransom. However, because it needs to
-          interact with another running app (Roblox), it requires elevated permissions that
-          legitimate apps rarely need.
+          Ang opisyal na Delta Executor APK, na-download mula sa{" "}
+          <strong className="text-white">deltaexecutor.com.ph</strong>, ay hindi malware sa tradisyonal
+          na kahulugan. Hindi nito inilalabas ang personal na data mo, hindi ka sinusubscribe sa bayad
+          na serbisyo, o ine-encrypt ang file para sa ransom. Gayunpaman, dahil kailangan nitong
+          makipag-ugnayan sa ibang tumatakbong app (Roblox), nangangailangan ito ng elevated permission
+          na bihira sa lehitimong app.
         </p>
         <p className="mt-4 text-white/65 leading-relaxed">
-          Antivirus tools may flag Delta as a "hack tool" or "PUP" (potentially unwanted program).
-          This is a <em>category</em> label, not proof of malicious behaviour. All major executor
-          tools receive similar category flags.
+          Maaaring i-flag ng antivirus ang Delta bilang &quot;hack tool&quot; o &quot;PUP&quot; (potentially unwanted
+          program). <em>Category</em> label ito, hindi patunay ng malicious na asal. Katulad na
+          category flag ang natatanggap ng lahat ng major executor tool.
         </p>
 
         <h3 className="mt-8 mb-3 font-display text-xl font-bold text-white">
-          Verifying your download with VirusTotal
+          Pag-verify ng download mo sa VirusTotal
         </h3>
         <ol className="space-y-2 text-sm text-white/65 leading-relaxed list-decimal list-inside">
-          <li>Download the APK from the official site and note the filename.</li>
+          <li>I-download ang APK mula sa opisyal na site at tandaan ang filename.</li>
           <li>
-            Go to{" "}
+            Pumunta sa{" "}
             <a
               href="https://www.virustotal.com"
               target="_blank"
@@ -180,18 +182,17 @@ export default function IsDeltaSafePage() {
             >
               virustotal.com
             </a>{" "}
-            and upload the file.
+            at i-upload ang file.
           </li>
-          <li>Wait for the scan to complete (usually under 60 seconds).</li>
+          <li>Hintayin matapos ang scan (karaniwang wala pang 60 segundo).</li>
           <li>
-            Expect 0–5 detections on a clean executor APK. Detections labeled{" "}
-            <strong className="text-white">trojan</strong>,{" "}
-            <strong className="text-white">spyware</strong>, or{" "}
-            <strong className="text-white">ransomware</strong> are serious red flags — do not
-            install that file.
+            Asahan ang 0–5 detection sa malinis na executor APK. Seryosong red flag ang detection na
+            may label na <strong className="text-white">trojan</strong>,{" "}
+            <strong className="text-white">spyware</strong>, o{" "}
+            <strong className="text-white">ransomware</strong> — huwag i-install ang file na iyon.
           </li>
           <li>
-            Cross-check the SHA-256 hash shown by VirusTotal against the hash published on the{" "}
+            I-cross-check ang SHA-256 hash sa VirusTotal laban sa hash sa{" "}
             <Link href="/download-delta-executor" className="text-pink hover:underline">
               download page
             </Link>
@@ -203,33 +204,33 @@ export default function IsDeltaSafePage() {
       {/* Permissions */}
       <div className="container mx-auto max-w-3xl px-4 pt-10">
         <h2 className="mb-4 font-display text-2xl font-bold text-white md:text-3xl">
-          Permissions Delta requests — and why
+          Mga permission na hinihingi ng Delta — at bakit
         </h2>
         <div className="overflow-x-auto rounded-2xl border border-white/10">
           <table className="w-full text-sm text-white/70">
             <thead>
               <tr className="border-b border-white/10 bg-white/[0.04] text-left text-xs uppercase tracking-wider text-white/40">
                 <th className="px-4 py-3">Permission</th>
-                <th className="px-4 py-3">Why it's needed</th>
-                <th className="px-4 py-3">Risk level</th>
+                <th className="px-4 py-3">Bakit kailangan</th>
+                <th className="px-4 py-3">Antas ng panganib</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-white/5">
               {[
                 [
                   "Draw over other apps (overlay)",
-                  "Displays the Delta UI on top of Roblox",
-                  "Low",
+                  "Ipinapakita ang Delta UI sa ibabaw ng Roblox",
+                  "Mababa",
                 ],
                 [
                   "Storage access",
-                  "Reads and writes script files to your device",
-                  "Low",
+                  "Nagbabasa at nagsusulat ng script file sa device mo",
+                  "Mababa",
                 ],
                 [
                   "Internet access",
-                  "Key validation, Script Hub content, updates",
-                  "Low",
+                  "Key validation, Script Hub content, update",
+                  "Mababa",
                 ],
               ].map(([perm, reason, risk]) => (
                 <tr key={perm as string}>
@@ -242,48 +243,48 @@ export default function IsDeltaSafePage() {
           </table>
         </div>
         <p className="mt-3 text-sm text-white/50">
-          Delta does <strong className="text-white/80">not</strong> request contacts, camera,
-          microphone, SMS, or location. If a version of "Delta" asks for those, you have a fake or
-          tampered APK.
+          <strong className="text-white/80">Hindi</strong> humihingi ang Delta ng contacts, camera,
+          microphone, SMS, o location. Kung humihingi ang bersyon ng &quot;Delta&quot; ng mga iyon, peke o
+          binago ang APK.
         </p>
       </div>
 
       {/* Account (Roblox) risk */}
       <div className="container mx-auto max-w-3xl px-4 pt-10">
         <h2 className="mb-4 font-display text-2xl font-bold text-white md:text-3xl">
-          Account (Roblox ban) risk
+          Panganib sa account (Roblox ban)
         </h2>
         <p className="text-white/65 leading-relaxed">
-          This is the <strong className="text-white">biggest real risk</strong>. Roblox's Terms of
-          Service explicitly prohibit using third-party clients, automation, or script execution. If
-          Roblox detects executor activity — through client-side telemetry, server-side anomaly
-          detection, or player reports — the account can receive a temporary ban or a permanent
-          termination.
+          Ito ang <strong className="text-white">pinakamalaking tunay na panganib</strong>. Malinaw na
+          ipinagbabawal ng Terms of Service ng Roblox ang third-party client, automation, o script
+          execution. Kapag na-detect ang executor activity — sa client-side telemetry, server-side
+          anomaly detection, o report ng player — maaaring temporary ban o permanenteng termination ang
+          account.
         </p>
         <div className="mt-6 grid gap-4 sm:grid-cols-2">
           {[
             {
-              label: "Lower-risk habit",
+              label: "Mas mababang panganib na habit",
               color: "border-green-500/30 bg-green-500/5",
               label_color: "text-green-400",
               items: [
-                "Use a dedicated alt account",
-                "Avoid competitive or ranked game modes",
-                "Don't use scripts that give obvious unfair advantages (aimbots, speed hacks)",
-                "Keep Delta updated to the latest version",
-                "Only run scripts from trusted sources",
+                "Gumamit ng dedicated alt account",
+                "Iwasan ang competitive o ranked game mode",
+                "Huwag gumamit ng obvious unfair advantage (aimbot, speed hack)",
+                "Panatilihing updated ang Delta",
+                "Script mula sa pinagkakatiwalaang source lamang",
               ],
             },
             {
-              label: "Higher-risk habit",
+              label: "Mas mataas na panganib na habit",
               color: "border-red-500/30 bg-red-500/5",
               label_color: "text-red-400",
               items: [
-                "Using your main account with years of progress",
-                "Running aimbots or wallhacks where other players can report you",
-                "Using outdated Delta versions after a Roblox update",
-                "Running scripts from random Discord servers without reviewing the code",
-                "Believing any claim that an executor is 'undetectable'",
+                "Ginagamit ang main account na may taon ng progress",
+                "Aimbot o wallhack kung saan maaaring i-report ka",
+                "Lumang Delta pagkatapos ng Roblox update",
+                "Script mula sa random Discord nang hindi binabasa ang code",
+                "Paniniwala na 'undetectable' ang executor",
               ],
             },
           ].map((col) => (
@@ -304,55 +305,55 @@ export default function IsDeltaSafePage() {
           ))}
         </div>
         <p className="mt-6 text-sm text-white/55">
-          New to Delta? Read{" "}
+          Bago sa Delta? Basahin ang{" "}
           <Link href="/blog/what-is-delta-executor" className="text-pink hover:underline">
-            what is Delta Executor
+            ano ang Delta Executor
           </Link>
-          . Key unlock problems and bypass scams are covered in{" "}
+          . Saklaw sa{" "}
           <Link href="/blog/delta-executor-key-not-working" className="text-pink hover:underline">
-            key not working
-          </Link>
-          .
+            hindi gumagana ang key
+          </Link>{" "}
+          ang problema sa unlock at bypass scam.
         </p>
       </div>
 
       {/* Script safety */}
       <div className="container mx-auto max-w-3xl px-4 pt-10">
         <h2 className="mb-4 font-display text-2xl font-bold text-white md:text-3xl">
-          Malicious scripts — the hidden risk inside safe executors
+          Malicious script — nakatagong panganib sa loob ng ligtas na executor
         </h2>
         <p className="text-white/65 leading-relaxed">
-          Even if Delta itself is clean, the <em>scripts</em> you run inside it are entirely your
-          responsibility. A script can read your Roblox client's local data, perform actions in
-          your account, or even attempt to load remote code. Here is how to stay safe:
+          Kahit malinis ang Delta mismo, ikaw ang responsable sa <em>script</em> na pinapatakbo mo.
+          Maaaring basahin ng script ang local data ng Roblox client, gumawa ng aksyon sa account mo,
+          o mag-load ng remote code. Ganito manatiling ligtas:
         </p>
         <ul className="mt-4 space-y-3 text-white/65 leading-relaxed">
           <li className="flex gap-3">
             <span className="text-pink font-bold shrink-0 mt-0.5">→</span>
             <span>
-              <strong className="text-white">Review scripts before executing</strong> — if a script
-              is hundreds of lines long and you can't read it, don't run it.
+              <strong className="text-white">Suriin muna ang script bago i-execute</strong> — kung
+              daan-daang linya at hindi mo mabasa, huwag patakbuhin.
             </span>
           </li>
           <li className="flex gap-3">
             <span className="text-pink font-bold shrink-0 mt-0.5">→</span>
             <span>
-              <strong className="text-white">Never run scripts that ask for your login</strong> — no
-              legitimate Roblox script needs your username or password.
+              <strong className="text-white">Huwag magpatakbo ng script na humihingi ng login</strong> —
+              walang lehitimong Roblox script ang kailangan ng username o password.
             </span>
           </li>
           <li className="flex gap-3">
             <span className="text-pink font-bold shrink-0 mt-0.5">→</span>
             <span>
-              <strong className="text-white">Prefer Delta's built-in Script Hub</strong> — these
-              scripts are vetted by the Delta team and updated regularly.
+              <strong className="text-white">Mas mainam ang built-in Script Hub ng Delta</strong> —
+              vet ng Delta team at regular na ina-update ang mga script.
             </span>
           </li>
           <li className="flex gap-3">
             <span className="text-pink font-bold shrink-0 mt-0.5">→</span>
             <span>
-              <strong className="text-white">Be cautious with scripts from Discord DMs</strong> — 
-              social-engineering attacks often start with someone "gifting" you a script.
+              <strong className="text-white">Mag-ingat sa script mula sa Discord DM</strong> — madalas
+              nagsisimula ang social-engineering sa pag-&quot;regalo&quot; ng script.
             </span>
           </li>
         </ul>
@@ -360,7 +361,7 @@ export default function IsDeltaSafePage() {
 
       {/* FAQ */}
       <div className="container mx-auto max-w-3xl px-4 pb-6">
-        <FaqSection title="Safety FAQ" items={faqItems} />
+        <FaqSection title="FAQ sa Kaligtasan" items={faqItems} />
       </div>
 
       <div className="container mx-auto max-w-3xl px-4 pb-14">

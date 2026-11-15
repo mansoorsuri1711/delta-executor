@@ -10,16 +10,16 @@ export type SiteLocale = {
   ogLocale: string;
 };
 
-/** Primary locale is English — deltaexecutor.com.ph global + PH SERP. */
+/** Primary locale: Filipino for Philippines SERP (deltaexecutor.com.ph). */
 export const SITE_LOCALES: SiteLocale[] = [
   {
-    code: "en",
+    code: "fil",
     slug: "",
     path: "/",
-    label: "English",
-    short: "EN",
-    hreflang: "en",
-    ogLocale: "en_PH",
+    label: "Filipino",
+    short: "FIL",
+    hreflang: "fil-PH",
+    ogLocale: "fil_PH",
   },
 ];
 
@@ -39,7 +39,8 @@ export function getLocaleFromPathname(_pathname: string): SiteLocale {
 
 export function localeAlternates(): Record<string, string> {
   return {
-    en: SITE_ORIGIN,
+    "fil-PH": SITE_ORIGIN,
+    fil: SITE_ORIGIN,
     "x-default": SITE_ORIGIN,
   };
 }

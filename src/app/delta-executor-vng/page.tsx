@@ -16,55 +16,55 @@ import {
 } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: `Delta Executor VNG — Vietnam Roblox Client Guide (${APP_VERSION})`,
+  title: `Delta Executor VNG — Gabay sa Vietnam Roblox Client (${APP_VERSION})`,
   description:
-    "Using Delta Executor with the VNG Roblox client in Vietnam. Understand VNG vs global Roblox, which Delta build to use, known compatibility issues, and how to switch between clients.",
+    "Paggamit ng Delta Executor sa VNG Roblox client sa Vietnam. Alamin ang VNG vs global Roblox, aling Delta build ang gagamitin, kilalang compatibility issues, at paano lumipat sa pagitan ng clients.",
   alternates: { canonical: `${SITE_ORIGIN}/delta-executor-vng` },
   openGraph: {
     title: `Delta Executor VNG (Vietnam) — ${SITE_NAME}`,
-    description: "Delta Executor guide for the VNG Roblox client used in Vietnam.",
+    description: "Gabay sa Delta Executor para sa VNG Roblox client na ginagamit sa Vietnam.",
     url: `${SITE_ORIGIN}/delta-executor-vng`,
     siteName: SITE_NAME,
     type: "website",
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `Delta Executor VNG Vietnam guide` }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `Gabay sa Delta Executor VNG Vietnam` }],
   },
 };
 
 const faqItems = [
   {
-    question: "What is the VNG Roblox client?",
+    question: "Ano ang VNG Roblox client?",
     answer:
-      "VNG is a Vietnamese game publisher that licenses and distributes Roblox in Vietnam under a local partnership. The VNG Roblox client is a separate APK from the global Roblox app — it has a different package name, different server endpoints, and may run on a different version cadence. Vietnamese players on the VNG client cannot directly access some global Roblox events or features.",
+      "Ang VNG ay Vietnamese game publisher na nagli-license at nagdi-distribute ng Roblox sa Vietnam sa ilalim ng local partnership. Hiwalay na APK ang VNG Roblox client mula sa global Roblox app — ibang package name, ibang server endpoints, at maaaring ibang version cadence. Hindi direktang maa-access ng mga Vietnamese player sa VNG client ang ilang global Roblox events o features.",
   },
   {
-    question: "Why doesn't the standard Delta APK work with VNG Roblox?",
+    question: "Bakit hindi gumagana ang standard Delta APK sa VNG Roblox?",
     answer:
-      "The standard Delta Executor APK targets the global Roblox client's package name and injection offsets. The VNG client has a different package identifier and binary structure, so injection either fails silently or causes the game to crash. A VNG-specific Delta build patches the target package and offsets to match.",
+      "Tinatarget ng standard Delta Executor APK ang package name at injection offsets ng global Roblox client. Iba ang package identifier at binary structure ng VNG client, kaya mabibigo nang tahimik ang injection o mag-crash ang laro. Ang VNG-specific Delta build ay ina-patch ang target package at offsets para tumugma.",
   },
   {
-    question: "How do I know if I have the VNG client or the global client?",
+    question: "Paano malalaman kung VNG client o global client ang meron ako?",
     answer:
-      "Open the Play Store and search for 'Roblox.' If you see two results — 'Roblox' (by Roblox Corporation) and 'Roblox VNG' (by VNG) — you can choose. If you're in Vietnam and downloaded Roblox from the local Play Store listing, you likely have the VNG version. The VNG app icon may have slight differences in the splash screen.",
+      "Buksan ang Play Store at maghanap ng 'Roblox.' Kung may dalawang resulta — 'Roblox' (by Roblox Corporation) at 'Roblox VNG' (by VNG) — maaari kang pumili. Kung nasa Vietnam ka at na-download ang Roblox mula sa local Play Store listing, malamang VNG version ang meron mo. Maaaring may kaunting pagkakaiba ang VNG app icon sa splash screen.",
   },
   {
-    question: "Can I switch from the VNG client to the global Roblox client?",
+    question: "Maaari bang lumipat mula sa VNG client patungo sa global Roblox client?",
     answer:
-      "Yes. Uninstall the VNG client and install the global Roblox app from the Play Store (by Roblox Corporation). Your Roblox account, progress, and Robux transfer between clients — the account is global, only the client differs. After switching, the standard Delta APK will work normally.",
+      "Oo. I-uninstall ang VNG client at i-install ang global Roblox app mula sa Play Store (by Roblox Corporation). Naililipat ang Roblox account, progress, at Robux sa pagitan ng clients — global ang account, client lang ang naiiba. Pagkatapos lumipat, normal na gagana ang standard Delta APK.",
   },
   {
-    question: "Is there a Delta VNG build for iOS?",
+    question: "May Delta VNG build ba para sa iOS?",
     answer:
-      "VNG Roblox's iOS availability is limited. If you are on a VNG iOS client, compatibility with Delta iOS IPA is not guaranteed. Check the Delta Discord for the latest VNG iOS status.",
+      "Limitado ang iOS availability ng VNG Roblox. Kung VNG iOS client ang gamit mo, hindi garantisado ang compatibility sa Delta iOS IPA. Tingnan ang Delta Discord para sa pinakabagong VNG iOS status.",
   },
   {
-    question: "Do VNG Roblox players face different ban risks?",
+    question: "Iba ba ang ban risk ng VNG Roblox players?",
     answer:
-      "The ban risk profile depends on Roblox's anti-cheat, which may differ between the VNG and global clients. Some users report the VNG client has less aggressive anti-cheat coverage, but this is not confirmed by Delta and should not be relied upon. Use an alternate account regardless.",
+      "Nakadepende sa anti-cheat ng Roblox ang ban risk profile, na maaaring magkaiba sa VNG at global clients. May mga user na nagsasabi na mas hindi agresibo ang anti-cheat coverage ng VNG client, pero hindi ito kumpirmado ng Delta at hindi dapat umasa dito. Gumamit pa rin ng alternate account.",
   },
   {
-    question: "Where do I download the Delta VNG build?",
+    question: "Saan i-download ang Delta VNG build?",
     answer:
-      "The VNG-compatible Delta build is available from the official download page linked on this site. Look for the VNG variant download button. If only one APK is listed, check the Delta Discord — VNG builds are sometimes released separately from the main APK.",
+      "Available ang VNG-compatible Delta build mula sa opisyal na download page na naka-link sa site na ito. Hanapin ang VNG variant download button. Kung isang APK lang ang nakalista, tingnan ang Delta Discord — minsan hiwalay na inilalabas ang VNG builds mula sa main APK.",
   },
 ];
 
@@ -83,27 +83,27 @@ export default function VngPage() {
               VNG · Vietnam Roblox · {APP_VERSION} · {STYLES_UPDATED}
             </p>
             <h1 className="font-display text-4xl font-bold text-white md:text-5xl">
-              Delta Executor for VNG Roblox
+              Delta Executor para sa VNG Roblox
             </h1>
             <p className="mt-4 max-w-xl text-lg text-white/65">
-              Vietnamese Roblox players using the VNG client need a VNG-specific Delta build. This page explains the difference between VNG and global Roblox, which APK to use, and how to switch clients if needed.
+              Kailangan ng VNG-specific Delta build ang mga Vietnamese Roblox player na gumagamit ng VNG client. Ipinaliliwanag ng pahinang ito ang pagkakaiba ng VNG at global Roblox, aling APK ang gagamitin, at paano lumipat ng client kung kailangan.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
               <CtaButton href={ANDROID_APK_URL} icon="download">
-                Download Delta APK {APP_VERSION}
+                I-download ang Delta APK {APP_VERSION}
               </CtaButton>
               <Link href="/download-delta-executor" className="font-semibold text-pink hover:underline self-center">
-                Full download guide →
+                Buong gabay sa download →
               </Link>
             </div>
             <p className="mt-3 text-xs text-white/35">
-              Script executors violate Roblox&apos;s ToS. Use at your own risk on a secondary account.
+              Lumalabag ang script executors sa ToS ng Roblox. Gamitin sa secondary account sa sarili mong panganib.
             </p>
           </div>
           <div className="brand-shot-frame brand-shot-frame--side shrink-0">
             <Image
               src={BRAND_FEATURE_2}
-              alt="Delta Executor on Android for VNG Roblox"
+              alt="Delta Executor sa Android para sa VNG Roblox"
               width={280}
               height={455}
               sizes="220px"
@@ -129,10 +129,10 @@ export default function VngPage() {
             <tbody className="divide-y divide-white/5">
               {[
                 ["Publisher", "VNG Corporation (Vietnam)", "Roblox Corporation (global)"],
-                ["Region", "Vietnam (primary)", "Worldwide"],
-                ["Package name", "Different from global", "com.roblox.client"],
-                ["Update cadence", "May lag behind global", "Direct from Roblox"],
-                ["Delta compatibility", "Requires VNG build", "Standard Delta APK"],
+                ["Region", "Vietnam (pangunahin)", "Buong mundo"],
+                ["Package name", "Iba sa global", "com.roblox.client"],
+                ["Update cadence", "Maaaring humuli sa global", "Direkta mula sa Roblox"],
+                ["Delta compatibility", "Kailangan ng VNG build", "Standard Delta APK"],
                 ["Account", "Shared Roblox account", "Shared Roblox account"],
               ].map(([feat, vng, global]) => (
                 <tr key={feat as string}>
@@ -148,23 +148,23 @@ export default function VngPage() {
 
       {/* How to identify and switch */}
       <div className="container mx-auto max-w-3xl px-4 pt-10 space-y-4">
-        <h2 className="font-display text-2xl font-bold text-white">How to identify and switch clients</h2>
+        <h2 className="font-display text-2xl font-bold text-white">Paano kilalanin at lumipat ng client</h2>
         <div className="rounded-2xl border border-white/10 bg-card p-6 space-y-3 text-sm text-white/70">
           <p>
-            <strong className="text-white">Identifying your client:</strong> Open the Play Store and check which Roblox publisher you have installed. &ldquo;Roblox&rdquo; by Roblox Corporation is the global client. &ldquo;Roblox VNG&rdquo; by VNG is the Vietnam variant.
+            <strong className="text-white">Pagkilala sa client mo:</strong> Buksan ang Play Store at tingnan kung aling Roblox publisher ang naka-install. Ang &ldquo;Roblox&rdquo; by Roblox Corporation ay global client. Ang &ldquo;Roblox VNG&rdquo; by VNG ay Vietnam variant.
           </p>
           <p>
-            <strong className="text-white">Switching to global:</strong> Uninstall the VNG client, then search for &ldquo;Roblox&rdquo; in the Play Store and install the version published by Roblox Corporation. Your account data, Robux, and game progress all carry over — only the local client binary changes.
+            <strong className="text-white">Lumipat sa global:</strong> I-uninstall ang VNG client, saka maghanap ng &ldquo;Roblox&rdquo; sa Play Store at i-install ang version na published by Roblox Corporation. Naililipat ang account data, Robux, at game progress — client binary lang ang nagbabago.
           </p>
           <p>
-            <strong className="text-white">Why switch?</strong> If you switch to the global client, the standard Delta Executor APK works without a separate VNG build. This also gives you access to global events and the latest Roblox features faster.
+            <strong className="text-white">Bakit lumipat?</strong> Kapag lumipat ka sa global client, gagana ang standard Delta Executor APK nang walang hiwalay na VNG build. Mas mabilis ding makukuha ang global events at pinakabagong Roblox features.
           </p>
         </div>
       </div>
 
       {/* FAQ */}
       <div className="container mx-auto max-w-3xl px-4 pb-14">
-        <FaqSection title="VNG FAQ" items={faqItems} />
+        <FaqSection title="FAQ sa VNG" items={faqItems} />
         <RelatedGuides links={[...RELATED_PRESETS.vng]} />
       </div>
     </>

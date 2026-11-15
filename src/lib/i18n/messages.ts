@@ -63,229 +63,229 @@ export type HomeMessages = {
   compareBody: string;
 };
 
-const en: HomeMessages = {
+const fil: HomeMessages = {
   brand: "Delta Executor",
-  metaTitle: "Delta Executor — Android, iOS & PC Download Guides",
+  metaTitle: "Delta Executor — Gabay sa Download para sa Android, iOS at PC (Pilipinas)",
   metaDescription:
-    "Delta Executor guides for Android APK, iOS install, PC emulator setup, key system help, safety checks, and Roblox script tips — updated for 2026 on deltaexecutor.com.ph.",
+    "Mga gabay sa Delta Executor para sa Android APK, iOS, PC emulator, key system, safety, at script tips — para sa mga manlalaro sa Pilipinas. Updated 2026 sa deltaexecutor.com.ph.",
   heroSubPrefix:
-    "Run supported Roblox scripts on mobile with clear Delta Executor download steps, key unlock help, and honest safety notes — built for players who want working builds without mirror-site noise.",
-  freeMeta: "Free guides · Android & iOS · Updated",
+    "Patakbuhin ang suportadong Roblox scripts sa mobile gamit ang malinaw na Delta Executor download steps, key unlock help, at tapat na safety notes — para sa mga manlalaro sa Pilipinas na gusto ng gumaganang build nang walang mirror-site ingay.",
+  freeMeta: "Libre · Android at iOS · Updated · Pilipinas",
   ratingsLabel: "ratings",
-  whatTitle: "What is Delta Executor?",
+  whatTitle: "Ano ang Delta Executor?",
   whatBody:
-    "Delta Executor is a mobile-first Roblox script executor that lets players load supported Lua scripts on Android and, when a build is available, on iOS. Players search for it when they want a working APK or IPA, a reliable key unlock, and a script hub that still injects after Roblox patches. Delta Executor on deltaexecutor.com.ph is an independent guide hub that explains installs, keys, platforms, and risk — without stuffing every keyword into one thin mirror page.",
-  toolExplainerTitle: "Why players search for Delta Executor",
+    "Ang Delta Executor ay isang mobile-first Roblox script executor na nagpapahintulot sa mga manlalaro na mag-load ng suportadong Lua scripts sa Android at, kapag available, sa iOS. Hinahanap ito ng mga Pilipinong manlalaro kapag kailangan nila ng gumaganang APK o IPA, maaasahang key unlock, at script hub na tumatakbo pa rin pagkatapos ng Roblox patch. Ang deltaexecutor.com.ph ay independent guide hub para sa install, key, platform, at panganib — hindi isang manipis na mirror page.",
+  toolExplainerTitle: "Bakit hinahanap ang Delta Executor",
   toolExplainerBody:
-    "Search demand clusters around three jobs: get a working Android or iOS build, finish the daily key, and find scripts that still run after Wednesday Roblox updates. Delta Executor is known for a dark mobile UI, built-in script hub access, and frequent version bumps in the v2.745 series. Our site splits those jobs into dedicated guides so Android, iOS, PC, VNG, and key help do not cannibalize each other.",
-  controlsTitle: "What you get with Delta Executor",
+    "Tatlong pangunahing kailangan ang nangingibabaw sa search: gumaganang Android o iOS build, araw-araw na key, at scripts na gumagana pagkatapos ng Roblox update. Kilala ang Delta sa dark mobile UI, built-in script hub, at madalas na update sa v2.745 series. Hinahati namin ang mga gabay para sa Android, iOS, PC, VNG, at key help para hindi magbanggaan ang mga page.",
+  controlsTitle: "Ano ang makukuha mo sa Delta Executor",
   controls: [
     {
-      t: "Fast script execution",
-      d: "On supported Android devices, Delta Executor injects and runs common farm and helper scripts with less waiting between joins — so sessions start cleaner when the build matches your Roblox client.",
+      t: "Mabilis na script execution",
+      d: "Sa suportadong Android devices, nag-i-inject at tumatakbo ang common farm at helper scripts nang mas mabilis — mas malinis ang session kapag tugma ang build sa Roblox client mo.",
     },
     {
-      t: "Android and iOS focused",
-      d: "Most Delta Executor searches are mobile. Follow the Android APK guide or the iOS install path that matches your device, signing method, and OS version.",
+      t: "Nakatuon sa Android at iOS",
+      d: "Karamihan ng Delta search sa Pilipinas ay mobile. Sundin ang Android APK guide o iOS install path na tugma sa device, signing method, at OS version mo.",
     },
     {
       t: "Key system unlock",
-      d: "Free builds use a time-limited key. Our key guide walks the standard in-app flow so you are not bounced through random cloaked redirects sold as “instant unlock.”",
+      d: "May time-limited key ang libreng build. Tinuturo ng key guide ang opisyal na in-app flow para hindi ka madala sa random na cloaked redirects.",
     },
     {
       t: "Script hub access",
-      d: "Browse or paste supported scripts from trusted hub categories. Always re-check scripts after major Roblox client updates — yesterday’s paste can break today.",
+      d: "Mag-browse o mag-paste ng suportadong scripts mula sa trusted hub categories. Palaging i-check ulit ang scripts pagkatapos ng malaking Roblox update.",
     },
     {
       t: "Stability updates",
-      d: "Executors break when Roblox patches. Prefer builds that publish a clear version string and release notes instead of anonymous “latest free” APKs from chat links.",
+      d: "Nabubuwag ang executors kapag nagpa-patch ang Roblox. Pumili ng build na may malinaw na version string at release notes — hindi anonymous “latest free” APK mula sa chat.",
     },
     {
       t: "Mobile-ready interface",
-      d: "Delta’s dark mobile UI keeps Execute, Hub, and Settings reachable with one hand — useful when you are farming on a phone without a keyboard.",
+      d: "Madaling maabot ang Execute, Hub, at Settings sa dark mobile UI ng Delta — praktikal kapag nagfa-farm ka sa phone nang walang keyboard.",
     },
   ],
-  whoTitle: "Who is Delta Executor for?",
+  whoTitle: "Para kanino ang Delta Executor?",
   whoIntro:
-    "Delta Executor guides are for mobile players who want clear install steps and honest risk language — not empty “instant free Robux” promises.",
+    "Para sa mga mobile players sa Pilipinas na gusto ng malinaw na install steps at tapat na usapan tungkol sa risk — hindi empty na “instant free Robux” promises.",
   whoItems: [
     {
       t: "Android script users",
-      d: "Players who sideload the Delta Executor APK, enable unknown sources carefully, and want a clean post-install checklist before opening Roblox.",
+      d: "Mga manlalarong nag-si-sideload ng Delta APK, maingat na nag-e-enable ng unknown sources, at may checklist bago buksan ang Roblox.",
     },
     {
       t: "iOS experimenters",
-      d: "Users researching IPA / Direct Install options who need platform-specific warnings about certificates, trust prompts, and revokes before installing.",
+      d: "Mga nagsasaliksik ng IPA / Direct Install na kailangan ng babala tungkol sa certificates, trust prompts, at revokes bago mag-install.",
     },
     {
-      t: "Key and script learners",
-      d: "Beginners who understand farm scripts but get stuck on expired keys, gateway loops, or hubs that stop working after a Roblox update.",
+      t: "Key at script learners",
+      d: "Mga baguhan na nauunawaan ang farm scripts pero natatigil sa expired keys, gateway loops, o hubs na tumitigil pagkatapos ng Roblox update.",
     },
     {
       t: "Safety-conscious players",
-      d: "Anyone comparing mirrors, reading risk write-ups, and asking whether Delta Executor is safe for their device and alt account.",
+      d: "Sinumang naghahambing ng mirrors, nagbabasa ng risk write-ups, at nagtatanong kung safe ba ang Delta para sa device at alt account nila.",
     },
   ],
-  modesTitle: "Explore the Delta Executor guides",
+  modesTitle: "Tuklasin ang mga gabay sa Delta Executor",
   modesIntro:
-    "Separate pages for download, iOS, PC, Mac, VNG, Discord, troubleshooting, and SERP blogs — every search intent has a clear home.",
+    "Hiwalay na page para sa download, iOS, PC, Mac, VNG, Discord, troubleshooting, at SERP blogs — may malinaw na tahanan ang bawat search intent.",
   cardExactTitle: "Android APK download",
   cardExactBody:
-    "Step-by-step Delta Executor APK install for Android 8+, including permissions, Play Protect notes, and post-install checks.",
+    "Step-by-step Delta Executor APK install para sa Android 8+, kasama ang permissions, Play Protect notes, at post-install checks.",
   cardSolverTitle: "iOS install path",
   cardSolverBody:
-    "How Delta usually lands on iPhone and iPad, what Direct Install means, and where builds commonly fail after certificate revokes.",
-  cardWhatsappTitle: "Scripts and hubs",
+    "Paano karaniwang napupunta ang Delta sa iPhone at iPad, ano ang Direct Install, at saan madalas bagsak ang builds pagkatapos ng certificate revoke.",
+  cardWhatsappTitle: "Scripts at hubs",
   cardWhatsappBody:
-    "How to find working scripts for Delta Executor and organize them without downloading random packs from unverified chat links.",
-  howTitle: "How to get started with Delta Executor",
-  howIntroBefore: "Want the full walkthrough?",
-  howIntroLink: "open the Android download guide",
-  howIntroAfter: "or jump to the iOS / PC pages from the menu.",
+    "Paano humanap ng gumaganang scripts para sa Delta at i-organize ang mga ito nang hindi nagda-download ng random packs mula sa unverified chat links.",
+  howTitle: "Paano magsimula sa Delta Executor",
+  howIntroBefore: "Gusto mo ng buong walkthrough?",
+  howIntroLink: "buksan ang Android download guide",
+  howIntroAfter: "o pumunta sa iOS / PC pages mula sa menu.",
   howSteps: [
     {
-      name: "Choose your platform",
-      text: "Android APK is the most common Delta Executor path. iOS and PC have different limits — use the matching guide instead of forcing one APK everywhere.",
+      name: "Piliin ang platform mo",
+      text: "Android APK ang pinakakaraniwang path. May ibang limitasyon ang iOS at PC — gamitin ang tugmang gabay, huwag pilitin ang isang APK sa lahat.",
     },
     {
-      name: "Install from a labeled build",
-      text: "Download the labeled Delta Executor package, verify the version string, and avoid randomly renamed APKs shared in Discord DMs or Telegram groups.",
+      name: "Mag-install mula sa labeled build",
+      text: "I-download ang labeled Delta package, i-verify ang version string, at iwasan ang randomly renamed APKs mula sa Discord DMs o Telegram groups.",
     },
     {
-      name: "Complete the key (if required)",
-      text: "Open the in-app Get Key flow, finish the short unlock steps, then paste back into Delta. Keys usually expire after about 24 hours on free builds.",
+      name: "Kumpletuhin ang key (kung kailangan)",
+      text: "Buksan ang in-app Get Key flow, tapusin ang maikling unlock steps, tapos i-paste pabalik sa Delta. Karaniwang ~24 oras ang validity ng key sa libreng build.",
     },
     {
-      name: "Load a supported script",
-      text: "Paste or pick a script from the hub, attach to Roblox when prompted, and only run scripts you understand on an alternate account.",
+      name: "Mag-load ng suportadong script",
+      text: "Mag-paste o pumili mula sa hub, mag-attach sa Roblox kapag hiniling, at magpatakbo lang ng scripts na naiintindihan mo sa alternate account.",
     },
   ],
-  whyEyebrow: "Built for clarity",
-  whyTitle: "Why use deltaexecutor.com.ph?",
+  whyEyebrow: "Ginawa para sa kalinawan",
+  whyTitle: "Bakit deltaexecutor.com.ph?",
   whyBody:
-    "Most Delta Executor SERP pages stuff every keyword into one URL, hide downloads behind trackers, or skip safety. We separate intents, ship real image metadata, and state sideloading and ban risks up front — so Philippines and global players get a brand guide they can trust.",
-  tipsTitle: "Practical Delta Executor tips",
+    "Karamihan ng Delta SERP pages ay pinagsasama-sama ang lahat ng keyword sa isang URL, nagtatago ng download sa trackers, o hindi nagsasabi ng safety. Hinahati namin ang intents, may totoong image metadata, at sinasabi agad ang sideloading at ban risk — gabay na mapagkakatiwalaan ng mga manlalaro sa Pilipinas.",
+  tipsTitle: "Praktikal na tips sa Delta Executor",
   tips: [
     {
-      t: "Match the Roblox client",
-      d: "After a Roblox update, wait for a Delta version note before assuming yesterday’s APK still injects cleanly on your device.",
+      t: "Itugma sa Roblox client",
+      d: "Pagkatapos ng Roblox update, hintayin ang Delta version note bago isipin na gumagana pa rin ang kahapon na APK sa device mo.",
     },
     {
-      t: "Treat keys as temporary",
-      d: "If unlock fails, refresh the official in-app key path instead of pasting keys sold by strangers in Discord DMs.",
+      t: "Ituring na pansamantala ang keys",
+      d: "Kung bagsak ang unlock, i-refresh ang opisyal na in-app key path — huwag mag-paste ng keys na ibinebenta ng strangers sa Discord DMs.",
     },
     {
-      t: "Separate accounts while testing",
-      d: "Script tools can violate Roblox rules. Use an alternate account when evaluating any executor — never your main with Robux inventory.",
+      t: "Ihiwalay ang accounts habang nagte-test",
+      d: "Maaaring lumabag sa Roblox rules ang script tools. Gumamit ng alt account — huwag ang main na may Robux inventory.",
     },
     {
-      t: "Scan before you install",
-      d: "Prefer known filenames and published hashes when available. Delete APKs that request unrelated accessibility permissions without a clear reason.",
+      t: "I-scan bago mag-install",
+      d: "Pumili ng kilalang filenames at published hashes kung available. Tanggalin ang APKs na humihingi ng unrelated accessibility permissions nang walang dahilan.",
     },
   ],
-  trustTitle: "Trust signals on this site",
+  trustTitle: "Trust signals sa site na ito",
   trustItems: [
-    "On-domain download guidance (no cloaked affiliate redirect as the only CTA)",
-    "Separate pages for Android, iOS, PC, key help, safety, and fake-site warnings",
-    "Custom Privacy and Disclaimer — not generator boilerplate",
-    "Visible rating UI that matches SoftwareApplication schema",
+    "On-domain download guidance (walang cloaked affiliate redirect bilang tanging CTA)",
+    "Hiwalay na pages para sa Android, iOS, PC, key help, safety, at fake-site warnings",
+    "Custom Privacy at Disclaimer — hindi generator boilerplate",
+    "Visible rating UI na tugma sa SoftwareApplication schema",
   ],
-  trustLink: "Read our disclaimer",
-  faqTitle: "Delta Executor FAQs",
+  trustLink: "Basahin ang aming disclaimer",
+  faqTitle: "Mga Madalas Itanong tungkol sa Delta Executor",
   faqs: [
     {
-      question: "What is Delta Executor?",
+      question: "Ano ang Delta Executor?",
       answer:
-        "Delta Executor is a third-party mobile Roblox script executor used to run supported Lua scripts on Android and, when available, on iOS builds. It is also searched as Delta X or Delta Roblox executor.",
+        "Ang Delta Executor ay third-party mobile Roblox script executor para patakbuhin ang suportadong Lua scripts sa Android at, kapag available, sa iOS. Hinahanap din bilang Delta X o Delta Roblox executor.",
     },
     {
-      question: "Is Delta Executor free?",
+      question: "Libre ba ang Delta Executor?",
       answer:
-        "The app is typically offered free with a key system or unlock flow. You should never pay random sellers for a “premium key” outside a documented official Premium path.",
+        "Karaniwang libre ang app na may key system o unlock flow. Huwag magbayad sa random sellers para sa “premium key” sa labas ng documented official Premium path.",
     },
     {
-      question: "Does Delta Executor work on Android and iOS?",
+      question: "Gumagana ba ang Delta sa Android at iOS?",
       answer:
-        "Android APK support is the primary path. iOS options exist on some releases but depend on signing, device OS, and the current patch — see the iOS guide.",
+        "Android APK ang pangunahing path. May iOS options sa ilang releases depende sa signing, OS, at kasalukuyang patch — tingnan ang iOS guide.",
     },
     {
-      question: "Do I need a Delta Executor key?",
+      question: "Kailangan ko ba ng Delta Executor key?",
       answer:
-        "Many free builds require a short key unlock before scripts run. Keys are usually time-limited and device-bound. Read the key system blog for the usual steps.",
+        "Maraming libreng build ang nangangailangan ng maikling key unlock bago tumakbo ang scripts. Time-limited at device-bound ang keys. Basahin ang key system blog para sa usual steps.",
     },
     {
-      question: "Can my Roblox account get banned?",
+      question: "Pwede bang ma-ban ang Roblox account ko?",
       answer:
-        "Yes. Using an executor can violate Roblox Terms of Service and lead to moderation action. Understand the risk before you install anything.",
+        "Oo. Ang paggamit ng executor ay maaaring lumabag sa Roblox Terms of Service at magresulta sa moderation. Unawain ang risk bago mag-install.",
     },
     {
-      question: "Is Delta Executor safe?",
+      question: "Safe ba ang Delta Executor?",
       answer:
-        "Safety depends on build source, permissions you grant, and scripts you run. Avoid unknown mirrors and read our safety article before sideloading.",
+        "Depende sa source ng build, permissions na ibinibigay mo, at scripts na pinapatakbo. Iwasan ang unknown mirrors at basahin ang safety article bago mag-sideload.",
     },
     {
-      question: "Is Delta Executor undetectable?",
+      question: "Undetectable ba ang Delta Executor?",
       answer:
-        "No executor is undetectable. Roblox anti-cheat is server-side and reviews behavior patterns. We never claim undetected status — quieter scripts reduce risk more than marketing slogans.",
+        "Walang executor na undetectable. May server-side anti-cheat ang Roblox. Hindi namin inaangkin ang “undetected” — mas ligtas ang quieter scripts kaysa sa marketing slogans.",
     },
     {
-      question: "Does Delta Executor support UNC?",
+      question: "Sinusuportahan ba ng Delta ang UNC?",
       answer:
-        "Delta Executor implements a large part of the UNC API surface. Exact coverage changes per update as Roblox’s Lua environment shifts after each patch cycle.",
+        "Implementado ang malaking bahagi ng UNC API surface. Nagbabago ang coverage kada update habang nagbabago ang Lua environment ng Roblox.",
     },
     {
-      question: "How is the script hub different from external script sites?",
+      question: "Paano naiiba ang script hub sa external script sites?",
       answer:
-        "Hub scripts are curated before listing, which reduces some session-stealing patterns. External paste sites are unreviewed and carry higher malicious Lua risk. The tradeoff is curated selection versus unlimited unverified pastes.",
+        "Na-curate ang hub scripts bago ilista, kaya nababawasan ang ilang session-stealing patterns. Ang external paste sites ay unchecked at mas mataas ang malicious Lua risk.",
     },
   ],
-  ctaTitle: "Open the Delta Executor download guide",
+  ctaTitle: "Buksan ang Delta Executor download guide",
   ctaBody:
-    "Start with the Android APK guide, or open the iOS / PC guides for your device. Then review key unlock and safety notes before you inject.",
-  ctaButton: "Open download guide",
+    "Magsimula sa Android APK guide, o buksan ang iOS / PC guides para sa device mo. Suriin muna ang key unlock at safety notes bago mag-inject.",
+  ctaButton: "Buksan ang download guide",
   navGenerator: "Home",
   navInstagram: "Download",
   navNick: "iOS",
   navWhatsapp: "PC",
   navWhat: "Features",
   navBlog: "Blog",
-  navAbout: "About",
+  navAbout: "Tungkol",
   makeStyles: "Download",
-  languageLabel: "Language",
-  footerTools: "Pages",
-  footerGuides: "Guides",
+  languageLabel: "Wika",
+  footerTools: "Mga Page",
+  footerGuides: "Mga Gabay",
   footerSocial: "Social",
-  footerCtaTitle: "Get Delta Executor",
-  footerCtaBody: "Android, iOS, and PC paths — with clear warnings.",
-  footerRights: "All rights reserved.",
+  footerCtaTitle: "Kunin ang Delta Executor",
+  footerCtaBody: "Android, iOS, at PC paths — may malinaw na babala.",
+  footerRights: "Lahat ng karapatan ay nakalaan.",
   footerNote:
-    "Delta Executor on deltaexecutor.com.ph is an independent fan guide. Not affiliated with Roblox Corporation. Executors can violate ToS — use at your own risk.",
-  platformsTitle: "Platforms we cover",
+    "Ang Delta Executor sa deltaexecutor.com.ph ay independent fan guide. Hindi affiliated sa Roblox Corporation. Maaaring lumabag ang executors sa ToS — gamitin sa sarili mong panganib.",
+  platformsTitle: "Mga platform na tinatalakay namin",
   platformsIntro:
-    "Delta Executor guides match the intents that dominate Google: Android APK, iOS install, PC via emulator, Mac options, VNG, and key unlock help.",
+    "Tugma ang mga gabay sa intents na nangingibabaw sa Google sa Pilipinas: Android APK, iOS install, PC via emulator, Mac, VNG, at key unlock help.",
   platforms: [
     {
       t: "Android",
-      d: "APK sideload, unknown-sources settings, and first-run key flow.",
+      d: "APK sideload, unknown-sources settings, at first-run key flow.",
     },
     {
       t: "iOS",
-      d: "IPA / Direct Install patterns and common signing failures.",
+      d: "IPA / Direct Install patterns at common signing failures.",
     },
     {
       t: "PC",
-      d: "What “Delta for PC” usually means and safer emulator alternatives to random EXE mirrors.",
+      d: "Ano ang ibig sabihin ng “Delta for PC” at mas ligtas na emulator alternatives sa random EXE mirrors.",
     },
     {
       t: "Scripts",
-      d: "Hub usage, paste-and-execute habits, and post-update verification.",
+      d: "Hub usage, paste-and-execute habits, at post-update verification.",
     },
   ],
-  compareTitle: "Delta Executor vs typical mirror pages",
+  compareTitle: "Delta Executor vs tipikal na mirror pages",
   compareBody:
-    "Mirror sites bury install steps under keyword stuffing and off-site redirects. We keep CTAs on deltaexecutor.com.ph, split guides by platform, and document the risks YouTube titles skip.",
+    "Itinatago ng mirror sites ang install steps sa keyword stuffing at off-site redirects. Pinapanatili namin ang CTAs sa deltaexecutor.com.ph, hinahati ang gabay ayon sa platform, at isinusulat ang risks na nilalaktawan ng YouTube titles.",
 };
 
 export function getMessages(_code?: string): HomeMessages {
-  return en;
+  return fil;
 }

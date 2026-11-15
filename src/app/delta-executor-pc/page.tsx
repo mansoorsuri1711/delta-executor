@@ -17,93 +17,93 @@ import {
 } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: `Delta Executor on PC — Run Android APK via Emulator (${APP_VERSION}, November 2026)`,
+  title: `Delta Executor sa PC — Android APK sa Emulator (${APP_VERSION}, Nobyembre 2026)`,
   description:
-    "How to use Delta Executor on Windows PC in 2026: run the Android APK inside MuMu Player or BlueStacks, avoid fake Windows EXE files, and optimize emulator settings for Roblox. Honest guide — no fake native EXE.",
+    "Paano gamitin ang Delta Executor sa Windows PC sa 2026: patakbuhin ang Android APK sa MuMu Player o BlueStacks, iwasan ang pekeng Windows EXE, at i-optimize ang emulator para sa Roblox. Tapat na gabay — walang pekeng native EXE.",
   alternates: { canonical: `${SITE_ORIGIN}/delta-executor-pc` },
   openGraph: {
-    title: `Delta Executor for PC — ${SITE_NAME}`,
-    description: `Use Delta Executor on Windows via Android emulator. ${APP_VERSION}, ${STYLES_UPDATED}.`,
+    title: `Delta Executor para sa PC — ${SITE_NAME}`,
+    description: `Gamitin ang Delta Executor sa Windows via Android emulator. ${APP_VERSION}, ${STYLES_UPDATED}.`,
     url: `${SITE_ORIGIN}/delta-executor-pc`,
     siteName: SITE_NAME,
     type: "website",
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `Delta Executor PC guide` }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `Gabay sa Delta Executor PC` }],
   },
 };
 
 const pcSteps = [
   {
     n: 1,
-    title: "Download and install MuMu Player or BlueStacks",
-    body: "Head to mumuplayer.com or bluestacks.com and download the latest installer for Windows. MuMu Player 12 is lighter and generally preferred for Roblox. BlueStacks 5 is also a solid choice. Run the installer and complete setup — no special configuration needed at this stage.",
+    title: "I-download at i-install ang MuMu Player o BlueStacks",
+    body: "Pumunta sa mumuplayer.com o bluestacks.com at i-download ang pinakabagong installer para sa Windows. Mas magaan ang MuMu Player 12 at karaniwang mas gusto para sa Roblox. Solid choice din ang BlueStacks 5. Patakbuhin ang installer at tapusin ang setup — walang espesyal na configuration sa stage na ito.",
   },
   {
     n: 2,
-    title: "Configure emulator settings for Roblox",
-    body: "Open the emulator settings. Set Performance to High Performance, allocate at least 4 GB RAM and 4 CPU cores if your PC allows, and set the display resolution to 1280×720 or higher. Enable 'Enable high frame rate' if the option is present. These settings reduce Roblox lag inside the emulator.",
+    title: "I-configure ang emulator settings para sa Roblox",
+    body: "Buksan ang emulator settings. Itakda ang Performance sa High Performance, maglaan ng hindi bababa sa 4 GB RAM at 4 CPU cores kung kaya ng PC mo, at itakda ang display resolution sa 1280×720 o mas mataas. I-enable ang 'Enable high frame rate' kung available. Binabawasan ng mga setting na ito ang lag ng Roblox sa loob ng emulator.",
   },
   {
     n: 3,
-    title: "Install Roblox inside the emulator",
-    body: "Open the Google Play Store inside the emulator, sign in with a Google account (use a burner — not your personal account), search for Roblox, and install it. Launch Roblox at least once to ensure it runs correctly before adding Delta.",
+    title: "I-install ang Roblox sa loob ng emulator",
+    body: "Buksan ang Google Play Store sa loob ng emulator, mag-sign in gamit ang Google account (burner account — hindi personal), maghanap ng Roblox, at i-install. I-launch ang Roblox nang hindi bababa sa isang beses para siguraduhing tumatakbo bago idagdag ang Delta.",
   },
   {
     n: 4,
-    title: "Download the official Delta Executor APK",
-    body: `Inside the emulator's browser (or by dragging the file from your Windows desktop into the emulator window), download the official Delta Executor ${APP_VERSION} APK from this page. Confirm the filename: it should end in .apk and match the current version.`,
+    title: "I-download ang opisyal na Delta Executor APK",
+    body: `Sa browser ng emulator (o sa pamamagitan ng pag-drag ng file mula sa Windows desktop papasok sa emulator window), i-download ang opisyal na Delta Executor ${APP_VERSION} APK mula sa pahinang ito. Kumpirmahin ang filename: dapat nagtatapos sa .apk at tumugma sa kasalukuyang version.`,
   },
   {
     n: 5,
-    title: "Install the Delta APK inside the emulator",
-    body: "In MuMu Player, open the shared folder or drag the APK into the emulator window. Tap the APK to install it. In BlueStacks, drag and drop the APK file directly onto the running emulator window — it will install automatically. Grant overlay and storage permissions when prompted.",
+    title: "I-install ang Delta APK sa loob ng emulator",
+    body: "Sa MuMu Player, buksan ang shared folder o i-drag ang APK sa emulator window. I-tap ang APK para mag-install. Sa BlueStacks, i-drag and drop ang APK file direkta sa running emulator window — awtomatikong mag-i-install. Ibigay ang overlay at storage permissions kapag hiningi.",
   },
   {
     n: 6,
-    title: "Complete the key system",
-    body: "Open Delta Executor inside the emulator. Tap Get Key, complete the Linkvertise or Loot-Link checkpoint flow in the emulator's browser, copy the key, paste it into Delta, and tap Connect. See our key system guide for detailed tips.",
+    title: "Kumpletuhin ang key system",
+    body: "Buksan ang Delta Executor sa loob ng emulator. I-tap ang Get Key, tapusin ang Linkvertise o Loot-Link checkpoint flow sa browser ng emulator, kopyahin ang key, i-paste sa Delta, at i-tap ang Connect. Tingnan ang key system guide namin para sa detalyadong tips.",
   },
   {
     n: 7,
-    title: "Open Roblox and inject",
-    body: "Launch Roblox inside the emulator, join a game, switch to Delta Executor, tap Connect, wait for the green Injected status, then paste or load your script and tap Execute.",
+    title: "Buksan ang Roblox at mag-inject",
+    body: "I-launch ang Roblox sa loob ng emulator, sumali sa laro, lumipat sa Delta Executor, i-tap ang Connect, hintaying maging berde ang Injected status, saka i-paste o i-load ang script at i-tap ang Execute.",
   },
 ];
 
 const faqItems = [
   {
-    question: "Is there a native Windows EXE for Delta Executor?",
+    question: "May native Windows EXE ba para sa Delta Executor?",
     answer:
-      "There is no officially trusted native Windows EXE build of Delta Executor. Sites distributing a 'Delta Executor for Windows' EXE are either fake, distributing modified forks, or outright malware. Many fake EXEs instruct you to disable antivirus before running — a major red flag. The safe, supported path for PC is the Android APK inside an emulator like MuMu Player or BlueStacks.",
+      "Walang opisyal at pinagkakatiwalaang native Windows EXE build ng Delta Executor. Ang mga site na nagpapakalat ng 'Delta Executor for Windows' EXE ay peke, modified forks, o outright malware. Maraming pekeng EXE ang nag-uutos na i-disable ang antivirus bago mag-run — malaking red flag iyon. Ang ligtas at suportadong paraan sa PC ay Android APK sa loob ng emulator tulad ng MuMu Player o BlueStacks.",
   },
   {
-    question: "Why do fake Delta EXE files ask me to disable my antivirus?",
+    question: "Bakit hinihiling ng pekeng Delta EXE na i-disable ang antivirus ko?",
     answer:
-      "Legitimate software does not need you to disable your antivirus. This is a classic social engineering tactic used by malware distributors. If any 'Delta Executor' installer asks you to disable Windows Defender or any other security tool, do not proceed — delete the file immediately.",
+      "Hindi kailangan ng lehitimong software na i-disable ang antivirus. Classic social engineering tactic ito ng malware distributors. Kung humihingi ang anumang 'Delta Executor' installer na i-disable ang Windows Defender o iba pang security tool, huwag magpatuloy — burahin agad ang file.",
   },
   {
-    question: "Which emulator is best for Delta Executor on PC?",
+    question: "Aling emulator ang pinakamahusay para sa Delta Executor sa PC?",
     answer:
-      "MuMu Player 12 (Android 12 based) performs best for Roblox in 2026 and has the lowest overhead. BlueStacks 5 is a close second. LDPlayer 9 also works. Avoid Nox Player — it has had a history of bundled adware. All emulators run the same Delta Android APK.",
+      "Pinakamahusay ang performance ng MuMu Player 12 (Android 12 based) para sa Roblox sa 2026 at pinakamababang overhead. Malapit na pangalawa ang BlueStacks 5. Gumagana rin ang LDPlayer 9. Iwasan ang Nox Player — may kasaysayan ng bundled adware. Parehong Delta Android APK ang tumatakbo sa lahat ng emulator.",
   },
   {
-    question: "Does the emulator method require a powerful PC?",
+    question: "Kailangan ba ng malakas na PC ang emulator method?",
     answer:
-      "A modern mid-range PC (Intel i5 / AMD Ryzen 5, 8 GB RAM, integrated or discrete GPU) handles Roblox inside MuMu Player smoothly. Older hardware (4 GB RAM, dual-core CPU) will struggle. Virtualization (Intel VT-x or AMD-V) must be enabled in BIOS/UEFI for best performance.",
+      "Smooth na pinapatakbo ng modern mid-range PC (Intel i5 / AMD Ryzen 5, 8 GB RAM, integrated o discrete GPU) ang Roblox sa MuMu Player. Mahihirapan ang lumang hardware (4 GB RAM, dual-core CPU). Dapat naka-enable ang virtualization (Intel VT-x o AMD-V) sa BIOS/UEFI para sa pinakamahusay na performance.",
   },
   {
-    question: "Do I need a separate Roblox account for the emulator?",
+    question: "Kailangan ba ng hiwalay na Roblox account para sa emulator?",
     answer:
-      "Using your main account inside an emulator with a script executor attached is higher risk than using it on mobile. It's recommended to use a secondary Roblox account for PC emulator testing.",
+      "Mas mataas ang panganib kapag ginagamit ang main account sa emulator na may script executor kaysa sa mobile. Inirerekomenda ang secondary Roblox account para sa PC emulator testing.",
   },
   {
-    question: "Does the same Delta key work in the emulator as on my phone?",
+    question: "Gumagana ba ang parehong Delta key sa emulator at sa phone ko?",
     answer:
-      "No. Delta keys are device-bound. The emulator registers as a different device from your phone, so you need to generate a new key inside the emulator separately.",
+      "Hindi. Device-bound ang Delta keys. Iba ang device fingerprint ng emulator kaysa sa phone mo, kaya kailangan mong gumawa ng bagong key sa loob ng emulator nang hiwalay.",
   },
   {
-    question: "Can I use Delta Executor on a Chromebook?",
+    question: "Maaari bang gamitin ang Delta Executor sa Chromebook?",
     answer:
-      "Some Chromebooks support running Android apps natively via the Play Store — in that case, install Delta as you would on any Android device. For x86 Chromebooks that don't support Android apps natively, an x86 Android emulator can work but performance varies significantly.",
+      "May mga Chromebook na sumusuporta sa native Android apps via Play Store — sa kasong iyon, i-install ang Delta tulad sa anumang Android device. Para sa x86 Chromebook na walang native Android apps, maaaring gumana ang x86 Android emulator pero malaki ang pagkakaiba ng performance.",
   },
 ];
 
@@ -111,16 +111,16 @@ export default function PcPage() {
   return (
     <>
       <Breadcrumbs
-        items={[{ label: "Home", href: "/" }, { label: "PC Guide" }]}
+        items={[{ label: "Home", href: "/" }, { label: "Gabay sa PC" }]}
       />
 
       {/* Warning banner */}
       <div className="container mx-auto max-w-6xl px-4 pt-6">
         <div className="rounded-2xl border border-red-400/30 bg-red-400/5 p-5">
           <p className="text-sm text-white/80">
-            <strong className="text-red-300">⚠ Fake Windows EXE Warning:</strong>{" "}
-            There is no trusted native Delta Executor EXE for Windows. Any site offering one is likely distributing malware — especially if it asks you to disable antivirus first.{" "}
-            <strong className="text-white">The only safe PC method is the Android APK inside an emulator.</strong>
+            <strong className="text-red-300">⚠ Babala sa Pekeng Windows EXE:</strong>{" "}
+            Walang pinagkakatiwalaang native Delta Executor EXE para sa Windows. Malamang malware ang anumang site na nag-aalok nito — lalo na kung humihingi munang i-disable ang antivirus.{" "}
+            <strong className="text-white">Ang tanging ligtas na paraan sa PC ay Android APK sa loob ng emulator.</strong>
           </p>
         </div>
       </div>
@@ -133,27 +133,27 @@ export default function PcPage() {
               PC · Android Emulator · {APP_VERSION} · {STYLES_UPDATED}
             </p>
             <h1 className="font-display text-4xl font-bold text-white md:text-5xl">
-              Delta Executor on PC
+              Delta Executor sa PC
             </h1>
             <p className="mt-4 max-w-xl text-lg text-white/65">
-              Run Delta Executor on your Windows PC by installing the official Android APK inside MuMu Player or BlueStacks. This is the only safe and supported path — there is no trusted native Windows EXE.
+              Patakbuhin ang Delta Executor sa Windows PC sa pamamagitan ng pag-install ng opisyal na Android APK sa MuMu Player o BlueStacks. Ito lang ang ligtas at suportadong paraan — walang pinagkakatiwalaang native Windows EXE.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
               <CtaButton href={ANDROID_APK_URL} icon="download">
-                Download Android APK {APP_VERSION}
+                I-download ang Android APK {APP_VERSION}
               </CtaButton>
               <Link href="/download-delta-executor" className="font-semibold text-pink hover:underline self-center">
-                Full Android guide →
+                Buong gabay sa Android →
               </Link>
             </div>
             <p className="mt-3 text-xs text-white/35">
-              Script executors violate Roblox&apos;s ToS and may result in bans. Use at your own risk.
+              Lumalabag ang script executors sa ToS ng Roblox at maaaring magresulta sa ban. Gamitin sa sarili mong panganib.
             </p>
           </div>
           <div className="brand-shot-frame brand-shot-frame--side shrink-0">
             <Image
               src={BRAND_FEATURE_2}
-              alt="Delta Executor Android APK running inside emulator"
+              alt="Delta Executor Android APK na tumatakbo sa loob ng emulator"
               width={280}
               height={455}
               sizes="220px"
@@ -166,7 +166,7 @@ export default function PcPage() {
 
       {/* Emulator comparison */}
       <div className="container mx-auto max-w-3xl px-4 pt-10">
-        <h2 className="mb-4 font-display text-2xl font-bold text-white">Recommended Emulators</h2>
+        <h2 className="mb-4 font-display text-2xl font-bold text-white">Inirerekomendang Emulator</h2>
         <div className="overflow-x-auto rounded-2xl border border-white/10">
           <table className="w-full text-sm text-white/70">
             <thead>
@@ -174,15 +174,15 @@ export default function PcPage() {
                 <th className="px-4 py-3">Emulator</th>
                 <th className="px-4 py-3">Android Version</th>
                 <th className="px-4 py-3">Performance</th>
-                <th className="px-4 py-3">Notes</th>
+                <th className="px-4 py-3">Mga Tala</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-white/5">
               {[
-                ["MuMu Player 12", "Android 12", "⭐⭐⭐⭐⭐", "Best for Roblox in 2026"],
-                ["BlueStacks 5", "Android 9", "⭐⭐⭐⭐", "Drag-and-drop APK install"],
-                ["LDPlayer 9", "Android 9", "⭐⭐⭐⭐", "Good alternative"],
-                ["Nox Player", "Android 7", "⭐⭐⭐", "Avoid — history of bundled adware"],
+                ["MuMu Player 12", "Android 12", "⭐⭐⭐⭐⭐", "Pinakamahusay para sa Roblox sa 2026"],
+                ["BlueStacks 5", "Android 9", "⭐⭐⭐⭐", "Drag-and-drop na APK install"],
+                ["LDPlayer 9", "Android 9", "⭐⭐⭐⭐", "Magandang alternatibo"],
+                ["Nox Player", "Android 7", "⭐⭐⭐", "Iwasan — may kasaysayan ng bundled adware"],
               ].map(([name, android, perf, notes]) => (
                 <tr key={name as string}>
                   <td className="px-4 py-3 font-semibold text-white">{name}</td>
@@ -198,7 +198,7 @@ export default function PcPage() {
 
       {/* PC Requirements */}
       <div className="container mx-auto max-w-3xl px-4 pt-10">
-        <h2 className="mb-4 font-display text-2xl font-bold text-white">PC Requirements</h2>
+        <h2 className="mb-4 font-display text-2xl font-bold text-white">Mga Kailangan sa PC</h2>
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="rounded-2xl border border-white/10 bg-card p-5">
             <h3 className="font-display font-bold text-white mb-3">Minimum</h3>
@@ -206,18 +206,18 @@ export default function PcPage() {
               <li>Windows 10 (64-bit)</li>
               <li>Intel i3 / AMD Ryzen 3</li>
               <li>4 GB RAM</li>
-              <li>5 GB free storage</li>
-              <li>Virtualization enabled (VT-x / AMD-V)</li>
+              <li>5 GB libreng storage</li>
+              <li>Naka-enable ang virtualization (VT-x / AMD-V)</li>
             </ul>
           </div>
           <div className="rounded-2xl border border-pink/20 bg-pink/5 p-5">
-            <h3 className="font-display font-bold text-white mb-3">Recommended</h3>
+            <h3 className="font-display font-bold text-white mb-3">Inirerekomenda</h3>
             <ul className="space-y-2 text-sm text-white/65">
               <li>Windows 10/11 (64-bit)</li>
-              <li>Intel i5 / AMD Ryzen 5 or better</li>
-              <li>8 GB RAM or more</li>
-              <li>10 GB free storage (SSD preferred)</li>
-              <li>Discrete GPU (optional but helpful)</li>
+              <li>Intel i5 / AMD Ryzen 5 o mas mahusay</li>
+              <li>8 GB RAM o higit pa</li>
+              <li>10 GB libreng storage (mas gusto ang SSD)</li>
+              <li>Discrete GPU (opsyonal pero nakakatulong)</li>
             </ul>
           </div>
         </div>
@@ -226,9 +226,9 @@ export default function PcPage() {
       {/* Steps */}
       <div className="container mx-auto max-w-3xl px-4 pt-10">
         <h2 className="mb-2 font-display text-2xl font-bold text-white md:text-3xl">
-          How to use Delta Executor on PC
+          Paano gamitin ang Delta Executor sa PC
         </h2>
-        <p className="mb-8 text-sm text-white/45">Step-by-step — MuMu Player or BlueStacks emulator method</p>
+        <p className="mb-8 text-sm text-white/45">Step-by-step — MuMu Player o BlueStacks emulator method</p>
 
         <script
           type="application/ld+json"
@@ -236,9 +236,9 @@ export default function PcPage() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "HowTo",
-              name: `How to Use Delta Executor on PC via Android Emulator (${APP_VERSION})`,
+              name: `Paano Gamitin ang Delta Executor sa PC via Android Emulator (${APP_VERSION})`,
               description:
-                "Run Delta Executor on Windows PC by installing the Android APK inside MuMu Player or BlueStacks.",
+                "Patakbuhin ang Delta Executor sa Windows PC sa pamamagitan ng pag-install ng Android APK sa MuMu Player o BlueStacks.",
               totalTime: "PT25M",
               step: pcSteps.map((s) => ({
                 "@type": "HowToStep",
@@ -273,7 +273,7 @@ export default function PcPage() {
         <div className="brand-shot-frame">
           <Image
             src={BRAND_HERO}
-            alt="Delta Executor UI overview"
+            alt="Pangkalahatang-ideya ng UI ng Delta Executor"
             width={280}
             height={455}
             sizes="220px"
@@ -284,7 +284,7 @@ export default function PcPage() {
 
       {/* FAQ */}
       <div className="container mx-auto max-w-3xl px-4 pb-14">
-        <FaqSection title="PC FAQ" items={faqItems} />
+        <FaqSection title="FAQ sa PC" items={faqItems} />
         <RelatedGuides links={[...RELATED_PRESETS.pc]} />
       </div>
     </>

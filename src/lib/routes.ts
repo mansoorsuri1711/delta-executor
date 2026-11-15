@@ -24,6 +24,8 @@ export const ROUTES = {
   whatIs: "/blog/what-is-delta-executor",
   /** SERP: delta key linkvertise not working */
   keyNotWorking: "/blog/delta-executor-key-not-working",
+  /** SERP: robux to usd / robux converter */
+  robuxToUsd: "/robux-to-usd",
 } as const;
 
 /**
@@ -64,4 +66,8 @@ export const LEGACY_ROUTE_REDIRECTS: Array<{ source: string; destination: string
   { source: "/blog/delta-executor-key-system", destination: ROUTES.keySystem },
   { source: "/blog/delta-executor-scripts-hub", destination: ROUTES.howToUse },
   { source: "/blog/fake-delta-executor-websites", destination: ROUTES.safety },
+  // Robux converter aliases
+  { source: "/robux-converter", destination: ROUTES.robuxToUsd },
+  { source: "/robux-to-usd-calculator", destination: ROUTES.robuxToUsd },
+  { source: "/usd-to-robux", destination: ROUTES.robuxToUsd },
 ];

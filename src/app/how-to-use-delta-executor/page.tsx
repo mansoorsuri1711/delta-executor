@@ -17,93 +17,93 @@ import {
 } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: `How to Use Delta Executor — Complete Beginner Guide (${APP_VERSION}, November 2026)`,
+  title: `Paano Gamitin ang Delta Executor — Kumpletong Gabay para sa Baguhan (${APP_VERSION}, Nobyembre 2026)`,
   description:
-    "Full walkthrough on how to use Delta Executor on Android: inject into Roblox, run scripts, use the Script Hub, manage your library, and troubleshoot common issues. Updated November 2026.",
+    "Buong walkthrough kung paano gamitin ang Delta Executor sa Android: mag-inject sa Roblox, mag-run ng scripts, gamitin ang Script Hub, pamahalaan ang library, at ayusin ang karaniwang problema. Updated Nobyembre 2026 para sa Pilipinas.",
   alternates: { canonical: `${SITE_ORIGIN}/how-to-use-delta-executor` },
   openGraph: {
-    title: `How to Use Delta Executor — ${SITE_NAME}`,
-    description: `Complete beginner guide for Delta Executor ${APP_VERSION}, ${STYLES_UPDATED}.`,
+    title: `Paano Gamitin ang Delta Executor — ${SITE_NAME}`,
+    description: `Kumpletong gabay para sa baguhan para sa Delta Executor ${APP_VERSION}, ${STYLES_UPDATED}.`,
     url: `${SITE_ORIGIN}/how-to-use-delta-executor`,
     siteName: SITE_NAME,
     type: "website",
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `How to use Delta Executor guide` }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `Gabay kung paano gamitin ang Delta Executor` }],
   },
 };
 
 const usageSteps = [
   {
     n: 1,
-    title: "Install Delta Executor",
-    body: "If you haven't installed Delta Executor yet, download the official APK from our download page and follow the sideloading steps. Make sure overlay and storage permissions are granted before proceeding.",
+    title: "I-install ang Delta Executor",
+    body: "Kung hindi mo pa nai-install ang Delta Executor, i-download ang opisyal na APK mula sa download page namin at sundan ang sideloading steps. Siguraduhing naibigay ang overlay at storage permissions bago magpatuloy.",
   },
   {
     n: 2,
-    title: "Get your key (first time or after 24 hours)",
-    body: "Open Delta Executor. If the key gate appears, tap 'Get Key,' complete the Linkvertise or Loot-Link checkpoint, copy the key string, paste it into the key field, and tap Connect. Keys last 24 hours and are device-bound. See our key system guide for detailed tips.",
+    title: "Kumuha ng key (unang beses o pagkatapos ng 24 oras)",
+    body: "Buksan ang Delta Executor. Kung lumabas ang key gate, i-tap ang 'Get Key,' tapusin ang Linkvertise o Loot-Link checkpoint, kopyahin ang key string, i-paste sa key field, at i-tap ang Connect. 24 oras ang validity ng keys at device-bound ang mga ito. Tingnan ang key system guide namin para sa detalyadong tips.",
   },
   {
     n: 3,
-    title: "Open Roblox and join a game",
-    body: "Launch Roblox on your Android device and join any game. Wait until you're fully loaded into the game world — injection attempts during the loading screen will fail.",
+    title: "Buksan ang Roblox at sumali sa laro",
+    body: "I-launch ang Roblox sa Android device mo at sumali sa kahit anong laro. Hintaying fully loaded ka sa game world — mabibigo ang injection attempts sa loading screen.",
   },
   {
     n: 4,
-    title: "Return to Delta and tap Connect / Inject",
-    body: "Switch back to Delta Executor. Tap the Connect or Inject button. The status indicator should turn green and show 'Injected' or a similar success message. This may take a few seconds. If it fails, see the troubleshooting section below.",
+    title: "Bumalik sa Delta at i-tap ang Connect / Inject",
+    body: "Lumipat pabalik sa Delta Executor. I-tap ang Connect o Inject button. Dapat maging berde ang status indicator at ipakita ang 'Injected' o katulad na success message. Maaaring tumagal ng ilang segundo. Kung mabigo, tingnan ang troubleshooting section sa ibaba.",
   },
   {
     n: 5,
-    title: "Browse the Script Hub or paste your own script",
-    body: "With injection confirmed, you have two paths: (A) Script Hub — tap the Script Hub tab, browse by game or category, and tap Execute on any script; (B) Manual — tap the Editor tab, paste your Lua script code, and tap Execute. Both methods produce the same result.",
+    title: "Mag-browse sa Script Hub o mag-paste ng sarili mong script",
+    body: "Kapag nakumpirma ang injection, may dalawang paraan: (A) Script Hub — i-tap ang Script Hub tab, mag-browse ayon sa laro o category, at i-tap ang Execute sa anumang script; (B) Manual — i-tap ang Editor tab, i-paste ang Lua script code, at i-tap ang Execute. Parehong resulta ang dalawang method.",
   },
   {
     n: 6,
-    title: "Save frequently used scripts",
-    body: "In Script Hub, tap the bookmark/heart icon to save a script to your Library. For manual scripts, tap the Save icon in the Editor to store it locally. Access saved scripts from the Library tab at any time.",
+    title: "I-save ang madalas gamiting scripts",
+    body: "Sa Script Hub, i-tap ang bookmark/heart icon para i-save ang script sa Library. Para sa manual scripts, i-tap ang Save icon sa Editor para i-store locally. Maa-access ang saved scripts mula sa Library tab anumang oras.",
   },
   {
     n: 7,
-    title: "Disconnect when done",
-    body: "When you finish your session, either exit Roblox (which automatically clears the injection) or tap Disconnect in Delta Executor. This prevents injection state from lingering for the next session.",
+    title: "Mag-disconnect kapag tapos na",
+    body: "Kapag tapos na ang session, mag-exit sa Roblox (awtomatikong nililinis ang injection) o i-tap ang Disconnect sa Delta Executor. Pinipigilan nitong manatili ang injection state para sa susunod na session.",
   },
 ];
 
 const faqItems = [
   {
-    question: "Why does Delta Executor say 'Injection failed'?",
+    question: "Bakit sinasabi ng Delta Executor na 'Injection failed'?",
     answer:
-      "Injection failure most commonly happens because: (1) you tried to inject before fully loading into the game — wait for the game world to appear; (2) Roblox received an update that broke compatibility — check the Discord for a Delta update; (3) another app is conflicting with the overlay permission. Restart both Roblox and Delta and try again.",
+      "Karaniwang dahil sa: (1) nag-try mag-inject bago fully loaded sa laro — hintaying lumabas ang game world; (2) may Roblox update na sumira sa compatibility — tingnan ang Discord para sa Delta update; (3) may ibang app na sumasalungat sa overlay permission. I-restart ang Roblox at Delta at subukan ulit.",
   },
   {
-    question: "How do I know if Delta is properly injected?",
+    question: "Paano ko malalaman kung properly injected ang Delta?",
     answer:
-      "A green status indicator labeled 'Injected' or 'Connected' appears in Delta Executor's main screen. Some versions also show an overlay icon inside the Roblox game. If the indicator is red or says 'Not connected,' the injection didn't succeed.",
+      "Lumalabas ang berdeng status indicator na may label na 'Injected' o 'Connected' sa main screen ng Delta Executor. Sa ilang version may overlay icon din sa loob ng Roblox game. Kung pula ang indicator o 'Not connected,' hindi nagtagumpay ang injection.",
   },
   {
-    question: "Can I run multiple scripts at the same time?",
+    question: "Maaari bang mag-run ng maraming script sabay?",
     answer:
-      "Yes. Each script you execute runs independently. However, running conflicting scripts (e.g., two scripts that both control player movement) can cause unexpected behavior or crashes. Run one script at a time when troubleshooting.",
+      "Oo. Independent ang bawat script na ie-execute mo. Pero ang magkasalungat na scripts (hal. dalawang script na parehong kumokontrol sa galaw) ay maaaring magdulot ng hindi inaasahang behavior o crash. Isa-isa lang kapag nag-troubleshoot.",
   },
   {
-    question: "What is the difference between Script Hub and the Editor?",
+    question: "Ano ang pagkakaiba ng Script Hub at Editor?",
     answer:
-      "Script Hub is a curated library of pre-built scripts organized by game and category. The Editor is a blank text field where you can paste any raw Lua code. Script Hub is easier for beginners; the Editor is for running custom or community scripts.",
+      "Ang Script Hub ay curated library ng pre-built scripts na nakaayos ayon sa laro at category. Ang Editor ay blangkong text field kung saan maaari kang mag-paste ng anumang raw Lua code. Mas madali ang Script Hub para sa baguhan; ang Editor para sa custom o community scripts.",
   },
   {
-    question: "Why isn't my script doing anything after I execute it?",
+    question: "Bakit walang nangyayari pagkatapos mag-execute ng script?",
     answer:
-      "Check that injection succeeded first (green status). Then verify: (1) the script targets the game you're playing — most scripts are game-specific; (2) the script isn't outdated due to a Roblox game update; (3) there are no syntax errors in the Lua code if you wrote or modified it yourself.",
+      "Siguraduhing successful ang injection muna (berdeng status). Tapos i-verify: (1) tumatarget ba ang script sa laro na pinaglalaruan mo — karamihan ay game-specific; (2) hindi ba outdated ang script dahil sa Roblox game update; (3) walang syntax errors sa Lua code kung ikaw ang sumulat o nag-edit.",
   },
   {
-    question: "Can I use Delta Executor offline?",
+    question: "Maaari bang gamitin ang Delta Executor nang offline?",
     answer:
-      "No. Both Roblox and Delta Executor require an active internet connection. Delta's key system also requires network access to validate the key token.",
+      "Hindi. Kailangan ng active internet connection ang Roblox at Delta Executor. Kailangan din ng network access ng key system ng Delta para i-validate ang key token.",
   },
   {
-    question: "How do I update Delta Executor?",
+    question: "Paano i-update ang Delta Executor?",
     answer:
-      "Download the latest APK from the download page and install it over the existing version — no uninstall needed. Your library of saved scripts is preserved. After updating, you may need a fresh key if the key format changed.",
+      "I-download ang pinakabagong APK mula sa download page at i-install sa existing version — hindi kailangang mag-uninstall. Napapanatili ang saved scripts sa Library. Pagkatapos mag-update, maaaring kailanganin ng bagong key kung nagbago ang key format.",
   },
 ];
 
@@ -111,7 +111,7 @@ export default function HowToUsePage() {
   return (
     <>
       <Breadcrumbs
-        items={[{ label: "Home", href: "/" }, { label: "How to Use" }]}
+        items={[{ label: "Home", href: "/" }, { label: "Paano Gamitin" }]}
       />
 
       {/* Hero */}
@@ -119,27 +119,27 @@ export default function HowToUsePage() {
         <div className="flex flex-col gap-8 md:flex-row md:items-center">
           <div className="flex-1">
             <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-pink/80">
-              Usage Guide · {APP_VERSION} · {STYLES_UPDATED}
+              Gabay sa Paggamit · {APP_VERSION} · {STYLES_UPDATED}
             </p>
             <h1 className="font-display text-4xl font-bold text-white md:text-5xl">
-              How to Use Delta Executor
+              Paano Gamitin ang Delta Executor
             </h1>
             <p className="mt-4 max-w-xl text-lg text-white/65">
-              A complete beginner walkthrough — from installation and the key system to injecting into Roblox, running scripts, and using the built-in Script Hub.
+              Kumpletong walkthrough para sa baguhan — mula sa install at key system hanggang sa pag-inject sa Roblox, pagpapatakbo ng scripts, at paggamit ng built-in Script Hub.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
               <CtaButton href={ANDROID_APK_URL} icon="download">
-                Download Delta Executor
+                I-download ang Delta Executor
               </CtaButton>
               <Link href="/download-delta-executor" className="font-semibold text-pink hover:underline self-center">
-                Install guide →
+                Gabay sa install →
               </Link>
             </div>
           </div>
           <div className="brand-shot-frame brand-shot-frame--side shrink-0">
             <Image
               src={BRAND_FEATURE_2}
-              alt="Delta Executor main interface on Android"
+              alt="Pangunahing interface ng Delta Executor sa Android"
               width={280}
               height={455}
               sizes="220px"
@@ -152,23 +152,23 @@ export default function HowToUsePage() {
 
       {/* Interface overview */}
       <div className="container mx-auto max-w-3xl px-4 pt-10">
-        <h2 className="mb-4 font-display text-2xl font-bold text-white">Delta Executor interface overview</h2>
+        <h2 className="mb-4 font-display text-2xl font-bold text-white">Pangkalahatang-ideya ng interface ng Delta Executor</h2>
         <div className="overflow-x-auto rounded-2xl border border-white/10">
           <table className="w-full text-sm text-white/70">
             <thead>
               <tr className="border-b border-white/10 bg-white/[0.04] text-left text-xs uppercase tracking-wider text-white/40">
                 <th className="px-4 py-3">Tab / Button</th>
-                <th className="px-4 py-3">What it does</th>
+                <th className="px-4 py-3">Ginagawa nito</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-white/5">
               {[
-                ["Connect / Inject", "Initiates Roblox injection — tap after fully loading into a game"],
-                ["Script Hub", "Browse and execute pre-built scripts by game/category"],
-                ["Editor", "Paste and run any raw Lua script code"],
-                ["Library", "Your saved scripts — tap any entry to re-execute it"],
-                ["Get Key", "Opens the key gateway (Linkvertise / Loot-Link) for a fresh 24h key"],
-                ["Settings", "Adjust display, injection method, and notification preferences"],
+                ["Connect / Inject", "Sinisimulan ang Roblox injection — i-tap pagkatapos fully loaded sa laro"],
+                ["Script Hub", "Mag-browse at mag-execute ng pre-built scripts ayon sa laro/category"],
+                ["Editor", "Mag-paste at mag-run ng anumang raw Lua script code"],
+                ["Library", "Mga saved script mo — i-tap ang entry para i-execute ulit"],
+                ["Get Key", "Binubuksan ang key gateway (Linkvertise / Loot-Link) para sa bagong 24h key"],
+                ["Settings", "I-adjust ang display, injection method, at notification preferences"],
               ].map(([label, what]) => (
                 <tr key={label as string}>
                   <td className="px-4 py-3 font-semibold text-white">{label}</td>
@@ -183,9 +183,9 @@ export default function HowToUsePage() {
       {/* Steps */}
       <div className="container mx-auto max-w-3xl px-4 pt-10">
         <h2 className="mb-2 font-display text-2xl font-bold text-white md:text-3xl">
-          Step-by-step usage guide
+          Step-by-step na gabay sa paggamit
         </h2>
-        <p className="mb-8 text-sm text-white/45">From first launch to running your first script</p>
+        <p className="mb-8 text-sm text-white/45">Mula sa unang launch hanggang sa unang script mo</p>
 
         <script
           type="application/ld+json"
@@ -193,9 +193,9 @@ export default function HowToUsePage() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "HowTo",
-              name: `How to Use Delta Executor on Android (${APP_VERSION})`,
+              name: `Paano Gamitin ang Delta Executor sa Android (${APP_VERSION})`,
               description:
-                "Complete guide to injecting into Roblox and running scripts with Delta Executor.",
+                "Kumpletong gabay sa pag-inject sa Roblox at pagpapatakbo ng scripts gamit ang Delta Executor.",
               totalTime: "PT10M",
               step: usageSteps.map((s) => ({
                 "@type": "HowToStep",
@@ -230,7 +230,7 @@ export default function HowToUsePage() {
         <div className="brand-shot-frame">
           <Image
             src={BRAND_FEATURE_4}
-            alt="Delta Executor Script Hub interface"
+            alt="Interface ng Script Hub ng Delta Executor"
             width={280}
             height={455}
             sizes="220px"
@@ -238,29 +238,29 @@ export default function HowToUsePage() {
           />
         </div>
         <p className="mt-3 text-center text-xs text-white/35">
-          Delta Executor Script Hub — browse and execute scripts without leaving the app
+          Script Hub ng Delta Executor — mag-browse at mag-execute ng scripts nang hindi umaalis sa app
         </p>
       </div>
 
       {/* Quick troubleshooting */}
       <div className="container mx-auto max-w-3xl px-4 pt-10">
-        <h2 className="mb-4 font-display text-2xl font-bold text-white">Quick troubleshooting</h2>
+        <h2 className="mb-4 font-display text-2xl font-bold text-white">Mabilis na troubleshooting</h2>
         <div className="overflow-x-auto rounded-2xl border border-white/10">
           <table className="w-full text-sm text-white/70">
             <thead>
               <tr className="border-b border-white/10 bg-white/[0.04] text-left text-xs uppercase tracking-wider text-white/40">
-                <th className="px-4 py-3">Problem</th>
-                <th className="px-4 py-3">Likely cause</th>
-                <th className="px-4 py-3">Fix</th>
+                <th className="px-4 py-3">Problema</th>
+                <th className="px-4 py-3">Malamang na dahilan</th>
+                <th className="px-4 py-3">Ayos</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-white/5">
               {[
-                ["Injection failed", "Injected too early / Roblox updated", "Wait for full game load; check for Delta update"],
-                ["Invalid key", "Key expired (>24h) or partial copy", "Generate a fresh key; copy the full string"],
-                ["Script Hub blank", "Network issue or outdated Delta", "Check internet; update to " + APP_VERSION],
-                ["Overlay not showing", "Permission revoked", "Re-grant 'Draw over other apps' in settings"],
-                ["App crashes on inject", "Roblox/Delta version mismatch", "Update Delta; check Discord for patch notes"],
+                ["Injection failed", "Masyadong maaga nag-inject / na-update ang Roblox", "Hintayin ang full game load; tingnan ang Delta update"],
+                ["Invalid key", "Expired ang key (>24h) o partial copy", "Gumawa ng bagong key; kopyahin ang buong string"],
+                ["Blank ang Script Hub", "Network issue o outdated na Delta", "I-check ang internet; i-update sa " + APP_VERSION],
+                ["Hindi lumalabas ang overlay", "Na-revoke ang permission", "Ibigay ulit ang 'Draw over other apps' sa settings"],
+                ["Nag-crash ang app sa inject", "Hindi tugma ang Roblox/Delta version", "I-update ang Delta; tingnan ang Discord para sa patch notes"],
               ].map(([prob, cause, fix]) => (
                 <tr key={prob as string}>
                   <td className="px-4 py-3 font-semibold text-white">{prob}</td>
@@ -272,7 +272,7 @@ export default function HowToUsePage() {
           </table>
         </div>
         <p className="mt-4 text-sm text-white/50">
-          For a full list of issues and solutions, see the{" "}
+          Para sa buong listahan ng problema at solusyon, tingnan ang{" "}
           <Link href="/delta-executor-troubleshooting" className="text-pink hover:underline">
             troubleshooting guide
           </Link>.
@@ -281,7 +281,7 @@ export default function HowToUsePage() {
 
       {/* FAQ */}
       <div className="container mx-auto max-w-3xl px-4 pb-14">
-        <FaqSection title="Usage FAQ" items={faqItems} />
+        <FaqSection title="FAQ sa Paggamit" items={faqItems} />
         <RelatedGuides links={[...RELATED_PRESETS.howToUse]} />
       </div>
     </>

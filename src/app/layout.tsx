@@ -52,12 +52,12 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_ORIGIN),
   title: {
-    default: "Delta Executor — Android, iOS & PC Download Guides",
+    default: "Delta Executor — Gabay sa Download (Android, iOS at PC) | Pilipinas",
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_TAGLINE,
   keywords: [...SITE_KEYWORDS],
-  authors: [{ name: "Delta Executor Team" }],
+  authors: [{ name: "Delta Executor Team (Pilipinas)" }],
   creator: SITE_NAME,
   publisher: SITE_NAME,
   robots: {
@@ -84,27 +84,27 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: SITE_ORIGIN,
-    languages: { en: SITE_ORIGIN, "x-default": SITE_ORIGIN },
+    languages: { "fil-PH": SITE_ORIGIN, "x-default": SITE_ORIGIN },
   },
   openGraph: {
-    title: "Delta Executor — Android, iOS & PC Download Guides",
+    title: "Delta Executor — Gabay sa Download (Android, iOS at PC) | Pilipinas",
     description: SITE_TAGLINE,
     url: SITE_ORIGIN,
     siteName: SITE_NAME,
-    locale: "en_PH",
+    locale: "fil_PH",
     type: "website",
     images: [
       {
         url: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: `${SITE_NAME} — Delta Executor download guides`,
+        alt: `${SITE_NAME} — mga gabay sa download para sa Pilipinas`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Delta Executor — Android, iOS & PC Download Guides",
+    title: "Delta Executor — Gabay sa Download | Pilipinas",
     description: SITE_TAGLINE,
     images: [
       {
@@ -127,7 +127,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="fil-PH"
       className={`light ${bodyFont.variable} ${displayFont.variable}`}
       suppressHydrationWarning
     >

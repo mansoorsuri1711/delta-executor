@@ -3,7 +3,7 @@ export const SITE_SHORT_NAME = "Delta";
 export const SITE_ORIGIN = "https://deltaexecutor.com.ph";
 export const SITE_DOMAIN = "deltaexecutor.com.ph";
 export const SITE_TAGLINE =
-  "Delta Executor — download guides for Android, iOS, PC, Mac, and VNG. Key system help, safe install steps, and script tips for Roblox.";
+  "Delta Executor — mga gabay sa download para sa Android, iOS, PC, Mac, at VNG para sa Pilipinas. Key system help, safe install steps, at script tips para sa Roblox.";
 
 export const CONTACT_EMAIL = "support@deltaexecutor.com.ph";
 
@@ -42,7 +42,7 @@ export const SITE_RATING = {
 } as const;
 
 export const APP_VERSION = "v2.745";
-export const STYLES_UPDATED = "November 15, 2026";
+export const STYLES_UPDATED = "Nobyembre 15, 2026";
 
 /** Official Android APK direct download */
 export const ANDROID_APK_URL =
@@ -105,4 +105,8 @@ export const SITE_KEYWORDS = [
   "roblox executor android",
   "delta executor 2026",
   "delta executor philippines",
+  "robux to usd",
+  "robux to usd calculator",
+  "robux converter",
+  "usd to robux",
 ] as const;

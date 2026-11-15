@@ -5,12 +5,12 @@ import ContactForm from "@/components/ContactForm";
 import { CONTACT_EMAIL, SITE_NAME, SITE_ORIGIN, SOCIAL_LINKS } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: `Contact Us — ${SITE_NAME}`,
-  description: `Get in touch with the ${SITE_NAME} team for support, error reports, or feedback. Email ${CONTACT_EMAIL} or use the contact form below.`,
+  title: `Makipag-ugnayan — ${SITE_NAME}`,
+  description: `Makipag-ugnayan sa team ng ${SITE_NAME} para sa support, ulat ng error, o feedback. Email ${CONTACT_EMAIL} o gamitin ang contact form sa ibaba.`,
   alternates: { canonical: `${SITE_ORIGIN}/contact-us` },
   openGraph: {
-    title: `Contact — ${SITE_NAME}`,
-    description: `${SITE_NAME} support and contact.`,
+    title: `Makipag-ugnayan — ${SITE_NAME}`,
+    description: `Support at contact ng ${SITE_NAME}.`,
     url: `${SITE_ORIGIN}/contact-us`,
     siteName: SITE_NAME,
     type: "website",
@@ -23,26 +23,26 @@ export default function ContactPage() {
       <Breadcrumbs
         items={[
           { label: "Home", href: "/" },
-          { label: "Contact Us" },
+          { label: "Makipag-ugnayan" },
         ]}
       />
       <div className="container mx-auto max-w-3xl px-4 pb-12 pt-8">
         <h1 className="mb-3 font-display text-3xl font-bold text-white md:text-4xl">
-          Contact Us
+          Makipag-ugnayan
         </h1>
         <p className="mb-4 text-lg text-white/70">
-          Have a question about Delta Executor, spotted an error in one of our guides, or need to report an issue?
-          Reach us directly at{" "}
+          May tanong tungkol sa Delta Executor, may nakitang error sa isa sa aming gabay, o kailangan mag-ulat ng isyu?
+          Makipag-ugnayan direkta sa{" "}
           <a href={`mailto:${CONTACT_EMAIL}`} className="font-semibold text-pink underline">
             {CONTACT_EMAIL}
           </a>{" "}
-          or use the form below.
+          o gamitin ang form sa ibaba.
         </p>
         <p className="mb-2 text-sm text-white/50">
-          Typical response time: within 48 hours on business days.
+          Karaniwang oras ng tugon: sa loob ng 48 oras sa araw ng trabaho.
         </p>
         <p className="mb-8 text-sm text-white/50">
-          Official community channels:{" "}
+          Opisyal na channel ng komunidad:{" "}
           <a
             href={SOCIAL_LINKS.telegram}
             className="text-pink underline"
@@ -76,7 +76,7 @@ export default function ContactPage() {
           .
         </p>
         <p className="mb-8 text-sm text-white/50">
-          Looking for a guide first? Try{" "}
+          Gabay muna? Subukan ang{" "}
           <Link href="/download-delta-executor" className="text-pink underline">
             download
           </Link>
@@ -86,11 +86,11 @@ export default function ContactPage() {
           </Link>
           ,{" "}
           <Link href="/blog/how-to-get-delta-executor-key" className="text-pink underline">
-            get a key
+            kumuha ng key
           </Link>
-          , or{" "}
+          , o{" "}
           <Link href="/blog/delta-executor-key-not-working" className="text-pink underline">
-            key not working
+            hindi gumagana ang key
           </Link>
           .
         </p>

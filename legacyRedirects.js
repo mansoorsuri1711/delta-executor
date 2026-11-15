@@ -55,6 +55,11 @@ const PAIRS = [
   ["/blog/delta-executor-key-system", "/blog/how-to-get-delta-executor-key"],
   ["/blog/delta-executor-scripts-hub", "/how-to-use-delta-executor"],
   ["/blog/fake-delta-executor-websites", "/blog/is-delta-executor-safe"],
+
+  // Robux converter aliases
+  ["/robux-converter", "/robux-to-usd"],
+  ["/robux-to-usd-calculator", "/robux-to-usd"],
+  ["/usd-to-robux", "/robux-to-usd"],
 ];
 
 function withTrailingSlashVariants(pairs) {

@@ -22,36 +22,37 @@ export default function Footer() {
           </div>
 
           <div>
-            <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white/45">Downloads</h2>
+            <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white/45">Mga Download</h2>
             <ul className="space-y-2.5 text-sm">
               <li><Link href="/" className="text-white/70 hover:text-white">Home</Link></li>
-              <li><Link href="/download-delta-executor" className="text-white/70 hover:text-white">Download Android</Link></li>
-              <li><Link href="/delta-executor-ios" className="text-white/70 hover:text-white">iOS Guide</Link></li>
-              <li><Link href="/delta-executor-pc" className="text-white/70 hover:text-white">PC Guide</Link></li>
-              <li><Link href="/delta-executor-mac" className="text-white/70 hover:text-white">Mac Guide</Link></li>
+              <li><Link href="/download-delta-executor" className="text-white/70 hover:text-white">I-download sa Android</Link></li>
+              <li><Link href="/delta-executor-ios" className="text-white/70 hover:text-white">Gabay sa iOS</Link></li>
+              <li><Link href="/delta-executor-pc" className="text-white/70 hover:text-white">Gabay sa PC</Link></li>
+              <li><Link href="/delta-executor-mac" className="text-white/70 hover:text-white">Gabay sa Mac</Link></li>
               <li><Link href="/delta-executor-vng" className="text-white/70 hover:text-white">VNG (Vietnam)</Link></li>
             </ul>
           </div>
 
           <div>
-            <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white/45">Guides</h2>
+            <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white/45">Mga Gabay</h2>
             <ul className="space-y-2.5 text-sm">
-              <li><Link href="/how-to-use-delta-executor" className="text-white/70 hover:text-white">How to Use</Link></li>
-              <li><Link href="/delta-executor-troubleshooting" className="text-white/70 hover:text-white">Troubleshooting</Link></li>
+              <li><Link href="/how-to-use-delta-executor" className="text-white/70 hover:text-white">Paano Gamitin</Link></li>
+              <li><Link href="/delta-executor-troubleshooting" className="text-white/70 hover:text-white">Pag-troubleshoot</Link></li>
               <li><Link href="/delta-executor-discord" className="text-white/70 hover:text-white">Discord</Link></li>
-              <li><Link href="/delta-executor-comparison" className="text-white/70 hover:text-white">Comparison</Link></li>
+              <li><Link href="/delta-executor-comparison" className="text-white/70 hover:text-white">Paghahambing</Link></li>
+              <li><Link href="/robux-to-usd" className="text-white/70 hover:text-white">Robux to USD</Link></li>
               <li><Link href="/blog" className="text-white/70 hover:text-white">Blog</Link></li>
-              <li><Link href="/blog/what-is-delta-executor" className="text-white/70 hover:text-white">What Is Delta?</Link></li>
+              <li><Link href="/blog/what-is-delta-executor" className="text-white/70 hover:text-white">Ano ang Delta?</Link></li>
               <li><Link href="/blog/how-to-get-delta-executor-key" className="text-white/70 hover:text-white">Key System</Link></li>
-              <li><Link href="/blog/is-delta-executor-safe" className="text-white/70 hover:text-white">Is It Safe?</Link></li>
-              <li><Link href="/blog/delta-executor-key-not-working" className="text-white/70 hover:text-white">Key Not Working</Link></li>
-              <li><Link href="/about-us" className="text-white/70 hover:text-white">About Us</Link></li>
-              <li><Link href="/contact-us" className="text-white/70 hover:text-white">Contact</Link></li>
+              <li><Link href="/blog/is-delta-executor-safe" className="text-white/70 hover:text-white">Ligtas ba?</Link></li>
+              <li><Link href="/blog/delta-executor-key-not-working" className="text-white/70 hover:text-white">Hindi Gumagana ang Key</Link></li>
+              <li><Link href="/about-us" className="text-white/70 hover:text-white">Tungkol sa Amin</Link></li>
+              <li><Link href="/contact-us" className="text-white/70 hover:text-white">Makipag-ugnayan</Link></li>
             </ul>
           </div>
 
           <div>
-            <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white/45">Community</h2>
+            <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white/45">Komunidad</h2>
             <ul className="mb-6 space-y-2.5 text-sm">
               {(Object.keys(SOCIAL_LINKS) as Array<keyof typeof SOCIAL_LINKS>).map((key) => (
                 <li key={key}>
@@ -74,7 +75,7 @@ export default function Footer() {
             </ul>
             <h2 className="mb-3 text-sm font-semibold uppercase tracking-wider text-white/45">Legal</h2>
             <ul className="space-y-2.5 text-sm">
-              <li><Link href="/privacy" className="text-white/70 hover:text-white">Privacy Policy</Link></li>
+              <li><Link href="/privacy" className="text-white/70 hover:text-white">Patakaran sa Privacy</Link></li>
               <li><Link href="/disclaimer" className="text-white/70 hover:text-white">Disclaimer</Link></li>
             </ul>
           </div>
@@ -82,12 +83,12 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-center text-sm text-white/45 sm:flex-row sm:text-left">
           <p>
-            © 2026 {SITE_NAME}. All rights reserved ·{' '}
+            © 2026 {SITE_NAME}. Lahat ng karapatan ay nakalaan ·{' '}
             <Link href="/" className="text-white/70 hover:text-white">{SITE_DOMAIN}</Link>
           </p>
           <p className="text-xs text-white/30 max-w-xl sm:text-right">
-            {SITE_NAME} is an independent guide site. Not affiliated with or endorsed by Roblox Corporation.
-            Using script executors violates Roblox Terms of Service and may result in account bans. Use at your own risk.
+            Ang {SITE_NAME} ay independent guide site para sa Pilipinas. Hindi affiliated o endorsed ng Roblox Corporation.
+            Ang paggamit ng script executors ay lumalabag sa Roblox Terms of Service at maaaring magresulta sa account ban. Gamitin sa sarili mong panganib.
           </p>
         </div>
       </div>

@@ -1,12 +1,12 @@
 {
   "name": "Delta Executor",
   "short_name": "Delta",
-  "description": "Delta Executor — free Roblox script executor guides for Android, iOS, PC, Mac, and VNG. Key system, safety, and script hub tips on deltaexecutor.com.ph.",
+  "description": "Delta Executor — libreng mga gabay sa Roblox script executor para sa Android, iOS, PC, Mac, at VNG. Key system, kaligtasan, at mga tip sa script hub sa deltaexecutor.com.ph.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
-  "lang": "en",
+  "lang": "fil",
   "icons": [
     {
       "src": "/favicon.ico?v=20261115-de2",

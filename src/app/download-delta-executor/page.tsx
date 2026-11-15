@@ -17,107 +17,107 @@ import {
 } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: `Download Delta Executor APK ${APP_VERSION} for Android (November 2026)`,
+  title: `I-download ang Delta Executor APK ${APP_VERSION} para sa Android (Nobyembre 2026, Pilipinas)`,
   description:
-    "Step-by-step guide to downloading and installing Delta Executor APK on Android. Covers sideloading, the key system, APK details, system requirements, fake-APK warnings, and a safe-install checklist.",
+    "Step-by-step na gabay sa pag-download at pag-install ng Delta Executor APK sa Android — para sa mga manlalaro sa Pilipinas. May sideloading, key system, detalye ng APK, system requirements, babala sa pekeng APK, at checklist sa ligtas na install.",
   alternates: { canonical: `${SITE_ORIGIN}/download-delta-executor` },
   openGraph: {
-    title: `Download Delta Executor APK — ${SITE_NAME}`,
-    description: `Safe Android install guide for Delta Executor ${APP_VERSION}, ${STYLES_UPDATED}.`,
+    title: `I-download ang Delta Executor APK — ${SITE_NAME}`,
+    description: `Ligtas na gabay sa Android install para sa Delta Executor ${APP_VERSION}, ${STYLES_UPDATED}.`,
     url: `${SITE_ORIGIN}/download-delta-executor`,
     siteName: SITE_NAME,
     type: "website",
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `${SITE_NAME} download guide` }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `Gabay sa download ng ${SITE_NAME}` }],
   },
 };
 
 const steps = [
   {
     n: 1,
-    title: "Back up your Roblox account first",
-    body: "Before installing any third-party tool, enable two-factor authentication on your Roblox account and note your recovery codes. This isn't specific to Delta — it's just good security hygiene.",
+    title: "I-back up muna ang Roblox account mo",
+    body: "Bago mag-install ng third-party tool, i-enable ang two-factor authentication sa Roblox account mo at itabi ang recovery codes. Hindi ito eksklusibo sa Delta — basic na seguridad lang ito.",
   },
   {
     n: 2,
-    title: "Allow installation from unknown sources",
-    body: "On Android 8+, go to Settings → Apps → Special app access → Install unknown apps, then enable the permission for your browser or file manager. On older Android versions, a single toggle under Security covers all sources.",
+    title: "Payagan ang install mula sa unknown sources",
+    body: "Sa Android 8+, pumunta sa Settings → Apps → Special app access → Install unknown apps, tapos i-enable ang permission para sa browser o file manager mo. Sa mas lumang Android, isang toggle sa Security ang sakop para sa lahat ng source.",
   },
   {
     n: 3,
-    title: "Download the Delta Executor APK",
-    body: `Tap the download button on this page to get the official Delta Executor ${APP_VERSION} APK (${STYLES_UPDATED}). The file is approximately 167.8 MB. Confirm the filename ends in .apk — never run a .exe file on Android.`,
+    title: "I-download ang Delta Executor APK",
+    body: `I-tap ang download button sa pahinang ito para makuha ang opisyal na Delta Executor ${APP_VERSION} APK (${STYLES_UPDATED}). Mga 167.8 MB ang file. Siguraduhing nagtatapos sa .apk ang filename — huwag kailanman mag-run ng .exe sa Android.`,
   },
   {
     n: 4,
-    title: "Run the APK installer",
-    body: "Open your Downloads folder, tap the APK, and confirm the install prompt. Android will display a permission summary; Delta Executor needs storage access to load script files and overlay permission to show its UI over Roblox.",
+    title: "Patakbuhin ang APK installer",
+    body: "Buksan ang Downloads folder, i-tap ang APK, at kumpirmahin ang install prompt. Ipapakita ng Android ang permission summary; kailangan ng Delta Executor ang storage access para mag-load ng script files at overlay permission para ipakita ang UI nito sa ibabaw ng Roblox.",
   },
   {
     n: 5,
-    title: "Grant overlay and storage permissions",
-    body: "After install, open Delta Executor. If 'Draw over other apps' is requested, go to Settings → Apps → Special app access → Appear on top and enable Delta. For storage, go to Settings → Apps → Delta Executor → Permissions → Storage → Allow.",
+    title: "Ibigay ang overlay at storage permissions",
+    body: "Pagkatapos mag-install, buksan ang Delta Executor. Kung hinihingi ang 'Draw over other apps', pumunta sa Settings → Apps → Special app access → Appear on top at i-enable ang Delta. Para sa storage: Settings → Apps → Delta Executor → Permissions → Storage → Allow.",
   },
   {
     n: 6,
-    title: "Complete the key system (if prompted)",
-    body: "Delta Executor uses a key system to prevent automated abuse. Open the key link, complete the Linkvertise or Loot-Link steps, copy the key, paste it into the executor, and tap Connect. See our key system guide for detailed steps.",
+    title: "Kumpletuhin ang key system (kung hiningi)",
+    body: "Gumagamit ang Delta Executor ng key system para pigilan ang automated abuse. Buksan ang key link, tapusin ang mga hakbang sa Linkvertise o Loot-Link, kopyahin ang key, i-paste sa executor, at i-tap ang Connect. Tingnan ang key system guide namin para sa detalyadong steps.",
   },
   {
     n: 7,
-    title: "Launch Roblox and inject",
-    body: "Open Roblox first and join any game. Switch to Delta Executor, tap Connect, wait for the green 'Injected' status, then paste or load your script and tap Execute.",
+    title: "Buksan ang Roblox at mag-inject",
+    body: "Buksan muna ang Roblox at sumali sa kahit anong laro. Lumipat sa Delta Executor, i-tap ang Connect, hintaying maging berde ang status na 'Injected', saka i-paste o i-load ang script at i-tap ang Execute.",
   },
 ];
 
 const faqItems = [
   {
-    question: "Is Delta Executor free to download?",
+    question: "Libre bang i-download ang Delta Executor?",
     answer:
-      "Yes. Delta Executor is free for Android. No paid tier is required to run scripts — the only gate is the key system, and keys are obtainable for free through the key page.",
+      "Oo. Libre ang Delta Executor para sa Android. Walang bayad na tier para mag-run ng scripts — ang tanging hadlang ay ang key system, at libre ang keys sa key page.",
   },
   {
-    question: "Will using Delta Executor get my Roblox account banned?",
+    question: "Maba-ban ba ang Roblox account ko kapag gumamit ng Delta Executor?",
     answer:
-      "Using a script executor violates Roblox's Terms of Service. Bans do occur, particularly in games with strong anti-cheat systems. If you want to protect your main account, use an alternate account. Delta Executor does not guarantee you won't be banned.",
+      "Lumalabag ang paggamit ng script executor sa Terms of Service ng Roblox. May naba-ban, lalo na sa mga larong may malakas na anti-cheat. Kung gusto mong protektahan ang main account, gumamit ng alternate account. Hindi ginagarantiyahan ng Delta Executor na hindi ka maba-ban.",
   },
   {
-    question: "What Android version is required?",
+    question: "Anong Android version ang kailangan?",
     answer:
-      "Delta Executor supports Android 5.0 (Lollipop) and above, with full feature support on Android 8.0 (Oreo) and later. Android 8+ is recommended for the most stable injection experience. Older versions may encounter injection errors.",
+      "Sinusuportahan ng Delta Executor ang Android 5.0 (Lollipop) pataas, na may full feature support sa Android 8.0 (Oreo) at mas bago. Inirerekomenda ang Android 8+ para sa pinaka-stable na injection. Sa mas lumang version, maaaring magkaroon ng injection errors.",
   },
   {
-    question: "Why does my antivirus flag the APK?",
+    question: "Bakit mina-flag ng antivirus ang APK?",
     answer:
-      "Android antivirus tools sometimes flag executors not because of actual malware but because of hook-like behavior. If you downloaded from this page, the APK is the official build. For peace of mind, scan it on VirusTotal before installing.",
+      "Minsan mina-flag ng Android antivirus ang mga executor hindi dahil sa tunay na malware kundi dahil sa hook-like behavior. Kung na-download mo mula sa pahinang ito, opisyal na build ang APK. Para sa kapanatagan, i-scan sa VirusTotal bago mag-install.",
   },
   {
-    question: "The key page has too many ads — any tips?",
+    question: "Sobrang daming ads sa key page — may tips ba?",
     answer:
-      "Use a clean browser rather than the in-app browser, and complete each checkpoint in order. Don't tap the misleading 'Download' buttons on Linkvertise — only tap the small 'Continue' or 'I'm not a robot' buttons.",
+      "Gumamit ng malinis na browser imbes na in-app browser, at tapusin ang bawat checkpoint nang sunud-sunod. Huwag i-tap ang mapanlinlang na 'Download' buttons sa Linkvertise — ang maliit na 'Continue' o 'I'm not a robot' buttons lang ang dapat.",
   },
   {
-    question: "How large is the APK file?",
-    answer: `Delta Executor ${APP_VERSION} APK is approximately 167.8 MB. Make sure you have enough free storage before downloading. The installed size may be slightly larger.`,
+    question: "Gaano kalaki ang APK file?",
+    answer: `Mga 167.8 MB ang Delta Executor ${APP_VERSION} APK. Siguraduhing may sapat na storage bago mag-download. Maaaring mas malaki nang konti ang installed size.`,
   },
   {
-    question: "What does 'Play Protect blocked the install' mean?",
+    question: "Ano ang ibig sabihin ng 'Play Protect blocked the install'?",
     answer:
-      "Google Play Protect flags all APKs not distributed via the Play Store — including legitimate executor tools. This is expected for any sideloaded app. Tap 'Install anyway' to proceed. This warning is not a virus detection; it's Play Protect's default caution for any APK outside the Play Store.",
+      "Mina-flag ng Google Play Protect ang lahat ng APK na hindi mula sa Play Store — kasama ang legitimate na executor tools. Inaasahan ito sa anumang sideloaded app. I-tap ang 'Install anyway' para magpatuloy. Hindi ito virus detection; default na babala lang ng Play Protect sa APK sa labas ng Play Store.",
   },
   {
-    question: "How do I update Delta Executor to a newer version?",
+    question: "Paano i-update ang Delta Executor sa mas bagong version?",
     answer:
-      "Download the latest APK from this page and install it directly over the existing version — you don't need to uninstall first. Your saved scripts and settings are preserved. If you experience issues after updating, a clean reinstall (uninstall first) resolves most problems.",
+      "I-download ang pinakabagong APK mula sa pahinang ito at i-install direkta sa existing version — hindi kailangang mag-uninstall muna. Napananatili ang saved scripts at settings. Kung may problema pagkatapos mag-update, ang clean reinstall (uninstall muna) ang nag-aayos ng karamihan.",
   },
   {
-    question: "Does Delta Executor work on ARM64 devices?",
+    question: "Gumagana ba ang Delta Executor sa ARM64 devices?",
     answer:
-      "Yes. Delta Executor supports ARM64 (64-bit) devices, covering nearly all Android phones made after 2017. Stability may be reduced on ARM32 (32-bit) devices running Android 5/6.",
+      "Oo. Sinusuportahan ng Delta Executor ang ARM64 (64-bit) devices — halos lahat ng Android phones pagkatapos ng 2017. Maaaring mas mababa ang stability sa ARM32 (32-bit) na Android 5/6.",
   },
   {
-    question: "Where do I get Delta Executor for Vietnam (VNG Roblox)?",
+    question: "Saan ako makakakuha ng Delta Executor para sa Vietnam (VNG Roblox)?",
     answer:
-      "If you play on the VNG-published Roblox client, you need a VNG-compatible Delta build. See our VNG page for details and the Vietnam Roblox client-specific download link.",
+      "Kung naglalaro ka sa VNG-published Roblox client, kailangan mo ng VNG-compatible na Delta build. Tingnan ang VNG page namin para sa detalye at Vietnam Roblox client-specific download link.",
   },
 ];
 
@@ -136,30 +136,30 @@ export default function DownloadPage() {
               Android APK · {APP_VERSION} · {STYLES_UPDATED}
             </p>
             <h1 className="font-display text-4xl font-bold text-white md:text-5xl">
-              Download Delta Executor for Android
+              I-download ang Delta Executor para sa Android
             </h1>
             <p className="mt-4 max-w-xl text-lg text-white/65">
-              The most popular free Roblox script executor for Android. Follow the steps below for a clean, safe install — no root required.
+              Ang pinakasikat na libreng Roblox script executor para sa Android sa Pilipinas. Sundin ang mga hakbang sa ibaba para sa malinis at ligtas na install — hindi kailangan ng root.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
               <CtaButton href={ANDROID_APK_URL} icon="download">
-                Download APK {APP_VERSION}
+                I-download ang APK {APP_VERSION}
               </CtaButton>
               <Link href="/delta-executor-ios" className="font-semibold text-pink hover:underline self-center">
-                iOS guide →
+                Gabay sa iOS →
               </Link>
               <Link href="/blog/how-to-get-delta-executor-key" className="font-semibold text-pink hover:underline self-center">
-                Get key →
+                Kumuha ng key →
               </Link>
             </div>
             <p className="mt-3 text-xs text-white/35">
-              By downloading you acknowledge that script executors violate Roblox&apos;s ToS and use is at your own risk.
+              Sa pag-download, kinikilala mong lumalabag ang script executors sa ToS ng Roblox at gamit mo ito sa sarili mong panganib.
             </p>
           </div>
           <div className="brand-shot-frame brand-shot-frame--side shrink-0">
             <Image
               src={BRAND_FEATURE_2}
-              alt="Delta Executor running on Android"
+              alt="Delta Executor na tumatakbo sa Android"
               width={280}
               height={455}
               sizes="220px"
@@ -172,21 +172,21 @@ export default function DownloadPage() {
 
       {/* APK Details Table */}
       <div className="container mx-auto max-w-3xl px-4 pt-10">
-        <h2 className="mb-4 font-display text-2xl font-bold text-white">APK Details</h2>
+        <h2 className="mb-4 font-display text-2xl font-bold text-white">Detalye ng APK</h2>
         <div className="overflow-x-auto rounded-2xl border border-white/10">
           <table className="w-full text-sm text-white/70">
             <tbody className="divide-y divide-white/5">
               {[
-                ["App name", "Delta Executor"],
+                ["Pangalan ng app", "Delta Executor"],
                 ["Version", APP_VERSION],
-                ["Release date", STYLES_UPDATED],
-                ["File format", "APK (Android Package)"],
-                ["Minimum Android", "5.0 (Lollipop)"],
-                ["Recommended Android", "8.0+ (Oreo or newer)"],
+                ["Petsa ng release", STYLES_UPDATED],
+                ["Format ng file", "APK (Android Package)"],
+                ["Minimum na Android", "5.0 (Lollipop)"],
+                ["Inirerekomendang Android", "8.0+ (Oreo o mas bago)"],
                 ["Architecture", "ARM64 + ARM32"],
-                ["Approximate size", "167.8 MB"],
-                ["Price", "Free"],
-                ["Root required", "No"],
+                ["Tinatayang laki", "167.8 MB"],
+                ["Presyo", "Libre"],
+                ["Kailangan ng root", "Hindi"],
               ].map(([label, value]) => (
                 <tr key={label}>
                   <td className="px-4 py-3 font-semibold text-white/80">{label}</td>
@@ -207,19 +207,19 @@ export default function DownloadPage() {
             <ul className="space-y-2 text-sm text-white/65">
               <li>Android 5.0+</li>
               <li>1 GB RAM</li>
-              <li>200 MB free storage</li>
+              <li>200 MB libreng storage</li>
               <li>ARM processor</li>
-              <li>Roblox installed</li>
+              <li>Naka-install ang Roblox</li>
             </ul>
           </div>
           <div className="rounded-2xl border border-pink/20 bg-pink/5 p-5">
-            <h3 className="font-display font-bold text-white mb-3">Recommended</h3>
+            <h3 className="font-display font-bold text-white mb-3">Inirerekomenda</h3>
             <ul className="space-y-2 text-sm text-white/65">
-              <li>Android 8.0+ (Oreo or newer)</li>
-              <li>3 GB RAM or more</li>
-              <li>500 MB free storage</li>
+              <li>Android 8.0+ (Oreo o mas bago)</li>
+              <li>3 GB RAM o higit pa</li>
+              <li>500 MB libreng storage</li>
               <li>ARM64 processor</li>
-              <li>Stable internet connection</li>
+              <li>Stable na internet</li>
             </ul>
           </div>
         </div>
@@ -229,29 +229,32 @@ export default function DownloadPage() {
       <div className="container mx-auto max-w-3xl px-4 pt-10">
         <div className="rounded-2xl border border-red-400/30 bg-red-400/5 p-6">
           <h2 className="mb-3 font-display text-xl font-bold text-red-300">
-            ⚠ Fake APKs, Keyless Scams &amp; Play Store Impostors
+            ⚠ Pekeng APK, Keyless Scam at Play Store Impostor
           </h2>
           <div className="space-y-3 text-sm text-white/65">
             <p>
-              <strong className="text-white">Fake APKs:</strong> Third-party Telegram channels,
-              YouTube descriptions, and clone sites distribute APKs claiming to be Delta Executor.
-              Many contain password stealers or crypto miners. Only download from{" "}
-              <strong className="text-white">deltaexecutor.com.ph</strong>. Read the full{" "}
+              <strong className="text-white">Pekeng APK:</strong> Nagpapakalat ng APK
+              ang third-party Telegram channels, YouTube descriptions, at clone sites na
+              nagsasabing Delta Executor ang mga ito. Marami ang may password stealers o
+              crypto miners. Sa{" "}
+              <strong className="text-white">deltaexecutor.com.ph</strong> lang
+              mag-download. Basahin ang buong{" "}
               <Link href="/blog/is-delta-executor-safe" className="text-pink hover:underline">
                 safety guide
               </Link>{" "}
-              for how to spot impostors.
+              para malaman ang impostor.
             </p>
             <p>
-              <strong className="text-white">Keyless scams:</strong> Sites advertising &ldquo;Delta
-              Executor Keyless&rdquo; or &ldquo;Delta without key system&rdquo; are either modified
-              forks of unknown safety or outright malware. Official Delta requires a 24-hour key —
-              any build claiming to bypass this permanently should be treated with extreme caution.
+              <strong className="text-white">Keyless scam:</strong> Ang mga site na
+              nag-a-advertise ng &ldquo;Delta Executor Keyless&rdquo; o &ldquo;Delta
+              without key system&rdquo; ay modified forks na hindi kilala ang kaligtasan
+              o outright malware. Kailangan ng opisyal na Delta ng 24-hour key — ang
+              anumang build na nag-claim na permanenteng bypass ay dapat pag-ingatan.
             </p>
             <p>
-              <strong className="text-white">Play Store impostors:</strong> Delta Executor is not
-              on the official Google Play Store. Any app on the Play Store calling itself
-              &ldquo;Delta Executor&rdquo; is an impostor — do not install it.
+              <strong className="text-white">Play Store impostor:</strong> Wala ang Delta
+              Executor sa opisyal na Google Play Store. Anumang app sa Play Store na
+              tinatawag na &ldquo;Delta Executor&rdquo; ay impostor — huwag i-install.
             </p>
           </div>
         </div>
@@ -264,12 +267,14 @@ export default function DownloadPage() {
             Google Play Protect: false-positive note
           </h3>
           <p className="text-sm text-white/65">
-            Google Play Protect flags all APKs not distributed through the Play Store, including legitimate executor tools.
-            When you see &ldquo;Play Protect blocked the install,&rdquo; tap{" "}
-            <strong className="text-white">Install anyway</strong> — this is not a virus detection.
-            For independent verification, scan the APK on VirusTotal before installing. Executor
-            APKs typically receive &ldquo;Hacktool&rdquo; detections from generic heuristics — widespread Trojan
-            or Spyware detections would indicate a real problem.
+            Mina-flag ng Google Play Protect ang lahat ng APK na hindi mula sa Play
+            Store, kasama ang legitimate na executor tools. Kapag nakita mo ang
+            &ldquo;Play Protect blocked the install,&rdquo; i-tap ang{" "}
+            <strong className="text-white">Install anyway</strong> — hindi ito virus
+            detection. Para sa independent verification, i-scan ang APK sa VirusTotal
+            bago mag-install. Karaniwang nakakakuha ng &ldquo;Hacktool&rdquo; detections
+            ang executor APKs mula sa generic heuristics — malawak na Trojan o Spyware
+            detections ang senyales ng tunay na problema.
           </p>
         </div>
       </div>
@@ -277,10 +282,10 @@ export default function DownloadPage() {
       {/* How-to steps */}
       <div className="container mx-auto max-w-3xl px-4 pt-10">
         <h2 className="mb-2 font-display text-2xl font-bold text-white md:text-3xl">
-          How to install Delta Executor on Android
+          Paano i-install ang Delta Executor sa Android
         </h2>
         <p className="mb-8 text-sm text-white/45">
-          Complete walkthrough — sideloading, key system, and running your first script
+          Kumpletong walkthrough — sideloading, key system, at unang script mo
         </p>
 
         {/* HowTo schema */}
@@ -290,17 +295,17 @@ export default function DownloadPage() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "HowTo",
-              name: `How to Install Delta Executor on Android (${APP_VERSION})`,
+              name: `Paano i-install ang Delta Executor sa Android (${APP_VERSION})`,
               description:
-                "Step-by-step guide to downloading and sideloading the Delta Executor APK on an Android device.",
+                "Step-by-step na gabay sa pag-download at sideload ng Delta Executor APK sa Android device.",
               totalTime: "PT10M",
               supply: [
                 { "@type": "HowToSupply", name: "Android phone (5.0+)" },
-                { "@type": "HowToSupply", name: "Roblox installed" },
+                { "@type": "HowToSupply", name: "Naka-install ang Roblox" },
               ],
               tool: [
                 { "@type": "HowToTool", name: "File manager app" },
-                { "@type": "HowToTool", name: "Chrome or Firefox browser" },
+                { "@type": "HowToTool", name: "Chrome o Firefox browser" },
               ],
               step: steps.map((s) => ({
                 "@type": "HowToStep",
@@ -329,21 +334,21 @@ export default function DownloadPage() {
           ))}
         </ol>
         <p className="mt-6 text-sm text-white/55">
-          After install:{" "}
+          Pagkatapos mag-install:{" "}
           <Link href="/blog/how-to-get-delta-executor-key" className="text-pink hover:underline">
-            get your Delta key
+            kumuha ng Delta key
           </Link>
-          , then follow{" "}
+          , tapos sundan ang{" "}
           <Link href="/how-to-use-delta-executor" className="text-pink hover:underline">
-            how to use Delta Executor
+            paano gamitin ang Delta Executor
           </Link>
-          . Stuck on unlock? See{" "}
+          . Nahihirapan sa unlock? Tingnan ang{" "}
           <Link href="/blog/delta-executor-key-not-working" className="text-pink hover:underline">
-            key not working
+            hindi gumagana ang key
           </Link>
-          . New to Delta? Start with{" "}
+          . Bago sa Delta? Simulan sa{" "}
           <Link href="/blog/what-is-delta-executor" className="text-pink hover:underline">
-            what is Delta Executor
+            ano ang Delta Executor
           </Link>
           .
         </p>
@@ -351,15 +356,15 @@ export default function DownloadPage() {
 
       {/* Safe-install checklist */}
       <div className="container mx-auto max-w-3xl px-4 pt-10">
-        <h2 className="mb-4 font-display text-2xl font-bold text-white">Safe-install checklist</h2>
+        <h2 className="mb-4 font-display text-2xl font-bold text-white">Checklist sa ligtas na install</h2>
         <ul className="space-y-2 text-sm text-white/65">
           {[
-            "Only download from deltaexecutor.com.ph — never from random Telegram channels or YouTube links.",
-            "The APK filename should match the current version (e.g. Delta-2.745.1142.apk).",
-            "If a site asks you to fill out a survey before showing a download button, leave — that's not us.",
-            "Delta Executor does not require Device Administrator privileges. If prompted, decline that request.",
-            "If you prefer tighter security, re-disable 'Unknown sources' after installation.",
-            "When in doubt, scan the APK on VirusTotal before installing — a few 'Hacktool' detections are normal; widespread Trojan detections are not.",
+            "Sa deltaexecutor.com.ph lang mag-download — huwag kailanman sa random na Telegram channels o YouTube links.",
+            "Dapat tumugma ang APK filename sa kasalukuyang version (hal. Delta-2.745.1142.apk).",
+            "Kung humihingi ang site na mag-survey bago magpakita ng download button, umalis — hindi kami iyon.",
+            "Hindi kailangan ng Delta Executor ang Device Administrator privileges. Kung hiningi, tanggihan.",
+            "Kung gusto mo ng mas mahigpit na seguridad, i-disable ulit ang 'Unknown sources' pagkatapos mag-install.",
+            "Kung may duda, i-scan ang APK sa VirusTotal bago mag-install — normal ang ilang 'Hacktool' detections; hindi normal ang malawak na Trojan detections.",
           ].map((item) => (
             <li key={item} className="flex items-start gap-2">
               <span className="mt-0.5 text-pink" aria-hidden="true">✓</span>
@@ -374,7 +379,7 @@ export default function DownloadPage() {
         <div className="brand-shot-frame">
           <Image
             src={BRAND_HERO}
-            alt="Delta Executor interface overview on Android"
+            alt="Pangkalahatang-ideya ng interface ng Delta Executor sa Android"
             width={280}
             height={455}
             sizes="220px"
@@ -382,14 +387,14 @@ export default function DownloadPage() {
           />
         </div>
         <p className="mt-3 text-center text-xs text-white/35">
-          Delta Executor {APP_VERSION} — script hub UI on Android
+          Delta Executor {APP_VERSION} — Script Hub UI sa Android
         </p>
       </div>
 
       {/* FAQ */}
       <div className="container mx-auto max-w-3xl px-4 pb-14">
         <FaqSection
-          title="Download FAQ"
+          title="FAQ sa Download"
           items={faqItems}
         />
         <RelatedGuides links={[...RELATED_PRESETS.download]} />

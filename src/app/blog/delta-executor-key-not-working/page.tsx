@@ -17,61 +17,61 @@ import {
 } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: `Delta Executor Key Not Working — Fix Every Error (2026)`,
+  title: `Hindi Gumagana ang Delta Executor Key — Ayusin ang Bawat Error (2026)`,
   description:
-    "Delta key not working after Linkvertise? Fix 'Invalid Key,' Too Many Requests, device-bind errors, adblock failures, and completed-but-stuck loops. Full troubleshooting guide.",
+    "Hindi gumagana ang Delta key pagkatapos ng Linkvertise? Ayusin ang 'Invalid Key,' Too Many Requests, device-bind error, adblock, at completed-but-stuck loop. Kumpletong troubleshooting guide.",
   alternates: { canonical: `${SITE_ORIGIN}/blog/delta-executor-key-not-working` },
   openGraph: {
-    title: `Delta Executor Key Not Working — ${SITE_NAME}`,
+    title: `Hindi Gumagana ang Delta Executor Key — ${SITE_NAME}`,
     description:
-      "Every reason a Delta Executor key fails — network, device-bind, adblock, rate-limits — and step-by-step fixes.",
+      "Lahat ng dahilan kung bakit nabibigo ang Delta Executor key — network, device-bind, adblock, rate-limit — at hakbang-hakbang na solusyon.",
     url: `${SITE_ORIGIN}/blog/delta-executor-key-not-working`,
     siteName: SITE_NAME,
     type: "article",
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `Delta Executor key not working` }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `Hindi gumagana ang Delta Executor key` }],
   },
 };
 
 const faqItems = [
   {
-    question: "Why does the key say 'Invalid Key' even though I just generated it?",
+    question: "Bakit 'Invalid Key' kahit kakagenerate ko lang?",
     answer:
-      "The most common cause is a partial copy — only part of the key string was captured. Long-press the key and 'Select All' before copying, then paste. Also check that you are using the key on the same device you generated it on (keys are device-bound).",
+      "Karaniwang sanhi ay partial copy — hindi buo ang key string. Long-press ang key → 'Select All' bago kopyahin, tapos paste. Tiyakin ding ginagamit mo ang key sa parehong device kung saan ginawa (device-bound ang key).",
   },
   {
-    question: "Linkvertise says 'Too Many Requests' — what do I do?",
+    question: "Sinasabi ng Linkvertise ang 'Too Many Requests' — ano ang gagawin?",
     answer:
-      "Linkvertise rate-limits rapid repeated visits from the same IP address. Wait 5–10 minutes, then try again. If you're on Wi-Fi, switch to mobile data (a different IP) and retry. Using a VPN can also bypass the rate limit.",
+      "Nililimitahan ng Linkvertise ang mabilis na paulit-ulit na bisita mula sa parehong IP. Maghintay ng 5–10 minuto at subukan muli. Kung naka-Wi-Fi, lumipat sa mobile data (ibang IP). Maaari ring VPN para lampasan ang rate limit.",
   },
   {
-    question: "I completed all the steps but the key page didn't give me a key string.",
+    question: "Natapos ko ang lahat ng hakbang pero walang key string.",
     answer:
-      "This 'completed-but-stuck' loop sometimes occurs when the browser fails to redirect back to the key confirmation page. Try: clearing browser cache, switching to a different browser (Chrome vs. Firefox), or switching checkpoint provider (Linkvertise → LootLabs → Work.ink).",
+      "Minsan nangyayari ang 'completed-but-stuck' loop kapag hindi nagre-redirect ang browser sa key confirmation page. Subukan: burahin ang browser cache, ibang browser (Chrome vs Firefox), o ibang provider (Linkvertise → LootLabs → Work.ink).",
   },
   {
-    question: "My adblock is blocking the key gateway — should I disable it?",
+    question: "Bina-block ng adblock ang key gateway — i-disable ba?",
     answer:
-      "Yes, temporarily disable your adblocker for the Linkvertise/LootLabs/Work.ink domain while completing the key flow. These providers use ad injections to validate completion; aggressive adblockers prevent the checkpoint from registering. Re-enable adblock after you have your key.",
+      "Oo, pansamantalang i-disable ang adblocker para sa domain ng Linkvertise/LootLabs/Work.ink habang ginagawa ang key flow. Gumagamit ang mga provider ng ad injection para i-validate ang completion; pinipigilan ng agresibong adblocker ang checkpoint. I-enable muli pagkatapos makakuha ng key.",
   },
   {
-    question: "Can I use a 'bypass' site to skip the key gateway?",
+    question: "Maaari ba akong gumamit ng 'bypass' site para laktawan ang gateway?",
     answer:
-      "No. Third-party 'bypass' or 'skip' sites for Linkvertise are unsafe. They either don't work (the key they produce is invalid) or they serve malware and phishing pages. The only legitimate way to get a key is through the official Delta gateway.",
+      "Hindi. Delikado ang third-party 'bypass' o 'skip' site para sa Linkvertise. Hindi gumagana (invalid ang key) o may malware at phishing. Tanging opisyal na Delta gateway ang lehitimong paraan.",
   },
   {
-    question: "My key worked yesterday but doesn't work today.",
+    question: "Gumana kahapon ang key ko pero hindi ngayon.",
     answer:
-      "Keys expire after 24 hours. This is by design. Open Delta Executor, tap 'Get Key,' and generate a fresh one. There is no way to extend a key's lifetime on the free tier — only Delta Premium subscribers skip this step.",
+      "Nag-e-expire ang key pagkatapos ng 24 oras. By design ito. Buksan ang Delta Executor, i-tap 'Get Key,' at gumawa ng bago. Walang paraan na i-extend ang key sa libreng tier — nilalaktawan lang ito ng Delta Premium.",
   },
   {
-    question: "I changed phones and my key stopped working.",
+    question: "Nagpalit ako ng phone at huminto ang key.",
     answer:
-      "Keys are device-bound. If you switch to a new phone, change ROMs, or factory-reset, you need to generate a fresh key on the new device. The old key will not transfer.",
+      "Device-bound ang key. Kapag bagong phone, nagpalit ng ROM, o factory-reset, kailangan ng bagong key sa bagong device. Hindi lilipat ang lumang key.",
   },
   {
-    question: "Delta shows 'Key Error' after a Roblox update — what happened?",
+    question: "'Key Error' ang Delta pagkatapos ng Roblox update — ano nangyari?",
     answer:
-      "Sometimes a Roblox update changes how Delta validates keys internally. If a fresh key still errors after an update, check the Delta Discord for a hotfix APK. Downgrading Roblox to the previous version temporarily can also restore functionality while you wait.",
+      "Minsan binabago ng Roblox update kung paano nag-validate ang Delta. Kung fresh key pa rin may error, tingnan ang Delta Discord para sa hotfix APK. Pansamantalang pag-downgrade ng Roblox ay maaaring makabawi habang naghihintay.",
   },
 ];
 
@@ -80,59 +80,59 @@ const errors = [
     id: "invalid-key",
     title: "Invalid Key",
     causes: [
-      "Partial copy — only part of the key string was captured.",
-      "Key generated on a different device (device-bound).",
-      "Key has already expired (>24 hours old).",
-      "Outdated Delta version with changed key format.",
+      "Partial copy — hindi buo ang key string.",
+      "Ginawa ang key sa ibang device (device-bound).",
+      "Expired na ang key (>24 oras na).",
+      "Lumang bersyon ng Delta na ibang key format.",
     ],
     fixes: [
-      "Long-press the key string → 'Select All' → Copy. Then paste into Delta.",
-      "Generate the key on the device you will use it on.",
-      "Tap 'Get Key' in Delta to generate a fresh token.",
-      `Update Delta Executor to ${APP_VERSION} from the official download page.`,
+      "Long-press ang key string → 'Select All' → Copy. I-paste sa Delta.",
+      "Gumawa ng key sa device kung saan mo ito gagamitin.",
+      "I-tap ang 'Get Key' sa Delta para sa bagong token.",
+      `I-update ang Delta Executor sa ${APP_VERSION} mula sa opisyal na download page.`,
     ],
   },
   {
     id: "too-many-requests",
     title: "Too Many Requests (Linkvertise / LootLabs)",
     causes: [
-      "You attempted the key gateway multiple times in quick succession.",
-      "Your ISP's IP is shared with many other users who also triggered the limit.",
+      "Maraming sunod-sunod na pagtatangka sa key gateway.",
+      "Shared IP ang ISP mo na marami ring nag-trigger ng limit.",
     ],
     fixes: [
-      "Wait 5–10 minutes and try again.",
-      "Switch from Wi-Fi to mobile data for a different IP address.",
-      "Use a VPN to change your apparent IP, then try the gateway again.",
-      "Switch to a different checkpoint provider (LootLabs or Work.ink).",
+      "Maghintay ng 5–10 minuto at subukan muli.",
+      "Lumipat mula Wi-Fi patungong mobile data para sa ibang IP.",
+      "Gumamit ng VPN para palitan ang IP, tapos subukan muli ang gateway.",
+      "Lumipat sa ibang checkpoint provider (LootLabs o Work.ink).",
     ],
   },
   {
     id: "completed-stuck",
-    title: "Completed checkpoint but no key appeared",
+    title: "Natapos ang checkpoint pero walang key",
     causes: [
-      "Browser failed to redirect to the key confirmation page.",
-      "An adblocker or content blocker prevented the final step from firing.",
-      "Cookies or tracking protection blocked the session handshake.",
+      "Hindi nag-redirect ang browser sa key confirmation page.",
+      "Pinigilan ng adblocker o content blocker ang huling hakbang.",
+      "Na-block ng cookies o tracking protection ang session handshake.",
     ],
     fixes: [
-      "Disable your adblocker for the gateway domain, then redo the flow.",
-      "Clear your browser's cache and cookies, then retry.",
-      "Try a different browser (Chrome, Firefox, or the in-app browser).",
-      "Switch to a different checkpoint provider.",
+      "I-disable ang adblocker para sa gateway domain, gawin muli ang flow.",
+      "Burahin ang cache at cookies ng browser, subukan muli.",
+      "Subukan ang ibang browser (Chrome, Firefox, o in-app browser).",
+      "Lumipat sa ibang checkpoint provider.",
     ],
   },
   {
     id: "wrong-network",
-    title: "Key generates but fails to validate in Delta",
+    title: "May key pero hindi ma-validate sa Delta",
     causes: [
-      "Network changed between key generation and validation (Wi-Fi → data).",
-      "VPN was active during generation but disabled during validation.",
-      "Roblox update changed Delta's internal validation mechanism.",
+      "Nagbago ang network sa pagitan ng generate at validate (Wi-Fi → data).",
+      "Naka-VPN sa generate pero off sa validate.",
+      "Binago ng Roblox update ang internal validation ng Delta.",
     ],
     fixes: [
-      "Keep the same network connection throughout the entire key flow and validation.",
-      "If using a VPN, keep it enabled or disabled consistently across both steps.",
-      "Check Delta's Discord for a post-update hotfix APK.",
+      "Panatilihing pareho ang network sa buong key flow at validation.",
+      "Kung VPN, panatilihing on o off sa parehong hakbang.",
+      "Tingnan ang Discord ng Delta para sa post-update hotfix APK.",
     ],
   },
 ];
@@ -144,13 +144,13 @@ export default function DeltaKeyNotWorkingPage() {
         items={[
           { label: "Home", href: "/" },
           { label: "Blog", href: "/blog" },
-          { label: "Key Not Working" },
+          { label: "Hindi Gumagana ang Key" },
         ]}
       />
 
       <BlogPostSchema
-        title="Delta Executor Key Not Working — Fix Every Error (2026)"
-        description="Fix 'Invalid Key,' Too Many Requests, device-bind errors, adblock failures, and completed-but-stuck loops. Full troubleshooting guide."
+        title="Hindi Gumagana ang Delta Executor Key — Ayusin ang Bawat Error (2026)"
+        description="Ayusin ang 'Invalid Key,' Too Many Requests, device-bind error, adblock, at completed-but-stuck loop. Kumpletong troubleshooting guide."
         slug="delta-executor-key-not-working"
         datePublished="2026-11-15"
         image={`${SITE_ORIGIN}${BRAND_FEATURE_3}`}
@@ -161,32 +161,32 @@ export default function DeltaKeyNotWorkingPage() {
         <div className="flex flex-col gap-8 md:flex-row md:items-center">
           <div className="flex-1">
             <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-pink/80">
-              Troubleshooting · {APP_VERSION} · November 15, 2026
+              Troubleshooting · {APP_VERSION} · Nobyembre 15, 2026
             </p>
             <h1 className="font-display text-4xl font-bold text-white md:text-5xl">
-              Delta Executor Key Not Working
+              Hindi Gumagana ang Delta Executor Key
             </h1>
             <p className="mt-4 max-w-xl text-lg text-white/65">
-              A Delta key can fail for half a dozen different reasons — expired token, wrong
-              network, adblock interference, rate-limits, or a post-update format change. This guide
-              walks through every common failure with specific fixes.
+              Maaaring mabigo ang Delta key sa maraming dahilan — expired token, maling network,
+              adblock, rate-limit, o pagbabago ng format pagkatapos ng update. Tinutulungan ka ng gabay
+              na ito sa bawat karaniwang pagkabigo na may tiyak na solusyon.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
               <CtaButton href={ANDROID_APK_URL} icon="download">
-                Download Latest Delta
+                I-download ang Pinakabagong Delta
               </CtaButton>
               <Link
                 href="/blog/how-to-get-delta-executor-key"
                 className="font-semibold text-pink hover:underline self-center"
               >
-                How to get a key →
+                Paano kumuha ng key →
               </Link>
             </div>
           </div>
           <div className="relative w-full overflow-hidden rounded-2xl border border-white/10 bg-muted md:w-64 lg:w-80">
             <Image
               src={BRAND_FEATURE_3}
-              alt="Delta Executor download and unlock screen"
+              alt="Delta Executor — download at unlock screen"
               width={280}
               height={455}
               sizes="220px"
@@ -200,16 +200,16 @@ export default function DeltaKeyNotWorkingPage() {
       {/* Quick check */}
       <div className="container mx-auto max-w-3xl px-4 pt-10">
         <h2 className="mb-4 font-display text-2xl font-bold text-white md:text-3xl">
-          Quick checklist before diving deep
+          Mabilis na checklist bago lumalim
         </h2>
         <ul className="space-y-2 text-white/65 text-sm leading-relaxed">
           {[
-            "Your key is less than 24 hours old — keys expire after exactly 24 hours.",
-            "You are on the same device you generated the key on (keys are device-bound).",
-            "You copied the entire key string — long-press → Select All → Copy.",
-            `You are using Delta Executor ${APP_VERSION} — older versions use different key formats.`,
-            "Your internet connection is stable and unchanged from when you generated the key.",
-            "You are NOT using a 'bypass site' — those produce invalid or fake keys.",
+            "Mas bata sa 24 oras ang key mo — nag-e-expire ang key eksaktong 24 oras.",
+            "Parehong device kung saan ginawa ang key (device-bound ang mga key).",
+            "Buong key string ang kinopya mo — long-press → Select All → Copy.",
+            `Gumagamit ka ng Delta Executor ${APP_VERSION} — ibang key format ang lumang bersyon.`,
+            "Stable at hindi nagbago ang internet mula nang ginawa ang key.",
+            "HINDI ka gumagamit ng 'bypass site' — invalid o pekeng key ang produkto ng mga iyon.",
           ].map((item, i) => (
             <li key={i} className="flex gap-3">
               <span className="text-pink font-bold shrink-0 mt-0.5">{i + 1}.</span>
@@ -222,7 +222,7 @@ export default function DeltaKeyNotWorkingPage() {
       {/* Error breakdowns */}
       <div className="container mx-auto max-w-3xl px-4 pt-12">
         <h2 className="mb-6 font-display text-2xl font-bold text-white md:text-3xl">
-          Common errors — causes and fixes
+          Karaniwang error — sanhi at solusyon
         </h2>
         <div className="space-y-6">
           {errors.map((err) => (
@@ -235,7 +235,7 @@ export default function DeltaKeyNotWorkingPage() {
               <div className="grid gap-4 sm:grid-cols-2">
                 <div>
                   <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-white/40">
-                    Likely causes
+                    Malamang na sanhi
                   </p>
                   <ul className="space-y-1.5 text-sm text-white/60">
                     {err.causes.map((c) => (
@@ -248,7 +248,7 @@ export default function DeltaKeyNotWorkingPage() {
                 </div>
                 <div>
                   <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-white/40">
-                    Fixes
+                    Solusyon
                   </p>
                   <ul className="space-y-1.5 text-sm text-white/60">
                     {err.fixes.map((f) => (
@@ -268,25 +268,24 @@ export default function DeltaKeyNotWorkingPage() {
       {/* Bypass sites warning */}
       <div className="container mx-auto max-w-3xl px-4 pt-10">
         <h2 className="mb-4 font-display text-2xl font-bold text-white md:text-3xl">
-          Why "bypass" sites don't work — and are unsafe
+          Bakit hindi gumagana — at delikado — ang mga &quot;bypass&quot; site
         </h2>
         <p className="text-white/65 leading-relaxed">
-          Search results for "delta executor linkvertise bypass" or "skip key delta" surface a
-          cluster of third-party sites claiming to generate valid keys without going through the
-          checkpoint. <strong className="text-white">None of these work reliably</strong> — the keys
-          they produce are either fabricated (and immediately rejected by Delta) or recycled from
-          old sessions.
+          Sa paghahanap ng &quot;delta executor linkvertise bypass&quot; o &quot;skip key delta&quot; lalabas ang mga
+          third-party site na nagsasabing makakagawa ng valid key nang hindi dumadaan sa checkpoint.{" "}
+          <strong className="text-white">Wala sa mga ito ang maaasahang gumagana</strong> — peke o
+          recycled mula sa lumang session ang mga key.
         </p>
         <p className="mt-4 text-white/65 leading-relaxed">
-          More dangerously, many of these sites are phishing pages that imitate the Delta interface
-          and ask you to enter your Roblox username or "verify" with a survey that harvests personal
-          data. Others auto-redirect to APK downloads laced with adware.
+          Mas delikado, marami sa mga site na ito ay phishing na ginagaya ang interface ng Delta at
+          humihingi ng Roblox username o &quot;verify&quot; sa survey na nangongolekta ng personal na data. May
+          auto-redirect din sa APK na may adware.
         </p>
         <div className="mt-5 rounded-2xl border border-red-500/30 bg-red-500/5 px-5 py-4">
-          <p className="text-sm font-semibold text-red-400">The only safe rule</p>
+          <p className="text-sm font-semibold text-red-400">Tanging ligtas na tuntunin</p>
           <p className="mt-1 text-sm text-white/65">
-            Only generate your key through the official "Get Key" button inside Delta Executor
-            itself. Never enter your Roblox credentials on any page reached through the key flow.
+            Sa opisyal na &quot;Get Key&quot; button sa loob ng Delta Executor lamang gumawa ng key. Huwag
+            maglagay ng Roblox credentials sa anumang page mula sa key flow.
           </p>
         </div>
       </div>
@@ -294,11 +293,11 @@ export default function DeltaKeyNotWorkingPage() {
       {/* Still stuck */}
       <div className="container mx-auto max-w-3xl px-4 pt-10">
         <h2 className="mb-4 font-display text-2xl font-bold text-white md:text-3xl">
-          Still stuck? Here's where to get help
+          Stuck pa rin? Heto kung saan humingi ng tulong
         </h2>
         <p className="text-white/65 leading-relaxed mb-4">
-          If none of the fixes above resolve your issue, there may be a post-update compatibility
-          problem affecting all users. Check these resources:
+          Kung wala sa mga solusyon sa itaas ang gumana, maaaring post-update compatibility issue na
+          apektado ang lahat. Tingnan ang mga resource na ito:
         </p>
         <ul className="space-y-3 text-sm text-white/65">
           <li className="flex gap-3">
@@ -307,16 +306,16 @@ export default function DeltaKeyNotWorkingPage() {
               <Link href="/delta-executor-discord" className="text-pink hover:underline font-semibold">
                 Delta Executor Discord
               </Link>{" "}
-              — the #announcements channel is the first place post-update fixes are shared.
+              — unang lugar kung saan ibinabahagi ang post-update fix (#announcements).
             </span>
           </li>
           <li className="flex gap-3">
             <span className="text-pink font-bold shrink-0 mt-0.5">→</span>
             <span>
               <Link href="/delta-executor-troubleshooting" className="text-pink hover:underline font-semibold">
-                Full troubleshooting guide
+                Kumpletong troubleshooting guide
               </Link>{" "}
-              — covers injection failures, crash loops, and more beyond the key system.
+              — injection failure, crash loop, at iba pa bukod sa key system.
             </span>
           </li>
           <li className="flex gap-3">
@@ -325,7 +324,7 @@ export default function DeltaKeyNotWorkingPage() {
               <Link href="/download-delta-executor" className="text-pink hover:underline font-semibold">
                 Download page
               </Link>{" "}
-              — make sure you're on the latest APK. Outdated versions are the most common root cause.
+              — tiyaking pinakabagong APK. Pinakakaraniwang sanhi ang lumang bersyon.
             </span>
           </li>
         </ul>
@@ -333,7 +332,7 @@ export default function DeltaKeyNotWorkingPage() {
 
       {/* FAQ */}
       <div className="container mx-auto max-w-3xl px-4 pb-6">
-        <FaqSection title="Key not working FAQ" items={faqItems} />
+        <FaqSection title="FAQ: Hindi gumagana ang key" items={faqItems} />
       </div>
 
       <div className="container mx-auto max-w-3xl px-4 pb-14">

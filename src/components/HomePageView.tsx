@@ -34,7 +34,7 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
         name: t.brand,
         description: t.metaDescription,
         publisher: { "@id": `${SITE_ORIGIN}/#organization` },
-        inLanguage: "en",
+        inLanguage: "fil",
       },
       {
         ...WEB_APPLICATION_JSON_LD,
@@ -77,82 +77,88 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
 
   const guideTopics = [
     {
-      title: "Android download",
-      body: "Delta Executor installs as an APK on Android. Allowing unknown sources, picking the right ARM build, and checking Play Protect prompts are the steps most players miss. The download page walks the checklist in order.",
+      title: "Pag-download sa Android",
+      body: "Naka-install ang Delta Executor bilang APK sa Android. Ang pagpayag sa unknown sources, pagpili ng tamang ARM build, at pagsuri sa Play Protect prompt ang madalas na nalalampasan ng mga player. Sunud-sunod ang checklist sa download page.",
       href: ROUTES.download,
-      linkLabel: "Android download guide",
+      linkLabel: "Gabay sa pag-download sa Android",
     },
     {
-      title: "iOS setup",
-      body: "On iPhone and iPad, Delta usually arrives via IPA, Direct Install, or a sideloading tool. Signing errors, expired profiles, and revokes are the common blockers. The iOS page explains which method fits which device.",
+      title: "Setup sa iOS",
+      body: "Sa iPhone at iPad, karaniwang dumarating ang Delta sa pamamagitan ng IPA, Direct Install, o sideloading tool. Signing error, expired profile, at revoke ang karaniwang hadlang. Ipinapaliwanag ng iOS page kung aling paraan ang bagay sa iyong device.",
       href: ROUTES.ios,
-      linkLabel: "iOS install guide",
+      linkLabel: "Gabay sa pag-install sa iOS",
     },
     {
-      title: "PC version",
-      body: "Many mirror sites advertise a “Delta for PC” EXE. Most of those links are unrelated or risky software. Our PC guide separates emulator installs of the Android APK from fake native Windows downloads.",
+      title: "Bersyon sa PC",
+      body: "Maraming mirror site ang nag-aadvertise ng “Delta for PC” EXE. Karamihan sa mga link na iyon ay hindi kaugnay o mapanganib na software. Hinihiwalay ng PC guide ang emulator install ng Android APK mula sa pekeng native Windows download.",
       href: ROUTES.pc,
-      linkLabel: "PC version guide",
+      linkLabel: "Gabay sa bersyon sa PC",
     },
     {
-      title: "How to use",
-      body: "After install you still need attach, Script Hub, paste, and execute. The how-to guide shows that flow so you are not stuck with an APK that never runs a script.",
+      title: "Paano gamitin",
+      body: "Pagkatapos mag-install kailangan mo pa ring mag-attach, Script Hub, paste, at execute. Ipinapakita ng how-to guide ang flow na iyon para hindi ka manatili sa APK na hindi tumatakbo ng script.",
       href: ROUTES.howToUse,
-      linkLabel: "How to use Delta Executor",
+      linkLabel: "Paano gamitin ang Delta Executor",
     },
     {
-      title: "What is Delta Executor?",
-      body: "New to Delta? The beginner guide explains what the executor does, which platforms it supports, and what risks to understand before you install.",
+      title: "Ano ang Delta Executor?",
+      body: "Bago sa Delta? Ipinapaliwanag ng beginner guide kung ano ang ginagawa ng executor, aling platform ang sinusuportahan, at anong mga panganib ang dapat mong unawain bago mag-install.",
       href: ROUTES.whatIs,
-      linkLabel: "Beginner guide",
+      linkLabel: "Gabay para sa baguhan",
     },
     {
-      title: "How to get a Delta key",
-      body: "Free Delta keys are time-limited and often device-bound. The key guide walks Linkvertise, LootLabs, and Work.ink without risky installs.",
+      title: "Paano kumuha ng Delta key",
+      body: "Ang libreng Delta key ay may time limit at madalas na nakatali sa device. Tinutunton ng key guide ang Linkvertise, LootLabs, at Work.ink nang walang mapanganib na install.",
       href: ROUTES.keySystem,
-      linkLabel: "Get key walkthrough",
+      linkLabel: "Walkthrough sa pagkuha ng key",
     },
     {
-      title: "Is Delta Executor safe?",
-      body: "Device risk, Roblox ban risk, VirusTotal habits, and permissions explained — honest assessment with no marketing fluff.",
+      title: "Ligtas ba ang Delta Executor?",
+      body: "Panganib sa device, ban sa Roblox, VirusTotal habits, at permissions — tapat na assessment na walang marketing fluff.",
       href: ROUTES.safety,
-      linkLabel: "Safety review",
+      linkLabel: "Review sa kaligtasan",
     },
     {
-      title: "Key not working",
-      body: "Invalid key, Too Many Requests, stuck unlock progress, and network bind errors — fixes for the key failures people search most.",
+      title: "Hindi gumagana ang key",
+      body: "Invalid key, Too Many Requests, stuck unlock progress, at network bind error — mga solusyon sa key failure na madalas hanapin.",
       href: ROUTES.keyNotWorking,
-      linkLabel: "Key error fixes",
+      linkLabel: "Ayos sa key error",
     },
     {
-      title: "Troubleshooting",
-      body: "Injection failures, key loops, crashes, and Play Protect blocks show up after every Roblox patch week. The troubleshooting page gives short diagnosis orders for each error.",
+      title: "Pag-troubleshoot",
+      body: "Injection failure, key loop, crash, at Play Protect block ang lumalabas pagkatapos ng Roblox patch week. Ang troubleshooting page ay nagbibigay ng maikling diagnosis para sa bawat error.",
       href: ROUTES.troubleshooting,
-      linkLabel: "Troubleshooting guide",
+      linkLabel: "Gabay sa pag-troubleshoot",
     },
     {
-      title: "Mac guide",
-      body: "There is no trusted mass-market Delta .dmg for every Mac user. Most people use an emulator or iPhone mirroring. The Mac page clarifies which option fits whom.",
+      title: "Gabay sa Mac",
+      body: "Walang pinagkakatiwalaang mass-market Delta .dmg para sa lahat ng Mac user. Karamihan ay gumagamit ng emulator o iPhone mirroring. Nililinaw ng Mac page kung aling opsyon ang bagay kanino.",
       href: ROUTES.mac,
-      linkLabel: "Mac guide",
+      linkLabel: "Gabay sa Mac",
     },
     {
       title: "VNG (Vietnam)",
-      body: "The VNG Roblox client differs from the global client in some regions. The VNG page explains who needs that build and how install differs.",
+      body: "Naiiba ang VNG Roblox client sa global client sa ilang rehiyon. Ipinapaliwanag ng VNG page kung sino ang kailangan ng build na iyon at paano naiiba ang install.",
       href: ROUTES.vng,
-      linkLabel: "VNG guide",
+      linkLabel: "Gabay sa VNG",
     },
     {
       title: "Discord server",
-      body: "Update pings, bug reports, and script talk live on Discord. The Discord page covers safe joins and warns about fake invite / DM scams.",
+      body: "Update ping, bug report, at usapan tungkol sa script ay nasa Discord. Saklaw ng Discord page ang ligtas na pagsali at babala sa pekeng invite / DM scam.",
       href: ROUTES.discord,
-      linkLabel: "Discord guide",
+      linkLabel: "Gabay sa Discord",
     },
     {
-      title: "Executor comparison",
-      body: "Mobile support, key friction, hub quality, and update speed — compared without “undetectable” slogans. Use it when deciding if Delta fits your device.",
+      title: "Paghahambing ng executor",
+      body: "Mobile support, key friction, kalidad ng hub, at bilis ng update — ihinahambing nang walang “undetectable” slogan. Gamitin kapag nagdedesisyon kung bagay ang Delta sa iyong device.",
       href: ROUTES.comparison,
-      linkLabel: "Comparison table",
+      linkLabel: "Talahanayan ng paghahambing",
+    },
+    {
+      title: "Robux to USD",
+      body: "I-convert ang Robux sa dolyar o dolyar sa Robux gamit ang buy rate at DevEx cash-out rate — kasama ang mabilis na lookup para sa 10K, 100K, at 18 milyong Robux.",
+      href: ROUTES.robuxToUsd,
+      linkLabel: "Buksan ang Robux converter",
     },
   ];
 
@@ -188,11 +194,11 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
                 download
                 rel="noopener noreferrer"
               >
-                Download Delta Executor
+                I-download ang Delta Executor
                 <span aria-hidden="true">→</span>
               </a>
               <Link href={ROUTES.ios} className="bfv-outline-btn bfv-outline-btn-muted">
-                iOS guide
+                Gabay sa iOS
               </Link>
             </div>
             <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
@@ -210,25 +216,25 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
               ))}
             </div>
             <p className="mt-3 text-xs text-white/40">
-              Community channels — Telegram, Facebook, X, and Discord
+              Mga channel ng komunidad — Telegram, Facebook, X, at Discord
             </p>
             <div className="mx-auto mt-8 w-full max-w-xl text-left">
-              <h2 className="font-display text-2xl font-bold text-white md:text-3xl">APK details</h2>
+              <h2 className="font-display text-2xl font-bold text-white md:text-3xl">Detalye ng APK</h2>
               <p className="mt-2 mb-4 text-sm text-white/55">
-                Quick facts for the current Delta Executor build
+                Mabilis na impormasyon para sa kasalukuyang build ng Delta Executor
               </p>
               <div className="overflow-x-auto rounded-2xl border border-white/10">
                 <table className="w-full text-sm text-white/70">
                   <tbody className="divide-y divide-white/5">
                     {[
-                      ["App name", "Delta Executor"],
-                      ["Version", APP_VERSION],
-                      ["Updated", STYLES_UPDATED],
+                      ["Pangalan ng app", "Delta Executor"],
+                      ["Bersyon", APP_VERSION],
+                      ["Na-update", STYLES_UPDATED],
                       ["Platform", "Android 5.0+ · iOS 15–18"],
-                      ["Architecture", "ARM64 + ARM32"],
-                      ["Approx. size", "167.8 MB"],
-                      ["Price", "Free (key system)"],
-                      ["Root / jailbreak", "Not required"],
+                      ["Arkitektura", "ARM64 + ARM32"],
+                      ["Tinatayang laki", "167.8 MB"],
+                      ["Presyo", "Libre (key system)"],
+                      ["Root / jailbreak", "Hindi kailangan"],
                     ].map(([label, value]) => (
                       <tr key={label}>
                         <td className="px-4 py-3 font-semibold text-white/70">{label}</td>
@@ -244,7 +250,7 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
                 ★
               </span>
               {SITE_RATING.ratingValue} · {Number(SITE_RATING.ratingCount).toLocaleString("en-PH")}{" "}
-              {t.ratingsLabel} · Free · Android · Game · {STYLES_UPDATED}
+              {t.ratingsLabel} · Libre · Android · Laro · {STYLES_UPDATED}
             </p>
           </div>
         </div>
@@ -256,15 +262,15 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
           <div className="mx-auto mt-8 max-w-3xl">
             <p className="text-base leading-relaxed text-white/60 sm:text-lg">{t.whatBody}</p>
             <p className="mt-4 text-base leading-relaxed text-white/60 sm:text-lg">
-              Live Google results for “delta executor download” are crowded with YouTube installs, Softonic-style mirrors, and one-page skyscraper sites.{" "}
+              Ang live na Google result para sa “delta executor download” ay puno ng YouTube install, Softonic-style mirror, at one-page skyscraper site.{" "}
               <Link href={ROUTES.download} className="font-semibold text-pink hover:underline">
-                Our download guide
+                Ang aming download guide
               </Link>{" "}
-              keeps platform steps on{" "}
-              <span className="text-white/80">deltaexecutor.com.ph</span> instead of stuffing every query into a single thin URL.
+              ay nag-iingat ng mga hakbang kada platform sa{" "}
+              <span className="text-white/80">deltaexecutor.com.ph</span> sa halip na isiksik ang lahat ng query sa isang manipis na URL.
             </p>
             <p className="mt-4 text-base leading-relaxed text-white/60 sm:text-lg">
-              Competitors like deltaexecuter.com, delta-executor.com, deltaexploits.gg, and deltaexecutor.com.br cover Android buttons and key steps, but often skip honest ban language, image SEO, or multi-page IA. We close those gaps with dedicated{" "}
+              Ang mga kakumpitensya tulad ng deltaexecuter.com, delta-executor.com, deltaexploits.gg, at deltaexecutor.com.br ay may Android button at key step, pero madalas na walang tapat na ban language, image SEO, o multi-page IA. Pinupunan namin ang mga puwang na iyon sa pamamagitan ng dedikadong{" "}
               <Link href={ROUTES.ios} className="font-semibold text-pink hover:underline">
                 iOS
               </Link>
@@ -274,13 +280,13 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
               </Link>
               ,{" "}
               <Link href={ROUTES.safety} className="font-semibold text-pink hover:underline">
-                safety
+                kaligtasan
               </Link>
-              , and{" "}
+              , at{" "}
               <Link href={ROUTES.keyNotWorking} className="font-semibold text-pink hover:underline">
                 key troubleshooting
               </Link>{" "}
-              guides.
+              na mga gabay.
             </p>
           </div>
           <div className="brand-shot-frame brand-shot-frame--hero relative mx-auto mt-8">
@@ -300,18 +306,18 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
       <section className="px-4 py-12 sm:px-6 md:px-8">
         <div className="container mx-auto max-w-3xl">
           <h2 className="font-display text-3xl font-bold text-white md:text-4xl">
-            What&apos;s new in {APP_VERSION}?
+            Ano&apos;ng bago sa {APP_VERSION}?
           </h2>
-          <p className="mt-3 text-white/55 mb-6">{STYLES_UPDATED} build — headline improvements</p>
+          <p className="mt-3 text-white/55 mb-6">{STYLES_UPDATED} build — mga pangunahing pagpapabuti</p>
           <ul className="space-y-3">
             {[
-              "Roblox November 2026 engine compatibility — injection restored after the latest patch cycle.",
-              "Script hub refreshed with current Blox Fruits, Da Hood, and Grow a Garden categories.",
-              "ARM64 injection path optimized — faster attach on 4 GB+ RAM phones.",
-              "Improved auto-inject reliability on Android 13/14.",
-              "iOS build updated for iOS 18.x Direct Install / AltStore signing checks.",
-              "Error toast now surfaces Lua line numbers on script failures.",
-              "Longer key-gateway timeout on slow mobile networks.",
+              "Roblox November 2026 engine compatibility — naibalik ang injection pagkatapos ng pinakabagong patch cycle.",
+              "Na-refresh ang Script hub na may kasalukuyang Blox Fruits, Da Hood, at Grow a Garden category.",
+              "Na-optimize ang ARM64 injection path — mas mabilis na attach sa 4 GB+ RAM na phone.",
+              "Mas maaasahang auto-inject sa Android 13/14.",
+              "Na-update ang iOS build para sa iOS 18.x Direct Install / AltStore signing check.",
+              "Ipinapakita na ng error toast ang Lua line number kapag may script failure.",
+              "Mas mahabang key-gateway timeout sa mabagal na mobile network.",
             ].map((item) => (
               <li key={item} className="flex gap-3 text-sm text-white/65">
                 <span className="mt-0.5 text-pink shrink-0" aria-hidden="true">
@@ -322,11 +328,11 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
             ))}
           </ul>
           <p className="mt-6 text-sm text-white/55">
-            Need install steps after updating? Jump to the{" "}
+            Kailangan ng install step pagkatapos mag-update? Pumunta sa{" "}
             <Link href={ROUTES.download} className="font-semibold text-pink hover:underline">
-              Android APK guide
+              gabay sa Android APK
             </Link>{" "}
-            or the{" "}
+            o sa{" "}
             <Link href={ROUTES.howToUse} className="font-semibold text-pink hover:underline">
               how-to-use walkthrough
             </Link>
@@ -365,19 +371,19 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
 
       <section className="px-4 py-12 sm:px-6 md:px-8">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-3xl font-bold text-white md:text-4xl">Pros and cons</h2>
-          <p className="mt-3 mb-6 text-white/55">Honest scorecard — no fake “undetectable forever” claims</p>
+          <h2 className="font-display text-3xl font-bold text-white md:text-4xl">Mga kalamangan at kahinaan</h2>
+          <p className="mt-3 mb-6 text-white/55">Tapat na scorecard — walang pekeng “undetectable forever” claim</p>
           <div className="grid gap-6 sm:grid-cols-2">
             <div className="rounded-2xl border border-green-400/20 bg-green-400/5 p-5">
-              <h3 className="mb-3 font-display font-bold text-green-400">Pros</h3>
+              <h3 className="mb-3 font-display font-bold text-green-400">Mga kalamangan</h3>
               <ul className="space-y-2 text-sm text-white/65">
                 {[
-                  "Android and iOS — real cross-platform mobile focus",
-                  "No root or jailbreak required for standard builds",
-                  "Free with a key system — no forced paywall for basic use",
-                  "Native ARM64 path for modern phones",
-                  "Curated script hub reduces some malicious-paste risk",
-                  "Usually responds to Roblox patches within 24–72 hours",
+                  "Android at iOS — tunay na cross-platform mobile focus",
+                  "Hindi kailangan ng root o jailbreak para sa standard build",
+                  "Libre na may key system — walang sapilitang paywall para sa basic use",
+                  "Native ARM64 path para sa modernong phone",
+                  "Curated script hub — nabawas ang panganib ng malicious paste",
+                  "Karaniwang sumasagot sa Roblox patch sa loob ng 24–72 oras",
                 ].map((p) => (
                   <li key={p} className="flex gap-2">
                     <span className="text-green-400 shrink-0">✓</span>
@@ -387,14 +393,14 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
               </ul>
             </div>
             <div className="rounded-2xl border border-red-400/20 bg-red-400/5 p-5">
-              <h3 className="mb-3 font-display font-bold text-red-400">Cons</h3>
+              <h3 className="mb-3 font-display font-bold text-red-400">Mga kahinaan</h3>
               <ul className="space-y-2 text-sm text-white/65">
                 {[
-                  "Daily ~24-hour key refresh on free tier",
-                  "No trusted native Windows EXE for most users",
-                  "Free iOS signing may need re-trust after revokes",
-                  "Injection can break temporarily after Roblox updates",
-                  "Ban risk is real — Roblox ToS violation",
+                  "Araw-araw na ~24-oras na key refresh sa libreng tier",
+                  "Walang pinagkakatiwalaang native Windows EXE para sa karamihan",
+                  "Maaaring kailanganin muling i-trust ang libreng iOS signing pagkatapos ng revoke",
+                  "Maaaring pansamantalang masira ang injection pagkatapos ng Roblox update",
+                  "Tunay ang panganib ng ban — paglabag sa Roblox ToS",
                 ].map((c) => (
                   <li key={c} className="flex gap-2">
                     <span className="text-red-400 shrink-0">✗</span>
@@ -405,9 +411,9 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
             </div>
           </div>
           <p className="mt-6 text-sm text-white/55">
-            Want a deeper risk breakdown? Read{" "}
+            Gusto ng mas malalim na breakdown ng panganib? Basahin ang{" "}
             <Link href={ROUTES.safety} className="font-semibold text-pink hover:underline">
-              Is Delta Executor safe?
+              Ligtas ba ang Delta Executor?
             </Link>
           </p>
         </div>
@@ -415,24 +421,24 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
 
       <section className="px-4 py-12 sm:px-6 md:px-8">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-3xl font-bold text-white md:text-4xl">Popular games in Script Hub</h2>
+          <h2 className="font-display text-3xl font-bold text-white md:text-4xl">Sikat na laro sa Script Hub</h2>
           <p className="mt-3 mb-6 text-white/55">
-            The built-in hub surfaces categories for these game types.{" "}
+            Ipinapakita ng built-in hub ang mga category para sa mga uri ng larong ito.{" "}
             <Link href={ROUTES.howToUse} className="text-pink hover:underline">
-              How to run scripts →
+              Paano tumakbo ang script →
             </Link>
           </p>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { game: "Blox Fruits", type: "Auto farm, teleport, fruit helpers" },
-              { game: "Brookhaven", type: "Admin tools, social scripts" },
-              { game: "Pet Simulator X", type: "Auto collect, hatch helpers" },
-              { game: "Arsenal", type: "Aim helpers, ESP-style tools" },
-              { game: "Jailbreak", type: "Vehicle speed, teleport routes" },
-              { game: "Da Hood", type: "Farm, hitbox, movement helpers" },
-              { game: "Grow a Garden", type: "Farm automation, stat tools" },
-              { game: "Adopt Me", type: "Trade helpers, auto actions" },
-              { game: "Universal helpers", type: "Admin panels, anti-AFK, FPS unlock" },
+              { game: "Blox Fruits", type: "Auto farm, teleport, fruit helper" },
+              { game: "Brookhaven", type: "Admin tool, social script" },
+              { game: "Pet Simulator X", type: "Auto collect, hatch helper" },
+              { game: "Arsenal", type: "Aim helper, ESP-style tool" },
+              { game: "Jailbreak", type: "Vehicle speed, teleport route" },
+              { game: "Da Hood", type: "Farm, hitbox, movement helper" },
+              { game: "Grow a Garden", type: "Farm automation, stat tool" },
+              { game: "Adopt Me", type: "Trade helper, auto action" },
+              { game: "Universal helper", type: "Admin panel, anti-AFK, FPS unlock" },
             ].map((item) => (
               <div key={item.game} className="rounded-xl border border-white/10 bg-card p-4">
                 <p className="font-semibold text-white text-sm">{item.game}</p>
@@ -447,16 +453,16 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
         <div className="container mx-auto max-w-3xl">
           <div className="bfv-glass-card flex flex-col sm:flex-row sm:items-center gap-4 justify-between p-6 sm:p-8">
             <div>
-              <h2 className="font-display text-xl font-bold text-white">How does Delta compare?</h2>
+              <h2 className="font-display text-xl font-bold text-white">Paano nahahambing ang Delta?</h2>
               <p className="mt-2 text-sm text-white/55">
-                Side-by-side: mobile support, key friction, script hub, update speed — no fake claims.
+                Side-by-side: mobile support, key friction, script hub, bilis ng update — walang pekeng claim.
               </p>
             </div>
             <Link
               href={ROUTES.comparison}
               className="shrink-0 rounded-full border border-pink/30 bg-pink/10 px-5 py-2.5 text-sm font-semibold text-pink hover:bg-pink/20"
             >
-              View comparison →
+              Tingnan ang paghahambing →
             </Link>
           </div>
         </div>
@@ -464,17 +470,17 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
 
       <section className="px-4 py-12 sm:px-6 md:px-8">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-3xl font-bold text-white md:text-4xl">Community &amp; Discord</h2>
+          <h2 className="font-display text-3xl font-bold text-white md:text-4xl">Komunidad at Discord</h2>
           <p className="mt-4 text-base leading-relaxed text-white/60 sm:text-lg">
-            Competitor hubs lean on Discord for patch notes, script sharing, and error reports. We point you to community channels for update pings — and keep support email on{" "}
-            <strong className="font-semibold text-white/80">{SITE_NAME}</strong> so random invite scams do not become your only contact path.
+            Umaasa ang competitor hub sa Discord para sa patch note, script sharing, at error report. Itinuturo namin ang mga community channel para sa update ping — at pinapanatili ang support email sa{" "}
+            <strong className="font-semibold text-white/80">{SITE_NAME}</strong> para ang random invite scam ay hindi maging tanging daan ng pakikipag-ugnayan.
           </p>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2">
             {[
-              { t: "Update announcements", d: "Learn when Android / iOS builds catch up after Roblox patches." },
-              { t: "Bug reports", d: "Injection and key issues diagnose faster with logs." },
-              { t: "Script sharing", d: "Community hubs surface working scripts — still verify before execute." },
-              { t: "Tutorials", d: "Short clips for attach, key renew, and first script runs." },
+              { t: "Mga anunsyo ng update", d: "Alamin kung kailan naaabutan ng Android / iOS build ang Roblox patch." },
+              { t: "Mga bug report", d: "Mas mabilis ma-diagnose ang injection at key issue kapag may log." },
+              { t: "Pagbabahagi ng script", d: "Lumalabas sa community hub ang gumaganang script — i-verify pa rin bago mag-execute." },
+              { t: "Mga tutorial", d: "Maikling clip para sa attach, key renew, at unang script run." },
             ].map((item) => (
               <li key={item.t} className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
                 <h3 className="font-semibold text-white">{item.t}</h3>
@@ -484,13 +490,13 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
           </ul>
           <p className="mt-6 text-sm text-white/55">
             <Link href={ROUTES.discord} className="font-semibold text-pink hover:underline">
-              Open the Discord guide →
+              Buksan ang gabay sa Discord →
             </Link>{" "}
-            Prefer email? Write{" "}
+            Mas gusto ang email? Sumulat sa{" "}
             <Link href={ROUTES.contact} className="font-semibold text-pink hover:underline">
               support@deltaexecutor.com.ph
             </Link>
-            . Never paste Roblox passwords into Discord DMs that claim to “whitelist” your account.
+            . Huwag kailanman mag-paste ng Roblox password sa Discord DM na nagsasabing “i-whitelist” ang account mo.
           </p>
         </div>
       </section>
@@ -520,10 +526,10 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
         <div className="container mx-auto max-w-6xl">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-display text-3xl font-bold text-white md:text-4xl">
-              Android, iOS, and scripts — at a glance
+              Android, iOS, at script — sa isang sulyap
             </h2>
             <p className="mt-4 text-white/55">
-              Three feature visuals cover the intents people actually search around Delta Executor.
+              Tatlong feature visual ang sumasaklaw sa intent na talagang hinahanap ng mga tao tungkol sa Delta Executor.
             </p>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-3">

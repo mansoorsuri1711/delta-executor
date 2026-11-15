@@ -3,8 +3,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { CONTACT_EMAIL, SITE_DOMAIN, SITE_NAME, SITE_ORIGIN, STYLES_UPDATED } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: `Privacy Policy — ${SITE_NAME}`,
-  description: `Privacy policy for ${SITE_DOMAIN}: what data we collect, analytics, cookies, and how to contact us about your privacy.`,
+  title: `Patakaran sa Privacy — ${SITE_NAME}`,
+  description: `Patakaran sa privacy para sa ${SITE_DOMAIN}: anong data ang kinokolekta namin, analytics, cookies, at paano makipag-ugnayan tungkol sa iyong privacy.`,
   alternates: { canonical: `${SITE_ORIGIN}/privacy` },
 };
 
@@ -14,53 +14,53 @@ export default function PrivacyPage() {
       <Breadcrumbs
         items={[
           { label: "Home", href: "/" },
-          { label: "Privacy Policy" },
+          { label: "Patakaran sa Privacy" },
         ]}
       />
       <div className="container mx-auto max-w-3xl px-4 pb-12 pt-8">
-        <h1 className="mb-6 font-display text-3xl font-bold text-white">Privacy Policy</h1>
+        <h1 className="mb-6 font-display text-3xl font-bold text-white">Patakaran sa Privacy</h1>
         <div className="space-y-4 leading-relaxed text-white/75">
           <p>
-            This Privacy Policy explains how {SITE_NAME} ({SITE_DOMAIN}) handles information when you visit or use this website.
+            Ipinaliliwanag ng Patakaran sa Privacy na ito kung paano pinapamahalaan ng {SITE_NAME} ({SITE_DOMAIN}) ang impormasyon kapag binisita o ginagamit mo ang website na ito.
           </p>
 
-          <h2 className="pt-2 font-display text-xl font-bold text-white">Information we collect</h2>
+          <h2 className="pt-2 font-display text-xl font-bold text-white">Impormasyon na kinokolekta namin</h2>
           <p>
-            This site does not require you to create an account or submit personal information to access content. If you contact us via email or the contact form, we receive only the information you voluntarily provide (name, email address, and message) solely to respond to your inquiry.
+            Hindi kailangan ng site na ito na gumawa ng account o magsumite ng personal na impormasyon para ma-access ang content. Kung makikipag-ugnayan ka sa amin via email o contact form, natatanggap lamang namin ang impormasyong kusang ibinibigay mo (pangalan, email address, at mensahe) upang tugunan ang iyong inquiry.
           </p>
 
-          <h2 className="font-display text-xl font-bold text-white">Server logs and analytics</h2>
+          <h2 className="font-display text-xl font-bold text-white">Server logs at analytics</h2>
           <p>
-            Our hosting provider and analytics tools may automatically collect technical data including your IP address, browser type and version, referring URL, and pages visited. This data is used in aggregate to monitor site performance, security, and traffic trends. We do not sell or share individual log data with third-party advertisers.
+            Maaaring awtomatikong magkolekta ng teknikal na data ang hosting provider at analytics tools namin, kabilang ang IP address, uri at bersyon ng browser, referring URL, at mga binisitang pahina. Ginagamit ang data nang aggregate upang subaybayan ang performance, seguridad, at traffic trends. Hindi namin ibinebenta o ibinabahagi ang indibidwal na log data sa third-party advertiser.
           </p>
 
           <h2 className="font-display text-xl font-bold text-white">Cookies</h2>
           <p>
-            Essential cookies may be used for site functionality (e.g. theme preference). Analytics cookies, if active, collect only anonymized, aggregated data. You can manage or delete cookies at any time through your browser settings; this does not affect your ability to read our content.
+            Maaaring gumamit ng essential cookies para sa functionality ng site (hal. theme preference). Kung aktibo ang analytics cookies, nangongolekta lamang ito ng anonymized at aggregated data. Maaari mong pamahalaan o burahin ang cookies anumang oras sa settings ng browser; hindi nito apektado ang iyong kakayahang basahin ang content namin.
           </p>
 
-          <h2 className="font-display text-xl font-bold text-white">Third-party links</h2>
+          <h2 className="font-display text-xl font-bold text-white">Mga third-party link</h2>
           <p>
-            Our pages link to external services including Roblox, app stores, and social media platforms. Clicking those links takes you outside {SITE_DOMAIN}, where the third party&apos;s own privacy policy applies. We are not responsible for the data practices of those parties.
+            May mga link ang aming pahina sa panlabas na serbisyo kabilang ang Roblox, app store, at social media platform. Kapag nag-click ka sa mga link na iyon, mapupunta ka sa labas ng {SITE_DOMAIN}, kung saan ang sariling privacy policy ng third party ang ilalapat. Hindi kami responsable sa data practices ng mga partidong iyon.
           </p>
 
-          <h2 className="font-display text-xl font-bold text-white">Children&apos;s privacy</h2>
+          <h2 className="font-display text-xl font-bold text-white">Privacy ng mga menor de edad</h2>
           <p>
-            This site is not directed at children under 13. We do not knowingly collect personal information from minors. If you believe a child has submitted personal information to us, please contact us and we will delete it promptly.
+            Hindi nakatuon ang site na ito sa mga batang wala pang 13 taong gulang. Walang sinasadyang kinokolekta naming personal na impormasyon mula sa mga menor de edad. Kung naniniwala kang may menor de edad na nagsumite ng personal na impormasyon sa amin, makipag-ugnayan sa amin at buburahin namin ito agad.
           </p>
 
-          <h2 className="font-display text-xl font-bold text-white">Changes to this policy</h2>
+          <h2 className="font-display text-xl font-bold text-white">Mga pagbabago sa patakarang ito</h2>
           <p>
-            We may update this policy from time to time. The date at the bottom of the page reflects the most recent revision.
+            Maaari naming i-update ang patakarang ito paminsan-minsan. Ang petsa sa ibabang bahagi ng pahina ang pinakabagong rebisyon.
           </p>
 
-          <h2 className="font-display text-xl font-bold text-white">Contact</h2>
+          <h2 className="font-display text-xl font-bold text-white">Makipag-ugnayan</h2>
           <p>
-            For privacy questions or data requests:{" "}
+            Para sa tanong sa privacy o data request:{" "}
             <a href={`mailto:${CONTACT_EMAIL}`} className="text-pink underline">
               {CONTACT_EMAIL}
             </a>
-            . Last updated: {STYLES_UPDATED}.
+            . Huling in-update: {STYLES_UPDATED}.
           </p>
         </div>
       </div>

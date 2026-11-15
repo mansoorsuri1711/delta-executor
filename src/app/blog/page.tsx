@@ -6,57 +6,57 @@ import RelatedGuides, { RELATED_PRESETS } from "@/components/RelatedGuides";
 import { OG_IMAGE, SITE_NAME, SITE_ORIGIN } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: `Delta Executor Blog — Guides, Key Help & Safety Tips`,
+  title: `Blog ng Delta Executor — Mga Gabay, Tulong sa Key at Safety Tips`,
   description:
-    "Delta Executor blog: beginner guide, key system walkthrough, safety and ban risk explained, and key error troubleshooting. Updated November 2026.",
+    "Blog ng Delta Executor: gabay para sa mga nagsisimula, key system, kaligtasan at ban risk, at troubleshooting ng key error. In-update noong Nobyembre 2026.",
   alternates: { canonical: `${SITE_ORIGIN}/blog` },
   openGraph: {
-    title: `Delta Executor Blog — ${SITE_NAME}`,
+    title: `Blog ng Delta Executor — ${SITE_NAME}`,
     description:
-      "Practical guides for Delta Executor users — key system, safety info, and troubleshooting. No fluff, no fake download links.",
+      "Praktikal na mga gabay para sa mga user ng Delta Executor — key system, impormasyon sa kaligtasan, at troubleshooting. Walang fluff, walang pekeng download link.",
     url: `${SITE_ORIGIN}/blog`,
     siteName: SITE_NAME,
     type: "website",
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `${SITE_NAME} blog` }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `Blog ng ${SITE_NAME}` }],
   },
 };
 
 const posts = [
   {
     href: "/blog/what-is-delta-executor",
-    title: "What Is Delta Executor? A Complete Beginner Guide",
+    title: "Ano ang Delta Executor? Kumpletong Gabay para sa Nagsisimula",
     excerpt:
-      "New to Delta Executor? This plain-English introduction covers what it is, which platforms it supports (Android, iOS, PC emulator), how the key system and scripts work at a high level, and what real risks you should understand before getting started.",
-    date: "November 15, 2026",
+      "Bago sa Delta Executor? Ang madaling maintindihang introduksyong ito ay sumasaklaw sa kung ano ito, anong mga platform ang sinusuportahan (Android, iOS, PC emulator), paano gumagana ang key system at mga script sa mataas na antas, at ang tunay na mga panganib na dapat mong unawain bago magsimula.",
+    date: "Nobyembre 15, 2026",
     image: "/delta-executer.webp",
-    imageAlt: "Delta Executor app — Get Key screen",
+    imageAlt: "App na Delta Executor — screen na Get Key",
   },
   {
     href: "/blog/how-to-get-delta-executor-key",
-    title: "How to Get Your Delta Executor Key — Step-by-Step (2026)",
+    title: "Paano Kunin ang Iyong Delta Executor Key — Hakbang-hakbang (2026)",
     excerpt:
-      "The key system trips up new users, but it only takes five minutes once you know the steps. This guide walks through every Linkvertise, LootLabs, and Work.ink checkpoint — no installs, no surveys. Includes the Premium skip option and what to avoid.",
-    date: "November 15, 2026",
+      "Nalilito ang mga baguhan sa key system, pero limang minuto lang kapag alam mo ang mga hakbang. Binibigyang-lakad ng gabay na ito ang bawat checkpoint sa Linkvertise, LootLabs, at Work.ink — walang install, walang survey. Kasama ang Premium skip at kung ano ang dapat iwasan.",
+    date: "Nobyembre 15, 2026",
     image: "/delta-executor-free-download.webp",
-    imageAlt: "Delta Executor key whitelist success screen",
+    imageAlt: "Delta Executor — success screen ng key whitelist",
   },
   {
     href: "/blog/is-delta-executor-safe",
-    title: "Is Delta Executor Safe? An Honest Risk Assessment",
+    title: "Ligtas ba ang Delta Executor? Tapatang Pagsusuri ng Panganib",
     excerpt:
-      "We cover the ban risk, what Delta actually requests on your phone, how to verify a clean download with VirusTotal, the risk from third-party scripts, and why no executor should ever claim to be undetectable — straight talk with no sugarcoating.",
-    date: "November 15, 2026",
+      "Tinatalakay namin ang ban risk, kung ano talagang hinihingi ng Delta sa iyong phone, paano i-verify ang malinis na download gamit ang VirusTotal, panganib mula sa third-party script, at bakit walang executor ang dapat mag-claim na undetectable — diretsong usapan, walang sugarcoating.",
+    date: "Nobyembre 15, 2026",
     image: "/delta-executor-logo.webp",
-    imageAlt: "Delta Executor official ninja logo",
+    imageAlt: "Opisyal na ninja logo ng Delta Executor",
   },
   {
     href: "/blog/delta-executor-key-not-working",
-    title: "Delta Executor Key Not Working — Fix Every Error",
+    title: "Hindi Gumagana ang Delta Executor Key — Ayusin ang Bawat Error",
     excerpt:
-      "Covers every common key failure: 'Invalid Key,' Too Many Requests on Linkvertise, adblock interference, device-bind errors, completed-but-stuck checkpoints, and why bypass sites are unsafe. Specific fixes for each scenario.",
-    date: "November 15, 2026",
+      "Saklaw ng lahat ng karaniwang pagkabigo ng key: 'Invalid Key,' Too Many Requests sa Linkvertise, adblock, device-bind error, natapos na checkpoint pero stuck, at bakit delikado ang bypass site. Tiyak na solusyon para sa bawat sitwasyon.",
+    date: "Nobyembre 15, 2026",
     image: "/delta-executor-download.webp",
-    imageAlt: "Delta Executor download and unlock screen",
+    imageAlt: "Delta Executor — download at unlock screen",
   },
 ];
 
@@ -66,12 +66,12 @@ export default function BlogIndexPage() {
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Blog" }]} />
       <div className="container mx-auto max-w-3xl px-4 pb-14 pt-6">
         <h1 className="font-display text-3xl font-bold text-white md:text-5xl">
-          Delta Executor Blog
+          Blog ng Delta Executor
         </h1>
         <p className="mt-4 text-white/55">
-          Practical guides written for real Delta Executor users — beginner orientation, key
-          system walkthrough, safety assessment, and troubleshooting. No fluff, no fake download
-          links.
+          Praktikal na mga gabay para sa tunay na user ng Delta Executor — oryentasyon para sa
+          nagsisimula, key system walkthrough, pagsusuri sa kaligtasan, at troubleshooting. Walang
+          fluff, walang pekeng download link.
         </p>
         <ul className="mt-10 space-y-5">
           {posts.map((post) => (
@@ -105,15 +105,15 @@ export default function BlogIndexPage() {
             </li>
           ))}
         </ul>
-        <RelatedGuides title="Popular guides & download" links={[...RELATED_PRESETS.blogIndex]} />
+        <RelatedGuides title="Sikat na mga gabay at download" links={[...RELATED_PRESETS.blogIndex]} />
         <p className="mt-12 text-sm text-white/35">
-          Ready to get started?{" "}
+          Handa nang magsimula?{" "}
           <Link href="/download-delta-executor" className="text-pink underline">
-            Visit the download page
+            Bisitahin ang download page
           </Link>{" "}
-          or{" "}
+          o{" "}
           <Link href="/" className="text-pink underline">
-            browse all features
+            tingnan ang lahat ng feature
           </Link>
           .
         </p>

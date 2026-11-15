@@ -16,136 +16,136 @@ import {
 } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: `Delta Executor Troubleshooting Guide — Fix Common Issues (${APP_VERSION})`,
+  title: `Gabay sa Troubleshooting ng Delta Executor — Ayusin ang Karaniwang Problema (${APP_VERSION})`,
   description:
-    "Fix Delta Executor injection failures, key errors, crashes, overlay issues, and 'Script Hub not loading' problems. Covers Android, iOS, and emulator-based PC setups. Updated November 2026.",
+    "Ayusin ang injection failures, key errors, crashes, overlay issues, at 'Script Hub not loading' sa Delta Executor. Saklaw ang Android, iOS, at PC emulator setups. Updated Nobyembre 2026 para sa Pilipinas.",
   alternates: { canonical: `${SITE_ORIGIN}/delta-executor-troubleshooting` },
   openGraph: {
-    title: `Delta Executor Troubleshooting — ${SITE_NAME}`,
-    description: "Fix Delta Executor injection failures, key errors, crashes, and more.",
+    title: `Troubleshooting ng Delta Executor — ${SITE_NAME}`,
+    description: "Ayusin ang injection failures, key errors, crashes, at iba pa sa Delta Executor.",
     url: `${SITE_ORIGIN}/delta-executor-troubleshooting`,
     siteName: SITE_NAME,
     type: "website",
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `Delta Executor troubleshooting` }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `Troubleshooting ng Delta Executor` }],
   },
 };
 
 const issues = [
   {
     id: "injection-failed",
-    title: "Injection Failed / Not Injecting",
+    title: "Injection Failed / Hindi Nag-i-inject",
     causes: [
-      "Tried to inject during the loading screen before the game world appeared.",
-      "Roblox received a silent update that broke injection compatibility.",
-      "Delta Executor is running an outdated version.",
-      "Overlay permission ('Draw over other apps') was revoked.",
+      "Nag-try mag-inject sa loading screen bago lumabas ang game world.",
+      "May silent update ang Roblox na sumira sa injection compatibility.",
+      "Outdated na version ang Delta Executor.",
+      "Na-revoke ang overlay permission ('Draw over other apps').",
     ],
     fixes: [
-      "Wait until you are fully inside the game world, then tap Connect.",
-      "Check the Delta Discord for a newer APK version — injection breaks after every Roblox update.",
-      `Update Delta Executor to ${APP_VERSION} from the official download page.`,
-      "Go to Settings → Apps → Special app access → Appear on top → enable Delta.",
+      "Hintaying fully loaded ka sa game world, saka i-tap ang Connect.",
+      "Tingnan ang Delta Discord para sa mas bagong APK version — sumisira ang injection pagkatapos ng bawat Roblox update.",
+      `I-update ang Delta Executor sa ${APP_VERSION} mula sa opisyal na download page.`,
+      "Pumunta sa Settings → Apps → Special app access → Appear on top → i-enable ang Delta.",
     ],
   },
   {
     id: "invalid-key",
-    title: "Invalid Key / Key Not Working",
+    title: "Invalid Key / Hindi Gumagana ang Key",
     causes: [
-      "Key expired — keys are valid for 24 hours from generation.",
-      "Key is device-bound; you generated it on a different device.",
-      "Partial copy — only copied part of the key string.",
-      "Using an old Delta version with a different key format.",
+      "Expired na ang key — 24 oras ang validity mula sa generation.",
+      "Device-bound ang key; ginawa mo ito sa ibang device.",
+      "Partial copy — bahagi lang ng key string ang nakopya.",
+      "Lumang Delta version na may ibang key format.",
     ],
     fixes: [
-      "Generate a fresh key by tapping 'Get Key' in Delta Executor.",
-      "Always generate the key on the device you will use it on.",
-      "Select all, copy, then paste the full key — including the first and last characters.",
-      `Update to ${APP_VERSION}; older versions may reject newer key formats.`,
+      "Gumawa ng bagong key sa pamamagitan ng 'Get Key' sa Delta Executor.",
+      "Laging gumawa ng key sa device na gagamitin mo ito.",
+      "Select all, copy, saka i-paste ang buong key — kasama ang unang at huling character.",
+      `I-update sa ${APP_VERSION}; maaaring tanggihan ng lumang version ang mas bagong key formats.`,
     ],
   },
   {
     id: "app-crash",
-    title: "Delta Executor Crashes or Closes",
+    title: "Nag-crash o Sumasara ang Delta Executor",
     causes: [
-      "RAM pressure — running too many apps alongside Roblox and Delta.",
-      "Roblox and Delta version mismatch after a Roblox patch.",
-      "Corrupted installation.",
+      "RAM pressure — masyadong maraming app kasabay ng Roblox at Delta.",
+      "Hindi tugma ang Roblox at Delta version pagkatapos ng Roblox patch.",
+      "Corrupted na installation.",
     ],
     fixes: [
-      "Close background apps before launching Roblox and Delta.",
-      "Check the Discord for a compatibility update and install it.",
-      "Uninstall Delta Executor completely, then reinstall the latest APK from the download page.",
+      "Isara ang background apps bago i-launch ang Roblox at Delta.",
+      "Tingnan ang Discord para sa compatibility update at i-install ito.",
+      "I-uninstall nang buo ang Delta Executor, saka i-reinstall ang pinakabagong APK mula sa download page.",
     ],
   },
   {
     id: "script-hub-blank",
-    title: "Script Hub Not Loading / Showing Blank",
+    title: "Hindi Naglo-load / Blank ang Script Hub",
     causes: [
-      "Slow or unstable internet connection during catalog fetch.",
-      "Outdated Delta version with an incompatible API endpoint.",
-      "Injection not fully completed before opening Script Hub.",
+      "Mabagal o unstable na internet habang kumukuha ng catalog.",
+      "Outdated na Delta version na may incompatible API endpoint.",
+      "Hindi pa fully completed ang injection bago buksan ang Script Hub.",
     ],
     fixes: [
-      "Switch to a stable Wi-Fi connection and pull-to-refresh in Script Hub.",
-      `Update to ${APP_VERSION}.`,
-      "Confirm the injection status is green before opening Script Hub.",
+      "Lumipat sa stable na Wi-Fi at pull-to-refresh sa Script Hub.",
+      `I-update sa ${APP_VERSION}.`,
+      "Kumpirmahing berde ang injection status bago buksan ang Script Hub.",
     ],
   },
   {
     id: "overlay-not-visible",
-    title: "Delta Overlay Not Showing In-Game",
+    title: "Hindi Lumalabas ang Delta Overlay Sa Laro",
     causes: [
-      "'Draw over other apps' permission was denied or revoked.",
-      "Roblox received an update that changed its window layer.",
+      "Tinanggihan o na-revoke ang 'Draw over other apps' permission.",
+      "May Roblox update na nagbago sa window layer nito.",
     ],
     fixes: [
-      "Settings → Apps → Special app access → Appear on top → enable Delta Executor.",
-      "Check for a Delta update that addresses the new Roblox window behavior.",
+      "Settings → Apps → Special app access → Appear on top → i-enable ang Delta Executor.",
+      "Tingnan ang Delta update na tumutugon sa bagong Roblox window behavior.",
     ],
   },
   {
     id: "play-protect-block",
-    title: "Google Play Protect Blocking Installation",
+    title: "Hinahadlangan ng Google Play Protect ang Installation",
     causes: [
-      "Google Play Protect flags all APKs not from the Play Store — this is expected.",
+      "Mina-flag ng Google Play Protect ang lahat ng APK na hindi mula sa Play Store — inaasahan ito.",
     ],
     fixes: [
-      "On the Play Protect warning screen, tap 'Install anyway.' This is not a virus detection.",
-      "If you want additional confidence, scan the APK on VirusTotal before installing. A few 'Hacktool' detections are normal.",
+      "Sa Play Protect warning screen, i-tap ang 'Install anyway.' Hindi ito virus detection.",
+      "Kung gusto mo ng dagdag na kumpiyansa, i-scan ang APK sa VirusTotal bago mag-install. Normal ang ilang 'Hacktool' detections.",
     ],
   },
 ];
 
 const faqItems = [
   {
-    question: "Delta Executor worked yesterday but not today — what happened?",
+    question: "Gumana kahapon ang Delta Executor pero ngayon hindi — ano nangyari?",
     answer:
-      "Roblox pushes silent client updates that can break executor injection compatibility. This is the most common reason Delta stops working overnight. The fix is almost always to wait for and install an updated Delta APK. Check the Discord announcement channel for new builds.",
+      "Nagpu-push ang Roblox ng silent client updates na maaaring sumira sa executor injection compatibility. Ito ang pinakakaraniwang dahilan kung bakit tumitigil ang Delta overnight. Halos laging hintayin at i-install ang updated Delta APK ang solusyon. Tingnan ang Discord announcement channel para sa mga bagong build.",
   },
   {
-    question: "How do I do a clean reinstall of Delta Executor?",
+    question: "Paano gumawa ng clean reinstall ng Delta Executor?",
     answer:
-      "Go to Settings → Apps → Delta Executor → Uninstall. Then download the latest APK from the download page and reinstall. Note: a clean reinstall removes your saved Library scripts — back up your .lua files first if needed.",
+      "Pumunta sa Settings → Apps → Delta Executor → Uninstall. Pagkatapos i-download ang pinakabagong APK mula sa download page at i-reinstall. Tandaan: tinatanggal ng clean reinstall ang saved Library scripts — i-back up muna ang .lua files kung kailangan.",
   },
   {
-    question: "Delta connects but my script doesn't execute — what's wrong?",
+    question: "Kumonekta ang Delta pero hindi nag-e-execute ang script — ano ang mali?",
     answer:
-      "First confirm injection status is green (not just 'connected'). Then check that the script targets the game you are in — most scripts are game-specific. If the script previously worked, the game may have been updated and the script is now outdated.",
+      "Kumpirmahin muna na berde ang injection status (hindi lang 'connected'). Tapos tingnan kung tumatarget ang script sa larong nilalaro mo — karamihan ay game-specific. Kung gumana dati ang script, maaaring na-update ang laro at outdated na ang script.",
   },
   {
-    question: "Key gateway is in an infinite redirect loop — what do I do?",
+    question: "Nasa infinite redirect loop ang key gateway — ano ang gagawin?",
     answer:
-      "Open the key URL in your phone's native browser (Chrome or Safari) rather than Delta's in-app browser. Disable VPN and ad-blocker temporarily. Complete each checkpoint in one continuous flow without refreshing mid-step.",
+      "Buksan ang key URL sa native browser ng phone (Chrome o Safari) imbes na in-app browser ng Delta. I-disable pansamantala ang VPN at ad-blocker. Tapusin ang bawat checkpoint nang tuloy-tuloy nang hindi nagre-refresh sa gitna.",
   },
   {
-    question: "I see 'Error 403' or 'Server error' in Delta — is the server down?",
+    question: "Nakikita ko ang 'Error 403' o 'Server error' sa Delta — down ba ang server?",
     answer:
-      "Occasional server errors happen. Wait 10–15 minutes and try again. If the issue persists beyond an hour, check the Delta Discord status channel for server maintenance announcements.",
+      "May occasional server errors. Hintayin ng 10–15 minuto at subukan ulit. Kung tumatagal nang mahigit isang oras, tingnan ang Delta Discord status channel para sa server maintenance announcements.",
   },
   {
-    question: "Delta works on Android but not in the PC emulator — why?",
+    question: "Gumagana ang Delta sa Android pero hindi sa PC emulator — bakit?",
     answer:
-      "Emulators expose a different device fingerprint. The key you generated on your phone won't work in the emulator — generate a fresh key inside the emulator. Also ensure Roblox is fully loaded inside the emulator before injecting.",
+      "Iba ang device fingerprint na inilalabas ng emulator. Hindi gagana sa emulator ang key na ginawa mo sa phone — gumawa ng bagong key sa loob ng emulator. Siguraduhing fully loaded ang Roblox sa emulator bago mag-inject.",
   },
 ];
 
@@ -164,24 +164,24 @@ export default function TroubleshootingPage() {
               Troubleshooting · {APP_VERSION} · {STYLES_UPDATED}
             </p>
             <h1 className="font-display text-4xl font-bold text-white md:text-5xl">
-              Delta Executor Troubleshooting
+              Troubleshooting ng Delta Executor
             </h1>
             <p className="mt-4 max-w-xl text-lg text-white/65">
-              Solutions for the most common Delta Executor problems — injection failures, key errors, crashes, overlay issues, and Script Hub problems.
+              Solusyon sa pinakakaraniwang problema sa Delta Executor — injection failures, key errors, crashes, overlay issues, at problema sa Script Hub.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
               <CtaButton href={ANDROID_APK_URL} icon="download" size="sm">
-                Download Latest APK
+                I-download ang Pinakabagong APK
               </CtaButton>
               <Link href="/blog/how-to-get-delta-executor-key" className="font-semibold text-pink hover:underline self-center">
-                Key system guide →
+                Gabay sa key system →
               </Link>
             </div>
           </div>
           <div className="brand-shot-frame brand-shot-frame--side shrink-0">
             <Image
               src={BRAND_HERO}
-              alt="Delta Executor troubleshooting"
+              alt="Troubleshooting ng Delta Executor"
               width={280}
               height={455}
               sizes="220px"
@@ -194,13 +194,13 @@ export default function TroubleshootingPage() {
 
       {/* Issue cards */}
       <div className="container mx-auto max-w-3xl px-4 pt-10 space-y-6">
-        <h2 className="font-display text-2xl font-bold text-white">Common Issues &amp; Fixes</h2>
+        <h2 className="font-display text-2xl font-bold text-white">Karaniwang Problema at Ayos</h2>
         {issues.map((issue) => (
           <div key={issue.id} id={issue.id} className="rounded-2xl border border-white/10 bg-card p-6">
             <h3 className="mb-4 font-display text-lg font-bold text-white">{issue.title}</h3>
             <div className="grid gap-4 sm:grid-cols-2">
               <div>
-                <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-white/40">Likely Causes</p>
+                <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-white/40">Malamang na Dahilan</p>
                 <ul className="space-y-1.5 text-sm text-white/65">
                   {issue.causes.map((c) => (
                     <li key={c} className="flex items-start gap-2">
@@ -211,7 +211,7 @@ export default function TroubleshootingPage() {
                 </ul>
               </div>
               <div>
-                <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-white/40">Fixes</p>
+                <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-white/40">Mga Ayos</p>
                 <ul className="space-y-1.5 text-sm text-white/65">
                   {issue.fixes.map((f) => (
                     <li key={f} className="flex items-start gap-2">
@@ -228,7 +228,7 @@ export default function TroubleshootingPage() {
 
       {/* FAQ */}
       <div className="container mx-auto max-w-3xl px-4 pb-14">
-        <FaqSection title="Troubleshooting FAQ" items={faqItems} />
+        <FaqSection title="FAQ sa Troubleshooting" items={faqItems} />
         <RelatedGuides links={[...RELATED_PRESETS.troubleshooting]} />
       </div>
     </>

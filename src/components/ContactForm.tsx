@@ -33,18 +33,18 @@ export default function ContactForm() {
 
   return (
     <div className="border border-white/10 bg-card p-6 md:p-8">
-      <h2 className="mb-6 text-center font-display text-2xl font-bold text-white">Bize mesaj gönderin</h2>
+      <h2 className="mb-6 text-center font-display text-2xl font-bold text-white">Magpadala ng mensahe sa amin</h2>
 
       {formSubmitted ? (
         <div className="mb-6 border border-emerald/40 bg-emerald/10 p-4 text-center text-white">
-          <p>Mesajınız için teşekkürler. En kısa sürede size döneceğiz.</p>
+          <p>Salamat sa iyong mensahe. Tutugon kami sa lalong madaling panahon.</p>
         </div>
       ) : null}
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         <div>
           <label htmlFor="name" className="mb-1 block text-sm font-medium text-white/85">
-            Ad Soyad
+            Buong pangalan
           </label>
           <input
             id="name"
@@ -52,8 +52,8 @@ export default function ContactForm() {
             className={`w-full rounded-md border bg-[#F7F8FC] px-4 py-2 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-violet ${
               errors.name ? 'border-pink' : 'border-ink/15'
             }`}
-            placeholder="Adınız"
-            {...register('name', { required: 'Ad Soyad zorunludur' })}
+            placeholder="Iyong pangalan"
+            {...register('name', { required: 'Kailangan ang buong pangalan' })}
           />
           {errors.name && (
             <p className="mt-1 text-sm text-pink-soft">{errors.name.message}</p>
@@ -62,7 +62,7 @@ export default function ContactForm() {
 
         <div>
           <label htmlFor="email" className="mb-1 block text-sm font-medium text-white/85">
-            E-posta
+            Email
           </label>
           <input
             id="email"
@@ -70,12 +70,12 @@ export default function ContactForm() {
             className={`w-full rounded-md border bg-[#F7F8FC] px-4 py-2 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-violet ${
               errors.email ? 'border-pink' : 'border-ink/15'
             }`}
-            placeholder="siz@example.com"
+            placeholder="ikaw@halimbawa.com"
             {...register('email', {
-              required: 'E-posta zorunludur',
+              required: 'Kailangan ang email',
               pattern: {
                 value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                message: 'Geçerli bir e-posta adresi girin',
+                message: 'Maglagay ng wastong email address',
               },
             })}
           />
@@ -86,7 +86,7 @@ export default function ContactForm() {
 
         <div>
           <label htmlFor="subject" className="mb-1 block text-sm font-medium text-white/85">
-            Konu
+            Paksa
           </label>
           <input
             id="subject"
@@ -94,8 +94,8 @@ export default function ContactForm() {
             className={`w-full rounded-md border bg-[#F7F8FC] px-4 py-2 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-violet ${
               errors.subject ? 'border-pink' : 'border-ink/15'
             }`}
-            placeholder="Size nasıl yardımcı olabiliriz?"
-            {...register('subject', { required: 'Konu zorunludur' })}
+            placeholder="Paano ka namin matutulungan?"
+            {...register('subject', { required: 'Kailangan ang paksa' })}
           />
           {errors.subject && (
             <p className="mt-1 text-sm text-pink-soft">{errors.subject.message}</p>
@@ -104,7 +104,7 @@ export default function ContactForm() {
 
         <div>
           <label htmlFor="message" className="mb-1 block text-sm font-medium text-white/85">
-            Mesaj
+            Mensahe
           </label>
           <textarea
             id="message"
@@ -112,12 +112,12 @@ export default function ContactForm() {
             className={`w-full rounded-md border bg-[#F7F8FC] px-4 py-2 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-violet ${
               errors.message ? 'border-pink' : 'border-ink/15'
             }`}
-            placeholder="Mesajınızı yazın..."
+            placeholder="Isulat ang iyong mensahe..."
             {...register('message', {
-              required: 'Mesaj zorunludur',
+              required: 'Kailangan ang mensahe',
               minLength: {
                 value: 10,
-                message: 'Mesaj en az 10 karakter olmalıdır',
+                message: 'Dapat hindi bababa sa 10 character ang mensahe',
               },
             })}
           />
@@ -128,7 +128,7 @@ export default function ContactForm() {
 
         <div className="flex justify-center">
           <CtaButton as="button" type="submit" icon="mail">
-            Mesaj gönder
+            Ipadala ang mensahe
           </CtaButton>
         </div>
       </form>

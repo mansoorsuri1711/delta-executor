@@ -15,7 +15,7 @@ function MenuButton({ onClick, isOpen }: { onClick: () => void; isOpen?: boolean
       onClick={onClick}
       className="relative z-[60] flex h-10 w-10 items-center justify-center rounded-full lg:hidden"
       style={{ color: 'var(--chrome-fg)' }}
-      aria-label={isOpen ? 'Close menu' : 'Open menu'}
+      aria-label={isOpen ? 'Isara ang menu' : 'Buksan ang menu'}
       aria-expanded={!!isOpen}
       aria-controls="mobile-nav-panel"
     >
@@ -39,31 +39,32 @@ export default function MobileNavigation() {
 
   const navSections = [
     {
-      title: 'DOWNLOADS',
+      title: 'MGA DOWNLOAD',
       items: [
         { href: '/', label: 'Home' },
-        { href: '/download-delta-executor', label: 'Download Android APK' },
-        { href: '/delta-executor-ios', label: 'iOS Guide' },
-        { href: '/delta-executor-pc', label: 'PC Guide' },
-        { href: '/delta-executor-mac', label: 'Mac Guide' },
+        { href: '/download-delta-executor', label: 'I-download ang Android APK' },
+        { href: '/delta-executor-ios', label: 'Gabay sa iOS' },
+        { href: '/delta-executor-pc', label: 'Gabay sa PC' },
+        { href: '/delta-executor-mac', label: 'Gabay sa Mac' },
         { href: '/delta-executor-discord', label: 'Discord' },
-        { href: '/delta-executor-comparison', label: 'Comparison' },
+        { href: '/delta-executor-comparison', label: 'Paghahambing' },
       ],
     },
     {
-      title: 'GUIDES & MORE',
+      title: 'MGA GABAY AT IBA PA',
       items: [
-        { href: '/how-to-use-delta-executor', label: 'How to Use' },
-        { href: '/delta-executor-troubleshooting', label: 'Troubleshooting' },
+        { href: '/how-to-use-delta-executor', label: 'Paano Gamitin' },
+        { href: '/robux-to-usd', label: 'Robux to USD Converter' },
+        { href: '/delta-executor-troubleshooting', label: 'Pag-troubleshoot' },
         { href: '/delta-executor-vng', label: 'VNG (Vietnam)' },
         { href: '/blog', label: 'Blog' },
-        { href: '/blog/what-is-delta-executor', label: 'What Is Delta?' },
-        { href: '/blog/how-to-get-delta-executor-key', label: 'Key System Guide' },
-        { href: '/blog/is-delta-executor-safe', label: 'Is It Safe?' },
-        { href: '/blog/delta-executor-key-not-working', label: 'Key Not Working' },
-        { href: '/about-us', label: 'About Us' },
-        { href: '/contact-us', label: 'Contact' },
-        { href: '/privacy', label: 'Privacy Policy' },
+        { href: '/blog/what-is-delta-executor', label: 'Ano ang Delta?' },
+        { href: '/blog/how-to-get-delta-executor-key', label: 'Gabay sa Key System' },
+        { href: '/blog/is-delta-executor-safe', label: 'Ligtas ba?' },
+        { href: '/blog/delta-executor-key-not-working', label: 'Hindi Gumagana ang Key' },
+        { href: '/about-us', label: 'Tungkol sa Amin' },
+        { href: '/contact-us', label: 'Makipag-ugnayan' },
+        { href: '/privacy', label: 'Patakaran sa Privacy' },
         { href: '/disclaimer', label: 'Disclaimer' },
       ],
     },
@@ -102,7 +103,7 @@ export default function MobileNavigation() {
         <button
           type="button"
           className={`absolute inset-0 bg-black/70 transition-opacity ${isOpen ? 'opacity-100' : 'opacity-0'}`}
-          aria-label="Close menu"
+          aria-label="Isara ang menu"
           onClick={() => setIsOpen(false)}
         />
         <div
@@ -139,7 +140,7 @@ export default function MobileNavigation() {
               </div>
             ))}
             <div className="mb-6">
-              <p className="mb-2 text-xs font-bold tracking-wider text-white/40">COMMUNITY</p>
+              <p className="mb-2 text-xs font-bold tracking-wider text-white/40">KOMUNIDAD</p>
               <ul className="flex flex-wrap gap-2">
                 {(Object.keys(SOCIAL_LINKS) as Array<keyof typeof SOCIAL_LINKS>).map((key) => (
                   <li key={key}>
@@ -172,7 +173,7 @@ export default function MobileNavigation() {
               onClick={() => setIsOpen(false)}
               className="bfv-outline-btn inline-flex w-full items-center justify-center rounded-full px-4 py-3 text-sm font-semibold"
             >
-              Download APK
+              I-download ang APK
             </a>
           </div>
         </div>

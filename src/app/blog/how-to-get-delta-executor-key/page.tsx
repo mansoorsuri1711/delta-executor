@@ -16,89 +16,89 @@ import {
 } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: `How to Get Your Delta Executor Key — 2026 Guide`,
+  title: `Paano Kunin ang Delta Executor Key — Gabay 2026`,
   description:
-    "Step-by-step walkthrough for getting a Delta Executor key through Linkvertise, LootLabs, and Work.ink — without installs or surveys. Includes Premium skip info and what to avoid.",
+    "Hakbang-hakbang na walkthrough para kumuha ng Delta Executor key sa Linkvertise, LootLabs, at Work.ink — walang install o survey. Kasama ang Premium skip at mga dapat iwasan.",
   alternates: { canonical: `${SITE_ORIGIN}/blog/how-to-get-delta-executor-key` },
   openGraph: {
-    title: `How to Get Your Delta Executor Key — ${SITE_NAME}`,
+    title: `Paano Kunin ang Delta Executor Key — ${SITE_NAME}`,
     description:
-      "Complete guide to completing the Delta Executor key gateway through Linkvertise, LootLabs, and Work.ink safely and quickly.",
+      "Kumpletong gabay sa Delta Executor key gateway sa Linkvertise, LootLabs, at Work.ink nang ligtas at mabilis.",
     url: `${SITE_ORIGIN}/blog/how-to-get-delta-executor-key`,
     siteName: SITE_NAME,
     type: "article",
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `Delta Executor key guide` }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `Gabay sa Delta Executor key` }],
   },
 };
 
 const faqItems = [
   {
-    question: "How long does a Delta Executor key last?",
+    question: "Gaano katagal valid ang Delta Executor key?",
     answer:
-      "Every key is valid for exactly 24 hours from the moment it is generated. After 24 hours the app will prompt you to get a new key — you cannot extend or reuse an expired key.",
+      "Valid ang bawat key nang eksaktong 24 oras mula sa pag-generate. Pagkatapos ng 24 oras hihingin ng app ang bagong key — hindi mo ma-extend o magamit muli ang expired na key.",
   },
   {
-    question: "Is my Delta key tied to my device?",
+    question: "Naka-tie ba ang Delta key sa device ko?",
     answer:
-      "Yes. Keys are device-bound, meaning a key generated on your phone will not work on a different phone or emulator. If you switch devices, generate a fresh key on the new device.",
+      "Oo. Device-bound ang mga key, ibig sabihin ang key na ginawa sa phone mo ay hindi gagana sa ibang phone o emulator. Kapag lumipat ng device, gumawa ng bagong key sa bagong device.",
   },
   {
-    question: "What is Linkvertise and why does Delta use it?",
+    question: "Ano ang Linkvertise at bakit ito ginagamit ng Delta?",
     answer:
-      "Linkvertise is a URL-shortening service that shows a short ad page before releasing the destination link. Delta's developers use it (and similar platforms like LootLabs and Work.ink) to monetise the free app without charging users directly. You are not installing anything — you are simply waiting through a short ad flow.",
+      "Ang Linkvertise ay URL-shortening service na nagpapakita ng maikling ad page bago ilabas ang destination link. Ginagamit ito ng developer ng Delta (at tulad ng LootLabs at Work.ink) para kumita mula sa libreng app nang hindi direktang sinisingil ang user. Wala kang ini-install — naghihintay ka lang sa maikling ad flow.",
   },
   {
-    question: "Can I skip the key with Delta Premium?",
+    question: "Maaari ko bang laktawan ang key sa Delta Premium?",
     answer:
-      "Yes. Delta Premium subscribers skip the daily key requirement entirely. The in-app upgrade option or the official website's Premium page has current pricing.",
+      "Oo. Nilalaktawan ng Delta Premium subscriber ang daily key requirement. Nasa in-app upgrade o opisyal na Premium page ang kasalukuyang presyo.",
   },
   {
-    question: "Is it safe to click through Linkvertise / LootLabs?",
+    question: "Ligtas bang mag-click sa Linkvertise / LootLabs?",
     answer:
-      "The official Linkvertise and LootLabs flows are ad pages — they don't install anything if you use a standard browser and decline any browser notification prompts. Never download files offered on those pages and never grant notification access.",
+      "Ad page ang opisyal na Linkvertise at LootLabs flow — walang ini-install kung standard browser at tinatanggihan ang notification prompt. Huwag mag-download ng file sa mga page na iyon at huwag magbigay ng notification access.",
   },
   {
-    question: "Should I buy a 'lifetime keyless' Delta crack?",
+    question: "Dapat ko bang bilhin ang 'lifetime keyless' Delta crack?",
     answer:
-      "Absolutely not. Any site selling a 'keyless Delta' or 'lifetime key' is a scam. At best you receive a cracked APK with stripped safety checks; at worst it carries malware. The only safe source is the official download on this site.",
+      "Hindi talaga. Scam ang anumang site na nagbebenta ng 'keyless Delta' o 'lifetime key'. Pinakamabuti ay cracked APK na walang safety check; pinakamasama ay may malware. Ang tanging ligtas na pinagmulan ay opisyal na download sa site na ito.",
   },
   {
-    question: "Why does the key page say 'Too Many Requests'?",
+    question: "Bakit 'Too Many Requests' ang sabi ng key page?",
     answer:
-      "Linkvertise and LootLabs throttle rapid repeated visits from the same IP. Wait 5–10 minutes, switch to mobile data if you were on Wi-Fi, and try again. See our key-not-working article for a full breakdown.",
+      "Nililimitahan ng Linkvertise at LootLabs ang mabilis na paulit-ulit na bisita mula sa parehong IP. Maghintay ng 5–10 minuto, lumipat sa mobile data kung naka-Wi-Fi, at subukan muli. Tingnan ang artikulo naming key-not-working para sa buong paliwanag.",
   },
 ];
 
 const steps = [
   {
     n: 1,
-    title: "Open Delta Executor and tap 'Get Key'",
-    body: "Launch the Delta Executor app. If the key gate is active you will see a screen with a 'Get Key' button. Tap it — this opens the key gateway in your default browser.",
+    title: "Buksan ang Delta Executor at i-tap ang 'Get Key'",
+    body: "I-launch ang Delta Executor app. Kapag aktibo ang key gate, may screen na may 'Get Key' button. I-tap ito — bubuksan ang key gateway sa default browser mo.",
   },
   {
     n: 2,
-    title: "Choose your gateway provider",
-    body: "Delta currently offers three checkpoint providers: Linkvertise, LootLabs, and Work.ink. Any of them works. Pick the one that loads fastest on your connection.",
+    title: "Piliin ang gateway provider",
+    body: "May tatlong checkpoint provider ang Delta: Linkvertise, LootLabs, at Work.ink. Kahit alin ay gumagana. Piliin ang pinakamabilis mag-load sa koneksyon mo.",
   },
   {
     n: 3,
-    title: "Complete the Linkvertise checkpoint",
-    body: "On Linkvertise: tap 'Free Access with Ads,' wait for the countdown, then tap 'Continue.' You may be shown a second page — tap 'I am not a robot' and wait for another short countdown. Do NOT click any download buttons or grant notification permissions.",
+    title: "Tapusin ang Linkvertise checkpoint",
+    body: "Sa Linkvertise: i-tap ang 'Free Access with Ads,' hintayin ang countdown, tapos 'Continue.' Maaaring may pangalawang page — i-tap ang 'I am not a robot' at hintayin ang isa pang maikling countdown. HUWAG mag-click ng download button o magbigay ng notification permission.",
   },
   {
     n: 4,
-    title: "Complete the LootLabs or Work.ink checkpoint",
-    body: "On LootLabs: click 'Get Access,' complete the brief tasks shown (usually clicking a link and waiting), then click 'Get Key.' On Work.ink: click 'Continue,' wait for the timer, and click 'Get Reward.' Both providers redirect you back to Delta's key page when done.",
+    title: "Tapusin ang LootLabs o Work.ink checkpoint",
+    body: "Sa LootLabs: i-click ang 'Get Access,' gawin ang maikling task (karaniwang mag-click ng link at maghintay), tapos 'Get Key.' Sa Work.ink: 'Continue,' hintayin ang timer, at 'Get Reward.' Parehong provider ang magre-redirect sa key page ng Delta kapag tapos.",
   },
   {
     n: 5,
-    title: "Copy the key string",
-    body: "After completing the checkpoint you will see a long alphanumeric string — that is your key. Tap the copy icon or long-press to select all and copy. The entire string must be copied; a partial copy will cause an 'Invalid Key' error.",
+    title: "Kopyahin ang key string",
+    body: "Pagkatapos ng checkpoint, makikita mo ang mahabang alphanumeric string — iyon ang key mo. I-tap ang copy icon o long-press → Select All → Copy. Dapat buo ang string; partial copy ang sanhi ng 'Invalid Key' error.",
   },
   {
     n: 6,
-    title: "Paste the key into Delta Executor",
-    body: "Switch back to Delta Executor. Tap the key input field, long-press and select Paste. Tap 'Connect' or 'Verify.' If the key is valid and not expired, the app will unlock and take you to the main interface.",
+    title: "I-paste ang key sa Delta Executor",
+    body: "Bumalik sa Delta Executor. I-tap ang key input, long-press at Paste. I-tap ang 'Connect' o 'Verify.' Kapag valid at hindi expired ang key, mag-u-unlock ang app at dadalhin ka sa main interface.",
   },
 ];
 
@@ -109,13 +109,13 @@ export default function HowToGetDeltaKeyPage() {
         items={[
           { label: "Home", href: "/" },
           { label: "Blog", href: "/blog" },
-          { label: "How to Get Your Delta Key" },
+          { label: "Paano Kunin ang Delta Key" },
         ]}
       />
 
       <BlogPostSchema
-        title="How to Get Your Delta Executor Key — Step-by-Step (2026)"
-        description="Step-by-step walkthrough for getting a Delta Executor key through Linkvertise, LootLabs, and Work.ink — without installs or surveys."
+        title="Paano Kunin ang Delta Executor Key — Hakbang-hakbang (2026)"
+        description="Hakbang-hakbang na walkthrough para kumuha ng Delta Executor key sa Linkvertise, LootLabs, at Work.ink — walang install o survey."
         slug="how-to-get-delta-executor-key"
         datePublished="2026-11-15"
         image={`${SITE_ORIGIN}${BRAND_FEATURE_KEY}`}
@@ -126,38 +126,38 @@ export default function HowToGetDeltaKeyPage() {
         <div className="flex flex-col gap-8 md:flex-row md:items-center">
           <div className="flex-1">
             <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-pink/80">
-              Key Guide · {APP_VERSION} · November 15, 2026
+              Gabay sa Key · {APP_VERSION} · Nobyembre 15, 2026
             </p>
             <h1 className="font-display text-4xl font-bold text-white md:text-5xl">
-              How to Get Your Delta Executor Key
+              Paano Kunin ang Delta Executor Key
             </h1>
             <p className="mt-4 max-w-xl text-lg text-white/65">
-              Delta's key system exists to block automated abuse — not to frustrate you. This
-              walkthrough covers every checkpoint on Linkvertise, LootLabs, and Work.ink so you can
-              unlock the app in under five minutes without installing anything or paying anyone.
+              Para pigilan ang automated abuse ang key system ng Delta — hindi para i-frustrate ka.
+              Saklaw ng walkthrough na ito ang bawat checkpoint sa Linkvertise, LootLabs, at Work.ink
+              upang ma-unlock ang app sa loob ng limang minuto nang walang install o bayad sa iba.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
               <CtaButton href={ANDROID_APK_URL} icon="download">
-                Download Delta Executor
+                I-download ang Delta Executor
               </CtaButton>
               <Link
                 href="/download-delta-executor"
                 className="font-semibold text-pink hover:underline self-center"
               >
-                Install guide →
+                Gabay sa install →
               </Link>
               <Link
                 href="/blog/delta-executor-key-not-working"
                 className="font-semibold text-pink hover:underline self-center"
               >
-                Key not working? →
+                Hindi gumagana ang key? →
               </Link>
             </div>
           </div>
           <div className="relative w-full overflow-hidden rounded-2xl border border-white/10 bg-muted md:w-64 lg:w-80">
             <Image
               src={BRAND_FEATURE_KEY}
-              alt="Delta Executor key whitelist success screen"
+              alt="Delta Executor — success screen ng key whitelist"
               width={280}
               height={455}
               sizes="220px"
@@ -171,26 +171,27 @@ export default function HowToGetDeltaKeyPage() {
       {/* What is the key system */}
       <div className="container mx-auto max-w-3xl px-4 pt-10">
         <h2 className="mb-4 font-display text-2xl font-bold text-white md:text-3xl">
-          What is the Delta Executor key system?
+          Ano ang Delta Executor key system?
         </h2>
         <p className="text-white/65 leading-relaxed">
-          Delta Executor is a free Android Roblox script executor. To sustain development without
-          charging upfront, the app uses a <strong className="text-white">key system</strong>: once
-          per 24 hours you must visit a short ad checkpoint and retrieve a time-limited token before
-          the app unlocks. The token is generated fresh each time — there is no permanent "lifetime
-          key" for free users.
+          Ang Delta Executor ay libreng Android Roblox script executor. Para sustentuhan ang
+          development nang walang upfront charge, gumagamit ang app ng{" "}
+          <strong className="text-white">key system</strong>: isang beses kada 24 oras dapat
+          bumisita sa maikling ad checkpoint at kumuha ng time-limited token bago mag-unlock ang app.
+          Bago ang token sa bawat pagkakataon — walang permanente na &quot;lifetime key&quot; para sa
+          libreng user.
         </p>
         <p className="mt-4 text-white/65 leading-relaxed">
-          Keys are <strong className="text-white">device-bound</strong>. The token generated on your
-          phone will not activate Delta on a different device. If you switch phones, run Delta on an
-          emulator, or factory-reset your device, you need a new key.
+          <strong className="text-white">Device-bound</strong> ang mga key. Ang token sa phone mo ay
+          hindi mag-a-activate ng Delta sa ibang device. Kapag lumipat ng phone, tumakbo sa emulator,
+          o factory-reset, kailangan ng bagong key.
         </p>
         <div className="mt-6 rounded-2xl border border-pink/20 bg-pink/5 px-5 py-4">
           <p className="text-sm font-semibold text-pink">Delta Premium</p>
           <p className="mt-1 text-sm text-white/65">
-            Delta Premium subscribers skip the daily key requirement entirely. If you use Delta
-            heavily every day, the upgrade pays off in saved time. Check the in-app store or the
-            Premium page for current pricing.
+            Nilalaktawan ng Delta Premium subscriber ang daily key requirement. Kapag araw-araw mong
+            ginagamit ang Delta, sulit ang upgrade sa oras na natitipid. Tingnan ang in-app store o
+            Premium page para sa kasalukuyang presyo.
           </p>
         </div>
       </div>
@@ -198,9 +199,9 @@ export default function HowToGetDeltaKeyPage() {
       {/* Step-by-step */}
       <div className="container mx-auto max-w-3xl px-4 pt-12">
         <h2 className="mb-2 font-display text-2xl font-bold text-white md:text-3xl">
-          Step-by-step: get your key in under 5 minutes
+          Hakbang-hakbang: kumuha ng key sa loob ng 5 minuto
         </h2>
-        <p className="mb-8 text-sm text-white/45">Works on Android — no installs, no surveys</p>
+        <p className="mb-8 text-sm text-white/45">Gumagana sa Android — walang install, walang survey</p>
 
         <script
           type="application/ld+json"
@@ -208,9 +209,9 @@ export default function HowToGetDeltaKeyPage() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "HowTo",
-              name: "How to Get a Delta Executor Key",
+              name: "Paano Kumuha ng Delta Executor Key",
               description:
-                "Step-by-step guide to completing the Delta Executor key gateway through Linkvertise, LootLabs, and Work.ink.",
+                "Hakbang-hakbang na gabay sa Delta Executor key gateway sa Linkvertise, LootLabs, at Work.ink.",
               totalTime: "PT5M",
               step: steps.map((s) => ({
                 "@type": "HowToStep",
@@ -243,23 +244,23 @@ export default function HowToGetDeltaKeyPage() {
       {/* Provider comparison */}
       <div className="container mx-auto max-w-3xl px-4 pt-12">
         <h2 className="mb-4 font-display text-2xl font-bold text-white">
-          Linkvertise vs LootLabs vs Work.ink — quick comparison
+          Linkvertise vs LootLabs vs Work.ink — mabilis na paghahambing
         </h2>
         <div className="overflow-x-auto rounded-2xl border border-white/10">
           <table className="w-full text-sm text-white/70">
             <thead>
               <tr className="border-b border-white/10 bg-white/[0.04] text-left text-xs uppercase tracking-wider text-white/40">
                 <th className="px-4 py-3">Provider</th>
-                <th className="px-4 py-3">Steps</th>
-                <th className="px-4 py-3">Time</th>
-                <th className="px-4 py-3">Notes</th>
+                <th className="px-4 py-3">Hakbang</th>
+                <th className="px-4 py-3">Oras</th>
+                <th className="px-4 py-3">Tala</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-white/5">
               {[
-                ["Linkvertise", "2–3 clicks + countdown", "~60 s", "Most common; stable worldwide"],
-                ["LootLabs", "Click tasks + wait", "~90 s", "Sometimes faster on mobile data"],
-                ["Work.ink", "Timer + single click", "~45 s", "Fewest steps when available"],
+                ["Linkvertise", "2–3 click + countdown", "~60 s", "Pinakakaraniwan; stable sa buong mundo"],
+                ["LootLabs", "Mga click task + hintay", "~90 s", "Minsan mas mabilis sa mobile data"],
+                ["Work.ink", "Timer + isang click", "~45 s", "Pinakakaunting hakbang kapag available"],
               ].map(([p, steps, time, notes]) => (
                 <tr key={p as string}>
                   <td className="px-4 py-3 font-semibold text-white">{p}</td>
@@ -276,37 +277,31 @@ export default function HowToGetDeltaKeyPage() {
       {/* What to avoid */}
       <div className="container mx-auto max-w-3xl px-4 pt-12">
         <h2 className="mb-4 font-display text-2xl font-bold text-white">
-          What to avoid during the key process
+          Mga dapat iwasan sa proseso ng key
         </h2>
         <ul className="space-y-3 text-white/65 leading-relaxed">
           <li className="flex gap-3">
             <span className="mt-0.5 text-pink font-bold shrink-0">✕</span>
             <span>
-              <strong className="text-white">Never buy a "lifetime key" or "keyless bypass"</strong> — these are
-              sold on third-party sites and Discord servers. They are either broken or bundled with
-              malware. Delta has no official lifetime key for free users.
+              <strong className="text-white">Huwag bumili ng &quot;lifetime key&quot; o &quot;keyless bypass&quot;</strong> — ibinebenta sa third-party site at Discord server. Sira ang mga ito o may malware. Walang opisyal na lifetime key ang Delta para sa libreng user.
             </span>
           </li>
           <li className="flex gap-3">
             <span className="mt-0.5 text-pink font-bold shrink-0">✕</span>
             <span>
-              <strong className="text-white">Don't install files offered on Linkvertise pages</strong> — the
-              legitimate Linkvertise flow never asks you to install an APK or extension.
+              <strong className="text-white">Huwag mag-install ng file sa Linkvertise page</strong> — hindi hinihingi ng lehitimong Linkvertise flow ang APK o extension.
             </span>
           </li>
           <li className="flex gap-3">
             <span className="mt-0.5 text-pink font-bold shrink-0">✕</span>
             <span>
-              <strong className="text-white">Don't grant browser notification permissions</strong> — ad pages
-              will request them. Always tap "Block." These are aggressive push notification
-              subscriptions, not part of the key flow.
+              <strong className="text-white">Huwag magbigay ng browser notification permission</strong> — hihingin ito ng ad page. Palaging &quot;Block.&quot; Agresibong push subscription ito, hindi bahagi ng key flow.
             </span>
           </li>
           <li className="flex gap-3">
             <span className="mt-0.5 text-pink font-bold shrink-0">✕</span>
             <span>
-              <strong className="text-white">Don't share your key</strong> — it's device-bound anyway, so
-              sharing it won't help anyone else and might confuse your own session.
+              <strong className="text-white">Huwag ibahagi ang key</strong> — device-bound naman, kaya hindi makakatulong sa iba at maaaring lituhin ang sarili mong session.
             </span>
           </li>
         </ul>
@@ -314,7 +309,7 @@ export default function HowToGetDeltaKeyPage() {
 
       {/* FAQ */}
       <div className="container mx-auto max-w-3xl px-4 pb-6">
-        <FaqSection title="Key system FAQ" items={faqItems} />
+        <FaqSection title="FAQ sa key system" items={faqItems} />
       </div>
 
       <div className="container mx-auto max-w-3xl px-4 pb-14">

@@ -159,6 +159,12 @@ export const SITEMAP_PAGES: SitemapPage[] = [
     ],
   },
   {
+    path: "/robux-to-usd",
+    lastMod: LASTMOD,
+    changeFreq: "weekly",
+    priority: 0.96,
+  },
+  {
     path: "/how-to-use-delta-executor",
     lastMod: LASTMOD,
     changeFreq: "monthly",

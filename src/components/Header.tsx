@@ -11,8 +11,8 @@ const navLinks = [
   { href: '/download-delta-executor', label: 'Download' },
   { href: '/delta-executor-ios', label: 'iOS' },
   { href: '/delta-executor-pc', label: 'PC' },
-  { href: '/how-to-use-delta-executor', label: 'How to Use' },
-  { href: '/delta-executor-discord', label: 'Discord' },
+  { href: '/how-to-use-delta-executor', label: 'Paano Gamitin' },
+  { href: '/robux-to-usd', label: 'Robux → PHP' },
   { href: '/blog', label: 'Blog' },
 ];
 
@@ -78,7 +78,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className="hidden items-center rounded-full bg-black px-4 py-2 text-sm font-semibold !text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.12)] transition hover:bg-neutral-900 sm:inline-flex"
           >
-            Download APK
+            I-download ang APK
           </a>
           <MobileNavigation />
         </div>
