@@ -63,14 +63,14 @@ function ButtonInner({
 }) {
   const iconWrap =
     size === 'sm'
-      ? 'ml-2 inline-flex rounded-full border border-white/35 bg-white/10 p-1.5 text-white transition-transform group-hover:scale-110'
-      : 'ml-3 inline-flex rounded-full border border-white/35 bg-white/10 p-2 text-white transition-transform group-hover:scale-110';
+      ? 'ml-2 inline-flex rounded-full border border-white/40 bg-white/15 p-1.5 transition-transform group-hover:scale-110'
+      : 'ml-3 inline-flex rounded-full border border-white/40 bg-white/15 p-2 transition-transform group-hover:scale-110';
   const iconSvg = size === 'sm' ? 'w-4 h-4' : 'w-5 h-5';
 
   return (
     <>
       <span className="text-left leading-tight">{children}</span>
-      <span className={`download-icon ${iconWrap}`}>
+      <span className={`download-icon ${iconWrap}`} style={{ color: '#ffffff' }}>
         <span className={iconSvg}>{ICONS[icon]}</span>
       </span>
     </>

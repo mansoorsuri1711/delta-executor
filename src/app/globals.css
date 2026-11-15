@@ -198,6 +198,14 @@ footer {
   color: #ffffff;
 }
 
+/* Keep CTA icon/text white on black pills (site remaps .text-white → dark ink) */
+.bfv-outline-btn .text-white,
+.bfv-outline-btn .download-icon,
+.bfv-outline-btn .download-icon svg {
+  color: #ffffff !important;
+  stroke: currentColor;
+}
+
 .bfv-outline-btn-muted {
   background: #ffffff;
   color: #0b1a28;
