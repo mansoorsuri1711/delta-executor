@@ -41,13 +41,20 @@ export const SITE_RATING = {
   worstRating: "1",
 } as const;
 
-export const APP_VERSION = "v2.745";
+export const APP_VERSION = "v2.743";
 export const STYLES_UPDATED = "Nobyembre 15, 2026";
 
 /** Official Android APK direct download */
 export const ANDROID_APK_URL =
-  "https://deltaexecutor.com.ph/downloads/Delta-2.745.1142.apk";
-export const ANDROID_APK_FILENAME = "Delta-2.745.1142.apk";
+  "https://dl.deltaexecutor.com.ph/file/deltaexecutor.com.ph/Delta-Executor-(deltaexecutor.com.ph)-2.743.1136-02.apk";
+export const ANDROID_APK_FILENAME =
+  "Delta-Executor-(deltaexecutor.com.ph)-2.743.1136-02.apk";
+
+/** Official VNG (Vietnam Roblox client) Android APK */
+export const VNG_APK_URL =
+  "https://dl.deltaexecutor.com.ph/file/deltaexecutor.com.ph/Delta-2.717.985-VN.apk";
+export const VNG_APK_FILENAME = "Delta-2.717.985-VN.apk";
+export const VNG_APP_VERSION = "v2.717";
 
 /** Community Discord — verified live invite (rotates; re-check if join fails) */
 export const DISCORD_INVITE_URL = "https://discord.gg/vKvRfYb78f";

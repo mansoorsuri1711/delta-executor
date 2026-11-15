@@ -102,35 +102,68 @@ export default function MobileNavigation() {
       >
         <button
           type="button"
-          className={`absolute inset-0 bg-black/70 transition-opacity ${isOpen ? 'opacity-100' : 'opacity-0'}`}
+          className={`absolute inset-0 bg-black/40 transition-opacity ${isOpen ? 'opacity-100' : 'opacity-0'}`}
           aria-label="Isara ang menu"
           onClick={() => setIsOpen(false)}
         />
         <div
-          className={`absolute right-0 top-0 flex h-full w-[min(100%,22rem)] flex-col border-l border-white/10 bg-[#0a0a0a] shadow-2xl transition-transform duration-300 ${
+          className={`absolute right-0 top-0 flex h-full w-[min(100%,22rem)] flex-col border-l shadow-2xl transition-transform duration-300 ${
             isOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
+          style={{
+            backgroundColor: 'var(--chrome-menu-bg)',
+            borderColor: 'var(--chrome-border)',
+            color: 'var(--chrome-fg)',
+          }}
         >
-          <div className="flex items-center justify-between border-b border-white/10 px-4 py-4">
+          <div
+            className="flex items-center justify-between border-b px-4 py-4"
+            style={{ borderColor: 'var(--chrome-border)' }}
+          >
             <Link href="/" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
               <Image src={BRAND_LOGO_MARK} alt="" width={32} height={32} className="rounded-lg" />
-              <span className="font-display text-sm font-bold text-white">{SITE_SHORT_NAME}</span>
+              <span className="font-display text-sm font-bold" style={{ color: 'var(--chrome-fg)' }}>
+                {SITE_SHORT_NAME}
+              </span>
             </Link>
             <MenuButton onClick={() => setIsOpen(false)} isOpen />
           </div>
           <div className="flex-1 overflow-y-auto px-4 py-5">
             {navSections.map((section) => (
               <div key={section.title} className="mb-6">
-                <p className="mb-2 text-xs font-bold tracking-wider text-white/40">{section.title}</p>
+                <p
+                  className="mb-2 text-xs font-bold tracking-wider"
+                  style={{ color: 'var(--chrome-fg-muted)' }}
+                >
+                  {section.title}
+                </p>
                 <ul className="space-y-1">
                   {section.items.map((item) => (
                     <li key={item.href}>
                       <Link
                         href={item.href}
                         onClick={() => setIsOpen(false)}
-                        className={`block rounded-lg px-3 py-2.5 text-sm font-medium ${
-                          isActive(item.href) ? 'bg-pink/15 text-pink' : 'text-white/70 hover:bg-white/5'
-                        }`}
+                        className="block rounded-lg px-3 py-2.5 text-sm font-semibold transition"
+                        style={
+                          isActive(item.href)
+                            ? {
+                                backgroundColor: 'var(--chrome-menu-active)',
+                                color: 'var(--chrome-fg)',
+                              }
+                            : {
+                                color: 'var(--chrome-fg)',
+                              }
+                        }
+                        onMouseEnter={(e) => {
+                          if (!isActive(item.href)) {
+                            e.currentTarget.style.backgroundColor = 'var(--chrome-hover)';
+                          }
+                        }}
+                        onMouseLeave={(e) => {
+                          if (!isActive(item.href)) {
+                            e.currentTarget.style.backgroundColor = 'transparent';
+                          }
+                        }}
                       >
                         {item.label}
                       </Link>
@@ -140,7 +173,12 @@ export default function MobileNavigation() {
               </div>
             ))}
             <div className="mb-6">
-              <p className="mb-2 text-xs font-bold tracking-wider text-white/40">KOMUNIDAD</p>
+              <p
+                className="mb-2 text-xs font-bold tracking-wider"
+                style={{ color: 'var(--chrome-fg-muted)' }}
+              >
+                KOMUNIDAD
+              </p>
               <ul className="flex flex-wrap gap-2">
                 {(Object.keys(SOCIAL_LINKS) as Array<keyof typeof SOCIAL_LINKS>).map((key) => (
                   <li key={key}>
@@ -148,7 +186,12 @@ export default function MobileNavigation() {
                       <Link
                         href="/delta-executor-discord"
                         onClick={() => setIsOpen(false)}
-                        className="rounded-lg border border-white/10 px-3 py-1.5 text-xs font-semibold text-white/70"
+                        className="inline-block rounded-lg border px-3 py-1.5 text-xs font-semibold"
+                        style={{
+                          borderColor: 'var(--chrome-border)',
+                          color: 'var(--chrome-fg)',
+                          backgroundColor: 'var(--chrome-menu-inset)',
+                        }}
                       >
                         {SOCIAL_LABELS[key]}
                       </Link>
@@ -157,7 +200,12 @@ export default function MobileNavigation() {
                         href={SOCIAL_LINKS[key]}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="rounded-lg border border-white/10 px-3 py-1.5 text-xs font-semibold text-white/70"
+                        className="inline-block rounded-lg border px-3 py-1.5 text-xs font-semibold"
+                        style={{
+                          borderColor: 'var(--chrome-border)',
+                          color: 'var(--chrome-fg)',
+                          backgroundColor: 'var(--chrome-menu-inset)',
+                        }}
                       >
                         {SOCIAL_LABELS[key]}
                       </a>

@@ -77,7 +77,7 @@ const fil: HomeMessages = {
     "Ang Delta Executor ay isang mobile-first Roblox script executor na nagpapahintulot sa mga manlalaro na mag-load ng suportadong Lua scripts sa Android at, kapag available, sa iOS. Hinahanap ito ng mga Pilipinong manlalaro kapag kailangan nila ng gumaganang APK o IPA, maaasahang key unlock, at script hub na tumatakbo pa rin pagkatapos ng Roblox patch. Ang deltaexecutor.com.ph ay independent guide hub para sa install, key, platform, at panganib — hindi isang manipis na mirror page.",
   toolExplainerTitle: "Bakit hinahanap ang Delta Executor",
   toolExplainerBody:
-    "Tatlong pangunahing kailangan ang nangingibabaw sa search: gumaganang Android o iOS build, araw-araw na key, at scripts na gumagana pagkatapos ng Roblox update. Kilala ang Delta sa dark mobile UI, built-in script hub, at madalas na update sa v2.745 series. Hinahati namin ang mga gabay para sa Android, iOS, PC, VNG, at key help para hindi magbanggaan ang mga page.",
+    "Tatlong pangunahing kailangan ang nangingibabaw sa search: gumaganang Android o iOS build, araw-araw na key, at scripts na gumagana pagkatapos ng Roblox update. Kilala ang Delta sa dark mobile UI, built-in script hub, at madalas na update sa v2.743 series. Hinahati namin ang mga gabay para sa Android, iOS, PC, VNG, at key help para hindi magbanggaan ang mga page.",
   controlsTitle: "Ano ang makukuha mo sa Delta Executor",
   controls: [
     {

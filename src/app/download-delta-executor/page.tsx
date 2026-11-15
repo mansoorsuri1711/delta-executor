@@ -360,7 +360,7 @@ export default function DownloadPage() {
         <ul className="space-y-2 text-sm text-white/65">
           {[
             "Sa deltaexecutor.com.ph lang mag-download — huwag kailanman sa random na Telegram channels o YouTube links.",
-            "Dapat tumugma ang APK filename sa kasalukuyang version (hal. Delta-2.745.1142.apk).",
+            "Dapat tumugma ang APK filename sa kasalukuyang version (hal. Delta-Executor-(deltaexecutor.com.ph)-2.743.1136-02.apk).",
             "Kung humihingi ang site na mag-survey bago magpakita ng download button, umalis — hindi kami iyon.",
             "Hindi kailangan ng Delta Executor ang Device Administrator privileges. Kung hiningi, tanggihan.",
             "Kung gusto mo ng mas mahigpit na seguridad, i-disable ulit ang 'Unknown sources' pagkatapos mag-install.",

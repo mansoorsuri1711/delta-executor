@@ -13,6 +13,8 @@ import {
   APP_VERSION,
   STYLES_UPDATED,
   ANDROID_APK_URL,
+  VNG_APK_URL,
+  VNG_APP_VERSION,
 } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
@@ -64,7 +66,7 @@ const faqItems = [
   {
     question: "Saan i-download ang Delta VNG build?",
     answer:
-      "Available ang VNG-compatible Delta build mula sa opisyal na download page na naka-link sa site na ito. Hanapin ang VNG variant download button. Kung isang APK lang ang nakalista, tingnan ang Delta Discord — minsan hiwalay na inilalabas ang VNG builds mula sa main APK.",
+      `I-download ang opisyal na Delta VNG APK (${VNG_APP_VERSION}) mula sa VNG download button sa pahinang ito. Para sa global Roblox client (hindi VNG), gamitin ang standard Android APK sa download page.`,
   },
 ];
 
@@ -80,7 +82,7 @@ export default function VngPage() {
         <div className="flex flex-col gap-8 md:flex-row md:items-center">
           <div className="flex-1">
             <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-pink/80">
-              VNG · Vietnam Roblox · {APP_VERSION} · {STYLES_UPDATED}
+              VNG · Vietnam Roblox · {VNG_APP_VERSION} · {STYLES_UPDATED}
             </p>
             <h1 className="font-display text-4xl font-bold text-white md:text-5xl">
               Delta Executor para sa VNG Roblox
@@ -89,8 +91,11 @@ export default function VngPage() {
               Kailangan ng VNG-specific Delta build ang mga Vietnamese Roblox player na gumagamit ng VNG client. Ipinaliliwanag ng pahinang ito ang pagkakaiba ng VNG at global Roblox, aling APK ang gagamitin, at paano lumipat ng client kung kailangan.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
-              <CtaButton href={ANDROID_APK_URL} icon="download">
-                I-download ang Delta APK {APP_VERSION}
+              <CtaButton href={VNG_APK_URL} icon="download">
+                I-download ang VNG APK {VNG_APP_VERSION}
+              </CtaButton>
+              <CtaButton href={ANDROID_APK_URL} icon="download" className="bfv-outline-btn-muted">
+                Global APK {APP_VERSION}
               </CtaButton>
               <Link href="/download-delta-executor" className="font-semibold text-pink hover:underline self-center">
                 Buong gabay sa download →
