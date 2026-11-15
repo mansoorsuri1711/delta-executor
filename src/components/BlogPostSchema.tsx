@@ -31,7 +31,7 @@ export default function BlogPostSchema({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: `${SITE_ORIGIN}/` },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_ORIGIN}/` },
       { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_ORIGIN}/blog` },
       { "@type": "ListItem", position: 3, name: title, item: url },
     ],
@@ -60,7 +60,7 @@ export default function BlogPostSchema({
     datePublished,
     dateModified: dateModified || datePublished,
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
-    inLanguage: "tr-TR",
+    inLanguage: "en",
     ...(articleBody && { articleBody }),
   };
   return (

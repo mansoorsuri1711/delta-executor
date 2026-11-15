@@ -1,16 +1,24 @@
-# SEO Stratejisi — Delta Roblox (Türkçe SERP)
+# SEO Strategy — Delta Executor (English SERP)
 
-**Domain:** https://deltaroblox.tr  
-**Dil:** `tr` / `tr_TR`  
-**Birincil anahtar kelimeler:** delta roblox, delta executor indir, delta executor apk, delta executor ios, delta executor key / anahtar, delta executor güvenli mi
+**Domain:** https://deltaexecutor.com.ph  
+**Language:** `en` / `en_PH`  
+**Primary keywords:** delta executor, delta executor download, delta executor apk, delta executor ios, delta executor key, is delta executor safe
 
-## Sayfa kümeleri
-- Ana sayfa + İndir + iOS + PC + Mac + VNG
-- Nasıl kullanılır + Sorun giderme + Özellikler + Karşılaştırma
-- Blog (anahtar, güvenlik, script hub)
-- Hakkımızda / İletişim / Gizlilik / Sorumluluk reddi
+## Page clusters
+- Home + Download + iOS + PC + Mac + VNG
+- How to use + Troubleshooting + Comparison + Discord
+- Blog (key system, safety, scripts hub, fake websites)
+- About / Contact / Privacy / Disclaimer
 
-## Teknik
-- `lang="tr"`, canonical deltaroblox.tr, sitemap index
+## Internal linking (priority)
+- Download ↔ How-to-use ↔ Key blog ↔ Safety ↔ Fake sites
+- Scripts hub → How-to-use + Download
+- iOS ↔ Download + Key + Safety
+- PC ↔ Download + Troubleshooting + Mac
+- Comparison ↔ Download + iOS + PC
+- Troubleshooting ↔ Download + Key + How-to-use + Discord
+
+## Technical
+- `lang="en"`, canonical deltaexecutor.com.ph, sitemap index
 - SoftwareApplication + FAQ + HowTo + Breadcrumb JSON-LD
-- İç linkler Türkçe çapa metinleriyle
+- Varied English internal anchors (not exact-match spam)

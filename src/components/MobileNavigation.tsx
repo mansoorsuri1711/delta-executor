@@ -7,8 +7,6 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useMobileMenu } from './MobileMenuProvider';
 import { ANDROID_APK_URL, BRAND_LOGO_MARK, SITE_SHORT_NAME, SOCIAL_LABELS, SOCIAL_LINKS } from '@/lib/siteConfig';
-import { getLocaleFromPathname } from '@/lib/locales';
-import { getMessages } from '@/lib/i18n/messages';
 
 function MenuButton({ onClick, isOpen }: { onClick: () => void; isOpen?: boolean }) {
   return (
@@ -17,7 +15,7 @@ function MenuButton({ onClick, isOpen }: { onClick: () => void; isOpen?: boolean
       onClick={onClick}
       className="relative z-[60] flex h-10 w-10 items-center justify-center rounded-full lg:hidden"
       style={{ color: 'var(--chrome-fg)' }}
-      aria-label={isOpen ? 'Menüyü kapat' : 'Menüyü aç'}
+      aria-label={isOpen ? 'Close menu' : 'Open menu'}
       aria-expanded={!!isOpen}
       aria-controls="mobile-nav-panel"
     >
@@ -38,33 +36,35 @@ export default function MobileNavigation() {
   const { isOpen, setIsOpen } = useMobileMenu();
   const pathname = usePathname();
   const [mounted, setMounted] = useState(false);
-  const locale = getLocaleFromPathname(pathname);
-  const t = getMessages(locale.code);
 
   const navSections = [
     {
-      title: t.footerTools.toUpperCase(),
+      title: 'DOWNLOADS',
       items: [
-        { href: '/', label: t.navGenerator },
-        { href: '/download-delta-roblox', label: t.navInstagram },
-        { href: '/delta-roblox-ios', label: t.navNick },
-        { href: '/delta-roblox-pc', label: t.navWhatsapp },
-        { href: '/delta-roblox-mac', label: 'Mac' },
-        { href: '/delta-roblox-discord', label: 'Discord' },
-        { href: '/how-to-use-delta-roblox', label: 'Nasıl Kullanılır' },
-        { href: '/delta-roblox-comparison', label: 'Karşılaştırma' },
+        { href: '/', label: 'Home' },
+        { href: '/download-delta-executor', label: 'Download Android APK' },
+        { href: '/delta-executor-ios', label: 'iOS Guide' },
+        { href: '/delta-executor-pc', label: 'PC Guide' },
+        { href: '/delta-executor-mac', label: 'Mac Guide' },
+        { href: '/delta-executor-discord', label: 'Discord' },
+        { href: '/delta-executor-comparison', label: 'Comparison' },
       ],
     },
     {
-      title: t.footerGuides.toUpperCase(),
+      title: 'GUIDES & MORE',
       items: [
-        { href: '/delta-roblox-troubleshooting', label: 'Sorun Giderme' },
-        { href: '/delta-roblox-vng', label: 'VNG (Vietnam)' },
-        { href: '/blog', label: t.navBlog },
-        { href: '/about-us', label: t.navAbout },
-        { href: '/contact-us', label: 'İletişim' },
-        { href: '/privacy', label: 'Gizlilik' },
-        { href: '/disclaimer', label: 'Sorumluluk Reddi' },
+        { href: '/how-to-use-delta-executor', label: 'How to Use' },
+        { href: '/delta-executor-troubleshooting', label: 'Troubleshooting' },
+        { href: '/delta-executor-vng', label: 'VNG (Vietnam)' },
+        { href: '/blog', label: 'Blog' },
+        { href: '/blog/what-is-delta-executor', label: 'What Is Delta?' },
+        { href: '/blog/how-to-get-delta-executor-key', label: 'Key System Guide' },
+        { href: '/blog/is-delta-executor-safe', label: 'Is It Safe?' },
+        { href: '/blog/delta-executor-key-not-working', label: 'Key Not Working' },
+        { href: '/about-us', label: 'About Us' },
+        { href: '/contact-us', label: 'Contact' },
+        { href: '/privacy', label: 'Privacy Policy' },
+        { href: '/disclaimer', label: 'Disclaimer' },
       ],
     },
   ];
@@ -102,7 +102,7 @@ export default function MobileNavigation() {
         <button
           type="button"
           className={`absolute inset-0 bg-black/70 transition-opacity ${isOpen ? 'opacity-100' : 'opacity-0'}`}
-          aria-label="Menüyü kapat"
+          aria-label="Close menu"
           onClick={() => setIsOpen(false)}
         />
         <div
@@ -139,13 +139,13 @@ export default function MobileNavigation() {
               </div>
             ))}
             <div className="mb-6">
-              <p className="mb-2 text-xs font-bold tracking-wider text-white/40">{t.footerSocial.toUpperCase()}</p>
+              <p className="mb-2 text-xs font-bold tracking-wider text-white/40">COMMUNITY</p>
               <ul className="flex flex-wrap gap-2">
                 {(Object.keys(SOCIAL_LINKS) as Array<keyof typeof SOCIAL_LINKS>).map((key) => (
                   <li key={key}>
                     {key === 'discord' ? (
                       <Link
-                        href="/delta-roblox-discord"
+                        href="/delta-executor-discord"
                         onClick={() => setIsOpen(false)}
                         className="rounded-lg border border-white/10 px-3 py-1.5 text-xs font-semibold text-white/70"
                       >
@@ -172,7 +172,7 @@ export default function MobileNavigation() {
               onClick={() => setIsOpen(false)}
               className="bfv-outline-btn inline-flex w-full items-center justify-center rounded-full px-4 py-3 text-sm font-semibold"
             >
-              {t.makeStyles}
+              Download APK
             </a>
           </div>
         </div>

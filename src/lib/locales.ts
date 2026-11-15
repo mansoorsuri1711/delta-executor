@@ -10,16 +10,16 @@ export type SiteLocale = {
   ogLocale: string;
 };
 
-/** Primary locale is Turkish — deltaroblox.tr Turkish SERP. */
+/** Primary locale is English — deltaexecutor.com.ph global + PH SERP. */
 export const SITE_LOCALES: SiteLocale[] = [
   {
-    code: "tr",
+    code: "en",
     slug: "",
     path: "/",
-    label: "Türkçe",
-    short: "TR",
-    hreflang: "tr",
-    ogLocale: "tr_TR",
+    label: "English",
+    short: "EN",
+    hreflang: "en",
+    ogLocale: "en_PH",
   },
 ];
 
@@ -39,7 +39,7 @@ export function getLocaleFromPathname(_pathname: string): SiteLocale {
 
 export function localeAlternates(): Record<string, string> {
   return {
-    tr: SITE_ORIGIN,
+    en: SITE_ORIGIN,
     "x-default": SITE_ORIGIN,
   };
 }

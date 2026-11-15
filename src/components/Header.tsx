@@ -4,25 +4,20 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import MobileNavigation from './MobileNavigation';
-import { ANDROID_APK_URL, BRAND_LOGO_MARK, SITE_SHORT_NAME } from '@/lib/siteConfig';
-import { getLocaleFromPathname } from '@/lib/locales';
-import { getMessages } from '@/lib/i18n/messages';
+import { ANDROID_APK_URL, BRAND_LOGO_MARK, SITE_NAME, SITE_SHORT_NAME } from '@/lib/siteConfig';
+
+const navLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/download-delta-executor', label: 'Download' },
+  { href: '/delta-executor-ios', label: 'iOS' },
+  { href: '/delta-executor-pc', label: 'PC' },
+  { href: '/how-to-use-delta-executor', label: 'How to Use' },
+  { href: '/delta-executor-discord', label: 'Discord' },
+  { href: '/blog', label: 'Blog' },
+];
 
 export default function Header() {
   const pathname = usePathname();
-  const locale = getLocaleFromPathname(pathname);
-  const t = getMessages(locale.code);
-
-  const navLinks = [
-    { href: '/', label: t.navGenerator },
-    { href: '/download-delta-roblox', label: t.navInstagram },
-    { href: '/delta-roblox-ios', label: t.navNick },
-    { href: '/delta-roblox-pc', label: t.navWhatsapp },
-    { href: '/delta-roblox-mac', label: 'Mac' },
-    { href: '/delta-roblox-discord', label: 'Discord' },
-    { href: '/how-to-use-delta-roblox', label: 'Nasıl kullanılır' },
-    { href: '/blog', label: t.navBlog },
-  ];
 
   const isActive = (href: string) => {
     if (href === '/') return pathname === '/';
@@ -42,7 +37,7 @@ export default function Header() {
           <div className="relative h-9 w-9 flex-shrink-0 overflow-hidden rounded-full ring-1 ring-[color:var(--chrome-border)] transition group-hover:ring-pink/50 sm:h-10 sm:w-10">
             <Image
               src={BRAND_LOGO_MARK}
-              alt={`${t.brand} logo`}
+              alt={`${SITE_NAME} logo`}
               width={40}
               height={40}
               className="object-contain"
@@ -53,12 +48,12 @@ export default function Header() {
             className="truncate font-display text-sm font-bold leading-tight sm:text-base"
             style={{ color: 'var(--chrome-fg)' }}
           >
-            <span className="hidden sm:inline">{t.brand}</span>
+            <span className="hidden sm:inline">{SITE_NAME}</span>
             <span className="sm:hidden">{SITE_SHORT_NAME}</span>
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-1 lg:flex" aria-label="Ana menü">
+        <nav className="hidden items-center gap-1 lg:flex" aria-label="Main navigation">
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}
@@ -81,9 +76,9 @@ export default function Header() {
             href={ANDROID_APK_URL}
             download
             rel="noopener noreferrer"
-            className="hidden items-center rounded-full bg-primary px-4 py-2 text-sm font-semibold text-black shadow-[inset_0_1px_0_rgba(255,255,255,0.15)] transition hover:bg-primary/90 sm:inline-flex"
+            className="hidden items-center rounded-full bg-black px-4 py-2 text-sm font-semibold !text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.12)] transition hover:bg-neutral-900 sm:inline-flex"
           >
-            {t.makeStyles}
+            Download APK
           </a>
           <MobileNavigation />
         </div>

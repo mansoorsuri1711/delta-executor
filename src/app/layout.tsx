@@ -43,8 +43,8 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: "#07101f",
-  colorScheme: "dark",
+  themeColor: "#ffffff",
+  colorScheme: "light",
   viewportFit: "cover",
   interactiveWidget: "resizes-visual",
 };
@@ -52,12 +52,12 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_ORIGIN),
   title: {
-    default: "Delta Roblox — Android ve iOS için Delta Executor İndir",
+    default: "Delta Executor — Android, iOS & PC Download Guides",
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_TAGLINE,
   keywords: [...SITE_KEYWORDS],
-  authors: [{ name: "Delta Roblox Ekibi" }],
+  authors: [{ name: "Delta Executor Team" }],
   creator: SITE_NAME,
   publisher: SITE_NAME,
   robots: {
@@ -73,50 +73,50 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: `/delta-roblox-logo.ico?v=${ASSET_VERSION}`, type: "image/x-icon", sizes: "256x256" },
+      { url: `/delta-executor-logo.ico?v=${ASSET_VERSION}`, type: "image/x-icon", sizes: "256x256" },
       { url: `/favicon.ico?v=${ASSET_VERSION}`, type: "image/x-icon", sizes: "48x48" },
-      { url: `/delta-roblox-logo.webp?v=${ASSET_VERSION}`, type: "image/webp", sizes: "400x400" },
+      { url: `/delta-executor-logo.webp?v=${ASSET_VERSION}`, type: "image/webp", sizes: "400x400" },
       { url: `/android-chrome-192x192.png?v=${ASSET_VERSION}`, type: "image/png", sizes: "192x192" },
       { url: `/android-chrome-512x512.png?v=${ASSET_VERSION}`, type: "image/png", sizes: "512x512" },
     ],
-    apple: [{ url: `/delta-roblox-logo.webp?v=${ASSET_VERSION}`, sizes: "400x400" }],
-    shortcut: [{ url: `/delta-roblox-logo.ico?v=${ASSET_VERSION}`, type: "image/x-icon" }],
+    apple: [{ url: `/delta-executor-logo.webp?v=${ASSET_VERSION}`, sizes: "400x400" }],
+    shortcut: [{ url: `/delta-executor-logo.ico?v=${ASSET_VERSION}`, type: "image/x-icon" }],
   },
   alternates: {
     canonical: SITE_ORIGIN,
-    languages: { tr: SITE_ORIGIN, "x-default": SITE_ORIGIN },
+    languages: { en: SITE_ORIGIN, "x-default": SITE_ORIGIN },
   },
   openGraph: {
-    title: "Delta Roblox — Android ve iOS için Delta Executor İndir",
+    title: "Delta Executor — Android, iOS & PC Download Guides",
     description: SITE_TAGLINE,
     url: SITE_ORIGIN,
     siteName: SITE_NAME,
-    locale: "tr_TR",
+    locale: "en_PH",
     type: "website",
     images: [
       {
         url: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: `${SITE_NAME} — Delta Executor indirme`,
+        alt: `${SITE_NAME} — Delta Executor download guides`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Delta Roblox — Android ve iOS için Delta Executor İndir",
+    title: "Delta Executor — Android, iOS & PC Download Guides",
     description: SITE_TAGLINE,
     images: [
       {
         url: TWITTER_IMAGE,
         width: 1200,
         height: 600,
-        alt: `${SITE_NAME} — deltaroblox.tr`,
+        alt: `${SITE_NAME} — deltaexecutor.com.ph`,
       },
     ],
   },
   applicationName: SITE_NAME,
-  category: "Oyun Araçları",
+  category: "Game Tools",
   classification: "Roblox Executor",
 };
 
@@ -127,19 +127,19 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="tr"
-      className={`dark ${bodyFont.variable} ${displayFont.variable}`}
+      lang="en"
+      className={`light ${bodyFont.variable} ${displayFont.variable}`}
       suppressHydrationWarning
     >
       <head>
         <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="theme-color" content="#07101f" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="theme-color" content="#ffffff" />
         <script dangerouslySetInnerHTML={{ __html: THEME_BOOT_SCRIPT }} />
-        <link rel="icon" href={`/delta-roblox-logo.ico?v=${ASSET_VERSION}`} type="image/x-icon" sizes="256x256" />
+        <link rel="icon" href={`/delta-executor-logo.ico?v=${ASSET_VERSION}`} type="image/x-icon" sizes="256x256" />
         <link rel="shortcut icon" href={`/favicon.ico?v=${ASSET_VERSION}`} type="image/x-icon" />
-        <link rel="icon" href={`/delta-roblox-logo.webp?v=${ASSET_VERSION}`} type="image/webp" sizes="400x400" />
-        <link rel="apple-touch-icon" href={`/delta-roblox-logo.webp?v=${ASSET_VERSION}`} sizes="400x400" />
+        <link rel="icon" href={`/delta-executor-logo.webp?v=${ASSET_VERSION}`} type="image/webp" sizes="400x400" />
+        <link rel="apple-touch-icon" href={`/delta-executor-logo.webp?v=${ASSET_VERSION}`} sizes="400x400" />
         <Script id="strip-extension-attrs" strategy="beforeInteractive">
           {`(function(){var ATTR="bis_skin_checked";function strip(n){if(!n||n.nodeType!==1)return;if(n.hasAttribute&&n.hasAttribute(ATTR))n.removeAttribute(ATTR);var list=n.querySelectorAll?n.querySelectorAll("["+ATTR+"]"):[];for(var i=0;i<list.length;i++)list[i].removeAttribute(ATTR);}strip(document.documentElement);try{new MutationObserver(function(ms){for(var i=0;i<ms.length;i++){if(ms[i].type==="attributes")strip(ms[i].target);var nodes=ms[i].addedNodes;if(nodes){for(var j=0;j<nodes.length;j++)strip(nodes[j]);}}}).observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:[ATTR]});}catch(e){}})();`}
         </Script>

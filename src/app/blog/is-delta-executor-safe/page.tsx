@@ -1,226 +1,371 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import BlogPostSchema from "@/components/BlogPostSchema";
 import FaqSection from "@/components/FaqSection";
 import CtaButton from "@/components/CtaButton";
+import RelatedGuides, { RELATED_PRESETS } from "@/components/RelatedGuides";
 import {
-  BRAND_HERO,
+  BRAND_LOGO,
+  OG_IMAGE,
   SITE_NAME,
   SITE_ORIGIN,
   APP_VERSION,
   ANDROID_APK_URL,
 } from "@/lib/siteConfig";
 
-const SLUG = "is-delta-executor-safe";
-const DATE = "2026-11-06";
-const TITLE = "Delta Executor Güvenli mi? Dürüst Risk Değerlendirmesi (2026)";
-const DESCRIPTION =
-  "Delta Executor ile ilgili tüm güvenlik endişelerini ele alıyoruz: yasaklanma riski, kötü amaçlı yazılım, gerekli izinler, indirme kaynağı doğrulama ve maruziyetinizi azaltma — Kasım 2026 güncellendi.";
-
 export const metadata: Metadata = {
-  title: `Delta Executor Güvenli mi? Dürüst Risk Değerlendirmesi (2026) — ${SITE_NAME}`,
-  description: DESCRIPTION,
-  alternates: { canonical: `${SITE_ORIGIN}/blog/${SLUG}` },
+  title: `Is Delta Executor Safe? Honest Risk Assessment (2026)`,
+  description:
+    "An honest look at Delta Executor safety: device risk vs account ban risk, VirusTotal checks, permissions the app requests, and how to avoid malicious scripts. No hype, no cover-ups.",
+  alternates: { canonical: `${SITE_ORIGIN}/blog/is-delta-executor-safe` },
   openGraph: {
-    title: TITLE,
-    description: DESCRIPTION,
-    url: `${SITE_ORIGIN}/blog/${SLUG}`,
+    title: `Is Delta Executor Safe? — ${SITE_NAME}`,
+    description:
+      "Device risk, account ban risk, VirusTotal habits, and how to protect yourself when using Delta Executor.",
+    url: `${SITE_ORIGIN}/blog/is-delta-executor-safe`,
     siteName: SITE_NAME,
     type: "article",
-    publishedTime: DATE,
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `Is Delta Executor safe?` }],
   },
 };
 
 const faqItems = [
   {
-    question: "Delta Executor kötü amaçlı yazılım içeriyor mu?",
+    question: "Will Delta Executor get my Roblox account banned?",
     answer:
-      "Resmi Delta APK, bilinenkaynaktan indirildiğinde kötü amaçlı yazılım içermez. Ne var ki resmi dağıtım dışındaki çok sayıda yansıma, Android saldırılarında kullanılan yaygın bir teknik olan Truva atı yüklü veya yeniden paketlenmiş Delta kopyaları dağıtmaktadır. Yalnızca doğrulanmış indirme sayfamızı kullanın.",
+      "Using any script executor — including Delta — violates Roblox's Terms of Service. Roblox can and does issue account warnings, temporary bans, and permanent bans to accounts caught running executors. The risk is real. Many users choose an alt account specifically to protect their main.",
   },
   {
-    question: "Delta Executor için Roblox hesabımın yasaklanma riski nedir?",
+    question: "Is Delta Executor a virus?",
     answer:
-      "Delta gibi üçüncü taraf executor'lar kullanmak, Roblox Kullanım Koşullarını ihlal eder. Bunu algılayan Roblox'un ban sistemi, oturumunuzu sonlandırabilir veya hesabınızı geçici/kalıcı olarak askıya alabilir. Bazı kullanıcılar hiçbir zaman banlanmazken diğerleri hızlıca tespit edilir. Risk gerçektir; özellikle PvP oyunlarda script çalıştırıyorsanız asıl hesabınız için bunu göz önünde bulundurun.",
+      "The official APK from deltaexecutor.com.ph is not malware. Because Delta requires deep system permissions to interact with Roblox, some antivirus engines flag it as a 'potentially unwanted program' (PUP) or 'hack tool.' That is a category label, not a confirmed malware detection. Always verify the SHA-256 hash of the file you downloaded against the one published on the official site.",
   },
   {
-    question: "Delta Executor izinleri gerçekten neye erişiyor?",
+    question: "What permissions does Delta Executor request?",
     answer:
-      "Delta Executor, Roblox'un çalışması için ağ erişimine ve depolama iznine ihtiyaç duyar (scriptleri depolamak için). Kamera, kişiler veya SMS gerektirmez. Kurulum sırasında beklenmedik izinler istenirse muhtemelen farklı bir APK kuruyorsunuzdur.",
+      "Delta requests: 'Draw over other apps' (overlay, needed to display the injection UI on top of Roblox), storage access (to read/write scripts), and internet access (for key validation and Script Hub). It does not request contacts, camera, microphone, or SMS access.",
   },
   {
-    question: "Delta Executor telefonuma zarar verebilir mi?",
+    question: "Is Delta Executor undetectable?",
     answer:
-      "Resmi Delta APK, işletim sistemine zarar vermez veya donanımı etkilemez. Roblox'u çalıştırırken pil ve ısı üzerindeki etkisi herhangi bir yoğun oyunla aynıdır. 'Optimize edilmiş APK' satışı yapan üçüncü taraf değiştirilmiş sürümler, kesinlikle güven duyulmayan kaynaklardan gelmedikçe kaçınılması gereken gerçek güvenlik riskleri oluşturabilir.",
+      "No executor should ever be called 'undetectable.' Roblox's anti-cheat is updated continuously and detection methods evolve. Delta's developers work to maintain compatibility, but bans do occur. Never treat any executor as permanently safe.",
   },
   {
-    question: "Çocuğum Delta Executor'ı güvenle kullanabilir mi?",
+    question: "How can I check if my Delta APK is clean?",
     answer:
-      "Delta Executor, çocuklar için tasarlanmamış üçüncü taraf bir araçtır. Kullanım Koşulları ihlalleri, Roblox hesabını tehlikeye atabilir. Hesap güvenliğini anlayan yaşlı ergenler ve yetişkinler için risk göreceli olarak düşüktür; resmi olmayan kaynaklara maruz kalmaktan korkulan küçük çocuklar için bu bir faktördür.",
+      "Upload the APK to VirusTotal (virustotal.com). Expect a small number of antivirus flags (1–5 out of 70+) on any real executor APK — this is normal for tools that modify app processes. A large number of detections (10+), or detections for 'trojan,' 'ransomware,' or 'spyware,' is a red flag. Cross-check the file's SHA-256 hash on the official download page.",
   },
   {
-    question: "Virüs bulunan Delta APK indir sitelerini nasıl tespit ederim?",
+    question: "Should I use an alt account for Delta?",
     answer:
-      "Kırmızı bayraklar: belirsiz alt etki alanları, pop-up ağ geçitleri arkasındaki indirme düğmeleri, 'garantili yasaklanmama' iddiaları, uygulama boyutu beklenenden çok farklı (resmi Delta APK'sı genellikle 20–40 MB arasındadır) ve kurulum sırasında konum veya kameraya erişim isteyen izinler. İndirmeden önce her zaman SHA256 hash kontrolü yapın.",
+      "Yes — using a dedicated Roblox alt account is the single most effective way to protect your main account from a ban. If the alt gets banned, your progress, Robux, and items on the main account are unaffected.",
   },
   {
-    question: "Delta Executor kullanmak için cihazımı root etmem gerekiyor mu?",
+    question: "Can Delta Executor steal my Roblox password?",
     answer:
-      "Hayır. Delta Executor root gerektirmez ve Android 5.0 ve sonraki sürümlerde standart bir kullanıcı hesabıyla çalışır. Kök ayrıcalıkları isteyen bir kurulum, resmi Delta olmayan bir şeydir.",
-  },
-  {
-    question: "Delta Executor hesabımı veya kişisel verilerimi çalabilir mi?",
-    answer:
-      "Resmi Delta APK, hesap bilgilerinizi çalmak için tasarlanmış bir kimlik bilgisi hırsızı değildir — Roblox enjeksiyonunu etkinleştiren sistem düzeyinde kancalar kullanır. Ancak kötü amaçlı script'ler, Roblox oturumlarından token'ları çıkarabilen kodlar çalıştırabilir. Executor'da yalnızca anladığınız veya güvenilir kaynaklardan gelen scriptleri çalıştırın.",
-  },
-  {
-    question: "Delta iOS sürümü güvenli mi?",
-    answer:
-      "Delta iOS, bağımsız bir IPA aracılığıyla dağıtılır ve AltStore veya benzer araçlarla yan yükleme gerektirir. Bu, çeşitli Android cihaz üreticilerinde olduğu gibi Apple'ın App Store güvenlik incelemesini atlatır. Resmi IPA, kötü amaçlı yazılım içermez, ancak yan yükleme süreci kendine özgü risklere sahiptir; iOS rehberimizi gözden geçirin.",
-  },
-  {
-    question: "Delta benim konumumu izliyor mu?",
-    answer:
-      "Resmi Delta APK konum iznine ihtiyaç duymaz veya istemez. İzin listesinde konum görünüyorsa muhtemelen değiştirilmiş bir APK kuruyorsunuzdur.",
+      "The official Delta Executor APK does not harvest credentials. The risk of credential theft comes from scripts you run inside Roblox, not from Delta itself. Never execute scripts that ask for your Roblox username, password, or cookies.",
   },
 ];
 
 export default function IsDeltaSafePage() {
   return (
     <>
-      <BlogPostSchema
-        title={TITLE}
-        description={DESCRIPTION}
-        slug={SLUG}
-        datePublished={DATE}
-        image={`${SITE_ORIGIN}${BRAND_HERO}`}
-        articleBody={`Delta Executor güvenliği üç bağımsız konuya ayrılır: Roblox yasaklanma riski, kötü amaçlı yazılım riski (ağırlıklı olarak üçüncü taraf yansımalarla ilgili) ve cihaz izni endişeleri.`}
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Blog", href: "/blog" },
+          { label: "Is Delta Executor Safe?" },
+        ]}
       />
 
-      <nav aria-label="Breadcrumb" className="w-full">
-        <div className="container mx-auto px-4 pt-5 pb-2">
-          <ol className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-white/45">
-            <li className="flex items-center gap-2">
-              <Link href="/" className="hover:text-pink">Ana Sayfa</Link>
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-white/25" aria-hidden="true">/</span>
-              <Link href="/blog" className="hover:text-pink">Blog</Link>
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-white/25" aria-hidden="true">/</span>
-              <span className="text-white/80" aria-current="page">Güvenli mi?</span>
-            </li>
-          </ol>
+      <BlogPostSchema
+        title="Is Delta Executor Safe? An Honest Risk Assessment (2026)"
+        description="An honest look at Delta Executor safety: device risk vs account ban risk, VirusTotal checks, and how to avoid malicious scripts."
+        slug="is-delta-executor-safe"
+        datePublished="2026-11-15"
+        image={`${SITE_ORIGIN}${BRAND_LOGO}`}
+      />
+
+      {/* Hero */}
+      <div className="container mx-auto max-w-6xl px-4 pb-4 pt-6">
+        <div className="flex flex-col gap-8 md:flex-row md:items-center">
+          <div className="flex-1">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-pink/80">
+              Safety Guide · {APP_VERSION} · November 15, 2026
+            </p>
+            <h1 className="font-display text-4xl font-bold text-white md:text-5xl">
+              Is Delta Executor Safe?
+            </h1>
+            <p className="mt-4 max-w-xl text-lg text-white/65">
+              The honest answer is nuanced: the official Delta APK is not malware, but using it
+              carries real Roblox ban risk and demands certain habits to stay safe. This article
+              breaks down every dimension of "safe" so you can make an informed decision.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-4">
+              <CtaButton href={ANDROID_APK_URL} icon="download">
+                Download Official APK
+              </CtaButton>
+              <Link
+                href="/download-delta-executor"
+                className="font-semibold text-pink hover:underline self-center"
+              >
+                Safe install guide →
+              </Link>
+              <Link
+                href="/disclaimer"
+                className="font-semibold text-pink hover:underline self-center"
+              >
+                Disclaimer →
+              </Link>
+            </div>
+          </div>
+          <div className="relative w-full overflow-hidden rounded-2xl border border-white/10 bg-muted md:w-64 lg:w-72 flex items-center justify-center p-6">
+            <Image
+              src={BRAND_LOGO}
+              alt="Delta Executor official logo"
+              width={256}
+              height={256}
+              sizes="(max-width: 768px) 256px, 288px"
+              className="h-auto w-full max-w-[200px] object-contain"
+              priority
+            />
+          </div>
         </div>
-      </nav>
+      </div>
 
-      <article className="container mx-auto max-w-3xl px-4 pb-14 pt-6">
-        <header className="mb-8">
-          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-pink/80">
-            6 Kasım 2026 · 6 dk okuma
+      {/* Disclaimer banner */}
+      <div className="container mx-auto max-w-3xl px-4 pt-8">
+        <div className="rounded-2xl border border-yellow-500/30 bg-yellow-500/5 px-5 py-4">
+          <p className="text-sm font-semibold text-yellow-400">Important disclaimer</p>
+          <p className="mt-1 text-sm text-white/65">
+            Using script executors violates Roblox's Terms of Service and may result in account
+            suspensions or permanent bans. This article is for informational purposes only. Use
+            Delta Executor at your own risk.
           </p>
-          <h1 className="font-display text-3xl font-bold text-white md:text-4xl">
-            {TITLE}
-          </h1>
-          <p className="mt-4 text-lg text-white/65">
-            Delta Executor güvenliği üç bağımsız konuya ayrılır: Roblox yasaklanma riski, kötü amaçlı yazılım riski ve cihaz izni endişeleri. Her birini dürüstçe ele alıyoruz.
-          </p>
-        </header>
-
-        <div className="mb-8 overflow-hidden rounded-2xl border border-white/10 bg-muted">
-          <Image
-            src={BRAND_HERO}
-            alt="Android üzerinde Delta Executor arayüzü"
-            width={1200}
-            height={675}
-            sizes="(max-width: 768px) 100vw, 768px"
-            className="h-auto w-full object-contain"
-            priority
-          />
         </div>
+      </div>
 
-        <div className="space-y-5 leading-relaxed text-white/75">
+      {/* Device safety */}
+      <div className="container mx-auto max-w-3xl px-4 pt-10">
+        <h2 className="mb-4 font-display text-2xl font-bold text-white md:text-3xl">
+          Device safety: is the APK itself dangerous?
+        </h2>
+        <p className="text-white/65 leading-relaxed">
+          The official Delta Executor APK, downloaded from <strong className="text-white">deltaexecutor.com.ph</strong>, is
+          not malware in the traditional sense. It does not exfiltrate your personal data, subscribe
+          you to paid services, or encrypt your files for ransom. However, because it needs to
+          interact with another running app (Roblox), it requires elevated permissions that
+          legitimate apps rarely need.
+        </p>
+        <p className="mt-4 text-white/65 leading-relaxed">
+          Antivirus tools may flag Delta as a "hack tool" or "PUP" (potentially unwanted program).
+          This is a <em>category</em> label, not proof of malicious behaviour. All major executor
+          tools receive similar category flags.
+        </p>
 
-          <h2 className="font-display text-2xl font-bold text-white">
-            Kısa cevap
-          </h2>
-          <p>
-            Resmi Delta APK kasıtlı kötü amaçlı yazılım içermez. Roblox yasaklanma riski gerçektir ancak düşük profillidir — özellikle PvP oyunlarda kullanılıyorsa. En büyük pratik güvenlik riski, birinin resmi olmayan yansımadan indirmesi ve kötü amaçlı yazılım içeren klonlanmış bir APK ile karşılaşmasıdır.
-          </p>
+        <h3 className="mt-8 mb-3 font-display text-xl font-bold text-white">
+          Verifying your download with VirusTotal
+        </h3>
+        <ol className="space-y-2 text-sm text-white/65 leading-relaxed list-decimal list-inside">
+          <li>Download the APK from the official site and note the filename.</li>
+          <li>
+            Go to{" "}
+            <a
+              href="https://www.virustotal.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-pink hover:underline"
+            >
+              virustotal.com
+            </a>{" "}
+            and upload the file.
+          </li>
+          <li>Wait for the scan to complete (usually under 60 seconds).</li>
+          <li>
+            Expect 0–5 detections on a clean executor APK. Detections labeled{" "}
+            <strong className="text-white">trojan</strong>,{" "}
+            <strong className="text-white">spyware</strong>, or{" "}
+            <strong className="text-white">ransomware</strong> are serious red flags — do not
+            install that file.
+          </li>
+          <li>
+            Cross-check the SHA-256 hash shown by VirusTotal against the hash published on the{" "}
+            <Link href="/download-delta-executor" className="text-pink hover:underline">
+              download page
+            </Link>
+            .
+          </li>
+        </ol>
+      </div>
 
-          <h2 className="font-display text-2xl font-bold text-white">
-            1. Yasaklanma riski
-          </h2>
-          <p>
-            Delta gibi script executor&apos;lar, Roblox Kullanım Koşullarını ihlal eder. Roblox&apos;un hile karşıtı sistemi, enjeksiyon davranışını tespit etmeye çalışır. Risk kümülatif ve bağlama bağlıdır:
-          </p>
-          <ul className="ml-4 list-disc space-y-1 text-white/65">
-            <li>Exploitler veya combat avantajları çalıştırmak, anahtar&apos;ı görüntülemek gibi pasif scriptlere kıyasla daha fazla risk taşır.</li>
-            <li>Yoğun PvP oyunlarında ya da kalabalık sunucularda çalıştırmak daha fazla dikkat çeker.</li>
-            <li>Roblox tespit imzalarını sık güncelleyen oyunlar daha yüksek risklidir.</li>
-          </ul>
-          <p>
-            Önerilen davranış: hassas hesabınızı yalnızca birincil hesabınızda kullanmayın, test için yedek bir hesap kullanın.
-          </p>
-
-          <h2 className="font-display text-2xl font-bold text-white">
-            2. Kötü amaçlı yazılım ve indirme güvenliği
-          </h2>
-          <p>
-            Delta Executor için en büyük güvenlik riski, Roblox entegrasyonunun kendisi değil — kötü amaçlı aktörlerin kötü amaçlı yazılım içeren APK&apos;ları resmi görünümlü siteler aracılığıyla dağıtmasıdır. Bu yaygın bir yöntemdir:
-          </p>
-          <ul className="ml-4 list-disc space-y-1 text-white/65">
-            <li>Meşru görünen ancak orijinal olmayan alan adlarında barındırılan yansıma siteleri.</li>
-            <li>Google Drive veya Telegram kanallarından dağıtılan yeniden paketlenmiş Delta APK&apos;ları.</li>
-            <li>Gerçek Delta indirmesi gerçekleşmeden önce sizi ankete veya farklı APK indirmeye yönlendiren &ldquo;executor paketi&rdquo; siteleri.</li>
-          </ul>
-          <p>
-            Yeni bir Delta APK her aldığınızda bilinen bir değer karşısında SHA256 hash kontrolü yapın. İndirme sayfamız doğrulanmış hash&apos;leri içerir.
-          </p>
-
-          <h2 className="font-display text-2xl font-bold text-white">
-            3. Cihaz izinleri
-          </h2>
-          <p>
-            Resmi Delta APK şunlara erişim istemez: konumunuz, rehberiniz, kameranız veya SMS&apos;leriniz. Android üzerinde kurulum sırasında şunlara ihtiyaç duyar:
-          </p>
-          <ul className="ml-4 list-disc space-y-1 text-white/65">
-            <li>İnternet erişimi (Roblox sunucularına bağlanmak için)</li>
-            <li>Depolama (scriptleri kaydetmek için)</li>
-            <li>Arka planda çalıştırma (Roblox oyun oturumu sırasında)</li>
-          </ul>
-          <p>
-            Kurulum sırasında yukarıdakilerin ötesinde izinler isteniyorsa, resmi Delta APK yerine başka bir şey yüklüyorsunuzdur.
-          </p>
-
-          <h2 className="font-display text-2xl font-bold text-white">
-            Riskini azaltma kontrol listesi
-          </h2>
-          <ul className="ml-4 list-disc space-y-1 text-white/65">
-            <li>Yalnızca bu sitedeki doğrulanmış indirme sayfasından indirin.</li>
-            <li>APK hash&apos;ini indirmeden önce bilinen iyi değerle karşılaştırın.</li>
-            <li>Roblox&apos;ta yüksek değerli veya asıl hesapta değil, yedek hesapta çalıştırın.</li>
-            <li>Sadece anladığınız veya güvenilir bir script topluluğu kaynaklı scriptleri çalıştırın.</li>
-            <li>Aktif PvP veya rekabetçi Roblox oyunlarında kullanmaktan kaçının.</li>
-            <li>Delta Executor&apos;ı ve Roblox&apos;u güncel tutun — eski executor sürümleri daha az gizlidir.</li>
-          </ul>
+      {/* Permissions */}
+      <div className="container mx-auto max-w-3xl px-4 pt-10">
+        <h2 className="mb-4 font-display text-2xl font-bold text-white md:text-3xl">
+          Permissions Delta requests — and why
+        </h2>
+        <div className="overflow-x-auto rounded-2xl border border-white/10">
+          <table className="w-full text-sm text-white/70">
+            <thead>
+              <tr className="border-b border-white/10 bg-white/[0.04] text-left text-xs uppercase tracking-wider text-white/40">
+                <th className="px-4 py-3">Permission</th>
+                <th className="px-4 py-3">Why it's needed</th>
+                <th className="px-4 py-3">Risk level</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-white/5">
+              {[
+                [
+                  "Draw over other apps (overlay)",
+                  "Displays the Delta UI on top of Roblox",
+                  "Low",
+                ],
+                [
+                  "Storage access",
+                  "Reads and writes script files to your device",
+                  "Low",
+                ],
+                [
+                  "Internet access",
+                  "Key validation, Script Hub content, updates",
+                  "Low",
+                ],
+              ].map(([perm, reason, risk]) => (
+                <tr key={perm as string}>
+                  <td className="px-4 py-3 font-semibold text-white">{perm}</td>
+                  <td className="px-4 py-3">{reason}</td>
+                  <td className="px-4 py-3 text-green-400">{risk}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
+        <p className="mt-3 text-sm text-white/50">
+          Delta does <strong className="text-white/80">not</strong> request contacts, camera,
+          microphone, SMS, or location. If a version of "Delta" asks for those, you have a fake or
+          tampered APK.
+        </p>
+      </div>
 
-        <FaqSection title="Güvenlik SSS" items={faqItems} />
-
-        <div className="mt-10 flex flex-wrap gap-4">
-          <CtaButton href={ANDROID_APK_URL} icon="download" size="sm">
-            Delta Executor İndir
-          </CtaButton>
-          <Link href="/blog/delta-executor-key-system" className="font-semibold text-pink hover:underline self-center">
-            Anahtar sistemi →
+      {/* Account (Roblox) risk */}
+      <div className="container mx-auto max-w-3xl px-4 pt-10">
+        <h2 className="mb-4 font-display text-2xl font-bold text-white md:text-3xl">
+          Account (Roblox ban) risk
+        </h2>
+        <p className="text-white/65 leading-relaxed">
+          This is the <strong className="text-white">biggest real risk</strong>. Roblox's Terms of
+          Service explicitly prohibit using third-party clients, automation, or script execution. If
+          Roblox detects executor activity — through client-side telemetry, server-side anomaly
+          detection, or player reports — the account can receive a temporary ban or a permanent
+          termination.
+        </p>
+        <div className="mt-6 grid gap-4 sm:grid-cols-2">
+          {[
+            {
+              label: "Lower-risk habit",
+              color: "border-green-500/30 bg-green-500/5",
+              label_color: "text-green-400",
+              items: [
+                "Use a dedicated alt account",
+                "Avoid competitive or ranked game modes",
+                "Don't use scripts that give obvious unfair advantages (aimbots, speed hacks)",
+                "Keep Delta updated to the latest version",
+                "Only run scripts from trusted sources",
+              ],
+            },
+            {
+              label: "Higher-risk habit",
+              color: "border-red-500/30 bg-red-500/5",
+              label_color: "text-red-400",
+              items: [
+                "Using your main account with years of progress",
+                "Running aimbots or wallhacks where other players can report you",
+                "Using outdated Delta versions after a Roblox update",
+                "Running scripts from random Discord servers without reviewing the code",
+                "Believing any claim that an executor is 'undetectable'",
+              ],
+            },
+          ].map((col) => (
+            <div
+              key={col.label}
+              className={`rounded-2xl border p-5 ${col.color}`}
+            >
+              <p className={`mb-3 text-sm font-semibold ${col.label_color}`}>{col.label}</p>
+              <ul className="space-y-1.5 text-sm text-white/65">
+                {col.items.map((item) => (
+                  <li key={item} className="flex gap-2">
+                    <span className="shrink-0 mt-0.5">•</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+        <p className="mt-6 text-sm text-white/55">
+          New to Delta? Read{" "}
+          <Link href="/blog/what-is-delta-executor" className="text-pink hover:underline">
+            what is Delta Executor
           </Link>
-          <Link href="/delta-roblox-troubleshooting" className="font-semibold text-pink hover:underline self-center">
-            Sorun giderme →
+          . Key unlock problems and bypass scams are covered in{" "}
+          <Link href="/blog/delta-executor-key-not-working" className="text-pink hover:underline">
+            key not working
           </Link>
-        </div>
-      </article>
+          .
+        </p>
+      </div>
+
+      {/* Script safety */}
+      <div className="container mx-auto max-w-3xl px-4 pt-10">
+        <h2 className="mb-4 font-display text-2xl font-bold text-white md:text-3xl">
+          Malicious scripts — the hidden risk inside safe executors
+        </h2>
+        <p className="text-white/65 leading-relaxed">
+          Even if Delta itself is clean, the <em>scripts</em> you run inside it are entirely your
+          responsibility. A script can read your Roblox client's local data, perform actions in
+          your account, or even attempt to load remote code. Here is how to stay safe:
+        </p>
+        <ul className="mt-4 space-y-3 text-white/65 leading-relaxed">
+          <li className="flex gap-3">
+            <span className="text-pink font-bold shrink-0 mt-0.5">→</span>
+            <span>
+              <strong className="text-white">Review scripts before executing</strong> — if a script
+              is hundreds of lines long and you can't read it, don't run it.
+            </span>
+          </li>
+          <li className="flex gap-3">
+            <span className="text-pink font-bold shrink-0 mt-0.5">→</span>
+            <span>
+              <strong className="text-white">Never run scripts that ask for your login</strong> — no
+              legitimate Roblox script needs your username or password.
+            </span>
+          </li>
+          <li className="flex gap-3">
+            <span className="text-pink font-bold shrink-0 mt-0.5">→</span>
+            <span>
+              <strong className="text-white">Prefer Delta's built-in Script Hub</strong> — these
+              scripts are vetted by the Delta team and updated regularly.
+            </span>
+          </li>
+          <li className="flex gap-3">
+            <span className="text-pink font-bold shrink-0 mt-0.5">→</span>
+            <span>
+              <strong className="text-white">Be cautious with scripts from Discord DMs</strong> — 
+              social-engineering attacks often start with someone "gifting" you a script.
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      {/* FAQ */}
+      <div className="container mx-auto max-w-3xl px-4 pb-6">
+        <FaqSection title="Safety FAQ" items={faqItems} />
+      </div>
+
+      <div className="container mx-auto max-w-3xl px-4 pb-14">
+        <RelatedGuides links={[...RELATED_PRESETS.safety]} />
+      </div>
     </>
   );
 }

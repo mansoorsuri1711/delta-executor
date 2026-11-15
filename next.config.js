@@ -23,7 +23,7 @@ const nextConfig = {
     return [
       ...LEGACY_REDIRECTS,
 
-      // Legacy niche routes → Delta Roblox IA
+      // Legacy niche routes → Delta Executor IA
       { source: '/funciones', destination: CURRENT.home, permanent: true },
       { source: '/como-usar', destination: CURRENT.download, permanent: true },
       { source: '/how-it-works', destination: CURRENT.download, permanent: true },

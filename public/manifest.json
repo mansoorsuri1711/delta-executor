@@ -1,31 +1,36 @@
 {
-  "name": "Delta Roblox",
+  "name": "Delta Executor",
   "short_name": "Delta",
-  "description": "Delta Executor — Android ve iOS için ücretsiz Roblox script yürütücüsü. İndirme rehberleri, anahtar sistemi, script hub ipuçları.",
+  "description": "Delta Executor — free Roblox script executor guides for Android, iOS, PC, Mac, and VNG. Key system, safety, and script hub tips on deltaexecutor.com.ph.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#00d4ff",
-  "lang": "tr",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "lang": "en",
   "icons": [
     {
-      "src": "/favicon.ico?v=20261106-dr2",
+      "src": "/favicon.ico?v=20261115-de2",
       "sizes": "48x48",
       "type": "image/x-icon"
     },
     {
-      "src": "/android-chrome-192x192.png?v=20261106-dr2",
+      "src": "/delta-executor-logo.webp?v=20261115-de2",
+      "sizes": "512x512",
+      "type": "image/webp"
+    },
+    {
+      "src": "/android-chrome-192x192.png?v=20261115-de2",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/android-chrome-512x512.png?v=20261106-dr2",
+      "src": "/android-chrome-512x512.png?v=20261115-de2",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/android-chrome-512x512.png?v=20261106-dr2",
+      "src": "/android-chrome-512x512.png?v=20261115-de2",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

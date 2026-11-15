@@ -17,15 +17,15 @@ const ThemeContext = createContext<ThemeContextValue | null>(null);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
-    applyResolvedTheme("dark");
+    applyResolvedTheme("light");
   }, []);
 
   const value = useMemo<ThemeContextValue>(
     () => ({
-      preference: "dark",
-      resolved: "dark",
+      preference: "light",
+      resolved: "light",
       setPreference: () => {
-        applyResolvedTheme("dark");
+        applyResolvedTheme("light");
       },
     }),
     [],

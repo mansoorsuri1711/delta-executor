@@ -19,6 +19,7 @@ import {
 } from "@/lib/siteConfig";
 import { type SiteLocale, DEFAULT_LOCALE } from "@/lib/locales";
 import { getMessages } from "@/lib/i18n/messages";
+import { ROUTES } from "@/lib/routes";
 
 export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: SiteLocale }) {
   const t = getMessages(locale.code);
@@ -33,12 +34,12 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
         name: t.brand,
         description: t.metaDescription,
         publisher: { "@id": `${SITE_ORIGIN}/#organization` },
-        inLanguage: "tr",
+        inLanguage: "en",
       },
       {
         ...WEB_APPLICATION_JSON_LD,
         name: "Delta Executor",
-        alternateName: ["Delta Roblox", "Delta X Executor"],
+        alternateName: ["Delta X Executor", "Delta Roblox Executor"],
         "@id": `${SITE_ORIGIN}/#app`,
         description: t.metaDescription,
       },
@@ -66,9 +67,9 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
         "@type": "ImageObject",
         contentUrl: `${SITE_ORIGIN}${BRAND_HERO}`,
         url: `${SITE_ORIGIN}${BRAND_HERO}`,
-        width: 1200,
-        height: 675,
-        caption: "Delta Roblox — Delta Executor mobile guide",
+        width: 280,
+        height: 455,
+        caption: "Delta Executor — Get Delta Key mobile guide",
         ...imageObjectLicensing,
       },
     ],
@@ -76,64 +77,82 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
 
   const guideTopics = [
     {
-      title: "Android indirme",
-      body: "Delta Executor Android'de APK olarak kurulur. Bilinmeyen kaynaklara izin verme, doğru derlemeyi seçme ve kurulum sonrası kontroller modern sürümlerde sık takıldığınız noktalardır. Adım adım kontrol listesini indirme sayfasında bulursunuz.",
-      href: "/download-delta-roblox",
-      linkLabel: "Android indirme rehberi",
+      title: "Android download",
+      body: "Delta Executor installs as an APK on Android. Allowing unknown sources, picking the right ARM build, and checking Play Protect prompts are the steps most players miss. The download page walks the checklist in order.",
+      href: ROUTES.download,
+      linkLabel: "Android download guide",
     },
     {
-      title: "iOS kurulumu",
-      body: "iPhone ve iPad'de Delta genellikle IPA veya doğrudan kurulum yollarıyla gelir. İmzalama hataları, süresi dolmuş profiller ve sürüm uyumsuzluğu en yaygın engellerdir. iOS sayfası hangi yöntemin ne zaman işe yaradığını açıklar.",
-      href: "/delta-roblox-ios",
-      linkLabel: "iOS kurulum rehberi",
+      title: "iOS setup",
+      body: "On iPhone and iPad, Delta usually arrives via IPA, Direct Install, or a sideloading tool. Signing errors, expired profiles, and revokes are the common blockers. The iOS page explains which method fits which device.",
+      href: ROUTES.ios,
+      linkLabel: "iOS install guide",
     },
     {
-      title: "PC sürümü",
-      body: "Birçok yansıma sitesi “PC için Delta” diye EXE dosyası sunar. Gerçekte çoğu bağlantı şüpheli veya alakasız yazılım taşır. PC sayfasında bu iddiaları ayıklıyor ve güvenli alternatifleri netleştiriyoruz.",
-      href: "/delta-roblox-pc",
-      linkLabel: "PC sürümü rehberi",
+      title: "PC version",
+      body: "Many mirror sites advertise a “Delta for PC” EXE. Most of those links are unrelated or risky software. Our PC guide separates emulator installs of the Android APK from fake native Windows downloads.",
+      href: ROUTES.pc,
+      linkLabel: "PC version guide",
     },
     {
-      title: "Nasıl kullanılır",
-      body: "Kurulumdan sonra bağlanma, Script Hub, yapıştırma ve çalıştırma akışını bilmek gerekir. Kullanım rehberi bu adımları sırayla gösterir; böylece sadece APK indirip ekranda takılmazsınız.",
-      href: "/how-to-use-delta-roblox",
-      linkLabel: "Kullanım rehberi",
+      title: "How to use",
+      body: "After install you still need attach, Script Hub, paste, and execute. The how-to guide shows that flow so you are not stuck with an APK that never runs a script.",
+      href: ROUTES.howToUse,
+      linkLabel: "How to use Delta Executor",
     },
     {
-      title: "Anahtar sistemi",
-      body: "Delta anahtarları süre sınırlıdır ve yanlış linkler hesabınızı riske atabilir. Anahtar blog yazısı anahtarların nasıl çalıştığını, yenilemeyi ve güvenli kilit açma alışkanlıklarını anlatır.",
-      href: "/blog/delta-executor-key-system",
-      linkLabel: "Anahtar sistemi yazısı",
+      title: "What is Delta Executor?",
+      body: "New to Delta? The beginner guide explains what the executor does, which platforms it supports, and what risks to understand before you install.",
+      href: ROUTES.whatIs,
+      linkLabel: "Beginner guide",
     },
     {
-      title: "Güvenlik incelemesi",
-      body: "“Delta güvenli mi?” sorusu hesap riski, sahte yansımalar ve verilen izinlerle ilgilidir. Güvenlik yazısı hangi uyarıların gerçek, hangilerinin abartı olduğunu ayırmanıza yardım eder.",
-      href: "/blog/is-delta-executor-safe",
-      linkLabel: "Güvenlik incelemesi",
+      title: "How to get a Delta key",
+      body: "Free Delta keys are time-limited and often device-bound. The key guide walks Linkvertise, LootLabs, and Work.ink without risky installs.",
+      href: ROUTES.keySystem,
+      linkLabel: "Get key walkthrough",
     },
     {
-      title: "Sorun giderme",
-      body: "Enjeksiyon hataları, anahtar sorunları, çökmeler ve Play Protect engelleri sık görülür. Sorun giderme sayfası her hata için kısa teşhis ve çözüm sırası verir.",
-      href: "/delta-roblox-troubleshooting",
-      linkLabel: "Sorun giderme rehberi",
+      title: "Is Delta Executor safe?",
+      body: "Device risk, Roblox ban risk, VirusTotal habits, and permissions explained — honest assessment with no marketing fluff.",
+      href: ROUTES.safety,
+      linkLabel: "Safety review",
     },
     {
-      title: "Mac rehberi",
-      body: "macOS'ta resmi bir Delta uygulaması yoktur; çoğu kullanıcı emülatör veya iPhone yansıtma ile ilerler. Mac sayfası hangi seçeneğin kime uyduğunu anlatır.",
-      href: "/delta-roblox-mac",
-      linkLabel: "Mac rehberi",
+      title: "Key not working",
+      body: "Invalid key, Too Many Requests, stuck unlock progress, and network bind errors — fixes for the key failures people search most.",
+      href: ROUTES.keyNotWorking,
+      linkLabel: "Key error fixes",
+    },
+    {
+      title: "Troubleshooting",
+      body: "Injection failures, key loops, crashes, and Play Protect blocks show up after every Roblox patch week. The troubleshooting page gives short diagnosis orders for each error.",
+      href: ROUTES.troubleshooting,
+      linkLabel: "Troubleshooting guide",
+    },
+    {
+      title: "Mac guide",
+      body: "There is no trusted mass-market Delta .dmg for every Mac user. Most people use an emulator or iPhone mirroring. The Mac page clarifies which option fits whom.",
+      href: ROUTES.mac,
+      linkLabel: "Mac guide",
     },
     {
       title: "VNG (Vietnam)",
-      body: "VNG Roblox istemcisi bazı bölgelerde standart istemciden farklıdır. VNG sayfası kimin buna ihtiyacı olduğunu ve kurulumu nasıl yapacağını açıklar.",
-      href: "/delta-roblox-vng",
-      linkLabel: "VNG rehberi",
+      body: "The VNG Roblox client differs from the global client in some regions. The VNG page explains who needs that build and how install differs.",
+      href: ROUTES.vng,
+      linkLabel: "VNG guide",
     },
     {
-      title: "Discord sunucusu",
-      body: "Güncelleme duyuruları, hata bildirimi ve script tartışması Discord’da akar. Discord sayfası güvenli katılım adımlarını ve sahte davet / DM dolandırıcılık uyarılarını verir.",
-      href: "/delta-roblox-discord",
-      linkLabel: "Discord rehberi",
+      title: "Discord server",
+      body: "Update pings, bug reports, and script talk live on Discord. The Discord page covers safe joins and warns about fake invite / DM scams.",
+      href: ROUTES.discord,
+      linkLabel: "Discord guide",
+    },
+    {
+      title: "Executor comparison",
+      body: "Mobile support, key friction, hub quality, and update speed — compared without “undetectable” slogans. Use it when deciding if Delta fits your device.",
+      href: ROUTES.comparison,
+      linkLabel: "Comparison table",
     },
   ];
 
@@ -169,18 +188,18 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
                 download
                 rel="noopener noreferrer"
               >
-                Delta Executor İndir
+                Download Delta Executor
                 <span aria-hidden="true">→</span>
               </a>
-              <Link href="/delta-roblox-ios" className="bfv-outline-btn bfv-outline-btn-muted">
-                iOS rehberi
+              <Link href={ROUTES.ios} className="bfv-outline-btn bfv-outline-btn-muted">
+                iOS guide
               </Link>
             </div>
             <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
               {(Object.keys(SOCIAL_LINKS) as Array<keyof typeof SOCIAL_LINKS>).map((key) => (
                 <a
                   key={key}
-                  href={key === "discord" ? "/delta-roblox-discord" : SOCIAL_LINKS[key]}
+                  href={key === "discord" ? ROUTES.discord : SOCIAL_LINKS[key]}
                   {...(key === "discord"
                     ? {}
                     : { target: "_blank", rel: "noopener noreferrer" })}
@@ -191,25 +210,25 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
               ))}
             </div>
             <p className="mt-3 text-xs text-white/40">
-              Resmi Delta kanalları — Telegram, Facebook, X ve Discord
+              Community channels — Telegram, Facebook, X, and Discord
             </p>
             <div className="mx-auto mt-8 w-full max-w-xl text-left">
-              <h2 className="font-display text-2xl font-bold text-white md:text-3xl">APK özeti</h2>
+              <h2 className="font-display text-2xl font-bold text-white md:text-3xl">APK details</h2>
               <p className="mt-2 mb-4 text-sm text-white/55">
-                En son Delta Executor derlemesi için hızlı bilgiler
+                Quick facts for the current Delta Executor build
               </p>
               <div className="overflow-x-auto rounded-2xl border border-white/10">
                 <table className="w-full text-sm text-white/70">
                   <tbody className="divide-y divide-white/5">
                     {[
-                      ["Uygulama adı", "Delta Executor"],
-                      ["Sürüm", APP_VERSION],
-                      ["Güncellendi", STYLES_UPDATED],
+                      ["App name", "Delta Executor"],
+                      ["Version", APP_VERSION],
+                      ["Updated", STYLES_UPDATED],
                       ["Platform", "Android 5.0+ · iOS 15–18"],
-                      ["Mimari", "ARM64 + ARM32"],
-                      ["Yaklaşık boyut", "167.8 MB"],
-                      ["Fiyat", "Ücretsiz (anahtar sistemi)"],
-                      ["Root / jailbreak gerekli", "Hayır"],
+                      ["Architecture", "ARM64 + ARM32"],
+                      ["Approx. size", "167.8 MB"],
+                      ["Price", "Free (key system)"],
+                      ["Root / jailbreak", "Not required"],
                     ].map(([label, value]) => (
                       <tr key={label}>
                         <td className="px-4 py-3 font-semibold text-white/70">{label}</td>
@@ -224,8 +243,8 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
               <span className="text-gold" aria-hidden="true">
                 ★
               </span>
-              {SITE_RATING.ratingValue} · {Number(SITE_RATING.ratingCount).toLocaleString("tr-TR")}{" "}
-              {t.ratingsLabel} · Ücretsiz · Android · Oyun · {STYLES_UPDATED}
+              {SITE_RATING.ratingValue} · {Number(SITE_RATING.ratingCount).toLocaleString("en-PH")}{" "}
+              {t.ratingsLabel} · Free · Android · Game · {STYLES_UPDATED}
             </p>
           </div>
         </div>
@@ -237,51 +256,82 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
           <div className="mx-auto mt-8 max-w-3xl">
             <p className="text-base leading-relaxed text-white/60 sm:text-lg">{t.whatBody}</p>
             <p className="mt-4 text-base leading-relaxed text-white/60 sm:text-lg">
-              &ldquo;delta roblox&rdquo; ve &ldquo;delta executor indir&rdquo; için canlı Google sonuçları YouTube kurulum videoları, Play Store benzerleri ve tek sayfalık yansıma siteleriyle doludur.{" "}
-              <Link href="/download-delta-roblox" className="font-semibold text-pink hover:underline">
-                İndirme rehberimiz
+              Live Google results for “delta executor download” are crowded with YouTube installs, Softonic-style mirrors, and one-page skyscraper sites.{" "}
+              <Link href={ROUTES.download} className="font-semibold text-pink hover:underline">
+                Our download guide
               </Link>{" "}
-              her sorguyu tek bir devasa URL&apos;ye yığmak yerine kurulum adımlarını deltaroblox.tr&apos;de platforma özgü ayrıntılarla sunar.
+              keeps platform steps on{" "}
+              <span className="text-white/80">deltaexecutor.com.ph</span> instead of stuffing every query into a single thin URL.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-white/60 sm:text-lg">
+              Competitors like deltaexecuter.com, delta-executor.com, deltaexploits.gg, and deltaexecutor.com.br cover Android buttons and key steps, but often skip honest ban language, image SEO, or multi-page IA. We close those gaps with dedicated{" "}
+              <Link href={ROUTES.ios} className="font-semibold text-pink hover:underline">
+                iOS
+              </Link>
+              ,{" "}
+              <Link href={ROUTES.pc} className="font-semibold text-pink hover:underline">
+                PC
+              </Link>
+              ,{" "}
+              <Link href={ROUTES.safety} className="font-semibold text-pink hover:underline">
+                safety
+              </Link>
+              , and{" "}
+              <Link href={ROUTES.keyNotWorking} className="font-semibold text-pink hover:underline">
+                key troubleshooting
+              </Link>{" "}
+              guides.
             </p>
           </div>
-          <div className="relative mx-auto mt-8 max-w-2xl">
-            <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-to-br from-pink/20 via-transparent to-emerald/10 blur-2xl" />
+          <div className="brand-shot-frame brand-shot-frame--hero relative mx-auto mt-8">
             <Image
               src={BRAND_HERO}
-              alt="Delta Roblox ana görsel — Delta Executor mobil arayüzü siyan parıltıyla"
-              width={1200}
-              height={675}
-              sizes="(max-width: 672px) 100vw, 672px"
+              alt="Delta Executor Get Key screen on mobile — deltaexecutor.com.ph"
+              width={280}
+              height={455}
+              sizes="220px"
               priority
-              className="h-auto w-full rounded-[1.5rem] border border-white/10 shadow-[0_30px_60px_-28px_rgba(0,0,0,0.85)]"
+              className="brand-shot"
             />
           </div>
         </div>
       </section>
 
-      {/* v2.745 improvements */}
       <section className="px-4 py-12 sm:px-6 md:px-8">
         <div className="container mx-auto max-w-3xl">
           <h2 className="font-display text-3xl font-bold text-white md:text-4xl">
-            {APP_VERSION} sürümünde neler yeni?
+            What&apos;s new in {APP_VERSION}?
           </h2>
-          <p className="mt-3 text-white/55 mb-6">{STYLES_UPDATED} sürümü — öne çıkan iyileştirmeler</p>
+          <p className="mt-3 text-white/55 mb-6">{STYLES_UPDATED} build — headline improvements</p>
           <ul className="space-y-3">
             {[
-              "Roblox Kasım 2026 motor uyumluluğu — son Roblox yama döngüsünden sonra enjeksiyon geri geldi.",
-              "Script hub yenilendi: güncel Blox Fruits, Da Hood ve Grow a Garden scriptleri.",
-              "ARM64 enjeksiyon yolu optimize edildi — 4 GB+ RAM’li cihazlarda daha hızlı bağlanma.",
-              "Android 13/14’te otomatik enjeksiyon güvenilirliği artırıldı.",
-              "iOS derlemesi iOS 18.1 için güncellendi — AltStore imzalama doğrulandı.",
-              "Hata bildirimi artık script hatalarında Lua satır numarasını gösteriyor.",
-              "Yavaş bağlantılarda anahtar geçidi zaman aşımı uzatıldı.",
+              "Roblox November 2026 engine compatibility — injection restored after the latest patch cycle.",
+              "Script hub refreshed with current Blox Fruits, Da Hood, and Grow a Garden categories.",
+              "ARM64 injection path optimized — faster attach on 4 GB+ RAM phones.",
+              "Improved auto-inject reliability on Android 13/14.",
+              "iOS build updated for iOS 18.x Direct Install / AltStore signing checks.",
+              "Error toast now surfaces Lua line numbers on script failures.",
+              "Longer key-gateway timeout on slow mobile networks.",
             ].map((item) => (
               <li key={item} className="flex gap-3 text-sm text-white/65">
-                <span className="mt-0.5 text-pink shrink-0" aria-hidden="true">→</span>
+                <span className="mt-0.5 text-pink shrink-0" aria-hidden="true">
+                  →
+                </span>
                 <span>{item}</span>
               </li>
             ))}
           </ul>
+          <p className="mt-6 text-sm text-white/55">
+            Need install steps after updating? Jump to the{" "}
+            <Link href={ROUTES.download} className="font-semibold text-pink hover:underline">
+              Android APK guide
+            </Link>{" "}
+            or the{" "}
+            <Link href={ROUTES.howToUse} className="font-semibold text-pink hover:underline">
+              how-to-use walkthrough
+            </Link>
+            .
+          </p>
         </div>
       </section>
 
@@ -291,7 +341,7 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
             <h2 className="font-display text-3xl font-bold text-white md:text-4xl">{t.howTitle}</h2>
             <p className="mt-3 max-w-2xl text-white/55">
               {t.howIntroBefore}{" "}
-              <Link href="/download-delta-roblox" className="font-semibold text-pink hover:underline">
+              <Link href={ROUTES.download} className="font-semibold text-pink hover:underline">
                 {t.howIntroLink}
               </Link>{" "}
               {t.howIntroAfter}
@@ -313,22 +363,21 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
         </div>
       </section>
 
-      {/* Pros & Cons */}
       <section className="px-4 py-12 sm:px-6 md:px-8">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-3xl font-bold text-white md:text-4xl">Artılar ve eksiler</h2>
-          <p className="mt-3 mb-6 text-white/55">Dürüst değerlendirme — sahte “tespit edilemez” iddiaları yok</p>
+          <h2 className="font-display text-3xl font-bold text-white md:text-4xl">Pros and cons</h2>
+          <p className="mt-3 mb-6 text-white/55">Honest scorecard — no fake “undetectable forever” claims</p>
           <div className="grid gap-6 sm:grid-cols-2">
             <div className="rounded-2xl border border-green-400/20 bg-green-400/5 p-5">
-              <h3 className="mb-3 font-display font-bold text-green-400">Artılar</h3>
+              <h3 className="mb-3 font-display font-bold text-green-400">Pros</h3>
               <ul className="space-y-2 text-sm text-white/65">
                 {[
-                  "Android ve iOS — gerçek çapraz platform mobil destek",
-                  "Root veya jailbreak gerekmez",
-                  "Anahtar sistemiyle ücretsiz — zorunlu ödeme duvarı yok",
-                  "Modern telefonlar için yerel ARM64",
-                  "Seçilmiş script hub kötü amaçlı script riskini azaltır",
-                  "Roblox yamalarına genelde 24–72 saat içinde yanıt",
+                  "Android and iOS — real cross-platform mobile focus",
+                  "No root or jailbreak required for standard builds",
+                  "Free with a key system — no forced paywall for basic use",
+                  "Native ARM64 path for modern phones",
+                  "Curated script hub reduces some malicious-paste risk",
+                  "Usually responds to Roblox patches within 24–72 hours",
                 ].map((p) => (
                   <li key={p} className="flex gap-2">
                     <span className="text-green-400 shrink-0">✓</span>
@@ -338,14 +387,14 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
               </ul>
             </div>
             <div className="rounded-2xl border border-red-400/20 bg-red-400/5 p-5">
-              <h3 className="mb-3 font-display font-bold text-red-400">Eksiler</h3>
+              <h3 className="mb-3 font-display font-bold text-red-400">Cons</h3>
               <ul className="space-y-2 text-sm text-white/65">
                 {[
-                  "Her gün 24 saatlik anahtar yenileme",
-                  "Yerel Windows/Mac derlemesi yok",
-                  "iOS’ta ücretsiz Apple ID ile 7 günde bir yeniden imzalama",
-                  "Roblox güncellemelerinden sonra enjeksiyon geçici bozulabilir",
-                  "Ban riski gerçek — Roblox ToS ihlali",
+                  "Daily ~24-hour key refresh on free tier",
+                  "No trusted native Windows EXE for most users",
+                  "Free iOS signing may need re-trust after revokes",
+                  "Injection can break temporarily after Roblox updates",
+                  "Ban risk is real — Roblox ToS violation",
                 ].map((c) => (
                   <li key={c} className="flex gap-2">
                     <span className="text-red-400 shrink-0">✗</span>
@@ -355,30 +404,35 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
               </ul>
             </div>
           </div>
+          <p className="mt-6 text-sm text-white/55">
+            Want a deeper risk breakdown? Read{" "}
+            <Link href={ROUTES.safety} className="font-semibold text-pink hover:underline">
+              Is Delta Executor safe?
+            </Link>
+          </p>
         </div>
       </section>
 
-      {/* Supported games overview */}
       <section className="px-4 py-12 sm:px-6 md:px-8">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-3xl font-bold text-white md:text-4xl">Script Hub’daki popüler oyunlar</h2>
+          <h2 className="font-display text-3xl font-bold text-white md:text-4xl">Popular games in Script Hub</h2>
           <p className="mt-3 mb-6 text-white/55">
-            Yerleşik hub, şu oyun türleri için bilgilendirici script kategorileri içerir.{" "}
-            <Link href="/blog/delta-executor-scripts-hub" className="text-pink hover:underline">
-              Tam hub rehberi →
+            The built-in hub surfaces categories for these game types.{" "}
+            <Link href={ROUTES.howToUse} className="text-pink hover:underline">
+              How to run scripts →
             </Link>
           </p>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { game: "Blox Fruits", type: "Otomatik farm, ışınlanma, meyve bulucu" },
-              { game: "Brookhaven", type: "Admin araçları, sosyal scriptler" },
-              { game: "Pet Simulator X", type: "Otomatik toplama, kuluçka otomasyonu" },
-              { game: "Arsenal", type: "Nişan yardımcıları, ESP" },
-              { game: "Jailbreak", type: "Araç hızı, ışınlanma" },
-              { game: "Da Hood", type: "Otomatik farm, hitbox, hareket" },
-              { game: "Grow a Garden", type: "Tarım otomasyonu, istatistik araçları" },
-              { game: "Adopt Me", type: "Takas yardımcıları, otomatik eylem" },
-              { game: "Genel yardımcılar", type: "Admin panelleri, anti-AFK, FPS açma" },
+              { game: "Blox Fruits", type: "Auto farm, teleport, fruit helpers" },
+              { game: "Brookhaven", type: "Admin tools, social scripts" },
+              { game: "Pet Simulator X", type: "Auto collect, hatch helpers" },
+              { game: "Arsenal", type: "Aim helpers, ESP-style tools" },
+              { game: "Jailbreak", type: "Vehicle speed, teleport routes" },
+              { game: "Da Hood", type: "Farm, hitbox, movement helpers" },
+              { game: "Grow a Garden", type: "Farm automation, stat tools" },
+              { game: "Adopt Me", type: "Trade helpers, auto actions" },
+              { game: "Universal helpers", type: "Admin panels, anti-AFK, FPS unlock" },
             ].map((item) => (
               <div key={item.game} className="rounded-xl border border-white/10 bg-card p-4">
                 <p className="font-semibold text-white text-sm">{item.game}</p>
@@ -389,41 +443,38 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
         </div>
       </section>
 
-      {/* Comparison teaser */}
       <section className="px-4 py-8 sm:px-6 md:px-8">
         <div className="container mx-auto max-w-3xl">
           <div className="bfv-glass-card flex flex-col sm:flex-row sm:items-center gap-4 justify-between p-6 sm:p-8">
             <div>
-              <h2 className="font-display text-xl font-bold text-white">Delta diğer executor’lara göre nasıl?</h2>
+              <h2 className="font-display text-xl font-bold text-white">How does Delta compare?</h2>
               <p className="mt-2 text-sm text-white/55">
-                Yan yana tablo: mobil destek, anahtar sistemi, script hub, güncelleme hızı — sahte iddia yok.
+                Side-by-side: mobile support, key friction, script hub, update speed — no fake claims.
               </p>
             </div>
             <Link
-              href="/delta-roblox-comparison"
+              href={ROUTES.comparison}
               className="shrink-0 rounded-full border border-pink/30 bg-pink/10 px-5 py-2.5 text-sm font-semibold text-pink hover:bg-pink/20"
             >
-              Karşılaştırmayı gör →
+              View comparison →
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Discord / community — competitor IA covers this on every major Delta site */}
       <section className="px-4 py-12 sm:px-6 md:px-8">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-3xl font-bold text-white md:text-4xl">Delta topluluğu &amp; Discord</h2>
+          <h2 className="font-display text-3xl font-bold text-white md:text-4xl">Community &amp; Discord</h2>
           <p className="mt-4 text-base leading-relaxed text-white/60 sm:text-lg">
-            Rakip hub’lar güncelleme bildirimleri, script paylaşımı ve hata raporları için Discord’a ağırlık verir.
-            Delta Roblox sizi yama notları için resmi görünüklü topluluk kanallarına yönlendirir — ve
-            destek postasını alan adında tutar, böylece rastgele davet dolandırıcılıklarına yönlendirilmezsiniz.
+            Competitor hubs lean on Discord for patch notes, script sharing, and error reports. We point you to community channels for update pings — and keep support email on{" "}
+            <strong className="font-semibold text-white/80">{SITE_NAME}</strong> so random invite scams do not become your only contact path.
           </p>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2">
             {[
-              { t: "Güncelleme duyuruları", d: "Roblox yamalarından sonra Android / iOS derlemelerinin ne zaman yetiştiğini öğrenin." },
-              { t: "Hata bildirimi", d: "Enjeksiyon hataları ve anahtar sorunları kayıtlarla daha hızlı teşhis edilir." },
-              { t: "Script paylaşımı", d: "Topluluk hub’ları çalışan scriptleri ortaya çıkarır — yine de çalıştırmadan önce kontrol edin." },
-              { t: "Eğitimler", d: "Bağlanma, anahtar yenileme ve ilk script çalıştırma için kısa klipler." },
+              { t: "Update announcements", d: "Learn when Android / iOS builds catch up after Roblox patches." },
+              { t: "Bug reports", d: "Injection and key issues diagnose faster with logs." },
+              { t: "Script sharing", d: "Community hubs surface working scripts — still verify before execute." },
+              { t: "Tutorials", d: "Short clips for attach, key renew, and first script runs." },
             ].map((item) => (
               <li key={item.t} className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
                 <h3 className="font-semibold text-white">{item.t}</h3>
@@ -432,14 +483,14 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
             ))}
           </ul>
           <p className="mt-6 text-sm text-white/55">
-            <Link href="/delta-roblox-discord" className="font-semibold text-pink hover:underline">
-              Discord rehberine git →
+            <Link href={ROUTES.discord} className="font-semibold text-pink hover:underline">
+              Open the Discord guide →
+            </Link>{" "}
+            Prefer email? Write{" "}
+            <Link href={ROUTES.contact} className="font-semibold text-pink hover:underline">
+              support@deltaexecutor.com.ph
             </Link>
-            {" "}E-posta mı tercih ediyorsunuz?{" "}
-            <Link href="/contact-us" className="font-semibold text-pink hover:underline">
-              destek@deltaroblox.tr
-            </Link>
-            {" "}adresine yazın. Hesabınızı “beyaz listeye aldığını” iddia eden Discord DM’lerine Roblox şifrelerinizi asla yapıştırmayın.
+            . Never paste Roblox passwords into Discord DMs that claim to “whitelist” your account.
           </p>
         </div>
       </section>
@@ -469,10 +520,10 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
         <div className="container mx-auto max-w-6xl">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-display text-3xl font-bold text-white md:text-4xl">
-              Android, iOS ve scriptler — özetle
+              Android, iOS, and scripts — at a glance
             </h2>
             <p className="mt-4 text-white/55">
-              Dört ana sayfa görseli, insanların Delta Roblox etrafında gerçekten aradığı konuları kapsar.
+              Three feature visuals cover the intents people actually search around Delta Executor.
             </p>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -481,22 +532,22 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
                 title: t.cardExactTitle,
                 body: t.cardExactBody,
                 img: BRAND_FEATURE_2,
-                href: "/download-delta-roblox",
-                alt: "Delta Roblox Android APK indirme özellik görseli",
+                href: ROUTES.download,
+                alt: "Delta Executor Android APK download feature visual",
               },
               {
                 title: t.cardSolverTitle,
                 body: t.cardSolverBody,
                 img: BRAND_FEATURE_3,
-                href: "/delta-roblox-ios",
-                alt: "Delta Executor iOS kurulum özellik görseli",
+                href: ROUTES.ios,
+                alt: "Delta Executor iOS install feature visual",
               },
               {
                 title: t.cardWhatsappTitle,
                 body: t.cardWhatsappBody,
                 img: BRAND_FEATURE_4,
-                href: "/blog/delta-executor-scripts-hub",
-                alt: "Delta Executor script hub özellik görseli",
+                href: ROUTES.howToUse,
+                alt: "Delta Executor script hub feature visual",
               },
             ].map((card) => (
               <article
@@ -507,10 +558,10 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
                   <Image
                     src={card.img}
                     alt={card.alt}
-                    width={900}
-                    height={675}
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    className="h-auto w-full object-contain"
+                    width={280}
+                    height={455}
+                    sizes="180px"
+                    className="brand-shot-sm"
                   />
                 </Link>
                 <div className="p-5">
@@ -599,7 +650,7 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
             ))}
           </ul>
           <p className="mt-6">
-            <Link href="/disclaimer" className="font-semibold text-pink hover:underline">
+            <Link href={ROUTES.disclaimer} className="font-semibold text-pink hover:underline">
               {t.trustLink}
             </Link>
           </p>
@@ -613,7 +664,7 @@ export default function HomePageView({ locale = DEFAULT_LOCALE }: { locale?: Sit
         </div>
       </section>
 
-      <section className="px-4 py-14 sm:px-6 md:px-8">
+      <section className="px-4 py-12 sm:px-6 md:px-8">
         <div className="container mx-auto max-w-3xl">
           <h2 className="font-display text-3xl font-bold text-white md:text-4xl">{t.modesTitle}</h2>
           <p className="mt-3 text-base leading-relaxed text-white/55 sm:text-lg">{t.modesIntro}</p>

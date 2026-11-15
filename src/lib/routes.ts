@@ -1,29 +1,33 @@
 /** Current SEO page paths */
 export const ROUTES = {
   home: "/",
-  download: "/download-delta-roblox",
-  ios: "/delta-roblox-ios",
-  pc: "/delta-roblox-pc",
-  mac: "/delta-roblox-mac",
-  discord: "/delta-roblox-discord",
-  howToUse: "/how-to-use-delta-roblox",
-  troubleshooting: "/delta-roblox-troubleshooting",
-  vng: "/delta-roblox-vng",
-  comparison: "/delta-roblox-comparison",
+  download: "/download-delta-executor",
+  ios: "/delta-executor-ios",
+  pc: "/delta-executor-pc",
+  mac: "/delta-executor-mac",
+  discord: "/delta-executor-discord",
+  howToUse: "/how-to-use-delta-executor",
+  troubleshooting: "/delta-executor-troubleshooting",
+  vng: "/delta-executor-vng",
+  comparison: "/delta-executor-comparison",
   about: "/about-us",
   contact: "/contact-us",
   blog: "/blog",
   privacy: "/privacy",
   disclaimer: "/disclaimer",
   featuresAnchor: "/",
-  keySystem: "/blog/delta-executor-key-system",
+  /** SERP: how to get delta executor key / linkvertise */
+  keySystem: "/blog/how-to-get-delta-executor-key",
+  /** SERP: is delta executor safe */
   safety: "/blog/is-delta-executor-safe",
-  scriptsHub: "/blog/delta-executor-scripts-hub",
+  /** SERP: what is delta executor */
+  whatIs: "/blog/what-is-delta-executor",
+  /** SERP: delta key linkvertise not working */
+  keyNotWorking: "/blog/delta-executor-key-not-working",
 } as const;
 
 /**
  * Retired paths that must 301 to current URLs (keep in sync with legacyRedirects.js).
- * Trailing-slash variants are added in next.config via legacyRedirects.js.
  */
 export const LEGACY_ROUTE_REDIRECTS: Array<{ source: string; destination: string }> = [
   { source: "/download", destination: ROUTES.download },
@@ -37,6 +41,16 @@ export const LEGACY_ROUTE_REDIRECTS: Array<{ source: string; destination: string
   { source: "/vng", destination: ROUTES.vng },
   { source: "/comparison", destination: ROUTES.comparison },
   { source: "/features", destination: ROUTES.featuresAnchor },
+  // Old Delta Roblox slugs → Delta Executor
+  { source: "/download-delta-roblox", destination: ROUTES.download },
+  { source: "/delta-roblox-ios", destination: ROUTES.ios },
+  { source: "/delta-roblox-pc", destination: ROUTES.pc },
+  { source: "/delta-roblox-mac", destination: ROUTES.mac },
+  { source: "/delta-roblox-discord", destination: ROUTES.discord },
+  { source: "/how-to-use-delta-roblox", destination: ROUTES.howToUse },
+  { source: "/delta-roblox-troubleshooting", destination: ROUTES.troubleshooting },
+  { source: "/delta-roblox-vng", destination: ROUTES.vng },
+  { source: "/delta-roblox-comparison", destination: ROUTES.comparison },
   { source: "/delta-roblox-download", destination: ROUTES.download },
   { source: "/delta-roblox-how-to-use", destination: ROUTES.howToUse },
   { source: "/ios-delta-roblox", destination: ROUTES.ios },
@@ -46,4 +60,8 @@ export const LEGACY_ROUTE_REDIRECTS: Array<{ source: string; destination: string
   { source: "/troubleshooting-delta-roblox", destination: ROUTES.troubleshooting },
   { source: "/vng-delta-roblox", destination: ROUTES.vng },
   { source: "/comparison-delta-roblox", destination: ROUTES.comparison },
+  // Retired blogs → SERP replacements
+  { source: "/blog/delta-executor-key-system", destination: ROUTES.keySystem },
+  { source: "/blog/delta-executor-scripts-hub", destination: ROUTES.howToUse },
+  { source: "/blog/fake-delta-executor-websites", destination: ROUTES.safety },
 ];

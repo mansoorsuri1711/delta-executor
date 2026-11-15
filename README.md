@@ -1,40 +1,25 @@
-# Delta Roblox — deltaroblox.tr
+# Delta Executor — deltaexecutor.com.ph
 
-Official guide site for **Delta Executor** — the free Roblox script executor for Android and iOS.
+Brand site and multi-page SEO guides for **Delta Executor** (Android, iOS, PC via emulator, Mac, VNG).
 
-## What this site covers
+## Stack
+- Next.js App Router + TypeScript + Tailwind
 
-- **Download** — Android APK sideload guide with HowTo schema
-- **iOS** — AltStore and TrollStore install walkthrough
-- **PC Version** — honest status + fake EXE warning
-- **Features** — full feature overview with script hub, injection engine, key system
-- **Blog** — key system guide, safety assessment, script hub tips
-- **Legal** — Privacy Policy, Disclaimer
-
-## Tech stack
-
-- Next.js (App Router)
-- TypeScript
-- Tailwind CSS
-- Schema.org structured data (HowTo, Article, FAQPage, BreadcrumbList)
-
-## Development
-
+## Scripts
 ```bash
 npm install
 npm run dev
+npm run build
+npm start
 ```
 
-## Key config files
+## Key routes
+- `/` — Home hub
+- `/download-delta-executor` — Android APK
+- `/delta-executor-ios` — iOS
+- `/delta-executor-pc` — PC / emulator
+- `/blog/*` — Key system, safety, scripts, fake websites
 
-| File | Purpose |
-|------|---------|
-| `src/lib/siteConfig.ts` | Brand name, origin, images, version |
-| `src/lib/sitemapData.ts` | Sitemap pages and image data |
-| `src/app/layout.tsx` | Root metadata and HTML shell |
-| `public/manifest.json` | PWA manifest |
-| `public/robots.txt` | Crawl directives |
-
-## Version
-
-Current executor version: **v2.745** (November 2026)
+## Brand
+- Domain: `https://deltaexecutor.com.ph`
+- Contact: `support@deltaexecutor.com.ph`

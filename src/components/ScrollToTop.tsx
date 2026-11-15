@@ -46,7 +46,7 @@ export default function ScrollToTop() {
       {isVisible && !isMobileMenuOpen && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 rounded-full bg-violet p-3 text-white shadow-lg shadow-violet/30 transition-all duration-300 hover:scale-110 hover:bg-violet-deep hover:shadow-2xl group"
+          className="fixed bottom-8 right-8 z-50 rounded-full bg-black p-3 text-white shadow-lg shadow-black/30 transition-all duration-300 hover:scale-110 hover:bg-neutral-900 hover:shadow-2xl group"
           aria-label="Scroll to top"
         >
           <svg

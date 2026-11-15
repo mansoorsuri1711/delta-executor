@@ -31,21 +31,21 @@ export const ORGANIZATION_JSON_LD = {
 export const WEB_APPLICATION_JSON_LD = {
   "@type": "SoftwareApplication",
   name: "Delta Executor",
-  alternateName: "Delta Roblox",
+  alternateName: ["Delta X Executor", "Delta Roblox Executor"],
   url: SITE_ORIGIN,
   applicationCategory: "GameApplication",
   operatingSystem: "Android, iOS",
   offers: {
     "@type": "Offer",
     price: "0",
-    priceCurrency: "TRY",
+    priceCurrency: "PHP",
   },
   aggregateRating: APP_AGGREGATE_RATING,
   image: {
     "@type": "ImageObject",
     url: `${SITE_ORIGIN}${BRAND_LOGO}`,
-    width: 512,
-    height: 512,
+    width: 256,
+    height: 256,
     ...imageObjectLicensing,
   },
 };

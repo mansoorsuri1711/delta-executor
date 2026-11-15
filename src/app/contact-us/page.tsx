@@ -1,16 +1,16 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ContactForm from "@/components/ContactForm";
 import { CONTACT_EMAIL, SITE_NAME, SITE_ORIGIN, SOCIAL_LINKS } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: `İletişim — ${SITE_NAME}`,
-  description:
-    `Destek, hata bildirimi veya geri bildirim için Delta Roblox ekibiyle iletişime geçin. ${CONTACT_EMAIL} adresine e-posta gönderin veya aşağıdaki iletişim formunu kullanın.`,
+  title: `Contact Us — ${SITE_NAME}`,
+  description: `Get in touch with the ${SITE_NAME} team for support, error reports, or feedback. Email ${CONTACT_EMAIL} or use the contact form below.`,
   alternates: { canonical: `${SITE_ORIGIN}/contact-us` },
   openGraph: {
-    title: `İletişim — ${SITE_NAME}`,
-    description: `${SITE_NAME} destek ve iletişim.`,
+    title: `Contact — ${SITE_NAME}`,
+    description: `${SITE_NAME} support and contact.`,
     url: `${SITE_ORIGIN}/contact-us`,
     siteName: SITE_NAME,
     type: "website",
@@ -22,26 +22,27 @@ export default function ContactPage() {
     <>
       <Breadcrumbs
         items={[
-          { label: "Ana Sayfa", href: "/" },
-          { label: "İletişim" },
+          { label: "Home", href: "/" },
+          { label: "Contact Us" },
         ]}
       />
       <div className="container mx-auto max-w-3xl px-4 pb-12 pt-8">
         <h1 className="mb-3 font-display text-3xl font-bold text-white md:text-4xl">
-          İletişim
+          Contact Us
         </h1>
         <p className="mb-4 text-lg text-white/70">
-          Delta Executor hakkında sorunuz mu var, rehberlerimizde bir hata mı fark ettiniz veya bir sorun mu bildirmek istiyorsunuz? Doğrudan{" "}
+          Have a question about Delta Executor, spotted an error in one of our guides, or need to report an issue?
+          Reach us directly at{" "}
           <a href={`mailto:${CONTACT_EMAIL}`} className="font-semibold text-pink underline">
             {CONTACT_EMAIL}
           </a>{" "}
-          adresine ulaşın veya aşağıdaki formu kullanın.
+          or use the form below.
         </p>
         <p className="mb-2 text-sm text-white/50">
-          Tipik yanıt süresi: iş günlerinde 48 saat içinde.
+          Typical response time: within 48 hours on business days.
         </p>
         <p className="mb-8 text-sm text-white/50">
-          Resmi kanallar:{" "}
+          Official community channels:{" "}
           <a
             href={SOCIAL_LINKS.telegram}
             className="text-pink underline"
@@ -69,9 +70,28 @@ export default function ContactPage() {
             X
           </a>
           ,{" "}
-          <a href="/delta-roblox-discord" className="text-pink underline">
+          <Link href="/delta-executor-discord" className="text-pink underline">
             Discord
-          </a>
+          </Link>
+          .
+        </p>
+        <p className="mb-8 text-sm text-white/50">
+          Looking for a guide first? Try{" "}
+          <Link href="/download-delta-executor" className="text-pink underline">
+            download
+          </Link>
+          ,{" "}
+          <Link href="/delta-executor-troubleshooting" className="text-pink underline">
+            troubleshooting
+          </Link>
+          ,{" "}
+          <Link href="/blog/how-to-get-delta-executor-key" className="text-pink underline">
+            get a key
+          </Link>
+          , or{" "}
+          <Link href="/blog/delta-executor-key-not-working" className="text-pink underline">
+            key not working
+          </Link>
           .
         </p>
         <ContactForm />

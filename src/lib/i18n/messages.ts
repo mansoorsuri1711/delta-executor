@@ -63,229 +63,229 @@ export type HomeMessages = {
   compareBody: string;
 };
 
-const tr: HomeMessages = {
-  brand: "Delta Roblox",
-  metaTitle: "Delta Roblox — Android ve iOS için Delta Executor İndirme",
+const en: HomeMessages = {
+  brand: "Delta Executor",
+  metaTitle: "Delta Executor — Android, iOS & PC Download Guides",
   metaDescription:
-    "Delta Roblox, Delta Executor için kapsamlı rehber merkezinizdir: Android APK, iOS kurulum ipuçları, PC rehberi, anahtar sistemi yardımı ve 2026 script çalıştırma güncellemeleri.",
+    "Delta Executor guides for Android APK, iOS install, PC emulator setup, key system help, safety checks, and Roblox script tips — updated for 2026 on deltaexecutor.com.ph.",
   heroSubPrefix:
-    "Delta Executor ile mobil cihazlarda desteklenen Roblox scriptlerini çalıştırın — Android ve iOS için net indirme adımları, anahtar yardımı ve pratik güvenlik notları deltaroblox.tr'de.",
-  freeMeta: "Ücretsiz rehberler · Android ve iOS · Güncellendi",
-  ratingsLabel: "değerlendirme",
-  whatTitle: "Delta Roblox Nedir?",
+    "Run supported Roblox scripts on mobile with clear Delta Executor download steps, key unlock help, and honest safety notes — built for players who want working builds without mirror-site noise.",
+  freeMeta: "Free guides · Android & iOS · Updated",
+  ratingsLabel: "ratings",
+  whatTitle: "What is Delta Executor?",
   whatBody:
-    "Delta Roblox, popüler mobil odaklı Roblox script yürütücüsü Delta Executor için bağımsız bir bilgi ve indirme rehberi sitesidir. Oyuncular, uygulama mevcut Roblox istemcisiyle uyumlu olduğunda Android ve iOS'ta desteklenen Lua scriptlerini yüklemek için Delta'yı kullanır. Bu site Delta'nın ne yaptığını, kurulumların nasıl çalıştığını, anahtar sisteminin nasıl işlediğini ve güvensiz yansıma APK'lardan nasıl kaçınılacağını açıklar.",
-  toolExplainerTitle: "Oyuncular neden Delta Executor arıyor?",
+    "Delta Executor is a mobile-first Roblox script executor that lets players load supported Lua scripts on Android and, when a build is available, on iOS. Players search for it when they want a working APK or IPA, a reliable key unlock, and a script hub that still injects after Roblox patches. Delta Executor on deltaexecutor.com.ph is an independent guide hub that explains installs, keys, platforms, and risk — without stuffing every keyword into one thin mirror page.",
+  toolExplainerTitle: "Why players search for Delta Executor",
   toolExplainerBody:
-    "Delta Roblox etrafındaki arama talebi üç konuda yoğunlaşır: çalışan bir APK veya iOS derlemesi edinmek, anahtar sistemini açmak ve Roblox güncellemelerinden sonra hâlâ çalışan scriptler bulmak. Delta Executor, karanlık mobil arayüzü, script hub erişimi ve sık sürüm güncellemeleriyle (v2.745 serisi gibi) tanınır. Delta Roblox, bu amaçları ayrı rehberlere böler.",
-  controlsTitle: "Delta Executor ile neler elde edersiniz",
+    "Search demand clusters around three jobs: get a working Android or iOS build, finish the daily key, and find scripts that still run after Wednesday Roblox updates. Delta Executor is known for a dark mobile UI, built-in script hub access, and frequent version bumps in the v2.745 series. Our site splits those jobs into dedicated guides so Android, iOS, PC, VNG, and key help do not cannibalize each other.",
+  controlsTitle: "What you get with Delta Executor",
   controls: [
     {
-      t: "Hızlı script çalıştırma",
-      d: "Delta, desteklenen Android cihazlarda hızlı enjeksiyon ve çalıştırma süreleri sunar; çiftlik ve yardımcı scriptler daha az beklemeyle başlar.",
+      t: "Fast script execution",
+      d: "On supported Android devices, Delta Executor injects and runs common farm and helper scripts with less waiting between joins — so sessions start cleaner when the build matches your Roblox client.",
     },
     {
-      t: "Android ve iOS odaklı",
-      d: "Delta Roblox aramalarının büyük çoğunluğu mobildir. Android APK rehberini veya cihazınıza uygun iOS kurulum rehberini takip edin.",
+      t: "Android and iOS focused",
+      d: "Most Delta Executor searches are mobile. Follow the Android APK guide or the iOS install path that matches your device, signing method, and OS version.",
     },
     {
-      t: "Anahtar sistemi açma",
-      d: "Pek çok derleme zaman sınırlı anahtar kullanır. Anahtar rehberimiz, sizi gizlenmiş yönlendirmelerden geçirmeden standart akışı açıklar.",
+      t: "Key system unlock",
+      d: "Free builds use a time-limited key. Our key guide walks the standard in-app flow so you are not bounced through random cloaked redirects sold as “instant unlock.”",
     },
     {
-      t: "Script hub erişimi",
-      d: "Güvenilir hub'lardan desteklenen scriptleri görüntüleyin veya yapıştırın. Büyük Roblox istemci güncellemelerinden sonra scriptleri mutlaka yeniden kontrol edin.",
+      t: "Script hub access",
+      d: "Browse or paste supported scripts from trusted hub categories. Always re-check scripts after major Roblox client updates — yesterday’s paste can break today.",
     },
     {
-      t: "Kararlılık güncellemeleri",
-      d: "Roblox yama yaptığında executor uygulamaları bozulur. Net bir sürüm numarası belirten ve değişiklik notları yayınlayan derlemeleri tercih edin.",
+      t: "Stability updates",
+      d: "Executors break when Roblox patches. Prefer builds that publish a clear version string and release notes instead of anonymous “latest free” APKs from chat links.",
     },
     {
-      t: "Kullanıcı dostu arayüz",
-      d: "Delta'nın karanlık mobil arayüzü; çalıştır, hub ve ayarlar seçeneklerini telefonda çiftlik yaparken bile kolayca erişilebilir kılar.",
+      t: "Mobile-ready interface",
+      d: "Delta’s dark mobile UI keeps Execute, Hub, and Settings reachable with one hand — useful when you are farming on a phone without a keyboard.",
     },
   ],
-  whoTitle: "Delta Roblox kime yönelik?",
+  whoTitle: "Who is Delta Executor for?",
   whoIntro:
-    "Delta Roblox, boş 'anında ücretsiz Robux' vaatleri değil, net kurulum adımları ve dürüst risk bilgisi isteyen mobil oyuncularına hizmet eder.",
+    "Delta Executor guides are for mobile players who want clear install steps and honest risk language — not empty “instant free Robux” promises.",
   whoItems: [
     {
-      t: "Android script kullanıcıları",
-      d: "Delta Executor APK'yı yükleyen, bilinmeyen kaynakları dikkatli etkinleştiren ve temiz bir kurulum kontrol listesi isteyen oyuncular.",
+      t: "Android script users",
+      d: "Players who sideload the Delta Executor APK, enable unknown sources carefully, and want a clean post-install checklist before opening Roblox.",
     },
     {
-      t: "iOS deneyimcileri",
-      d: "Yüklemeden önce platforma özgü uyarılara ihtiyaç duyan Delta iOS / IPA veya doğrudan kurulum seçeneklerini araştıran kullanıcılar.",
+      t: "iOS experimenters",
+      d: "Users researching IPA / Direct Install options who need platform-specific warnings about certificates, trust prompts, and revokes before installing.",
     },
     {
-      t: "Anahtar ve script öğrencileri",
-      d: "Çiftlik scriptlerini anlayan ancak güncellemelerden sonra anahtar sayfalarında, süresi dolmuş bağlantılarda veya bozulmuş hub'larda takılan yeni başlayanlar.",
+      t: "Key and script learners",
+      d: "Beginners who understand farm scripts but get stuck on expired keys, gateway loops, or hubs that stop working after a Roblox update.",
     },
     {
-      t: "Güvenlik bilincine sahip oyuncular",
-      d: "Yansımaları karşılaştıran, Trustpilot tarzı geri bildirimleri okuyan ve Delta Executor'ın hesabı için güvenli olup olmadığını soran herkes.",
+      t: "Safety-conscious players",
+      d: "Anyone comparing mirrors, reading risk write-ups, and asking whether Delta Executor is safe for their device and alt account.",
     },
   ],
-  modesTitle: "Delta Roblox rehberlerini keşfedin",
+  modesTitle: "Explore the Delta Executor guides",
   modesIntro:
-    "İndirme, iOS, PC, Discord, Mac ve blog konuları için ayrı sayfalar — her arama amacının net bir evi vardır.",
-  cardExactTitle: "Android APK indirme",
+    "Separate pages for download, iOS, PC, Mac, VNG, Discord, troubleshooting, and SERP blogs — every search intent has a clear home.",
+  cardExactTitle: "Android APK download",
   cardExactBody:
-    "Android 8+ için adım adım Delta Executor APK kurulumu; izinler ve kurulum sonrası kontroller dahil.",
-  cardSolverTitle: "iOS kurulum yolu",
+    "Step-by-step Delta Executor APK install for Android 8+, including permissions, Play Protect notes, and post-install checks.",
+  cardSolverTitle: "iOS install path",
   cardSolverBody:
-    "Delta'nın iOS'a genellikle nasıl kurulduğu, 'doğrudan kurulum' ne anlama gelir ve derlemelerin nerede başarısız olduğu.",
-  cardWhatsappTitle: "Scriptler ve hub'lar",
+    "How Delta usually lands on iPhone and iPad, what Direct Install means, and where builds commonly fail after certificate revokes.",
+  cardWhatsappTitle: "Scripts and hubs",
   cardWhatsappBody:
-    "Delta Executor için çalışan scriptler nasıl bulunur ve gereksiz paketler indirmeden nasıl düzenlenir.",
-  howTitle: "Delta Executor'a nasıl başlanır",
-  howIntroBefore: "Tam bir rehber mi istiyorsunuz?",
-  howIntroLink: "Android indirme rehberini",
-  howIntroAfter: "açın veya menüden iOS / PC sayfalarına geçin.",
+    "How to find working scripts for Delta Executor and organize them without downloading random packs from unverified chat links.",
+  howTitle: "How to get started with Delta Executor",
+  howIntroBefore: "Want the full walkthrough?",
+  howIntroLink: "open the Android download guide",
+  howIntroAfter: "or jump to the iOS / PC pages from the menu.",
   howSteps: [
     {
-      name: "Platformunuzu seçin",
-      text: "Android APK, en yaygın Delta Roblox yoludur. iOS ve PC'nin ayrı kısıtlamaları vardır — uygun rehberi kullanın.",
+      name: "Choose your platform",
+      text: "Android APK is the most common Delta Executor path. iOS and PC have different limits — use the matching guide instead of forcing one APK everywhere.",
     },
     {
-      name: "Güvenilir bir derlemeden yükleyin",
-      text: "Etiketli Delta Executor paketini indirin, sürüm dizesini doğrulayın ve sohbet bağlantılarından gelen rastgele yeniden adlandırılmış APK'lardan kaçının.",
+      name: "Install from a labeled build",
+      text: "Download the labeled Delta Executor package, verify the version string, and avoid randomly renamed APKs shared in Discord DMs or Telegram groups.",
     },
     {
-      name: "Anahtarı tamamlayın (gerekiyorsa)",
-      text: "Uygulama içi anahtar akışını açın, kısa kilit açma adımlarını tamamlayın, ardından Delta'ya geri dönün. Anahtarların süresi genellikle belirli bir süre sonra dolar.",
+      name: "Complete the key (if required)",
+      text: "Open the in-app Get Key flow, finish the short unlock steps, then paste back into Delta. Keys usually expire after about 24 hours on free builds.",
     },
     {
-      name: "Desteklenen bir script yükleyin",
-      text: "Hub'dan bir script yapıştırın veya seçin, istendiğinde Roblox'a bağlanın ve yalnızca anladığınız scriptleri çalıştırın.",
+      name: "Load a supported script",
+      text: "Paste or pick a script from the hub, attach to Roblox when prompted, and only run scripts you understand on an alternate account.",
     },
   ],
-  whyEyebrow: "Netlik için inşa edildi",
-  whyTitle: "Neden deltaroblox.tr kullanmalısınız?",
+  whyEyebrow: "Built for clarity",
+  whyTitle: "Why use deltaexecutor.com.ph?",
   whyBody:
-    "Delta Executor SERP sayfalarının çoğu tüm anahtar kelimeleri tek bir URL'ye tıkıştırır, indirmeleri izleyicilerin arkasına saklar veya güvenlik konusunu atlar. Delta Roblox amaçları ayırır, gerçek görüntü meta verisi kullanır ve yandan yükleme risklerini baştan belirtir.",
-  tipsTitle: "Pratik Delta ipuçları",
+    "Most Delta Executor SERP pages stuff every keyword into one URL, hide downloads behind trackers, or skip safety. We separate intents, ship real image metadata, and state sideloading and ban risks up front — so Philippines and global players get a brand guide they can trust.",
+  tipsTitle: "Practical Delta Executor tips",
   tips: [
     {
-      t: "Roblox istemcisiyle eşleştirin",
-      d: "Roblox güncellemesinden sonra, dünün APK'sının hâlâ temiz enjekte edip etmediğini varsaymadan önce bir Delta sürüm notunu bekleyin.",
+      t: "Match the Roblox client",
+      d: "After a Roblox update, wait for a Delta version note before assuming yesterday’s APK still injects cleanly on your device.",
     },
     {
-      t: "Anahtarları geçici sayın",
-      d: "Kilit açma başarısız olursa, Discord DM'lerindeki yabancılardan anahtar yapıştırmak yerine resmi anahtar yolunu yenileyin.",
+      t: "Treat keys as temporary",
+      d: "If unlock fails, refresh the official in-app key path instead of pasting keys sold by strangers in Discord DMs.",
     },
     {
-      t: "Test ederken hesapları ayırın",
-      d: "Script araçları Roblox kurallarını ihlal edebilir. Executor'ları değerlendiriyorsanız yedek hesap kullanın.",
+      t: "Separate accounts while testing",
+      d: "Script tools can violate Roblox rules. Use an alternate account when evaluating any executor — never your main with Robux inventory.",
     },
     {
-      t: "Yüklemeden önce tarayın",
-      d: "Mümkün olduğunda bilinen dosya adlarını ve karmalarını tercih edin. Delta ile ilgisi olmayan erişilebilirlik izinleri isteyen APK'ları silin.",
+      t: "Scan before you install",
+      d: "Prefer known filenames and published hashes when available. Delete APKs that request unrelated accessibility permissions without a clear reason.",
     },
   ],
-  trustTitle: "Bu sitedeki güven sinyalleri",
+  trustTitle: "Trust signals on this site",
   trustItems: [
-    "Alan adı üzerinde indirme rehberi (tek CTA olarak gizli bir bağlı kuruluş yönlendirmesi yok)",
-    "Android, iOS, PC, anahtar yardımı ve güvenlik için ayrı sayfalar",
-    "Özel Gizlilik ve Sorumluluk Reddi — şablonlu metin değil",
-    "SoftwareApplication şemasıyla eşleşen görünür derecelendirme arayüzü",
+    "On-domain download guidance (no cloaked affiliate redirect as the only CTA)",
+    "Separate pages for Android, iOS, PC, key help, safety, and fake-site warnings",
+    "Custom Privacy and Disclaimer — not generator boilerplate",
+    "Visible rating UI that matches SoftwareApplication schema",
   ],
-  trustLink: "Sorumluluk reddimizi okuyun",
-  faqTitle: "Delta Roblox Sıkça Sorulan Sorular",
+  trustLink: "Read our disclaimer",
+  faqTitle: "Delta Executor FAQs",
   faqs: [
     {
-      question: "Delta Executor nedir?",
+      question: "What is Delta Executor?",
       answer:
-        "Delta Executor (çoğunlukla Delta Roblox olarak aranır), Android'de ve uygun olduğunda iOS derlemelerinde desteklenen Lua scriptlerini çalıştırmak için kullanılan üçüncü taraf bir mobil Roblox script yürütücüsüdür.",
+        "Delta Executor is a third-party mobile Roblox script executor used to run supported Lua scripts on Android and, when available, on iOS builds. It is also searched as Delta X or Delta Roblox executor.",
     },
     {
-      question: "Delta Executor ücretsiz mi?",
+      question: "Is Delta Executor free?",
       answer:
-        "Uygulama genellikle bir anahtar sistemi veya kilit açma akışıyla ücretsiz sunulur. Belgelenmiş süreç dışında rastgele satıcılara 'premium anahtar' için asla ödeme yapmamalısınız.",
+        "The app is typically offered free with a key system or unlock flow. You should never pay random sellers for a “premium key” outside a documented official Premium path.",
     },
     {
-      question: "Delta Android ve iOS'ta çalışıyor mu?",
+      question: "Does Delta Executor work on Android and iOS?",
       answer:
-        "Android APK desteği birincil yoldur. iOS seçenekleri bazı sürümlerde mevcuttur ancak imzalama, cihaz işletim sistemi ve mevcut yamaya bağlıdır — iOS rehberine bakın.",
+        "Android APK support is the primary path. iOS options exist on some releases but depend on signing, device OS, and the current patch — see the iOS guide.",
     },
     {
-      question: "Delta anahtarına ihtiyacım var mı?",
+      question: "Do I need a Delta Executor key?",
       answer:
-        "Pek çok derleme, scriptler çalışmadan önce kısa bir anahtar kilit açma gerektirir. Anahtarların süresi genellikle sınırlıdır. Olağan adımlar için anahtar sistemi blogunu okuyun.",
+        "Many free builds require a short key unlock before scripts run. Keys are usually time-limited and device-bound. Read the key system blog for the usual steps.",
     },
     {
-      question: "Roblox hesabım yasaklanabilir mi?",
+      question: "Can my Roblox account get banned?",
       answer:
-        "Evet. Executor kullanmak Roblox Kullanım Koşullarını ihlal edebilir ve moderasyon işlemlerine yol açabilir. Herhangi bir şey yüklemeden önce riski anlayın.",
+        "Yes. Using an executor can violate Roblox Terms of Service and lead to moderation action. Understand the risk before you install anything.",
     },
     {
-      question: "Delta Executor güvenli mi?",
+      question: "Is Delta Executor safe?",
       answer:
-        "Güvenlik, derleme kaynağına, verdiğiniz izinlere ve çalıştırdığınız scriptlere bağlıdır. Bilinmeyen yansımalardan kaçının ve yandan yüklemeden önce güvenlik makalemizi okuyun.",
+        "Safety depends on build source, permissions you grant, and scripts you run. Avoid unknown mirrors and read our safety article before sideloading.",
     },
     {
-      question: "Delta Executor Roblox tarafından tespit edilemez mi?",
+      question: "Is Delta Executor undetectable?",
       answer:
-        "Hiçbir executor 'tespit edilemez' değildir. Roblox'un hile karşıtı sistemi sunucu taraflıdır ve davranış kalıplarını analiz eder. Delta'nın tespit edilemez olduğunu iddia etmiyoruz — daha az görünür scriptler (pasif otomatik çiftlik ile bariz uçma/hız hileleri) riski azaltır.",
+        "No executor is undetectable. Roblox anti-cheat is server-side and reviews behavior patterns. We never claim undetected status — quieter scripts reduce risk more than marketing slogans.",
     },
     {
-      question: "Delta UNC'yi (Unified Naming Convention) destekliyor mu?",
+      question: "Does Delta Executor support UNC?",
       answer:
-        "Delta Executor, UNC API yüzeyinin önemli bir bölümünü uygular. Tam kapsam düzeyi güncellemeye göre değişir — her yama döngüsünde Roblox'un Lua ortamına eklenen veya kaldırılan işlevler sonraki Delta güncellemelerinde ele alınır.",
+        "Delta Executor implements a large part of the UNC API surface. Exact coverage changes per update as Roblox’s Lua environment shifts after each patch cycle.",
     },
     {
-      question: "Script hub harici script sitelerinden nasıl farklı?",
+      question: "How is the script hub different from external script sites?",
       answer:
-        "Hub scriptleri eklenmeden önce incelenir; bu, açık oturum çalan kodları tarar. Harici script siteleri denetimsizdir ve daha yüksek kötü amaçlı Lua riski taşır. Hub ödünleşimi: sınırlı, düzenlenmiş bir seçim ile harici kaynaklardan sınırsız ancak denetlenmemiş seçenekler arasındadır.",
+        "Hub scripts are curated before listing, which reduces some session-stealing patterns. External paste sites are unreviewed and carry higher malicious Lua risk. The tradeoff is curated selection versus unlimited unverified pastes.",
     },
   ],
-  ctaTitle: "Delta Executor indirme rehberi",
+  ctaTitle: "Open the Delta Executor download guide",
   ctaBody:
-    "Android APK rehberiyle başlayın veya cihazınıza göre iOS / PC rehberlerini açın. Ardından anahtar kilit açma ve güvenlik notlarını inceleyin.",
-  ctaButton: "İndirme rehberini aç",
-  navGenerator: "Ana Sayfa",
-  navInstagram: "İndir",
+    "Start with the Android APK guide, or open the iOS / PC guides for your device. Then review key unlock and safety notes before you inject.",
+  ctaButton: "Open download guide",
+  navGenerator: "Home",
+  navInstagram: "Download",
   navNick: "iOS",
   navWhatsapp: "PC",
-  navWhat: "Özellikler",
+  navWhat: "Features",
   navBlog: "Blog",
-  navAbout: "Hakkımızda",
-  makeStyles: "İndir",
-  languageLabel: "Dil",
-  footerTools: "Sayfalar",
-  footerGuides: "Rehberler",
-  footerSocial: "Sosyal Medya",
-  footerCtaTitle: "Delta Executor'ı edinin",
-  footerCtaBody: "Android, iOS ve PC yolları — net uyarılarla birlikte.",
-  footerRights: "Tüm hakları saklıdır.",
+  navAbout: "About",
+  makeStyles: "Download",
+  languageLabel: "Language",
+  footerTools: "Pages",
+  footerGuides: "Guides",
+  footerSocial: "Social",
+  footerCtaTitle: "Get Delta Executor",
+  footerCtaBody: "Android, iOS, and PC paths — with clear warnings.",
+  footerRights: "All rights reserved.",
   footerNote:
-    "Delta Roblox bağımsız bir hayran rehberidir. Roblox Corporation ile bağlantısı yoktur. Executor'lar ToS'u ihlal edebilir — kullanım riski size aittir.",
-  platformsTitle: "Kapsanan platformlar",
+    "Delta Executor on deltaexecutor.com.ph is an independent fan guide. Not affiliated with Roblox Corporation. Executors can violate ToS — use at your own risk.",
+  platformsTitle: "Platforms we cover",
   platformsIntro:
-    "Delta Roblox, Google sonuçlarına hâkim olan amaçları ele alır: Android APK, iOS kurulumu, PC denemeleri ve anahtar kilit açma yardımı.",
+    "Delta Executor guides match the intents that dominate Google: Android APK, iOS install, PC via emulator, Mac options, VNG, and key unlock help.",
   platforms: [
     {
       t: "Android",
-      d: "APK yandan yükleme, bilinmeyen kaynak ayarları ve ilk çalıştırma anahtar akışı.",
+      d: "APK sideload, unknown-sources settings, and first-run key flow.",
     },
     {
       t: "iOS",
-      d: "IPA / doğrudan kurulum kalıpları ve yaygın imzalama hataları.",
+      d: "IPA / Direct Install patterns and common signing failures.",
     },
     {
       t: "PC",
-      d: "'Delta for PC' listelerinin genellikle ne anlama geldiği ve rastgele EXE yansımalarına güvenli alternatifler.",
+      d: "What “Delta for PC” usually means and safer emulator alternatives to random EXE mirrors.",
     },
     {
-      t: "Scriptler",
-      d: "Hub kullanımı, yapıştır-çalıştır ve güncelleme sonrası doğrulama alışkanlıkları.",
+      t: "Scripts",
+      d: "Hub usage, paste-and-execute habits, and post-update verification.",
     },
   ],
-  compareTitle: "Delta Roblox ile tipik yansıma sayfaları karşılaştırması",
+  compareTitle: "Delta Executor vs typical mirror pages",
   compareBody:
-    "Yansıma siteleri genellikle kurulum adımlarını anahtar kelime doldurma ve site dışı yönlendirmelerin altına gömer. Delta Roblox, CTA'ları deltaroblox.tr'de tutar, rehberleri platforma göre ayırır ve YouTube başlıklarının atladığı riskleri belgeler.",
+    "Mirror sites bury install steps under keyword stuffing and off-site redirects. We keep CTAs on deltaexecutor.com.ph, split guides by platform, and document the risks YouTube titles skip.",
 };
 
 export function getMessages(_code?: string): HomeMessages {
-  return tr;
+  return en;
 }

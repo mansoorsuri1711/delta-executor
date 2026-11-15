@@ -63,8 +63,8 @@ function ButtonInner({
 }) {
   const iconWrap =
     size === 'sm'
-      ? 'ml-2 inline-flex rounded-full border border-pink/40 bg-pink/10 p-1.5 text-pink transition-transform group-hover:scale-110'
-      : 'ml-3 inline-flex rounded-full border border-pink/40 bg-pink/10 p-2 text-pink transition-transform group-hover:scale-110';
+      ? 'ml-2 inline-flex rounded-full border border-white/35 bg-white/10 p-1.5 text-white transition-transform group-hover:scale-110'
+      : 'ml-3 inline-flex rounded-full border border-white/35 bg-white/10 p-2 text-white transition-transform group-hover:scale-110';
   const iconSvg = size === 'sm' ? 'w-4 h-4' : 'w-5 h-5';
 
   return (

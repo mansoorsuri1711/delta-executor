@@ -3,22 +3,22 @@
  * Used by next.config.js so old bookmarks never 404.
  */
 const CURRENT = {
-  download: "/download-delta-roblox",
-  ios: "/delta-roblox-ios",
-  pc: "/delta-roblox-pc",
-  mac: "/delta-roblox-mac",
-  discord: "/delta-roblox-discord",
-  howToUse: "/how-to-use-delta-roblox",
-  troubleshooting: "/delta-roblox-troubleshooting",
-  vng: "/delta-roblox-vng",
-  comparison: "/delta-roblox-comparison",
+  download: "/download-delta-executor",
+  ios: "/delta-executor-ios",
+  pc: "/delta-executor-pc",
+  mac: "/delta-executor-mac",
+  discord: "/delta-executor-discord",
+  howToUse: "/how-to-use-delta-executor",
+  troubleshooting: "/delta-executor-troubleshooting",
+  vng: "/delta-executor-vng",
+  comparison: "/delta-executor-comparison",
   home: "/",
   features: "/",
 };
 
 /** [sourceWithoutSlash, destination] */
 const PAIRS = [
-  // Original short paths
+  // Short paths
   ["/download", CURRENT.download],
   ["/ios", CURRENT.ios],
   ["/pc", CURRENT.pc],
@@ -31,11 +31,18 @@ const PAIRS = [
   ["/comparison", CURRENT.comparison],
   ["/features", CURRENT.features],
 
-  // Brand-first variants that were renamed
+  // Previous Delta Roblox brand slugs
+  ["/download-delta-roblox", CURRENT.download],
+  ["/delta-roblox-ios", CURRENT.ios],
+  ["/delta-roblox-pc", CURRENT.pc],
+  ["/delta-roblox-mac", CURRENT.mac],
+  ["/delta-roblox-discord", CURRENT.discord],
+  ["/how-to-use-delta-roblox", CURRENT.howToUse],
+  ["/delta-roblox-troubleshooting", CURRENT.troubleshooting],
+  ["/delta-roblox-vng", CURRENT.vng],
+  ["/delta-roblox-comparison", CURRENT.comparison],
   ["/delta-roblox-download", CURRENT.download],
   ["/delta-roblox-how-to-use", CURRENT.howToUse],
-
-  // Topic-first variants that were renamed (still used for some pages historically)
   ["/ios-delta-roblox", CURRENT.ios],
   ["/pc-delta-roblox", CURRENT.pc],
   ["/mac-delta-roblox", CURRENT.mac],
@@ -43,7 +50,11 @@ const PAIRS = [
   ["/troubleshooting-delta-roblox", CURRENT.troubleshooting],
   ["/vng-delta-roblox", CURRENT.vng],
   ["/comparison-delta-roblox", CURRENT.comparison],
-  // Note: /download-delta-roblox and /how-to-use-delta-roblox are CURRENT — do not redirect
+
+  // Retired blog posts → SERP replacements
+  ["/blog/delta-executor-key-system", "/blog/how-to-get-delta-executor-key"],
+  ["/blog/delta-executor-scripts-hub", "/how-to-use-delta-executor"],
+  ["/blog/fake-delta-executor-websites", "/blog/is-delta-executor-safe"],
 ];
 
 function withTrailingSlashVariants(pairs) {

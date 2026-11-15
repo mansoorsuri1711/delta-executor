@@ -12,7 +12,7 @@ export type SitemapPage = {
   images?: Array<{ loc: string; title: string; caption: string }>;
 };
 
-const LASTMOD = "2026-11-06";
+const LASTMOD = "2026-11-15";
 
 export const SITEMAP_PAGES: SitemapPage[] = [
   {
@@ -22,68 +22,68 @@ export const SITEMAP_PAGES: SitemapPage[] = [
     priority: 1,
     images: [
       {
-        loc: imageLoc("/delta-roblox-logo.webp"),
-        title: "Delta Roblox logosu",
-        caption: "Delta Roblox — deltaroblox.tr marka logosu",
+        loc: imageLoc("/delta-executor-logo.webp"),
+        title: "Delta Executor logo",
+        caption: "Delta Executor ninja logo — deltaexecutor.com.ph",
       },
       {
-        loc: imageLoc("/delta-roblox.webp"),
-        title: "Delta Executor",
-        caption: "Delta Executor — Android ve iOS için ücretsiz Roblox script executor",
+        loc: imageLoc("/delta-executer.webp"),
+        title: "Delta Executor key system",
+        caption: "Get Delta Key unlock flow on mobile",
       },
       {
-        loc: imageLoc("/delta-roblox-android.webp"),
-        title: "Delta Executor özellikleri — Android",
-        caption: "Script hub, hızlı enjeksiyon ve root gerektirmeyen Android yürütme",
+        loc: imageLoc("/delta-executor-for-android.webp"),
+        title: "Delta Executor for Android",
+        caption: "Delta Android Keysystem continue screen",
       },
       {
-        loc: imageLoc("/delta-roblox-ios.webp"),
-        title: "Delta Executor özellikleri — iOS",
-        caption: "Delta Executor iOS özelliklerine genel bakış",
+        loc: imageLoc("/delta-executor-download.webp"),
+        title: "Delta Executor download unlock",
+        caption: "Delta Executor unlock content after completed actions",
       },
       {
-        loc: imageLoc("/delta-roblox-scripts.webp"),
-        title: "Delta Executor script kütüphanesi",
-        caption: "Roblox oyunları için yerleşik script hub",
+        loc: imageLoc("/deltaexecutor.webp"),
+        title: "Delta Executor create key",
+        caption: "Create your Delta Executor key whitelist step",
       },
     ],
   },
   {
-    path: "/download-delta-roblox",
+    path: "/download-delta-executor",
     lastMod: LASTMOD,
     changeFreq: "weekly",
     priority: 0.98,
     images: [
       {
-        loc: imageLoc("/delta-roblox-android.webp"),
-        title: "Android için Delta Executor APK İndir",
-        caption: "Delta Executor v2.745 Android APK indirme ve kurulum rehberi",
+        loc: imageLoc("/delta-executor-for-android.webp"),
+        title: "Download Delta Executor APK for Android",
+        caption: "Delta Executor Android APK download and keysystem guide",
       },
     ],
   },
   {
-    path: "/delta-roblox-ios",
+    path: "/delta-executor-ios",
     lastMod: LASTMOD,
     changeFreq: "weekly",
     priority: 0.95,
     images: [
       {
-        loc: imageLoc("/delta-roblox-ios.webp"),
-        title: "iOS için Delta Executor",
-        caption: "AltStore ve TrollStore ile Delta Executor iOS kurulum rehberi",
+        loc: imageLoc("/delta-executor-download.webp"),
+        title: "Delta Executor for iOS",
+        caption: "Delta Executor iOS install and unlock guide",
       },
     ],
   },
   {
-    path: "/delta-roblox-pc",
+    path: "/delta-executor-pc",
     lastMod: LASTMOD,
     changeFreq: "monthly",
     priority: 0.85,
     images: [
       {
-        loc: imageLoc("/delta-roblox.webp"),
-        title: "Delta Executor PC sürümü rehberi",
-        caption: "Delta Executor PC durumu ve sahte EXE uyarısı",
+        loc: imageLoc("/delta-executer.webp"),
+        title: "Delta Executor PC guide",
+        caption: "Delta Executor PC via Android emulator — key flow",
       },
     ],
   },
@@ -94,9 +94,9 @@ export const SITEMAP_PAGES: SitemapPage[] = [
     priority: 0.65,
     images: [
       {
-        loc: imageLoc("/delta-roblox-logo.webp"),
-        title: "Delta Roblox hakkında",
-        caption: "Delta Roblox ekibi ve misyonu",
+        loc: imageLoc("/delta-executor-logo.webp"),
+        title: "About Delta Executor",
+        caption: "About the Delta Executor guide team",
       },
     ],
   },
@@ -107,119 +107,132 @@ export const SITEMAP_PAGES: SitemapPage[] = [
     priority: 0.8,
   },
   {
-    path: "/blog/delta-executor-key-system",
+    path: "/blog/how-to-get-delta-executor-key",
     lastMod: LASTMOD,
-    changeFreq: "monthly",
-    priority: 0.92,
+    changeFreq: "weekly",
+    priority: 0.95,
     images: [
       {
-        loc: imageLoc("/delta-roblox-android.webp"),
-        title: "Delta Executor anahtar sistemi rehberi",
-        caption: "Delta Executor anahtar kontrol noktasını beş dakikadan kısa sürede tamamlama",
+        loc: imageLoc("/delta-executor-free-download.webp"),
+        title: "How to get Delta Executor key",
+        caption: "Step-by-step Delta Executor key whitelist success screen",
       },
     ],
   },
   {
     path: "/blog/is-delta-executor-safe",
     lastMod: LASTMOD,
-    changeFreq: "monthly",
-    priority: 0.9,
+    changeFreq: "weekly",
+    priority: 0.93,
     images: [
       {
-        loc: imageLoc("/delta-roblox.webp"),
-        title: "Delta Executor güvenli mi?",
-        caption: "Dürüst risk değerlendirmesi: ban riski, kötü amaçlı yazılım ve izinler",
+        loc: imageLoc("/delta-executor-logo.webp"),
+        title: "Is Delta Executor safe?",
+        caption: "Honest risk assessment for Delta Executor downloads",
       },
     ],
   },
   {
-    path: "/blog/delta-executor-scripts-hub",
+    path: "/blog/what-is-delta-executor",
+    lastMod: LASTMOD,
+    changeFreq: "weekly",
+    priority: 0.94,
+    images: [
+      {
+        loc: imageLoc("/delta-executer.webp"),
+        title: "What is Delta Executor?",
+        caption: "Beginner guide to Delta Executor for Roblox",
+      },
+    ],
+  },
+  {
+    path: "/blog/delta-executor-key-not-working",
+    lastMod: LASTMOD,
+    changeFreq: "weekly",
+    priority: 0.92,
+    images: [
+      {
+        loc: imageLoc("/delta-executor-download.webp"),
+        title: "Delta Executor key not working",
+        caption: "Fix Linkvertise and key unlock errors for Delta Executor",
+      },
+    ],
+  },
+  {
+    path: "/how-to-use-delta-executor",
+    lastMod: LASTMOD,
+    changeFreq: "monthly",
+    priority: 0.9,
+    images: [
+      {
+        loc: imageLoc("/delta-executor-for-android.webp"),
+        title: "How to use Delta Executor",
+        caption: "Step-by-step Delta Executor Android keysystem usage",
+      },
+    ],
+  },
+  {
+    path: "/delta-executor-troubleshooting",
     lastMod: LASTMOD,
     changeFreq: "monthly",
     priority: 0.88,
     images: [
       {
-        loc: imageLoc("/delta-roblox-scripts.webp"),
-        title: "Delta Executor script hub",
-        caption: "En iyi scriptler ve Delta Executor yerleşik hub nasıl kullanılır",
+        loc: imageLoc("/delta-executor-download.webp"),
+        title: "Delta Executor troubleshooting guide",
+        caption: "Fix key unlock and injection issues on Delta Executor",
       },
     ],
   },
   {
-    path: "/how-to-use-delta-roblox",
-    lastMod: LASTMOD,
-    changeFreq: "monthly",
-    priority: 0.9,
-    images: [
-      {
-        loc: imageLoc("/delta-roblox-android.webp"),
-        title: "Delta Executor nasıl kullanılır — script çalıştırma rehberi",
-        caption: "Adım adım: Roblox'a bağlan, Script Hub, scripti yapıştır ve çalıştır",
-      },
-    ],
-  },
-  {
-    path: "/delta-roblox-troubleshooting",
-    lastMod: LASTMOD,
-    changeFreq: "monthly",
-    priority: 0.88,
-    images: [
-      {
-        loc: imageLoc("/delta-roblox.webp"),
-        title: "Delta Executor sorun giderme rehberi",
-        caption: "Enjeksiyon hatası, anahtar hataları, çökmeler ve Play Protect engellerini çözme",
-      },
-    ],
-  },
-  {
-    path: "/delta-roblox-mac",
+    path: "/delta-executor-mac",
     lastMod: LASTMOD,
     changeFreq: "monthly",
     priority: 0.78,
     images: [
       {
-        loc: imageLoc("/delta-roblox.webp"),
-        title: "Mac için Delta Executor — emülatör rehberi",
-        caption: "macOS kullanıcıları için seçenekler: BlueStacks emülatörü ve iPhone Mirroring",
+        loc: imageLoc("/delta-executer.webp"),
+        title: "Delta Executor for Mac",
+        caption: "macOS options for Delta Executor via emulator",
       },
     ],
   },
   {
-    path: "/delta-roblox-vng",
+    path: "/delta-executor-vng",
     lastMod: LASTMOD,
     changeFreq: "monthly",
     priority: 0.82,
     images: [
       {
-        loc: imageLoc("/delta-roblox-android.webp"),
-        title: "Delta Executor VNG — Vietnam Roblox istemcisi rehberi",
-        caption: "VNG Roblox açıklaması: kimin ihtiyacı var ve Delta VNG için nasıl kurulur",
+        loc: imageLoc("/delta-executor-for-android.webp"),
+        title: "Delta Executor VNG",
+        caption: "Delta Executor VNG Vietnam Android keysystem",
       },
     ],
   },
   {
-    path: "/delta-roblox-discord",
+    path: "/delta-executor-discord",
     lastMod: LASTMOD,
     changeFreq: "weekly",
     priority: 0.9,
     images: [
       {
-        loc: imageLoc("/delta-roblox.webp"),
-        title: "Delta Executor Discord sunucusu",
-        caption: "Delta Executor Discord — güvenli katılım, duyurular ve dolandırıcılık uyarıları",
+        loc: imageLoc("/delta-executor-logo.webp"),
+        title: "Delta Executor Discord server",
+        caption: "Delta Executor Discord — updates and community",
       },
     ],
   },
   {
-    path: "/delta-roblox-comparison",
+    path: "/delta-executor-comparison",
     lastMod: LASTMOD,
     changeFreq: "monthly",
     priority: 0.85,
     images: [
       {
-        loc: imageLoc("/delta-roblox-android.webp"),
-        title: "Delta Executor ile diğer Roblox executor'lar karşılaştırması",
-        caption: "Dürüst karşılaştırma tablosu: mobil destek, anahtar sistemi, script hub, güncelleme hızı",
+        loc: imageLoc("/feature/og-image-delta-executor.webp"),
+        title: "Delta Executor vs other Roblox executors",
+        caption: "Delta Executor brand comparison overview",
       },
     ],
   },
